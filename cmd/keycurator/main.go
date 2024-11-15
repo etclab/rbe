@@ -6,6 +6,6 @@ import (
 )
 
 func main() {
-	crs := rbe.NewCRS(100)
-	mu.UNUSED(crs)
+	pp := rbe.NewPublicParams(100)
+	mu.UNUSED(pp)
 }
