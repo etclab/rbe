@@ -115,12 +115,33 @@ func Update(crs *CRS, id int) []*bls.G1 {
 
 }
 
-func Decrypt(crs *CRS, id int, sk *bls.Scalar, updates []*bls.G1, ct *Ciphertext, updateIndex int) *bls.Gt {
-	mu.UNUSED(crs)
-	mu.UNUSED(id)
-	mu.UNUSED(sk)
-	mu.UNUSED(updates)
-	mu.UNUSED(ct)
-	mu.UNUSED(updateIndex)
-	return nil
+func Decrypt(crs *CRS, id int, sk *bls.Scalar, updates []*bls.G1, ct *Ciphertext, updateIndex int) (*bls.Gt, error) {
+
+	u := updates[updateIndex]
+	idIndex := id % crs.blockSize
+
+	t1 := bls.Pair(ct.ct0, crs.hParamsG2[crs.blockSize-1-idIndex])
+
+	t2 := bls.Pair(u, crs.g2)
+	x := new(bls.G1)
+	x.ScalarMult(sk, crs.hParamsG1[idIndex])
+	z := bls.Pair(x, crs.hParamsG2[crs.blockSize-1-idIndex])
+	t2.Mul(t2, z)
+
+	if !t1.IsEqual(t2) {
+		return nil, ErrDecrypt
+	}
+
+	z = bls.Pair(u, ct.ct2)
+	z.Inv(z)
+	z.Mul(z, ct.ct1)
+	w := new(bls.Scalar)
+	w.Inv(sk)
+	z.Exp(z, w)
+	z.Inv(z)
+
+	m := new(bls.Gt)
+	m.Mul(ct.ct3, z)
+
+	return m, nil
 }
