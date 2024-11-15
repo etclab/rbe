@@ -78,6 +78,39 @@ func NewPublicParams(maxUsers int) *PublicParams {
 	return pp
 }
 
+type KeyPair struct {
+	PublicKey *bls.G1
+	SecretKey *bls.Scalar
+	Xi        []*bls.G1
+}
+
+func NewKeyPair(pp *PublicParams, id int) (*KeyPair, error) {
+	if id < 0 || id >= pp.maxUsers {
+		return nil, ErrInvalidId
+	}
+
+	idIndex := id % pp.blockSize
+	sk := randomScalar()
+	h := pp.hParamsG1[idIndex]
+	pk := new(bls.G1)
+	pk.ScalarMult(sk, h)
+
+	xi := make([]*bls.G1, pp.blockSize)
+	for j := 0; j < pp.blockSize; j++ {
+		i := pp.blockSize - 1 - j
+		if pp.hParamsG1[idIndex+j+1] == nil {
+			continue
+		}
+		xi[i].ScalarMult(sk, pp.hParamsG1[idIndex+j+1])
+	}
+
+	return &KeyPair{
+		PublicKey: pk,
+		SecretKey: sk,
+		Xi:        xi,
+	}, nil
+}
+
 type Ciphertext struct {
 	ct0 *bls.G1
 	ct1 *bls.Gt
