@@ -11,7 +11,12 @@ func Setup(maxUsers int) *PublicParams {
 	return NewPublicParams(maxUsers)
 }
 
-func GenerateKeyPair(pp *PublicParams, id int) (*bls.G1, *bls.Scalar, []*bls.G1) {
+func GenerateKeyPair(pp *PublicParams, id int) (*bls.G1, *bls.Scalar, []*bls.G1, error) {
+
+	if id < 0 || id >= pp.maxUsers {
+		return nil, nil, nil, ErrInvalidId
+	}
+
 	idIndex := id % pp.blockSize
 	sk := randomScalar()
 	h := pp.hParamsG1[idIndex]
@@ -27,7 +32,7 @@ func GenerateKeyPair(pp *PublicParams, id int) (*bls.G1, *bls.Scalar, []*bls.G1)
 		xi[i].ScalarMult(sk, pp.hParamsG1[idIndex+j+1])
 	}
 
-	return pk, sk, xi
+	return pk, sk, xi, nil
 }
 
 func Register(pp *PublicParams, id int, pk *bls.G1, xi []*bls.G1) {

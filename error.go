@@ -10,5 +10,6 @@ func (e *Error) Error() string {
 }
 
 var (
-	ErrDecrypt error = &Error{err: "Decryption cannot be done, you need to get update first"}
+	ErrDecrypt   error = &Error{err: "Decryption cannot be done, you need to get update first"}
+	ErrInvalidId error = &Error{err: "id out of range"}
 )

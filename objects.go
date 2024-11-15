@@ -10,9 +10,9 @@ import (
 
 // Public Parameters and CRS
 type PublicParams struct {
-	maxUsers  int
-	blockSize int
-	numBlocks int
+	maxUsers  int // N
+	blockSize int // n
+	numBlocks int // B
 
 	g1 *bls.G1
 	g2 *bls.G2
@@ -35,17 +35,17 @@ func NewPublicParams(maxUsers int) *PublicParams {
 
 	pp.maxUsers = maxUsers
 	pp.blockSize = int(math.Ceil(math.Sqrt(float64(maxUsers))))
-	pp.numBlocks = pp.maxUsers / pp.blockSize
+	pp.numBlocks = int(math.Ceil(float64(pp.maxUsers) / float64(pp.blockSize)))
 
 	pp.g1 = bls.G1Generator()
 	pp.g2 = bls.G2Generator()
 
 	z := randomZ()
-	pp.hParamsG1 = make([]*bls.G1, maxUsers*2)
-	pp.hParamsG2 = make([]*bls.G2, maxUsers*2)
+	pp.hParamsG1 = make([]*bls.G1, pp.blockSize*2)
+	pp.hParamsG2 = make([]*bls.G2, pp.blockSize*2)
 
-	for i := 0; i < (2 * maxUsers); i++ {
-		if i == maxUsers {
+	for i := 0; i < (2 * pp.blockSize); i++ {
+		if i == pp.blockSize {
 			continue
 		}
 
