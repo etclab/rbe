@@ -7,5 +7,12 @@ import (
 
 func main() {
 	pp := rbe.NewPublicParams(100)
-	mu.UNUSED(pp)
+
+	id := 54
+	key, err := rbe.NewKeyPair(pp, id)
+	if err != nil {
+		mu.Fatalf("rbe.NewKeyPair failed: %v", err)
+	}
+
+	mu.UNUSED(key)
 }

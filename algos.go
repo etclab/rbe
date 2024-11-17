@@ -15,13 +15,7 @@ func GenerateKeyPair(pp *PublicParams, id int) (*KeyPair, error) {
 	return NewKeyPair(pp, id)
 }
 
-func Register(pp *PublicParams, id int, pk *bls.G1, xi []*bls.G1) {
-	// block index
-	k := id / pp.blockSize
-	idIndex := id % pp.blockSize
-	mu.UNUSED(idIndex)
-
-	// TODO: make this a separate function
+func checkConsistency(pp *PublicParams, pk *bls.G1, xi []*bls.G1) {
 	// check consistency of the helping values (xi)
 	hParams := pp.hParamsG2
 	e := bls.Pair(pk, hParams[pp.blockSize-1])
@@ -38,8 +32,22 @@ func Register(pp *PublicParams, id int, pk *bls.G1, xi []*bls.G1) {
 			mu.Fatalf("helping values (xi) are not consistent!")
 		}
 	}
+}
 
-	// fetch and update commitment
+// this function updates pp
+func Register(pp *PublicParams, id int, pk *bls.G1, xi []*bls.G1) error {
+	if id < 0 || id >= pp.maxUsers {
+		return ErrInvalidId
+	}
+
+	// block index
+	k := id / pp.blockSize
+	idIndex := id % pp.blockSize
+	mu.UNUSED(idIndex)
+
+	checkConsistency(pp, pk, xi)
+
+	// update commitment
 	com := pp.commitments[k]
 	com.Add(com, pk)
 
@@ -62,9 +70,15 @@ func Register(pp *PublicParams, id int, pk *bls.G1, xi []*bls.G1) {
 		pp.aux[newAuxIndex] = newAuxValue
 		pp.auxCount[k] += 1
 	}
+
+	return nil
 }
 
-func Encrypt(pp *PublicParams, id int, m *bls.Gt) *Ciphertext {
+func Encrypt(pp *PublicParams, id int, m *bls.Gt) (*Ciphertext, error) {
+	if id < 0 || id >= pp.maxUsers {
+		return nil, ErrInvalidId
+	}
+
 	// block index
 	k := id / pp.blockSize
 	idIndex := id % pp.blockSize
@@ -86,18 +100,15 @@ func Encrypt(pp *PublicParams, id int, m *bls.Gt) *Ciphertext {
 	ct3.Exp(ct3, r)
 	ct3.Mul(ct3, m)
 
-	ct := &Ciphertext{ct0, ct1, ct2, ct3}
-	return ct
+	return &Ciphertext{ct0, ct1, ct2, ct3}, nil
 }
 
-func Update(pp *PublicParams, id int) []*bls.G1 {
-	mu.UNUSED(pp)
-	mu.UNUSED(id)
-	return nil
-
-}
-
+// TODO: are the updates the xi?
 func Decrypt(pp *PublicParams, id int, sk *bls.Scalar, updates []*bls.G1, ct *Ciphertext, updateIndex int) (*bls.Gt, error) {
+	if id < 0 || id >= pp.maxUsers {
+		return nil, ErrInvalidId
+	}
+
 	u := updates[updateIndex]
 	idIndex := id % pp.blockSize
 
@@ -110,6 +121,7 @@ func Decrypt(pp *PublicParams, id int, sk *bls.Scalar, updates []*bls.G1, ct *Ci
 	t2.Mul(t2, z)
 
 	if !t1.IsEqual(t2) {
+		// TODO: user should update
 		return nil, ErrDecrypt
 	}
 
@@ -125,4 +137,11 @@ func Decrypt(pp *PublicParams, id int, sk *bls.Scalar, updates []*bls.G1, ct *Ci
 	m.Mul(ct.ct3, z)
 
 	return m, nil
+}
+
+func Update(pp *PublicParams, id int) []*bls.G1 {
+	mu.UNUSED(pp)
+	mu.UNUSED(id)
+	return nil
+
 }

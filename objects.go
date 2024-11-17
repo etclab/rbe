@@ -18,8 +18,11 @@ type PublicParams struct {
 	g2 *bls.G2
 
 	// common reference string
-	hParamsG1 []*bls.G1
-	hParamsG2 []*bls.G2
+
+	// h[i] = g1**{z**i}, where i ranges form 1 to 2n, inclusive
+	hParamsG1 []*bls.G1 // h_parameters_g1
+	// h[i] = g2**{z**i}, where i ranges form 1 to 2n, inclusive
+	hParamsG2 []*bls.G2 // h_parameters_g2
 
 	// indexed by the block number
 	commitments []*bls.G1
@@ -27,7 +30,8 @@ type PublicParams struct {
 	// indexed by the block number; stores the number of parties registered in
 	// each block
 	auxCount []int
-	aux      []*bls.G1 // TODO: what is the size of this array
+	// TODO: what is the size of this array
+	aux []*bls.G1
 }
 
 func NewPublicParams(maxUsers int) *PublicParams {
@@ -101,6 +105,7 @@ func NewKeyPair(pp *PublicParams, id int) (*KeyPair, error) {
 		if pp.hParamsG1[idIndex+j+1] == nil {
 			continue
 		}
+		xi[i] = new(bls.G1)
 		xi[i].ScalarMult(sk, pp.hParamsG1[idIndex+j+1])
 	}
 
