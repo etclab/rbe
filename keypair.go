@@ -19,20 +19,20 @@ func NewKeyPair(pp *PublicParams, id int) *KeyPair {
 
 	hParamsG1 := pp.crs.hParamsG1
 
-	idIndex := id % pp.blockSize
 	sk := randomScalar()
-	h := hParamsG1[idIndex]
+	idBar := pp.IdToIdBar(id)
+	h := hParamsG1[idBar]
 	pk := new(bls.G1)
 	pk.ScalarMult(sk, h)
 
 	xi := make([]*bls.G1, pp.blockSize)
 	for j := 0; j < pp.blockSize; j++ {
 		i := pp.blockSize - 1 - j
-		if hParamsG1[idIndex+j+1] == nil {
+		if hParamsG1[idBar+j+1] == nil {
 			continue
 		}
 		xi[i] = new(bls.G1)
-		xi[i].ScalarMult(sk, hParamsG1[idIndex+j+1])
+		xi[i].ScalarMult(sk, hParamsG1[idBar+j+1])
 	}
 
 	return &KeyPair{

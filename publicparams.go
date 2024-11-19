@@ -18,6 +18,9 @@ type PublicParams struct {
 	g2 *bls.G2
 
 	crs *CRS
+
+	// Commitment C for each block ; indexed by the block number
+	Commitments []*bls.G1 // in the paper, these are just called `pp`
 }
 
 func NewPublicParams(maxUsers int) *PublicParams {
@@ -32,12 +35,22 @@ func NewPublicParams(maxUsers int) *PublicParams {
 
 	pp.crs = NewCRS(pp.g1, pp.g2, pp.blockSize)
 
+	pp.Commitments = make([]*bls.G1, pp.numBlocks)
+	for i := 0; i < pp.numBlocks; i++ {
+		pp.Commitments[i] = new(bls.G1)
+		pp.Commitments[i].SetIdentity()
+	}
+
 	return pp
+}
+
+func (pp *PublicParams) GetGenerators() (*bls.G1, *bls.G2) {
+	return pp.g1, pp.g2
 }
 
 // check consistency of the helping values (xi)
 func (pp *PublicParams) CheckXiConsistency(pk *bls.G1, xi []*bls.G1) {
-	hParams := pp.hParamsG2
+	hParams := pp.crs.hParamsG2
 	e := bls.Pair(pk, hParams[pp.blockSize-1])
 	for i := 0; i < (pp.blockSize - 1); i++ {
 		if xi[i+1] == nil {

@@ -16,7 +16,7 @@ type User struct {
 }
 
 func NewUser(pp *PublicParams, id int) *User {
-	pp.CheckIdRange(pp, id)
+	pp.CheckIdRange(id)
 
 	u := new(User)
 	u.pp = pp
@@ -26,35 +26,20 @@ func NewUser(pp *PublicParams, id int) *User {
 	return u
 }
 
+func (u *User) PublicKey() *bls.G1 {
+	return u.keyPair.PublicKey
+}
+
+func (u *User) Xi() []*bls.G1 {
+	return u.keyPair.Xi
+}
+
+func (u *User) Id() int {
+	return u.id
+}
+
 func (u *User) Encrypt(recvId int, msg *bls.Gt) *Ciphertext {
-	pp := u.pp
-	hParamsG1 := pp.crs.hParamsG1
-	hParamsG2 := pp.crs.hParamsG2
-
-	pp.CheckIdRange(recvId)
-
-	// block index
-	k := pp.IdToBlock(recvId)
-	recvBar := pp.IdToIdBar(recvId)
-
-	g2 := pp.g2
-	com := pp.commitments[k]
-
-	r := randomScalar()
-
-	ct0 := com
-
-	ct1 := bls.Pair(com, hParamsG2[pp.blockSize-1-recvBar])
-	ct1.Exp(ct1, r)
-
-	ct2 := new(bls.G2)
-	ct2.ScalarMult(r, g2)
-
-	ct3 := bls.Pair(hParamsG1[recvBar], hParamsG2[pp.blockSize-1-recvBar])
-	ct3.Exp(ct3, r)
-	ct3.Mul(ct3, msg)
-
-	return &Ciphertext{ct0, ct1, ct2, ct3}
+	return Encrypt(u.pp, recvId, msg)
 }
 
 func (u *User) Decrypt(ct *Ciphertext) (*bls.Gt, error) {
@@ -65,6 +50,7 @@ func (u *User) Decrypt(ct *Ciphertext) (*bls.Gt, error) {
 	pp := u.pp
 	hParamsG1 := pp.crs.hParamsG1
 	hParamsG2 := pp.crs.hParamsG2
+	sk := u.keyPair.SecretKey
 
 	opening := u.openings[len(u.openings)-1]
 	idBar := pp.IdToIdBar(u.id)
@@ -96,6 +82,7 @@ func (u *User) Decrypt(ct *Ciphertext) (*bls.Gt, error) {
 	return m, nil
 }
 
-func (u *User) Update(newOpenings []*bls.G1) {
+func (u *User) Update(newCommitments, newOpenings []*bls.G1) {
+	u.pp.Commitments = newCommitments
 	u.openings = newOpenings
 }
