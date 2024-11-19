@@ -1,4 +1,4 @@
-progs= keycurator
+progs= simulation
 
 all: $(progs)
 
