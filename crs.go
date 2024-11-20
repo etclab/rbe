@@ -5,6 +5,7 @@ import (
 	"strings"
 
 	bls "github.com/cloudflare/circl/ecc/bls12381"
+	"github.com/etclab/rbe/proto"
 )
 
 type CRS struct {
@@ -12,6 +13,57 @@ type CRS struct {
 	hParamsG1 []*bls.G1 // h_parameters_g1
 	// h[i] = g2**{z**i}, where i ranges form 1 to 2n, inclusive
 	hParamsG2 []*bls.G2 // h_parameters_g2
+}
+
+func (crs *CRS) FromProto(protoCrs *proto.CRS) {
+	size := len(protoCrs.GetHParamsG1())
+
+	crs.hParamsG1 = make([]*bls.G1, size)
+	crs.hParamsG2 = make([]*bls.G2, size)
+
+	for i, v := range protoCrs.GetHParamsG1() {
+		if v == nil {
+			crs.hParamsG1[i] = nil
+		} else {
+			crs.hParamsG1[i] = new(bls.G1)
+			crs.hParamsG1[i].SetBytes(v.GetBytes())
+		}
+	}
+
+	for i, v := range protoCrs.GetHParamsG2() {
+		if v == nil {
+			crs.hParamsG2[i] = nil
+		} else {
+			crs.hParamsG2[i] = new(bls.G2)
+			crs.hParamsG2[i].SetBytes(v.GetBytes())
+		}
+	}
+}
+
+func (crs *CRS) ToProto() *proto.CRS {
+	hParamsG1 := []*proto.G1{}
+	hParamsG2 := []*proto.G2{}
+
+	for _, v := range crs.hParamsG1 {
+		if v == nil {
+			hParamsG1 = append(hParamsG1, nil)
+		} else {
+			hParamsG1 = append(hParamsG1, &proto.G1{Bytes: v.Bytes()})
+		}
+	}
+
+	for _, v := range crs.hParamsG2 {
+		if v == nil {
+			hParamsG2 = append(hParamsG2, nil)
+		} else {
+			hParamsG2 = append(hParamsG2, &proto.G2{Bytes: v.Bytes()})
+		}
+	}
+
+	return &proto.CRS{
+		HParamsG1: hParamsG1,
+		HParamsG2: hParamsG2,
+	}
 }
 
 func NewCRS(g1 *bls.G1, g2 *bls.G2, blockSize int) *CRS {

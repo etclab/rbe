@@ -1,0 +1,28 @@
+syntax = "proto3";
+
+option go_package = "github.com/etclab/rbe/proto";
+
+package rbe.proto;
+
+message G1 {
+    bytes bytes = 1;
+}
+
+message G2 {
+    bytes bytes = 1;
+}
+
+message CRS {
+    repeated G1 hParamsG1 = 1;
+    repeated G2 hParamsG2 = 2;
+}
+
+message PublicParams {
+    int32 maxUsers = 1;
+    int32 blockSize = 2;
+    int32 numBlocks = 3;
+    G1 g1 = 4;
+    G2 g2 = 5;
+    CRS crs = 6;
+    repeated G1 commitments = 7;
+}

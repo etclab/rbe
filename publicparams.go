@@ -7,6 +7,7 @@ import (
 
 	bls "github.com/cloudflare/circl/ecc/bls12381"
 	"github.com/etclab/mu"
+	"github.com/etclab/rbe/proto"
 )
 
 // Public Parameters and CRS
@@ -23,6 +24,45 @@ type PublicParams struct {
 
 	// Commitment C for each block ; indexed by the block number
 	Commitments []*bls.G1 // in the paper, these are just called `pp`
+}
+
+func (pp *PublicParams) FromProto(protoPp *proto.PublicParams) {
+	pp.maxUsers = int(protoPp.GetMaxUsers())
+	pp.blockSize = int(protoPp.GetBlockSize())
+	pp.numBlocks = int(protoPp.GetNumBlocks())
+
+	pp.g1 = new(bls.G1)
+	pp.g1.SetBytes(protoPp.GetG1().GetBytes())
+
+	pp.g2 = new(bls.G2)
+	pp.g2.SetBytes(protoPp.GetG2().GetBytes())
+
+	pp.crs = new(CRS)
+	pp.crs.FromProto(protoPp.GetCrs())
+
+	pp.Commitments = make([]*bls.G1, pp.numBlocks)
+	for i, v := range protoPp.GetCommitments() {
+		pp.Commitments[i] = new(bls.G1)
+		pp.Commitments[i].SetBytes(v.GetBytes())
+	}
+}
+
+func (pp *PublicParams) ToProto() *proto.PublicParams {
+	commitments := []*proto.G1{}
+	for _, v := range pp.Commitments {
+		commitG1 := &proto.G1{Bytes: v.Bytes()}
+		commitments = append(commitments, commitG1)
+	}
+
+	return &proto.PublicParams{
+		MaxUsers:    int32(pp.maxUsers),
+		BlockSize:   int32(pp.blockSize),
+		NumBlocks:   int32(pp.numBlocks),
+		G1:          &proto.G1{Bytes: pp.g1.Bytes()},
+		G2:          &proto.G2{Bytes: pp.g2.Bytes()},
+		Crs:         pp.crs.ToProto(),
+		Commitments: commitments,
+	}
 }
 
 func NewPublicParams(maxUsers int) *PublicParams {
