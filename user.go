@@ -64,7 +64,6 @@ func (u *User) Decrypt(ct *Ciphertext) (*bls.Gt, error) {
 	t2.Mul(t2, z)
 
 	if !t1.IsEqual(t2) {
-		// user should update
 		return nil, ErrDecrypt
 	}
 

@@ -1,7 +1,9 @@
 package rbe
 
 import (
+	"fmt"
 	"math"
+	"strings"
 
 	bls "github.com/cloudflare/circl/ecc/bls12381"
 	"github.com/etclab/mu"
@@ -42,6 +44,20 @@ func NewPublicParams(maxUsers int) *PublicParams {
 	}
 
 	return pp
+}
+
+func (pp *PublicParams) String() string {
+	sb := new(strings.Builder)
+
+	sb.WriteString("PublicParams: {")
+	fmt.Fprintf(sb, "\tmaxUsers: %d,\n", pp.maxUsers)
+	fmt.Fprintf(sb, "\tblockSize: %d,\n", pp.blockSize)
+	fmt.Fprintf(sb, "\tnumBlocks: %d,\n", pp.numBlocks)
+	fmt.Fprintf(sb, "\tg1: %v,\n", pp.g1)
+	fmt.Fprintf(sb, "\tg2: %v,\n", pp.g2)
+	fmt.Fprintf(sb, "\t%v\n}", pp.crs)
+
+	return sb.String()
 }
 
 func (pp *PublicParams) GetGenerators() (*bls.G1, *bls.G2) {

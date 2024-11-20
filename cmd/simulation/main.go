@@ -19,6 +19,7 @@ func main() {
 	maxUsers := 4
 
 	pp := rbe.NewPublicParams(maxUsers)
+	fmt.Println(pp)
 	kc := rbe.NewKeyCurator(pp)
 
 	// register users

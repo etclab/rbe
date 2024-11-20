@@ -21,7 +21,6 @@ func randomScalar() *bls.Scalar {
 	return z
 }
 
-// TODO: use randomScalar instead
 func randomZ() *big.Int {
 	z, err := rand.Int(rand.Reader, groupOrder)
 	if err != nil {

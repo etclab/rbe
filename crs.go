@@ -1,6 +1,9 @@
 package rbe
 
 import (
+	"fmt"
+	"strings"
+
 	bls "github.com/cloudflare/circl/ecc/bls12381"
 )
 
@@ -24,7 +27,7 @@ func NewCRS(g1 *bls.G1, g2 *bls.G2, blockSize int) *CRS {
 			continue
 		}
 
-		k := bigIntToScalar(modPow(z, i))
+		k := bigIntToScalar(modPow(z, i+1))
 
 		e1 := new(bls.G1)
 		e1.ScalarMult(k, g1)
@@ -36,4 +39,20 @@ func NewCRS(g1 *bls.G1, g2 *bls.G2, blockSize int) *CRS {
 	}
 
 	return crs
+}
+
+func (crs *CRS) String() string {
+	sb := new(strings.Builder)
+
+	sb.WriteString("CRS: {")
+	fmt.Fprintf(sb, "\thParamsG1[%d]:\n", len(crs.hParamsG1))
+	for i, v := range crs.hParamsG1 {
+		fmt.Fprintf(sb, "\t\t%d:%v\n", i, v)
+	}
+	fmt.Fprintf(sb, "\thParamsG2[%d]:\n", len(crs.hParamsG2))
+	for i, v := range crs.hParamsG2 {
+		fmt.Fprintf(sb, "\t\t%d:%v\n", i, v)
+	}
+
+	return sb.String()
 }

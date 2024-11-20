@@ -4,8 +4,6 @@ import (
 	bls "github.com/cloudflare/circl/ecc/bls12381"
 )
 
-//https://asecuritysite.com/golang/circl_pairing
-
 type KeyPair struct {
 	PublicKey *bls.G1
 	SecretKey *bls.Scalar

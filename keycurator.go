@@ -65,7 +65,6 @@ func (kc *KeyCurator) RegisterUser(id int, pk *bls.G1, xi []*bls.G1) {
 
 		jOpenings = append(jOpenings, newOpening)
 		kc.UserOpenings[jId] = jOpenings
-
 	}
 
 	kc.usersInBlock[k] += 1
