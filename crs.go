@@ -5,6 +5,7 @@ import (
 	"strings"
 
 	bls "github.com/cloudflare/circl/ecc/bls12381"
+	"github.com/etclab/mu"
 	"github.com/etclab/rbe/proto"
 )
 
@@ -22,20 +23,26 @@ func (crs *CRS) FromProto(protoCrs *proto.CRS) {
 	crs.hParamsG2 = make([]*bls.G2, size)
 
 	for i, v := range protoCrs.GetHParamsG1() {
-		if v == nil {
+		if len(v.GetPoint()) == 0 {
 			crs.hParamsG1[i] = nil
 		} else {
 			crs.hParamsG1[i] = new(bls.G1)
-			crs.hParamsG1[i].SetBytes(v.GetBytes())
+			err := crs.hParamsG1[i].SetBytes(v.GetPoint())
+			if err != nil {
+				mu.Fatalf("error setting crs.hParamsG1[%d]: %v", i, err)
+			}
 		}
 	}
 
 	for i, v := range protoCrs.GetHParamsG2() {
-		if v == nil {
+		if len(v.GetPoint()) == 0 {
 			crs.hParamsG2[i] = nil
 		} else {
 			crs.hParamsG2[i] = new(bls.G2)
-			crs.hParamsG2[i].SetBytes(v.GetBytes())
+			err := crs.hParamsG2[i].SetBytes(v.GetPoint())
+			if err != nil {
+				mu.Fatalf("error setting crs.hParamsG2[%d]: %v", i, err)
+			}
 		}
 	}
 }
@@ -46,17 +53,17 @@ func (crs *CRS) ToProto() *proto.CRS {
 
 	for _, v := range crs.hParamsG1 {
 		if v == nil {
-			hParamsG1 = append(hParamsG1, nil)
+			hParamsG1 = append(hParamsG1, &proto.G1{Point: []byte{}})
 		} else {
-			hParamsG1 = append(hParamsG1, &proto.G1{Bytes: v.Bytes()})
+			hParamsG1 = append(hParamsG1, &proto.G1{Point: v.Bytes()})
 		}
 	}
 
 	for _, v := range crs.hParamsG2 {
 		if v == nil {
-			hParamsG2 = append(hParamsG2, nil)
+			hParamsG2 = append(hParamsG2, &proto.G2{Point: []byte{}})
 		} else {
-			hParamsG2 = append(hParamsG2, &proto.G2{Bytes: v.Bytes()})
+			hParamsG2 = append(hParamsG2, &proto.G2{Point: v.Bytes()})
 		}
 	}
 
