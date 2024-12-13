@@ -29,6 +29,12 @@ func randomZ() *big.Int {
 	return z
 }
 
+func copyG1(g1 *bls.G1) *bls.G1 {
+	ret := new(bls.G1)
+	ret.SetBytes(g1.Bytes())
+	return ret
+}
+
 func modPow(base *big.Int, exp int) *big.Int {
 	z := new(big.Int)
 	x := big.NewInt(int64(exp))

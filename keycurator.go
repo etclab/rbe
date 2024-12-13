@@ -70,6 +70,44 @@ func (kc *KeyCurator) RegisterUser(id int, pk *bls.G1, xi []*bls.G1) {
 	kc.usersInBlock[k] += 1
 }
 
+func (kc *KeyCurator) UnregisterUser(id int, pk *bls.G1, xi []*bls.G1) {
+	pp := kc.PP
+	pp.CheckIdRange(id)
+
+	k := pp.IdToBlock(id)
+	idBar := pp.IdToIdBar(id)
+
+	pp.CheckXiConsistency(pk, xi)
+
+	// update commitment -- substract pk from commitment
+	com := pp.Commitments[k]
+	negPk := copyG1(pk)
+	negPk.Neg()
+	com.Add(com, negPk)
+
+	// update openings for the other users in that block
+	for jBar := 0; jBar < pp.blockSize; jBar++ {
+		if jBar == idBar {
+			// don't update the registering id's opening
+			continue
+		}
+
+		jId := pp.IdBarToId(jBar, k)
+		jOpenings := kc.UserOpenings[jId]
+		lastOpening := jOpenings[len(jOpenings)-1]
+
+		negXi := copyG1(xi[jBar])
+		negXi.Neg()
+		newOpening := new(bls.G1)
+		newOpening.Add(lastOpening, negXi)
+
+		jOpenings = append(jOpenings, newOpening)
+		kc.UserOpenings[jId] = jOpenings
+	}
+
+	kc.usersInBlock[k] -= 1
+}
+
 func (kc *KeyCurator) String() string {
 	return fmt.Sprintf("usersInBlock: %v", kc.usersInBlock)
 }
