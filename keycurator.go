@@ -15,7 +15,7 @@ type KeyCurator struct {
 	// each block.  The paper calls this `aux` and the code calls this `aux_count`
 	usersInBlock []int
 
-	// len=maxUsers; the opening value for each user (indexed by the user's
+	// len=MaxUsers; the opening value for each user (indexed by the user's
 	// id).  Ths is also called `aux` or `\Lambda`.  Each entry is a list of
 	// history of lambdas (the current is the last entry in the list)
 	UserOpenings [][]*bls.G1
@@ -25,10 +25,10 @@ func NewKeyCurator(pp *PublicParams) *KeyCurator {
 	kc := new(KeyCurator)
 	kc.PP = pp
 
-	kc.usersInBlock = make([]int, pp.numBlocks)
+	kc.usersInBlock = make([]int, pp.NumBlocks)
 
-	kc.UserOpenings = make([][]*bls.G1, pp.maxUsers)
-	for i := 0; i < pp.maxUsers; i++ {
+	kc.UserOpenings = make([][]*bls.G1, pp.MaxUsers)
+	for i := 0; i < pp.MaxUsers; i++ {
 		kc.UserOpenings[i] = append(kc.UserOpenings[i], new(bls.G1))
 		kc.UserOpenings[i][0].SetIdentity()
 	}
@@ -50,7 +50,7 @@ func (kc *KeyCurator) RegisterUser(id int, pk *bls.G1, xi []*bls.G1) {
 	com.Add(com, pk)
 
 	// update openings for the other users in that block
-	for jBar := 0; jBar < pp.blockSize; jBar++ {
+	for jBar := 0; jBar < pp.BlockSize; jBar++ {
 		if jBar == idBar {
 			// don't update the registering id's opening
 			continue
@@ -86,7 +86,7 @@ func (kc *KeyCurator) UnregisterUser(id int, pk *bls.G1, xi []*bls.G1) {
 	com.Add(com, negPk)
 
 	// update openings for the other users in that block
-	for jBar := 0; jBar < pp.blockSize; jBar++ {
+	for jBar := 0; jBar < pp.BlockSize; jBar++ {
 		if jBar == idBar {
 			// don't update the registering id's opening
 			continue
@@ -106,6 +106,16 @@ func (kc *KeyCurator) UnregisterUser(id int, pk *bls.G1, xi []*bls.G1) {
 	}
 
 	kc.usersInBlock[k] -= 1
+}
+
+func (kc *KeyCurator) ProveMembership(id int, pk *bls.G1) *bls.G1 {
+	pp := kc.PP
+	pp.CheckIdRange(id)
+
+	openings := kc.UserOpenings[id]
+	lastOpening := openings[len(openings)-1]
+
+	return lastOpening
 }
 
 func (kc *KeyCurator) String() string {
