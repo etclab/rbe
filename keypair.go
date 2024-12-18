@@ -12,12 +12,16 @@ type KeyPair struct {
 	Xi []*bls.G1
 }
 
-func NewKeyPair(pp *PublicParams, id int) *KeyPair {
+func NewKeyPair(pp *PublicParams, id int, secretKey *bls.Scalar) *KeyPair {
 	pp.CheckIdRange(id)
 
 	h1 := pp.CRS.H1
 
-	sk := randomScalar()
+	sk := secretKey
+	if sk == nil {
+		sk = randomScalar()
+	}
+
 	idBar := pp.IdToIdBar(id)
 	h := h1[idBar]
 	pk := new(bls.G1)

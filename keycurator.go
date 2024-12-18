@@ -108,7 +108,7 @@ func (kc *KeyCurator) UnregisterUser(id int, pk *bls.G1, xi []*bls.G1) {
 	kc.usersInBlock[k] -= 1
 }
 
-func (kc *KeyCurator) ProveMembership(id int, pk *bls.G1) *bls.G1 {
+func (kc *KeyCurator) ProveMembership(id int) *bls.G1 {
 	pp := kc.PP
 	pp.CheckIdRange(id)
 

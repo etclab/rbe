@@ -21,7 +21,7 @@ func NewUser(pp *PublicParams, id int) *User {
 	u := new(User)
 	u.pp = pp
 	u.id = id
-	u.keyPair = NewKeyPair(pp, id)
+	u.keyPair = NewKeyPair(pp, id, nil)
 
 	return u
 }
