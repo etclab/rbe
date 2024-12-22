@@ -10,7 +10,7 @@ type User struct {
 	keyPair *KeyPair
 
 	// the history of openings for this user.  (most recent last)
-	// This slice should never exceed a length of `blockSize
+	// This slice should never exceed a length of BlockSize
 	// The paper/code also calls these `updates`
 	openings []*bls.G1
 }
@@ -21,7 +21,7 @@ func NewUser(pp *PublicParams, id int) *User {
 	u := new(User)
 	u.pp = pp
 	u.id = id
-	u.keyPair = NewKeyPair(pp, id)
+	u.keyPair = NewKeyPair(pp, id, nil)
 
 	return u
 }
@@ -48,19 +48,19 @@ func (u *User) Decrypt(ct *Ciphertext) (*bls.Gt, error) {
 	// which is what the efficientRBE repo does
 
 	pp := u.pp
-	hParamsG1 := pp.crs.hParamsG1
-	hParamsG2 := pp.crs.hParamsG2
+	h1 := pp.CRS.H1
+	h2 := pp.CRS.H2
 	sk := u.keyPair.SecretKey
 
 	opening := u.openings[len(u.openings)-1]
 	idBar := pp.IdToIdBar(u.id)
 
-	t1 := bls.Pair(ct.ct0, hParamsG2[pp.blockSize-1-idBar])
+	t1 := bls.Pair(ct.ct0, h2[pp.BlockSize-1-idBar])
 
-	t2 := bls.Pair(opening, pp.g2)
+	t2 := bls.Pair(opening, pp.G2)
 	x := new(bls.G1)
-	x.ScalarMult(sk, hParamsG1[idBar])
-	z := bls.Pair(x, hParamsG2[pp.blockSize-1-idBar])
+	x.ScalarMult(sk, h1[idBar])
+	z := bls.Pair(x, h2[pp.BlockSize-1-idBar])
 	t2.Mul(t2, z)
 
 	if !t1.IsEqual(t2) {

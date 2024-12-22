@@ -76,8 +76,8 @@ func (ct *Ciphertext) ToProto() *proto.Ciphertext {
 }
 
 func Encrypt(pp *PublicParams, recvId int, msg *bls.Gt) *Ciphertext {
-	hParamsG1 := pp.crs.hParamsG1
-	hParamsG2 := pp.crs.hParamsG2
+	h1 := pp.CRS.H1
+	h2 := pp.CRS.H2
 
 	pp.CheckIdRange(recvId)
 
@@ -85,20 +85,20 @@ func Encrypt(pp *PublicParams, recvId int, msg *bls.Gt) *Ciphertext {
 	k := pp.IdToBlock(recvId)
 	recvBar := pp.IdToIdBar(recvId)
 
-	g2 := pp.g2
+	g2 := pp.G2
 	com := pp.Commitments[k]
 
 	r := randomScalar()
 
 	ct0 := com
 
-	ct1 := bls.Pair(com, hParamsG2[pp.blockSize-1-recvBar])
+	ct1 := bls.Pair(com, h2[pp.BlockSize-1-recvBar])
 	ct1.Exp(ct1, r)
 
 	ct2 := new(bls.G2)
 	ct2.ScalarMult(r, g2)
 
-	ct3 := bls.Pair(hParamsG1[recvBar], hParamsG2[pp.blockSize-1-recvBar])
+	ct3 := bls.Pair(h1[recvBar], h2[pp.BlockSize-1-recvBar])
 	ct3.Exp(ct3, r)
 	ct3.Mul(ct3, msg)
 
