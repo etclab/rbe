@@ -27,26 +27,26 @@ type PublicParams struct {
 }
 
 func (pp *PublicParams) FromProto(protoPp *proto.PublicParams) {
-	pp.maxUsers = int(protoPp.GetMaxUsers())
-	pp.blockSize = int(protoPp.GetBlockSize())
-	pp.numBlocks = int(protoPp.GetNumBlocks())
+	pp.MaxUsers = int(protoPp.GetMaxUsers())
+	pp.BlockSize = int(protoPp.GetBlockSize())
+	pp.NumBlocks = int(protoPp.GetNumBlocks())
 
-	pp.g1 = new(bls.G1)
-	err := pp.g1.SetBytes(protoPp.GetG1().GetPoint())
+	pp.G1 = new(bls.G1)
+	err := pp.G1.SetBytes(protoPp.GetG1().GetPoint())
 	if err != nil {
 		mu.Fatalf("error setting g1: %v", err)
 	}
 
-	pp.g2 = new(bls.G2)
-	err = pp.g2.SetBytes(protoPp.GetG2().GetPoint())
+	pp.G2 = new(bls.G2)
+	err = pp.G2.SetBytes(protoPp.GetG2().GetPoint())
 	if err != nil {
 		mu.Fatalf("error setting g2: %v", err)
 	}
 
-	pp.crs = new(CRS)
-	pp.crs.FromProto(protoPp.GetCrs())
+	pp.CRS = new(CRS)
+	pp.CRS.FromProto(protoPp.GetCrs())
 
-	pp.Commitments = make([]*bls.G1, pp.numBlocks)
+	pp.Commitments = make([]*bls.G1, pp.NumBlocks)
 	for i, v := range protoPp.GetCommitments() {
 		pp.Commitments[i] = new(bls.G1)
 		err = pp.Commitments[i].SetBytes(v.GetPoint())
@@ -67,12 +67,12 @@ func (pp *PublicParams) ToProto() *proto.PublicParams {
 	}
 
 	return &proto.PublicParams{
-		MaxUsers:    int32(pp.maxUsers),
-		BlockSize:   int32(pp.blockSize),
-		NumBlocks:   int32(pp.numBlocks),
-		G1:          &proto.G1{Point: pp.g1.Bytes()},
-		G2:          &proto.G2{Point: pp.g2.Bytes()},
-		Crs:         pp.crs.ToProto(),
+		MaxUsers:    int32(pp.MaxUsers),
+		BlockSize:   int32(pp.BlockSize),
+		NumBlocks:   int32(pp.NumBlocks),
+		G1:          &proto.G1{Point: pp.G1.Bytes()},
+		G2:          &proto.G2{Point: pp.G2.Bytes()},
+		Crs:         pp.CRS.ToProto(),
 		Commitments: commitments,
 	}
 }

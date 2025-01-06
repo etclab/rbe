@@ -17,59 +17,59 @@ type CRS struct {
 }
 
 func (crs *CRS) FromProto(protoCrs *proto.CRS) {
-	size := len(protoCrs.GetHParamsG1())
+	size := len(protoCrs.GetH1())
 
-	crs.hParamsG1 = make([]*bls.G1, size)
-	crs.hParamsG2 = make([]*bls.G2, size)
+	crs.H1 = make([]*bls.G1, size)
+	crs.H2 = make([]*bls.G2, size)
 
-	for i, v := range protoCrs.GetHParamsG1() {
+	for i, v := range protoCrs.GetH2() {
 		if len(v.GetPoint()) == 0 {
-			crs.hParamsG1[i] = nil
+			crs.H1[i] = nil
 		} else {
-			crs.hParamsG1[i] = new(bls.G1)
-			err := crs.hParamsG1[i].SetBytes(v.GetPoint())
+			crs.H1[i] = new(bls.G1)
+			err := crs.H1[i].SetBytes(v.GetPoint())
 			if err != nil {
-				mu.Fatalf("error setting crs.hParamsG1[%d]: %v", i, err)
+				mu.Fatalf("error setting crs.H1[%d]: %v", i, err)
 			}
 		}
 	}
 
-	for i, v := range protoCrs.GetHParamsG2() {
+	for i, v := range protoCrs.GetH2() {
 		if len(v.GetPoint()) == 0 {
-			crs.hParamsG2[i] = nil
+			crs.H2[i] = nil
 		} else {
-			crs.hParamsG2[i] = new(bls.G2)
-			err := crs.hParamsG2[i].SetBytes(v.GetPoint())
+			crs.H2[i] = new(bls.G2)
+			err := crs.H2[i].SetBytes(v.GetPoint())
 			if err != nil {
-				mu.Fatalf("error setting crs.hParamsG2[%d]: %v", i, err)
+				mu.Fatalf("error setting crs.H2[%d]: %v", i, err)
 			}
 		}
 	}
 }
 
 func (crs *CRS) ToProto() *proto.CRS {
-	hParamsG1 := []*proto.G1{}
-	hParamsG2 := []*proto.G2{}
+	H1 := []*proto.G1{}
+	H2 := []*proto.G2{}
 
-	for _, v := range crs.hParamsG1 {
+	for _, v := range crs.H1 {
 		if v == nil {
-			hParamsG1 = append(hParamsG1, &proto.G1{Point: []byte{}})
+			H1 = append(H1, &proto.G1{Point: []byte{}})
 		} else {
-			hParamsG1 = append(hParamsG1, &proto.G1{Point: v.Bytes()})
+			H1 = append(H1, &proto.G1{Point: v.Bytes()})
 		}
 	}
 
-	for _, v := range crs.hParamsG2 {
+	for _, v := range crs.H2 {
 		if v == nil {
-			hParamsG2 = append(hParamsG2, &proto.G2{Point: []byte{}})
+			H2 = append(H2, &proto.G2{Point: []byte{}})
 		} else {
-			hParamsG2 = append(hParamsG2, &proto.G2{Point: v.Bytes()})
+			H2 = append(H2, &proto.G2{Point: v.Bytes()})
 		}
 	}
 
 	return &proto.CRS{
-		HParamsG1: hParamsG1,
-		HParamsG2: hParamsG2,
+		H1: H1,
+		H2: H2,
 	}
 }
 

@@ -26,6 +26,17 @@ func NewUser(pp *PublicParams, id int) *User {
 	return u
 }
 
+func NewUserWithSecret(pp *PublicParams, id int, secretKey *bls.Scalar) *User {
+	pp.CheckIdRange(id)
+
+	u := new(User)
+	u.pp = pp
+	u.id = id
+	u.keyPair = NewKeyPair(pp, id, secretKey)
+
+	return u
+}
+
 func (u *User) PublicKey() *bls.G1 {
 	return u.keyPair.PublicKey
 }

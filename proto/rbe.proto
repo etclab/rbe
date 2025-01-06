@@ -17,8 +17,8 @@ message Gt {
 }
 
 message CRS {
-    repeated G1 hParamsG1 = 1;
-    repeated G2 hParamsG2 = 2;
+    repeated G1 H1 = 1;
+    repeated G2 H2 = 2;
 }
 
 message PublicParams {
