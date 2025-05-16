@@ -15,6 +15,9 @@ fmt:
 test:
 	go test -v -vet=all -count=1 ./...
 
+benchmark: fmt
+	go test -v -bench=. -benchmem
+
 clean:
 	rm -f $(progs)
 

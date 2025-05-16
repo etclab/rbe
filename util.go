@@ -15,10 +15,19 @@ func init() {
 	groupOrder.SetBytes(bls.Order())
 }
 
-func randomScalar() *bls.Scalar {
+func RandomScalar() *bls.Scalar {
 	z := new(bls.Scalar)
 	z.Random(rand.Reader)
 	return z
+}
+
+func RandomGt() *bls.Gt {
+	g1 := bls.G1Generator()
+	g2 := bls.G2Generator()
+	z := RandomScalar()
+	msg := bls.Pair(g1, g2)
+	msg.Exp(msg, z)
+	return msg
 }
 
 func randomZ() *big.Int {
