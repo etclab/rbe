@@ -1,11 +1,19 @@
 package rbe_test
 
 import (
+	"flag"
 	"fmt"
+	"math"
+	"os"
 	"testing"
 
 	bls "github.com/cloudflare/circl/ecc/bls12381"
 	"github.com/etclab/rbe"
+)
+
+var (
+	MaxUsers     int
+	SqrtMaxUsers int
 )
 
 const (
@@ -13,12 +21,50 @@ const (
 	kReceivingUserId = 3
 )
 
-func TestVerifyMembership(t *testing.T) {
-	pp := rbe.NewPublicParams(144)
+func setupSystem(maxUsers int) (*rbe.PublicParams, *rbe.KeyCurator, []*rbe.User) {
+	pp := rbe.NewPublicParams(maxUsers)
 	kc := rbe.NewKeyCurator(pp)
-	u := rbe.NewUser(pp, kSendingUserId)
-	kc.RegisterUser(u.Id(), u.PublicKey(), u.Xi())
 
+	// register users
+	users := make([]*rbe.User, maxUsers)
+	for id := 0; id < maxUsers; id++ {
+		u := rbe.NewUser(pp, id)
+		kc.RegisterUser(id, u.PublicKey(), u.Xi())
+		users[id] = u
+	}
+
+	// update each user with the system's commitments and their block's opening
+	coms := kc.PP.Commitments
+	for id := 0; id < maxUsers; id++ {
+		opening := kc.UserOpenings[id]
+		users[id].Update(coms, opening)
+	}
+
+	return pp, kc, users
+}
+
+func createDummyMessage() *bls.Gt {
+	return rbe.RandomGt()
+}
+
+func TestDecrypt(t *testing.T) {
+	_, _, users := setupSystem(MaxUsers)
+	sender := users[kSendingUserId]
+	receiver := users[kReceivingUserId]
+	msg := createDummyMessage()
+	ct := sender.Encrypt(kReceivingUserId, msg)
+	plain, err := receiver.Decrypt(ct)
+	if err != nil {
+		t.Fatalf("decrypt failed: %v", err)
+	}
+	if !msg.IsEqual(plain) {
+		t.Fatalf("decrypted plaintext does not equal the original message")
+	}
+}
+
+func TestVerifyMembership(t *testing.T) {
+	pp, kc, users := setupSystem(MaxUsers)
+	u := users[kSendingUserId]
 	proof := kc.ProveMembership(u.Id())
 	result := rbe.VerifyMembership(pp, u.Id(), u.PublicKey(), proof)
 	if !result {
@@ -26,122 +72,70 @@ func TestVerifyMembership(t *testing.T) {
 	}
 }
 
-var blackholeKeyPair *rbe.KeyPair
-
 func BenchmarkNewKeyPair(b *testing.B) {
-	// FIXME: should be i <= 1000
-	for i := 2; i <= 10; i++ {
-		// maxUsers must always be a square; thus the max we test is 1 M users
+	for i := 2; i <= SqrtMaxUsers; i++ {
 		maxUsers := i * i
 		pp := rbe.NewPublicParams(maxUsers)
 		b.Run(fmt.Sprintf("NewKeyPair-%d", maxUsers), func(b *testing.B) {
-			for j := 0; j < b.N; j++ {
-				keyPair := rbe.NewKeyPair(pp, kSendingUserId, nil)
-				// ensure compiler does not optimize away the call to
-				// rbe.NewKeyPair()
-				blackholeKeyPair = keyPair
+			for b.Loop() {
+				_ = rbe.NewKeyPair(pp, kSendingUserId, nil)
 			}
 		})
 	}
 }
-
-var blackholeCiphertext *rbe.Ciphertext
 
 func BenchmarkEncrypt(b *testing.B) {
-	// FIXME: should be i <= 1000
-	for i := 2; i <= 10; i++ {
-		// maxUsers must always be a square; thus the max we test is 1 M users
+	for i := 2; i <= SqrtMaxUsers; i++ {
 		maxUsers := i * i
-		pp := rbe.NewPublicParams(maxUsers)
-		kc := rbe.NewKeyCurator(pp)
-
-		// register users
-		users := make([]*rbe.User, maxUsers)
-		for id := 0; id < maxUsers; id++ {
-			u := rbe.NewUser(pp, id)
-			kc.RegisterUser(id, u.PublicKey(), u.Xi())
-			users[id] = u
-		}
-
-		// update each user with the system's commitments and their block's opening
-		for id := 0; id < maxUsers; id++ {
-			coms := kc.PP.Commitments
-			opening := kc.UserOpenings[id]
-			users[id].Update(coms, opening)
-		}
-
-		// Create a dummy message to encrypt
-		msg := rbe.RandomGt()
-
+		_, _, users := setupSystem(maxUsers)
+		msg := createDummyMessage()
 		sender := users[kSendingUserId]
-		// benchmark encryption
 		b.Run(fmt.Sprintf("Encrypt-%d", maxUsers), func(b *testing.B) {
-			for j := 0; j < b.N; j++ {
-				ct := sender.Encrypt(kReceivingUserId, msg)
-				// ensure compiler does not optimize away the call to Encrypt()
-				blackholeCiphertext = ct
+			for b.Loop() {
+				_ = sender.Encrypt(kReceivingUserId, msg)
 			}
 		})
 	}
 }
 
-var blackholePlaintext *bls.Gt
-
 func BenchmarkDecrypt(b *testing.B) {
-	// FIXME: should be i <= 1000
-	for i := 2; i <= 10; i++ {
-		// maxUsers must always be a square; thus the max we test is 1 M users
+	for i := 2; i <= SqrtMaxUsers; i++ {
 		maxUsers := i * i
-		pp := rbe.NewPublicParams(maxUsers)
-		kc := rbe.NewKeyCurator(pp)
-
-		// register users
-		users := make([]*rbe.User, maxUsers)
-		for id := 0; id < maxUsers; id++ {
-			u := rbe.NewUser(pp, id)
-			kc.RegisterUser(id, u.PublicKey(), u.Xi())
-			users[id] = u
-		}
-
-		// update each user with the system's commitments and their block's opening
-		for id := 0; id < maxUsers; id++ {
-			coms := kc.PP.Commitments
-			opening := kc.UserOpenings[id]
-			users[id].Update(coms, opening)
-		}
-
-		// Create and encrypt a dummy message
-		msg := rbe.RandomGt()
+		_, _, users := setupSystem(maxUsers)
+		msg := createDummyMessage()
 		sender := users[kSendingUserId]
 		receiver := users[kReceivingUserId]
 		ct := sender.Encrypt(kReceivingUserId, msg)
-
-		// benchmark encryption
-		b.Run(fmt.Sprintf("Encrypt-%d", maxUsers), func(b *testing.B) {
-			for j := 0; j < b.N; j++ {
-				plain, err := receiver.Decrypt(ct)
+		b.Run(fmt.Sprintf("Decrypt-%d", maxUsers), func(b *testing.B) {
+			for b.Loop() {
+				_, err := receiver.Decrypt(ct)
 				if err != nil {
 					b.Fatalf("decrypt failed: %v", err)
 				}
-				// ensure compiler does not optimize away the call to Decrypt()
-				blackholePlaintext = plain
 			}
 		})
 	}
-
 }
 
-/*
 func BenchmarkRegisterUser(b *testing.B) {
+	for i := 2; i <= SqrtMaxUsers; i++ {
+		maxUsers := i * i
+		pp := rbe.NewPublicParams(maxUsers)
+		kc := rbe.NewKeyCurator(pp)
+		u := rbe.NewUser(pp, kSendingUserId)
+		b.Run(fmt.Sprintf("ProveMembership-%d", maxUsers), func(b *testing.B) {
+			for b.Loop() {
+				kc.RegisterUser(u.Id(), u.PublicKey(), u.Xi())
+				b.StopTimer()
+				kc.UnregisterUser(u.Id(), u.PublicKey(), u.Xi())
+				b.StartTimer()
+			}
+		})
+	}
 }
-*/
-
-var blackholeProof *bls.G1
 
 func BenchmarkProveMembership(b *testing.B) {
-	// FIXME: should be i <= 1000
-	for i := 2; i <= 10; i++ {
-		// maxUsers must always be a square; thus the max we test is 1 M users
+	for i := 2; i <= SqrtMaxUsers; i++ {
 		maxUsers := i * i
 		pp := rbe.NewPublicParams(maxUsers)
 		kc := rbe.NewKeyCurator(pp)
@@ -149,20 +143,15 @@ func BenchmarkProveMembership(b *testing.B) {
 		u := rbe.NewUser(pp, id)
 		kc.RegisterUser(3, u.PublicKey(), u.Xi())
 		b.Run(fmt.Sprintf("ProveMembership-%d", maxUsers), func(b *testing.B) {
-			for j := 0; j < b.N; j++ {
-				proof := kc.ProveMembership(id)
-				// ensure compiler does not optimize away the call to
-				// kc.ProveMembership()
-				blackholeProof = proof
+			for b.Loop() {
+				_ = kc.ProveMembership(id)
 			}
 		})
 	}
 }
 
 func BenchmarkVerifyMembership(b *testing.B) {
-	// FIXME: should be i <= 1000
-	for i := 2; i <= 10; i++ {
-		// maxUsers must always be a square; thus the max we test is 1 M users
+	for i := 2; i <= SqrtMaxUsers; i++ {
 		maxUsers := i * i
 		pp := rbe.NewPublicParams(maxUsers)
 		kc := rbe.NewKeyCurator(pp)
@@ -170,11 +159,22 @@ func BenchmarkVerifyMembership(b *testing.B) {
 		kc.RegisterUser(u.Id(), u.PublicKey(), u.Xi())
 		proof := kc.ProveMembership(u.Id())
 		b.Run(fmt.Sprintf("VerifyMembership-%d", maxUsers), func(b *testing.B) {
-			for j := 0; j < b.N; j++ {
+			for b.Loop() {
 				if !rbe.VerifyMembership(pp, u.Id(), u.PublicKey(), proof) {
 					b.Fatalf("rbe.VerifyMembership failed for a registered user")
 				}
 			}
 		})
 	}
+}
+
+func TestMain(m *testing.M) {
+	flag.IntVar(&MaxUsers, "max-users", 100, "Maximum number of users (but be a square")
+	flag.Parse()
+	SqrtMaxUsers = int(math.Sqrt(float64(MaxUsers)))
+	fmt.Printf("MaxUsers=%d, SqrtMaxUsers=%d\n", MaxUsers, SqrtMaxUsers)
+
+	status := m.Run()
+
+	os.Exit(status)
 }
