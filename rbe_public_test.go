@@ -13,6 +13,19 @@ const (
 	kReceivingUserId = 3
 )
 
+func TestVerifyMembership(t *testing.T) {
+	pp := rbe.NewPublicParams(144)
+	kc := rbe.NewKeyCurator(pp)
+	u := rbe.NewUser(pp, kSendingUserId)
+	kc.RegisterUser(u.Id(), u.PublicKey(), u.Xi())
+
+	proof := kc.ProveMembership(u.Id())
+	result := rbe.VerifyMembership(pp, u.Id(), u.PublicKey(), proof)
+	if !result {
+		t.Fatalf("rbe.VerifyMembership returned false for registered user")
+	}
+}
+
 var blackholeKeyPair *rbe.KeyPair
 
 func BenchmarkNewKeyPair(b *testing.B) {
@@ -120,14 +133,48 @@ func BenchmarkDecrypt(b *testing.B) {
 
 /*
 func BenchmarkRegisterUser(b *testing.B) {
-
 }
+*/
+
+var blackholeProof *bls.G1
 
 func BenchmarkProveMembership(b *testing.B) {
-
+	// FIXME: should be i <= 1000
+	for i := 2; i <= 10; i++ {
+		// maxUsers must always be a square; thus the max we test is 1 M users
+		maxUsers := i * i
+		pp := rbe.NewPublicParams(maxUsers)
+		kc := rbe.NewKeyCurator(pp)
+		id := 3
+		u := rbe.NewUser(pp, id)
+		kc.RegisterUser(3, u.PublicKey(), u.Xi())
+		b.Run(fmt.Sprintf("ProveMembership-%d", maxUsers), func(b *testing.B) {
+			for j := 0; j < b.N; j++ {
+				proof := kc.ProveMembership(id)
+				// ensure compiler does not optimize away the call to
+				// kc.ProveMembership()
+				blackholeProof = proof
+			}
+		})
+	}
 }
 
 func BenchmarkVerifyMembership(b *testing.B) {
-
+	// FIXME: should be i <= 1000
+	for i := 2; i <= 10; i++ {
+		// maxUsers must always be a square; thus the max we test is 1 M users
+		maxUsers := i * i
+		pp := rbe.NewPublicParams(maxUsers)
+		kc := rbe.NewKeyCurator(pp)
+		u := rbe.NewUser(pp, kSendingUserId)
+		kc.RegisterUser(u.Id(), u.PublicKey(), u.Xi())
+		proof := kc.ProveMembership(u.Id())
+		b.Run(fmt.Sprintf("VerifyMembership-%d", maxUsers), func(b *testing.B) {
+			for j := 0; j < b.N; j++ {
+				if !rbe.VerifyMembership(pp, u.Id(), u.PublicKey(), proof) {
+					b.Fatalf("rbe.VerifyMembership failed for a registered user")
+				}
+			}
+		})
+	}
 }
-*/
