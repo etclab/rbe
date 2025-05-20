@@ -123,7 +123,7 @@ func BenchmarkRegisterUser(b *testing.B) {
 		pp := rbe.NewPublicParams(maxUsers)
 		kc := rbe.NewKeyCurator(pp)
 		u := rbe.NewUser(pp, kSendingUserId)
-		b.Run(fmt.Sprintf("ProveMembership-%d", maxUsers), func(b *testing.B) {
+		b.Run(fmt.Sprintf("RegisterUser-%d", maxUsers), func(b *testing.B) {
 			for b.Loop() {
 				kc.RegisterUser(u.Id(), u.PublicKey(), u.Xi())
 				b.StopTimer()
