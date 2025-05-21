@@ -88,7 +88,7 @@ func Encrypt(pp *PublicParams, recvId int, msg *bls.Gt) *Ciphertext {
 	g2 := pp.G2
 	com := pp.Commitments[k]
 
-	r := randomScalar()
+	r := RandomScalar()
 
 	ct0 := com
 

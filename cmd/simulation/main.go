@@ -1,19 +1,11 @@
 package main
 
 import (
-	"crypto/rand"
 	"fmt"
 
-	bls "github.com/cloudflare/circl/ecc/bls12381"
 	"github.com/etclab/mu"
 	"github.com/etclab/rbe"
 )
-
-func RandomScalar() *bls.Scalar {
-	z := new(bls.Scalar)
-	z.Random(rand.Reader)
-	return z
-}
 
 func main() {
 	maxUsers := 4
@@ -44,12 +36,7 @@ func main() {
 	}
 
 	// Test an encryption and decryption
-	g1, g2 := pp.GetGenerators()
-	z := RandomScalar()
-	msg := bls.Pair(g1, g2)
-	msg.Exp(msg, z)
-	fmt.Println(msg)
-
+	msg := rbe.RandomGt()
 	u2 := users[2]
 	ct := u2.Encrypt(3, msg)
 

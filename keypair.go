@@ -19,7 +19,7 @@ func NewKeyPair(pp *PublicParams, id int, secretKey *bls.Scalar) *KeyPair {
 
 	sk := secretKey
 	if sk == nil {
-		sk = randomScalar()
+		sk = RandomScalar()
 	}
 
 	idBar := pp.IdToIdBar(id)
