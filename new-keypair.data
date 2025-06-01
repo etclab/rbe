@@ -1,0 +1,2006 @@
+MaxUsers=1000000, SqrtMaxUsers=1000
+goos: linux
+goarch: amd64
+pkg: github.com/etclab/rbe
+cpu: Intel(R) Xeon(R) CPU E5-2630 v3 @ 2.40GHz
+BenchmarkNewKeyPair
+BenchmarkNewKeyPair/NewKeyPair-4
+BenchmarkNewKeyPair/NewKeyPair-4-32         	    1029	   1008926 ns/op	     792 B/op	      16 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-9
+BenchmarkNewKeyPair/NewKeyPair-9-32         	     764	   1512400 ns/op	     976 B/op	      18 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-16
+BenchmarkNewKeyPair/NewKeyPair-16-32        	     621	   1841996 ns/op	    1160 B/op	      20 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-25
+BenchmarkNewKeyPair/NewKeyPair-25-32        	     460	   2527242 ns/op	    1352 B/op	      22 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-36
+BenchmarkNewKeyPair/NewKeyPair-36-32        	     322	   3285845 ns/op	    1528 B/op	      24 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-49
+BenchmarkNewKeyPair/NewKeyPair-49-32        	     279	   3734664 ns/op	    1720 B/op	      26 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-64
+BenchmarkNewKeyPair/NewKeyPair-64-32        	     249	   4268192 ns/op	    1896 B/op	      28 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-81
+BenchmarkNewKeyPair/NewKeyPair-81-32        	     222	   4697643 ns/op	    2088 B/op	      30 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-100
+BenchmarkNewKeyPair/NewKeyPair-100-32       	     211	   5106700 ns/op	    2264 B/op	      32 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-121
+BenchmarkNewKeyPair/NewKeyPair-121-32       	     184	   5747142 ns/op	    2456 B/op	      34 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-144
+BenchmarkNewKeyPair/NewKeyPair-144-32       	     170	   6212070 ns/op	    2632 B/op	      36 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-169
+BenchmarkNewKeyPair/NewKeyPair-169-32       	     176	   6329685 ns/op	    2824 B/op	      38 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-196
+BenchmarkNewKeyPair/NewKeyPair-196-32       	     160	   6932216 ns/op	    3000 B/op	      40 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-225
+BenchmarkNewKeyPair/NewKeyPair-225-32       	     152	   7459367 ns/op	    3192 B/op	      42 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-256
+BenchmarkNewKeyPair/NewKeyPair-256-32       	     171	   7031738 ns/op	    3368 B/op	      44 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-289
+BenchmarkNewKeyPair/NewKeyPair-289-32       	     122	   8848975 ns/op	    3560 B/op	      46 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-324
+BenchmarkNewKeyPair/NewKeyPair-324-32       	     112	   9332918 ns/op	    3736 B/op	      48 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-361
+BenchmarkNewKeyPair/NewKeyPair-361-32       	     122	   9462603 ns/op	    3928 B/op	      50 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-400
+BenchmarkNewKeyPair/NewKeyPair-400-32       	     102	  10495431 ns/op	    4104 B/op	      52 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-441
+BenchmarkNewKeyPair/NewKeyPair-441-32       	     124	   9572846 ns/op	    4296 B/op	      54 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-484
+BenchmarkNewKeyPair/NewKeyPair-484-32       	      91	  11547406 ns/op	    4472 B/op	      56 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-529
+BenchmarkNewKeyPair/NewKeyPair-529-32       	      88	  11772232 ns/op	    4664 B/op	      58 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-576
+BenchmarkNewKeyPair/NewKeyPair-576-32       	     109	  10864505 ns/op	    4840 B/op	      60 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-625
+BenchmarkNewKeyPair/NewKeyPair-625-32       	      82	  12905891 ns/op	    5032 B/op	      62 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-676
+BenchmarkNewKeyPair/NewKeyPair-676-32       	     100	  11990524 ns/op	    5208 B/op	      64 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-729
+BenchmarkNewKeyPair/NewKeyPair-729-32       	      74	  14090278 ns/op	    5400 B/op	      66 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-784
+BenchmarkNewKeyPair/NewKeyPair-784-32       	      73	  13747827 ns/op	    5576 B/op	      68 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-841
+BenchmarkNewKeyPair/NewKeyPair-841-32       	      69	  14918256 ns/op	    5768 B/op	      70 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-900
+BenchmarkNewKeyPair/NewKeyPair-900-32       	      90	  13738741 ns/op	    5944 B/op	      72 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-961
+BenchmarkNewKeyPair/NewKeyPair-961-32       	      72	  15800065 ns/op	    6136 B/op	      74 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-1024
+BenchmarkNewKeyPair/NewKeyPair-1024-32      	      62	  16635431 ns/op	    6312 B/op	      76 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-1089
+BenchmarkNewKeyPair/NewKeyPair-1089-32      	      62	  17199883 ns/op	    6520 B/op	      78 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-1156
+BenchmarkNewKeyPair/NewKeyPair-1156-32      	      61	  17235245 ns/op	    6696 B/op	      80 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-1225
+BenchmarkNewKeyPair/NewKeyPair-1225-32      	      72	  16377688 ns/op	    6872 B/op	      82 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-1296
+BenchmarkNewKeyPair/NewKeyPair-1296-32      	      56	  18602417 ns/op	    7048 B/op	      84 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-1369
+BenchmarkNewKeyPair/NewKeyPair-1369-32      	      66	  17174644 ns/op	    7256 B/op	      86 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-1444
+BenchmarkNewKeyPair/NewKeyPair-1444-32      	      70	  17391442 ns/op	    7432 B/op	      88 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-1521
+BenchmarkNewKeyPair/NewKeyPair-1521-32      	      50	  20565487 ns/op	    7608 B/op	      90 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-1600
+BenchmarkNewKeyPair/NewKeyPair-1600-32      	      63	  18641844 ns/op	    7784 B/op	      92 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-1681
+BenchmarkNewKeyPair/NewKeyPair-1681-32      	      49	  21316017 ns/op	    7992 B/op	      94 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-1764
+BenchmarkNewKeyPair/NewKeyPair-1764-32      	      64	  18436809 ns/op	    8168 B/op	      96 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-1849
+BenchmarkNewKeyPair/NewKeyPair-1849-32      	      46	  22221672 ns/op	    8344 B/op	      98 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-1936
+BenchmarkNewKeyPair/NewKeyPair-1936-32      	      46	  22610217 ns/op	    8520 B/op	     100 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-2025
+BenchmarkNewKeyPair/NewKeyPair-2025-32      	      45	  23398190 ns/op	    8728 B/op	     102 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-2116
+BenchmarkNewKeyPair/NewKeyPair-2116-32      	      57	  21280648 ns/op	    8904 B/op	     104 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-2209
+BenchmarkNewKeyPair/NewKeyPair-2209-32      	      42	  24435745 ns/op	    9080 B/op	     106 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-2304
+BenchmarkNewKeyPair/NewKeyPair-2304-32      	      42	  24960348 ns/op	    9256 B/op	     108 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-2401
+BenchmarkNewKeyPair/NewKeyPair-2401-32      	      42	  25048054 ns/op	    9464 B/op	     110 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-2500
+BenchmarkNewKeyPair/NewKeyPair-2500-32      	      43	  24459207 ns/op	    9640 B/op	     112 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-2601
+BenchmarkNewKeyPair/NewKeyPair-2601-32      	      49	  24031657 ns/op	    9816 B/op	     114 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-2704
+BenchmarkNewKeyPair/NewKeyPair-2704-32      	      38	  26917049 ns/op	    9992 B/op	     116 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-2809
+BenchmarkNewKeyPair/NewKeyPair-2809-32      	      46	  24113181 ns/op	   10200 B/op	     118 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-2916
+BenchmarkNewKeyPair/NewKeyPair-2916-32      	      49	  23829951 ns/op	   10376 B/op	     120 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-3025
+BenchmarkNewKeyPair/NewKeyPair-3025-32      	      37	  28352644 ns/op	   10552 B/op	     122 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-3136
+BenchmarkNewKeyPair/NewKeyPair-3136-32      	      36	  29242903 ns/op	   10728 B/op	     124 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-3249
+BenchmarkNewKeyPair/NewKeyPair-3249-32      	      45	  26393373 ns/op	   10936 B/op	     126 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-3364
+BenchmarkNewKeyPair/NewKeyPair-3364-32      	      34	  30291328 ns/op	   11112 B/op	     128 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-3481
+BenchmarkNewKeyPair/NewKeyPair-3481-32      	      33	  31223744 ns/op	   11288 B/op	     130 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-3600
+BenchmarkNewKeyPair/NewKeyPair-3600-32      	      33	  31568288 ns/op	   11464 B/op	     132 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-3721
+BenchmarkNewKeyPair/NewKeyPair-3721-32      	      33	  32406581 ns/op	   11672 B/op	     134 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-3844
+BenchmarkNewKeyPair/NewKeyPair-3844-32      	      40	  28250553 ns/op	   11848 B/op	     136 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-3969
+BenchmarkNewKeyPair/NewKeyPair-3969-32      	      39	  29527245 ns/op	   12024 B/op	     138 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-4096
+BenchmarkNewKeyPair/NewKeyPair-4096-32      	      36	  32443692 ns/op	   12200 B/op	     140 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-4225
+BenchmarkNewKeyPair/NewKeyPair-4225-32      	      31	  33409087 ns/op	   12440 B/op	     142 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-4356
+BenchmarkNewKeyPair/NewKeyPair-4356-32      	      39	  29715583 ns/op	   12616 B/op	     144 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-4489
+BenchmarkNewKeyPair/NewKeyPair-4489-32      	      30	  34564563 ns/op	   12792 B/op	     146 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-4624
+BenchmarkNewKeyPair/NewKeyPair-4624-32      	      30	  35197054 ns/op	   12968 B/op	     148 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-4761
+BenchmarkNewKeyPair/NewKeyPair-4761-32      	      30	  35867026 ns/op	   13144 B/op	     150 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-4900
+BenchmarkNewKeyPair/NewKeyPair-4900-32      	      28	  36529313 ns/op	   13320 B/op	     152 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-5041
+BenchmarkNewKeyPair/NewKeyPair-5041-32      	      28	  37301281 ns/op	   13496 B/op	     154 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-5184
+BenchmarkNewKeyPair/NewKeyPair-5184-32      	      27	  37363403 ns/op	   13736 B/op	     156 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-5329
+BenchmarkNewKeyPair/NewKeyPair-5329-32      	      27	  37670286 ns/op	   13912 B/op	     158 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-5476
+BenchmarkNewKeyPair/NewKeyPair-5476-32      	      33	  34869035 ns/op	   14088 B/op	     160 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-5625
+BenchmarkNewKeyPair/NewKeyPair-5625-32      	      27	  39118863 ns/op	   14264 B/op	     162 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-5776
+BenchmarkNewKeyPair/NewKeyPair-5776-32      	      27	  38119814 ns/op	   14440 B/op	     164 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-5929
+BenchmarkNewKeyPair/NewKeyPair-5929-32      	      26	  40452788 ns/op	   14616 B/op	     166 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-6084
+BenchmarkNewKeyPair/NewKeyPair-6084-32      	      32	  36949470 ns/op	   14792 B/op	     168 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-6241
+BenchmarkNewKeyPair/NewKeyPair-6241-32      	      24	  45436689 ns/op	   14968 B/op	     170 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-6400
+BenchmarkNewKeyPair/NewKeyPair-6400-32      	      27	  40684096 ns/op	   15208 B/op	     172 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-6561
+BenchmarkNewKeyPair/NewKeyPair-6561-32      	      33	  36273160 ns/op	   15384 B/op	     174 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-6724
+BenchmarkNewKeyPair/NewKeyPair-6724-32      	      31	  39401725 ns/op	   15560 B/op	     176 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-6889
+BenchmarkNewKeyPair/NewKeyPair-6889-32      	      27	  40992595 ns/op	   15736 B/op	     178 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-7056
+BenchmarkNewKeyPair/NewKeyPair-7056-32      	      24	  45336720 ns/op	   15912 B/op	     180 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-7225
+BenchmarkNewKeyPair/NewKeyPair-7225-32      	      25	  41059775 ns/op	   16088 B/op	     182 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-7396
+BenchmarkNewKeyPair/NewKeyPair-7396-32      	      24	  44711708 ns/op	   16264 B/op	     184 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-7569
+BenchmarkNewKeyPair/NewKeyPair-7569-32      	      24	  44845080 ns/op	   16440 B/op	     186 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-7744
+BenchmarkNewKeyPair/NewKeyPair-7744-32      	      22	  46788451 ns/op	   16680 B/op	     188 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-7921
+BenchmarkNewKeyPair/NewKeyPair-7921-32      	      22	  46535085 ns/op	   16856 B/op	     190 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-8100
+BenchmarkNewKeyPair/NewKeyPair-8100-32      	      28	  41404700 ns/op	   17032 B/op	     192 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-8281
+BenchmarkNewKeyPair/NewKeyPair-8281-32      	      22	  48029540 ns/op	   17208 B/op	     194 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-8464
+BenchmarkNewKeyPair/NewKeyPair-8464-32      	      21	  49150222 ns/op	   17384 B/op	     196 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-8649
+BenchmarkNewKeyPair/NewKeyPair-8649-32      	      21	  48770622 ns/op	   17560 B/op	     198 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-8836
+BenchmarkNewKeyPair/NewKeyPair-8836-32      	      27	  42235509 ns/op	   17736 B/op	     200 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-9025
+BenchmarkNewKeyPair/NewKeyPair-9025-32      	      21	  51095467 ns/op	   17912 B/op	     202 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-9216
+BenchmarkNewKeyPair/NewKeyPair-9216-32      	      24	  44853970 ns/op	   18216 B/op	     204 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-9409
+BenchmarkNewKeyPair/NewKeyPair-9409-32      	      25	  45447482 ns/op	   18392 B/op	     206 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-9604
+BenchmarkNewKeyPair/NewKeyPair-9604-32      	      26	  44815723 ns/op	   18568 B/op	     208 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-9801
+BenchmarkNewKeyPair/NewKeyPair-9801-32      	      21	  51772629 ns/op	   18744 B/op	     210 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-10000
+BenchmarkNewKeyPair/NewKeyPair-10000-32     	      20	  51645167 ns/op	   18920 B/op	     212 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-10201
+BenchmarkNewKeyPair/NewKeyPair-10201-32     	      21	  50801193 ns/op	   19096 B/op	     214 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-10404
+BenchmarkNewKeyPair/NewKeyPair-10404-32     	      24	  47894339 ns/op	   19272 B/op	     216 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-10609
+BenchmarkNewKeyPair/NewKeyPair-10609-32     	      19	  54575711 ns/op	   19448 B/op	     218 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-10816
+BenchmarkNewKeyPair/NewKeyPair-10816-32     	      21	  51732541 ns/op	   19624 B/op	     220 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-11025
+BenchmarkNewKeyPair/NewKeyPair-11025-32     	      24	  49439264 ns/op	   19800 B/op	     222 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-11236
+BenchmarkNewKeyPair/NewKeyPair-11236-32     	      20	  54330164 ns/op	   19976 B/op	     224 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-11449
+BenchmarkNewKeyPair/NewKeyPair-11449-32     	      24	  48416858 ns/op	   20152 B/op	     226 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-11664
+BenchmarkNewKeyPair/NewKeyPair-11664-32     	      19	  56063216 ns/op	   20328 B/op	     228 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-11881
+BenchmarkNewKeyPair/NewKeyPair-11881-32     	      24	  48833898 ns/op	   20504 B/op	     230 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-12100
+BenchmarkNewKeyPair/NewKeyPair-12100-32     	      19	  57335123 ns/op	   20680 B/op	     232 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-12321
+BenchmarkNewKeyPair/NewKeyPair-12321-32     	      19	  56770984 ns/op	   20856 B/op	     234 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-12544
+BenchmarkNewKeyPair/NewKeyPair-12544-32     	      18	  60281556 ns/op	   21160 B/op	     236 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-12769
+BenchmarkNewKeyPair/NewKeyPair-12769-32     	      21	  53872040 ns/op	   21336 B/op	     238 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-12996
+BenchmarkNewKeyPair/NewKeyPair-12996-32     	      18	  60392226 ns/op	   21512 B/op	     240 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-13225
+BenchmarkNewKeyPair/NewKeyPair-13225-32     	      18	  60685257 ns/op	   21688 B/op	     242 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-13456
+BenchmarkNewKeyPair/NewKeyPair-13456-32     	      18	  60236930 ns/op	   21864 B/op	     244 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-13689
+BenchmarkNewKeyPair/NewKeyPair-13689-32     	      21	  53905358 ns/op	   22040 B/op	     246 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-13924
+BenchmarkNewKeyPair/NewKeyPair-13924-32     	      18	  61165875 ns/op	   22216 B/op	     248 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-14161
+BenchmarkNewKeyPair/NewKeyPair-14161-32     	      19	  58880509 ns/op	   22392 B/op	     250 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-14400
+BenchmarkNewKeyPair/NewKeyPair-14400-32     	      21	  54927645 ns/op	   22568 B/op	     252 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-14641
+BenchmarkNewKeyPair/NewKeyPair-14641-32     	      21	  55154058 ns/op	   22744 B/op	     254 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-14884
+BenchmarkNewKeyPair/NewKeyPair-14884-32     	      16	  64506483 ns/op	   22920 B/op	     256 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-15129
+BenchmarkNewKeyPair/NewKeyPair-15129-32     	      16	  64364167 ns/op	   23096 B/op	     258 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-15376
+BenchmarkNewKeyPair/NewKeyPair-15376-32     	      21	  55686051 ns/op	   23272 B/op	     260 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-15625
+BenchmarkNewKeyPair/NewKeyPair-15625-32     	      16	  64841691 ns/op	   23448 B/op	     262 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-15876
+BenchmarkNewKeyPair/NewKeyPair-15876-32     	      16	  65933749 ns/op	   23624 B/op	     264 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-16129
+BenchmarkNewKeyPair/NewKeyPair-16129-32     	      18	  61871234 ns/op	   23800 B/op	     266 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-16384
+BenchmarkNewKeyPair/NewKeyPair-16384-32     	      15	  67590042 ns/op	   24104 B/op	     268 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-16641
+BenchmarkNewKeyPair/NewKeyPair-16641-32     	      18	  63191164 ns/op	   24280 B/op	     270 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-16900
+BenchmarkNewKeyPair/NewKeyPair-16900-32     	      15	  68456438 ns/op	   24456 B/op	     272 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-17161
+BenchmarkNewKeyPair/NewKeyPair-17161-32     	      16	  68942292 ns/op	   24632 B/op	     274 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-17424
+BenchmarkNewKeyPair/NewKeyPair-17424-32     	      19	  61718922 ns/op	   24808 B/op	     276 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-17689
+BenchmarkNewKeyPair/NewKeyPair-17689-32     	      18	  65186346 ns/op	   24984 B/op	     278 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-17956
+BenchmarkNewKeyPair/NewKeyPair-17956-32     	      18	  65223778 ns/op	   25160 B/op	     280 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-18225
+BenchmarkNewKeyPair/NewKeyPair-18225-32     	      15	  70157071 ns/op	   25336 B/op	     282 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-18496
+BenchmarkNewKeyPair/NewKeyPair-18496-32     	      16	  66337599 ns/op	   25512 B/op	     284 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-18769
+BenchmarkNewKeyPair/NewKeyPair-18769-32     	      19	  61024240 ns/op	   25688 B/op	     286 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-19044
+BenchmarkNewKeyPair/NewKeyPair-19044-32     	      15	  71391524 ns/op	   25864 B/op	     288 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-19321
+BenchmarkNewKeyPair/NewKeyPair-19321-32     	      18	  62604924 ns/op	   26040 B/op	     290 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-19600
+BenchmarkNewKeyPair/NewKeyPair-19600-32     	      14	  73864424 ns/op	   26216 B/op	     292 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-19881
+BenchmarkNewKeyPair/NewKeyPair-19881-32     	      19	  63273201 ns/op	   26392 B/op	     294 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-20164
+BenchmarkNewKeyPair/NewKeyPair-20164-32     	      14	  74285878 ns/op	   26568 B/op	     296 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-20449
+BenchmarkNewKeyPair/NewKeyPair-20449-32     	      14	  74342029 ns/op	   26744 B/op	     298 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-20736
+BenchmarkNewKeyPair/NewKeyPair-20736-32     	      16	  69489620 ns/op	   27048 B/op	     300 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-21025
+BenchmarkNewKeyPair/NewKeyPair-21025-32     	      14	  74096106 ns/op	   27224 B/op	     302 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-21316
+BenchmarkNewKeyPair/NewKeyPair-21316-32     	      14	  74279423 ns/op	   27400 B/op	     304 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-21609
+BenchmarkNewKeyPair/NewKeyPair-21609-32     	      15	  71703019 ns/op	   27576 B/op	     306 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-21904
+BenchmarkNewKeyPair/NewKeyPair-21904-32     	      14	  77166545 ns/op	   27752 B/op	     308 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-22201
+BenchmarkNewKeyPair/NewKeyPair-22201-32     	      14	  74733385 ns/op	   27928 B/op	     310 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-22500
+BenchmarkNewKeyPair/NewKeyPair-22500-32     	      14	  77526192 ns/op	   28104 B/op	     312 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-22801
+BenchmarkNewKeyPair/NewKeyPair-22801-32     	      14	  76893614 ns/op	   28280 B/op	     314 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-23104
+BenchmarkNewKeyPair/NewKeyPair-23104-32     	      13	  78206041 ns/op	   28456 B/op	     316 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-23409
+BenchmarkNewKeyPair/NewKeyPair-23409-32     	      13	  79218077 ns/op	   28632 B/op	     318 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-23716
+BenchmarkNewKeyPair/NewKeyPair-23716-32     	      18	  69196998 ns/op	   28808 B/op	     320 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-24025
+BenchmarkNewKeyPair/NewKeyPair-24025-32     	      13	  81933963 ns/op	   28984 B/op	     322 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-24336
+BenchmarkNewKeyPair/NewKeyPair-24336-32     	      13	  81640654 ns/op	   29160 B/op	     324 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-24649
+BenchmarkNewKeyPair/NewKeyPair-24649-32     	      13	  81663882 ns/op	   29336 B/op	     326 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-24964
+BenchmarkNewKeyPair/NewKeyPair-24964-32     	      15	  71456502 ns/op	   29512 B/op	     328 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-25281
+BenchmarkNewKeyPair/NewKeyPair-25281-32     	      15	  72054454 ns/op	   29688 B/op	     330 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-25600
+BenchmarkNewKeyPair/NewKeyPair-25600-32     	      13	  84781489 ns/op	   29992 B/op	     332 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-25921
+BenchmarkNewKeyPair/NewKeyPair-25921-32     	      13	  83615763 ns/op	   30168 B/op	     334 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-26244
+BenchmarkNewKeyPair/NewKeyPair-26244-32     	      15	  73593210 ns/op	   30344 B/op	     336 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-26569
+BenchmarkNewKeyPair/NewKeyPair-26569-32     	      14	  79129119 ns/op	   30520 B/op	     338 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-26896
+BenchmarkNewKeyPair/NewKeyPair-26896-32     	      14	  76876160 ns/op	   30696 B/op	     340 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-27225
+BenchmarkNewKeyPair/NewKeyPair-27225-32     	      13	  82922672 ns/op	   30872 B/op	     342 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-27556
+BenchmarkNewKeyPair/NewKeyPair-27556-32     	      15	  75331598 ns/op	   31048 B/op	     344 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-27889
+BenchmarkNewKeyPair/NewKeyPair-27889-32     	      15	  74430766 ns/op	   31224 B/op	     346 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-28224
+BenchmarkNewKeyPair/NewKeyPair-28224-32     	      12	  83480168 ns/op	   31400 B/op	     348 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-28561
+BenchmarkNewKeyPair/NewKeyPair-28561-32     	      13	  86268828 ns/op	   31576 B/op	     350 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-28900
+BenchmarkNewKeyPair/NewKeyPair-28900-32     	      14	  77627124 ns/op	   31752 B/op	     352 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-29241
+BenchmarkNewKeyPair/NewKeyPair-29241-32     	      12	  88452665 ns/op	   31928 B/op	     354 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-29584
+BenchmarkNewKeyPair/NewKeyPair-29584-32     	      13	  85948479 ns/op	   32104 B/op	     356 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-29929
+BenchmarkNewKeyPair/NewKeyPair-29929-32     	      12	  89434135 ns/op	   32280 B/op	     358 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-30276
+BenchmarkNewKeyPair/NewKeyPair-30276-32     	      12	  91355211 ns/op	   32456 B/op	     360 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-30625
+BenchmarkNewKeyPair/NewKeyPair-30625-32     	      13	  79103043 ns/op	   32632 B/op	     362 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-30976
+BenchmarkNewKeyPair/NewKeyPair-30976-32     	      13	  87178825 ns/op	   32936 B/op	     364 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-31329
+BenchmarkNewKeyPair/NewKeyPair-31329-32     	      12	  89656475 ns/op	   33112 B/op	     366 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-31684
+BenchmarkNewKeyPair/NewKeyPair-31684-32     	      12	  91169559 ns/op	   33288 B/op	     368 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-32041
+BenchmarkNewKeyPair/NewKeyPair-32041-32     	      13	  86926347 ns/op	   33464 B/op	     370 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-32400
+BenchmarkNewKeyPair/NewKeyPair-32400-32     	      13	  84184093 ns/op	   33640 B/op	     372 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-32761
+BenchmarkNewKeyPair/NewKeyPair-32761-32     	      12	  92313877 ns/op	   33816 B/op	     374 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-33124
+BenchmarkNewKeyPair/NewKeyPair-33124-32     	      12	  93308932 ns/op	   33992 B/op	     376 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-33489
+BenchmarkNewKeyPair/NewKeyPair-33489-32     	      12	  93366824 ns/op	   34168 B/op	     378 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-33856
+BenchmarkNewKeyPair/NewKeyPair-33856-32     	      14	  81271053 ns/op	   34344 B/op	     380 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-34225
+BenchmarkNewKeyPair/NewKeyPair-34225-32     	      12	  83879816 ns/op	   34520 B/op	     382 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-34596
+BenchmarkNewKeyPair/NewKeyPair-34596-32     	      12	  93889623 ns/op	   34696 B/op	     384 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-34969
+BenchmarkNewKeyPair/NewKeyPair-34969-32     	      13	  86116292 ns/op	   34872 B/op	     386 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-35344
+BenchmarkNewKeyPair/NewKeyPair-35344-32     	      13	  87345519 ns/op	   35048 B/op	     388 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-35721
+BenchmarkNewKeyPair/NewKeyPair-35721-32     	      12	  87010468 ns/op	   35224 B/op	     390 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-36100
+BenchmarkNewKeyPair/NewKeyPair-36100-32     	      12	  97318337 ns/op	   35400 B/op	     392 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-36481
+BenchmarkNewKeyPair/NewKeyPair-36481-32     	      13	  85649873 ns/op	   35576 B/op	     394 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-36864
+BenchmarkNewKeyPair/NewKeyPair-36864-32     	      13	  87348503 ns/op	   36008 B/op	     396 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-37249
+BenchmarkNewKeyPair/NewKeyPair-37249-32     	      10	 100498257 ns/op	   36184 B/op	     398 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-37636
+BenchmarkNewKeyPair/NewKeyPair-37636-32     	      13	  89795387 ns/op	   36360 B/op	     400 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-38025
+BenchmarkNewKeyPair/NewKeyPair-38025-32     	      13	  87903228 ns/op	   36536 B/op	     402 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-38416
+BenchmarkNewKeyPair/NewKeyPair-38416-32     	      12	  96341288 ns/op	   36712 B/op	     404 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-38809
+BenchmarkNewKeyPair/NewKeyPair-38809-32     	      10	 100700574 ns/op	   36888 B/op	     406 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-39204
+BenchmarkNewKeyPair/NewKeyPair-39204-32     	      13	  89176434 ns/op	   37064 B/op	     408 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-39601
+BenchmarkNewKeyPair/NewKeyPair-39601-32     	      12	  91347936 ns/op	   37240 B/op	     410 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-40000
+BenchmarkNewKeyPair/NewKeyPair-40000-32     	      13	  90359193 ns/op	   37416 B/op	     412 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-40401
+BenchmarkNewKeyPair/NewKeyPair-40401-32     	      10	 104925301 ns/op	   37592 B/op	     414 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-40804
+BenchmarkNewKeyPair/NewKeyPair-40804-32     	      10	 104982607 ns/op	   37768 B/op	     416 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-41209
+BenchmarkNewKeyPair/NewKeyPair-41209-32     	      10	 106191608 ns/op	   37944 B/op	     418 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-41616
+BenchmarkNewKeyPair/NewKeyPair-41616-32     	      10	 106537846 ns/op	   38121 B/op	     420 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-42025
+BenchmarkNewKeyPair/NewKeyPair-42025-32     	      10	 103960035 ns/op	   38296 B/op	     422 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-42436
+BenchmarkNewKeyPair/NewKeyPair-42436-32     	      10	 106514130 ns/op	   38472 B/op	     424 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-42849
+BenchmarkNewKeyPair/NewKeyPair-42849-32     	      12	  91748300 ns/op	   38648 B/op	     426 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-43264
+BenchmarkNewKeyPair/NewKeyPair-43264-32     	      13	  93608481 ns/op	   38824 B/op	     428 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-43681
+BenchmarkNewKeyPair/NewKeyPair-43681-32     	      10	 104064981 ns/op	   39000 B/op	     430 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-44100
+BenchmarkNewKeyPair/NewKeyPair-44100-32     	      10	 107687963 ns/op	   39176 B/op	     432 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-44521
+BenchmarkNewKeyPair/NewKeyPair-44521-32     	       9	 112057427 ns/op	   39352 B/op	     434 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-44944
+BenchmarkNewKeyPair/NewKeyPair-44944-32     	       9	 111682733 ns/op	   39528 B/op	     436 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-45369
+BenchmarkNewKeyPair/NewKeyPair-45369-32     	      10	 108406270 ns/op	   39704 B/op	     438 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-45796
+BenchmarkNewKeyPair/NewKeyPair-45796-32     	      10	 109221081 ns/op	   39880 B/op	     440 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-46225
+BenchmarkNewKeyPair/NewKeyPair-46225-32     	      10	 104569340 ns/op	   40056 B/op	     442 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-46656
+BenchmarkNewKeyPair/NewKeyPair-46656-32     	      10	 101887652 ns/op	   40232 B/op	     444 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-47089
+BenchmarkNewKeyPair/NewKeyPair-47089-32     	      10	 102942753 ns/op	   40408 B/op	     446 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-47524
+BenchmarkNewKeyPair/NewKeyPair-47524-32     	      12	  97803081 ns/op	   40584 B/op	     448 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-47961
+BenchmarkNewKeyPair/NewKeyPair-47961-32     	       9	 113189162 ns/op	   40760 B/op	     450 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-48400
+BenchmarkNewKeyPair/NewKeyPair-48400-32     	      10	 108939244 ns/op	   40936 B/op	     452 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-48841
+BenchmarkNewKeyPair/NewKeyPair-48841-32     	      10	 102057998 ns/op	   41112 B/op	     454 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-49284
+BenchmarkNewKeyPair/NewKeyPair-49284-32     	      10	 107735136 ns/op	   41288 B/op	     456 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-49729
+BenchmarkNewKeyPair/NewKeyPair-49729-32     	      10	 104578775 ns/op	   41464 B/op	     458 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-50176
+BenchmarkNewKeyPair/NewKeyPair-50176-32     	      10	 102210566 ns/op	   41896 B/op	     460 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-50625
+BenchmarkNewKeyPair/NewKeyPair-50625-32     	       9	 114841274 ns/op	   42072 B/op	     462 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-51076
+BenchmarkNewKeyPair/NewKeyPair-51076-32     	       9	 113836168 ns/op	   42248 B/op	     464 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-51529
+BenchmarkNewKeyPair/NewKeyPair-51529-32     	      10	 100002471 ns/op	   42424 B/op	     466 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-51984
+BenchmarkNewKeyPair/NewKeyPair-51984-32     	       9	 120217875 ns/op	   42600 B/op	     468 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-52441
+BenchmarkNewKeyPair/NewKeyPair-52441-32     	       9	 117262005 ns/op	   42776 B/op	     470 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-52900
+BenchmarkNewKeyPair/NewKeyPair-52900-32     	       9	 117861909 ns/op	   42952 B/op	     472 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-53361
+BenchmarkNewKeyPair/NewKeyPair-53361-32     	      10	 106990237 ns/op	   43128 B/op	     474 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-53824
+BenchmarkNewKeyPair/NewKeyPair-53824-32     	       9	 120450336 ns/op	   43304 B/op	     476 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-54289
+BenchmarkNewKeyPair/NewKeyPair-54289-32     	       9	 121624915 ns/op	   43480 B/op	     478 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-54756
+BenchmarkNewKeyPair/NewKeyPair-54756-32     	      10	 105525584 ns/op	   43656 B/op	     480 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-55225
+BenchmarkNewKeyPair/NewKeyPair-55225-32     	       9	 122169950 ns/op	   43832 B/op	     482 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-55696
+BenchmarkNewKeyPair/NewKeyPair-55696-32     	       9	 120273191 ns/op	   44008 B/op	     484 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-56169
+BenchmarkNewKeyPair/NewKeyPair-56169-32     	      10	 109398004 ns/op	   44184 B/op	     486 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-56644
+BenchmarkNewKeyPair/NewKeyPair-56644-32     	       9	 121161672 ns/op	   44360 B/op	     488 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-57121
+BenchmarkNewKeyPair/NewKeyPair-57121-32     	       9	 122090616 ns/op	   44536 B/op	     490 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-57600
+BenchmarkNewKeyPair/NewKeyPair-57600-32     	       9	 121666875 ns/op	   44712 B/op	     492 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-58081
+BenchmarkNewKeyPair/NewKeyPair-58081-32     	       9	 116154221 ns/op	   44888 B/op	     494 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-58564
+BenchmarkNewKeyPair/NewKeyPair-58564-32     	       9	 119321357 ns/op	   45064 B/op	     496 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-59049
+BenchmarkNewKeyPair/NewKeyPair-59049-32     	       8	 125691183 ns/op	   45240 B/op	     498 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-59536
+BenchmarkNewKeyPair/NewKeyPair-59536-32     	       9	 122055705 ns/op	   45416 B/op	     500 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-60025
+BenchmarkNewKeyPair/NewKeyPair-60025-32     	       9	 122968248 ns/op	   45592 B/op	     502 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-60516
+BenchmarkNewKeyPair/NewKeyPair-60516-32     	       8	 127303076 ns/op	   45768 B/op	     504 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-61009
+BenchmarkNewKeyPair/NewKeyPair-61009-32     	       9	 117213470 ns/op	   45944 B/op	     506 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-61504
+BenchmarkNewKeyPair/NewKeyPair-61504-32     	      10	 108484407 ns/op	   46120 B/op	     508 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-62001
+BenchmarkNewKeyPair/NewKeyPair-62001-32     	       8	 130631137 ns/op	   46296 B/op	     510 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-62500
+BenchmarkNewKeyPair/NewKeyPair-62500-32     	       8	 130607746 ns/op	   46472 B/op	     512 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-63001
+BenchmarkNewKeyPair/NewKeyPair-63001-32     	       8	 132201674 ns/op	   46648 B/op	     514 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-63504
+BenchmarkNewKeyPair/NewKeyPair-63504-32     	       8	 125658032 ns/op	   46824 B/op	     516 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-64009
+BenchmarkNewKeyPair/NewKeyPair-64009-32     	       8	 133496357 ns/op	   47000 B/op	     518 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-64516
+BenchmarkNewKeyPair/NewKeyPair-64516-32     	       8	 131826700 ns/op	   47176 B/op	     520 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-65025
+BenchmarkNewKeyPair/NewKeyPair-65025-32     	       8	 133457526 ns/op	   47352 B/op	     522 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-65536
+BenchmarkNewKeyPair/NewKeyPair-65536-32     	       8	 131466180 ns/op	   47784 B/op	     524 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-66049
+BenchmarkNewKeyPair/NewKeyPair-66049-32     	       9	 120063321 ns/op	   47960 B/op	     526 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-66564
+BenchmarkNewKeyPair/NewKeyPair-66564-32     	       9	 115163265 ns/op	   48136 B/op	     528 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-67081
+BenchmarkNewKeyPair/NewKeyPair-67081-32     	       8	 131286438 ns/op	   48312 B/op	     530 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-67600
+BenchmarkNewKeyPair/NewKeyPair-67600-32     	       8	 136035837 ns/op	   48488 B/op	     532 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-68121
+BenchmarkNewKeyPair/NewKeyPair-68121-32     	       9	 121135210 ns/op	   48664 B/op	     534 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-68644
+BenchmarkNewKeyPair/NewKeyPair-68644-32     	       8	 136785177 ns/op	   48840 B/op	     536 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-69169
+BenchmarkNewKeyPair/NewKeyPair-69169-32     	       9	 122168057 ns/op	   49016 B/op	     538 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-69696
+BenchmarkNewKeyPair/NewKeyPair-69696-32     	       9	 118392412 ns/op	   49192 B/op	     540 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-70225
+BenchmarkNewKeyPair/NewKeyPair-70225-32     	       8	 136785402 ns/op	   49368 B/op	     542 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-70756
+BenchmarkNewKeyPair/NewKeyPair-70756-32     	       8	 138071730 ns/op	   49544 B/op	     544 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-71289
+BenchmarkNewKeyPair/NewKeyPair-71289-32     	       9	 118778165 ns/op	   49720 B/op	     546 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-71824
+BenchmarkNewKeyPair/NewKeyPair-71824-32     	       9	 123573006 ns/op	   49896 B/op	     548 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-72361
+BenchmarkNewKeyPair/NewKeyPair-72361-32     	       9	 124342773 ns/op	   50072 B/op	     550 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-72900
+BenchmarkNewKeyPair/NewKeyPair-72900-32     	       7	 144359713 ns/op	   50249 B/op	     552 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-73441
+BenchmarkNewKeyPair/NewKeyPair-73441-32     	       8	 126460292 ns/op	   50424 B/op	     554 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-73984
+BenchmarkNewKeyPair/NewKeyPair-73984-32     	       8	 139515756 ns/op	   50600 B/op	     556 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-74529
+BenchmarkNewKeyPair/NewKeyPair-74529-32     	       9	 125186862 ns/op	   50776 B/op	     558 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-75076
+BenchmarkNewKeyPair/NewKeyPair-75076-32     	       9	 123834738 ns/op	   50952 B/op	     560 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-75625
+BenchmarkNewKeyPair/NewKeyPair-75625-32     	       8	 134805240 ns/op	   51128 B/op	     562 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-76176
+BenchmarkNewKeyPair/NewKeyPair-76176-32     	       7	 143417042 ns/op	   51305 B/op	     564 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-76729
+BenchmarkNewKeyPair/NewKeyPair-76729-32     	       8	 125106754 ns/op	   51480 B/op	     566 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-77284
+BenchmarkNewKeyPair/NewKeyPair-77284-32     	       8	 137107780 ns/op	   51656 B/op	     568 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-77841
+BenchmarkNewKeyPair/NewKeyPair-77841-32     	       8	 135617569 ns/op	   51832 B/op	     570 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-78400
+BenchmarkNewKeyPair/NewKeyPair-78400-32     	       8	 133695851 ns/op	   52008 B/op	     572 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-78961
+BenchmarkNewKeyPair/NewKeyPair-78961-32     	       8	 125579146 ns/op	   52184 B/op	     574 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-79524
+BenchmarkNewKeyPair/NewKeyPair-79524-32     	       7	 145270355 ns/op	   52361 B/op	     576 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-80089
+BenchmarkNewKeyPair/NewKeyPair-80089-32     	       7	 145994438 ns/op	   52537 B/op	     578 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-80656
+BenchmarkNewKeyPair/NewKeyPair-80656-32     	       8	 128572565 ns/op	   52712 B/op	     580 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-81225
+BenchmarkNewKeyPair/NewKeyPair-81225-32     	       9	 126293044 ns/op	   52888 B/op	     582 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-81796
+BenchmarkNewKeyPair/NewKeyPair-81796-32     	       8	 131549034 ns/op	   53064 B/op	     584 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-82369
+BenchmarkNewKeyPair/NewKeyPair-82369-32     	       7	 147123997 ns/op	   53241 B/op	     586 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-82944
+BenchmarkNewKeyPair/NewKeyPair-82944-32     	       8	 130715215 ns/op	   53800 B/op	     588 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-83521
+BenchmarkNewKeyPair/NewKeyPair-83521-32     	       7	 150317848 ns/op	   53977 B/op	     590 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-84100
+BenchmarkNewKeyPair/NewKeyPair-84100-32     	       7	 150944400 ns/op	   54153 B/op	     592 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-84681
+BenchmarkNewKeyPair/NewKeyPair-84681-32     	       7	 148932308 ns/op	   54329 B/op	     594 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-85264
+BenchmarkNewKeyPair/NewKeyPair-85264-32     	       8	 132138740 ns/op	   54504 B/op	     596 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-85849
+BenchmarkNewKeyPair/NewKeyPair-85849-32     	       7	 151414019 ns/op	   54681 B/op	     598 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-86436
+BenchmarkNewKeyPair/NewKeyPair-86436-32     	       7	 148987673 ns/op	   54857 B/op	     600 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-87025
+BenchmarkNewKeyPair/NewKeyPair-87025-32     	       7	 150234507 ns/op	   55033 B/op	     602 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-87616
+BenchmarkNewKeyPair/NewKeyPair-87616-32     	       7	 149982148 ns/op	   55209 B/op	     604 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-88209
+BenchmarkNewKeyPair/NewKeyPair-88209-32     	       8	 133662130 ns/op	   55384 B/op	     606 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-88804
+BenchmarkNewKeyPair/NewKeyPair-88804-32     	       7	 146222951 ns/op	   55561 B/op	     608 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-89401
+BenchmarkNewKeyPair/NewKeyPair-89401-32     	       7	 145999154 ns/op	   55737 B/op	     610 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-90000
+BenchmarkNewKeyPair/NewKeyPair-90000-32     	       7	 154794075 ns/op	   55913 B/op	     612 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-90601
+BenchmarkNewKeyPair/NewKeyPair-90601-32     	       8	 134038760 ns/op	   56088 B/op	     614 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-91204
+BenchmarkNewKeyPair/NewKeyPair-91204-32     	       7	 152727321 ns/op	   56265 B/op	     616 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-91809
+BenchmarkNewKeyPair/NewKeyPair-91809-32     	       8	 137755606 ns/op	   56440 B/op	     618 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-92416
+BenchmarkNewKeyPair/NewKeyPair-92416-32     	       8	 136249300 ns/op	   56616 B/op	     620 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-93025
+BenchmarkNewKeyPair/NewKeyPair-93025-32     	       7	 156454688 ns/op	   56793 B/op	     622 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-93636
+BenchmarkNewKeyPair/NewKeyPair-93636-32     	       7	 155519171 ns/op	   56969 B/op	     624 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-94249
+BenchmarkNewKeyPair/NewKeyPair-94249-32     	       7	 156461968 ns/op	   57145 B/op	     626 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-94864
+BenchmarkNewKeyPair/NewKeyPair-94864-32     	       8	 137723836 ns/op	   57320 B/op	     628 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-95481
+BenchmarkNewKeyPair/NewKeyPair-95481-32     	       7	 151620479 ns/op	   57497 B/op	     630 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-96100
+BenchmarkNewKeyPair/NewKeyPair-96100-32     	       7	 159325659 ns/op	   57673 B/op	     632 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-96721
+BenchmarkNewKeyPair/NewKeyPair-96721-32     	       7	 157511630 ns/op	   57849 B/op	     634 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-97344
+BenchmarkNewKeyPair/NewKeyPair-97344-32     	       7	 154068315 ns/op	   58025 B/op	     636 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-97969
+BenchmarkNewKeyPair/NewKeyPair-97969-32     	       7	 159301210 ns/op	   58201 B/op	     638 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-98596
+BenchmarkNewKeyPair/NewKeyPair-98596-32     	       7	 159566276 ns/op	   58377 B/op	     640 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-99225
+BenchmarkNewKeyPair/NewKeyPair-99225-32     	       7	 156588167 ns/op	   58553 B/op	     642 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-99856
+BenchmarkNewKeyPair/NewKeyPair-99856-32     	       7	 160070642 ns/op	   58729 B/op	     644 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-100489
+BenchmarkNewKeyPair/NewKeyPair-100489-32    	       7	 152790780 ns/op	   58905 B/op	     646 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-101124
+BenchmarkNewKeyPair/NewKeyPair-101124-32    	       7	 161294284 ns/op	   59081 B/op	     648 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-101761
+BenchmarkNewKeyPair/NewKeyPair-101761-32    	       7	 161437787 ns/op	   59257 B/op	     650 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-102400
+BenchmarkNewKeyPair/NewKeyPair-102400-32    	       7	 160851865 ns/op	   59433 B/op	     652 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-103041
+BenchmarkNewKeyPair/NewKeyPair-103041-32    	       6	 167512241 ns/op	   59608 B/op	     654 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-103684
+BenchmarkNewKeyPair/NewKeyPair-103684-32    	       6	 168397243 ns/op	   59784 B/op	     656 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-104329
+BenchmarkNewKeyPair/NewKeyPair-104329-32    	       8	 143039093 ns/op	   59960 B/op	     658 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-104976
+BenchmarkNewKeyPair/NewKeyPair-104976-32    	       6	 168345674 ns/op	   60136 B/op	     660 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-105625
+BenchmarkNewKeyPair/NewKeyPair-105625-32    	       7	 148877874 ns/op	   60313 B/op	     662 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-106276
+BenchmarkNewKeyPair/NewKeyPair-106276-32    	       6	 169784173 ns/op	   60488 B/op	     664 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-106929
+BenchmarkNewKeyPair/NewKeyPair-106929-32    	       6	 172715164 ns/op	   60664 B/op	     666 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-107584
+BenchmarkNewKeyPair/NewKeyPair-107584-32    	       6	 171656878 ns/op	   60840 B/op	     668 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-108241
+BenchmarkNewKeyPair/NewKeyPair-108241-32    	       7	 150911116 ns/op	   61017 B/op	     670 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-108900
+BenchmarkNewKeyPair/NewKeyPair-108900-32    	       6	 171647955 ns/op	   61192 B/op	     672 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-109561
+BenchmarkNewKeyPair/NewKeyPair-109561-32    	       6	 172684850 ns/op	   61368 B/op	     674 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-110224
+BenchmarkNewKeyPair/NewKeyPair-110224-32    	       6	 173083084 ns/op	   61544 B/op	     676 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-110889
+BenchmarkNewKeyPair/NewKeyPair-110889-32    	       6	 173898899 ns/op	   61720 B/op	     678 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-111556
+BenchmarkNewKeyPair/NewKeyPair-111556-32    	       7	 163982203 ns/op	   61897 B/op	     680 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-112225
+BenchmarkNewKeyPair/NewKeyPair-112225-32    	       6	 175793172 ns/op	   62072 B/op	     682 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-112896
+BenchmarkNewKeyPair/NewKeyPair-112896-32    	       6	 177226640 ns/op	   62632 B/op	     684 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-113569
+BenchmarkNewKeyPair/NewKeyPair-113569-32    	       7	 153868667 ns/op	   62809 B/op	     686 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-114244
+BenchmarkNewKeyPair/NewKeyPair-114244-32    	       6	 177402062 ns/op	   62984 B/op	     688 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-114921
+BenchmarkNewKeyPair/NewKeyPair-114921-32    	       7	 155861369 ns/op	   63161 B/op	     690 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-115600
+BenchmarkNewKeyPair/NewKeyPair-115600-32    	       7	 155371985 ns/op	   63337 B/op	     692 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-116281
+BenchmarkNewKeyPair/NewKeyPair-116281-32    	       6	 175981174 ns/op	   63512 B/op	     694 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-116964
+BenchmarkNewKeyPair/NewKeyPair-116964-32    	       6	 177318519 ns/op	   63688 B/op	     696 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-117649
+BenchmarkNewKeyPair/NewKeyPair-117649-32    	       6	 171271932 ns/op	   63864 B/op	     698 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-118336
+BenchmarkNewKeyPair/NewKeyPair-118336-32    	       6	 181626121 ns/op	   64040 B/op	     700 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-119025
+BenchmarkNewKeyPair/NewKeyPair-119025-32    	       6	 168527568 ns/op	   64216 B/op	     702 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-119716
+BenchmarkNewKeyPair/NewKeyPair-119716-32    	       6	 177065337 ns/op	   64392 B/op	     704 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-120409
+BenchmarkNewKeyPair/NewKeyPair-120409-32    	       7	 163791217 ns/op	   64569 B/op	     706 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-121104
+BenchmarkNewKeyPair/NewKeyPair-121104-32    	       6	 177132688 ns/op	   64744 B/op	     708 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-121801
+BenchmarkNewKeyPair/NewKeyPair-121801-32    	       6	 174236993 ns/op	   64920 B/op	     710 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-122500
+BenchmarkNewKeyPair/NewKeyPair-122500-32    	       6	 180731150 ns/op	   65096 B/op	     712 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-123201
+BenchmarkNewKeyPair/NewKeyPair-123201-32    	       6	 172098889 ns/op	   65272 B/op	     714 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-123904
+BenchmarkNewKeyPair/NewKeyPair-123904-32    	       6	 180688200 ns/op	   65448 B/op	     716 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-124609
+BenchmarkNewKeyPair/NewKeyPair-124609-32    	       6	 183761153 ns/op	   65624 B/op	     718 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-125316
+BenchmarkNewKeyPair/NewKeyPair-125316-32    	       6	 170554099 ns/op	   65800 B/op	     720 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-126025
+BenchmarkNewKeyPair/NewKeyPair-126025-32    	       6	 185916174 ns/op	   65976 B/op	     722 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-126736
+BenchmarkNewKeyPair/NewKeyPair-126736-32    	       7	 161396168 ns/op	   66153 B/op	     724 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-127449
+BenchmarkNewKeyPair/NewKeyPair-127449-32    	       6	 183483928 ns/op	   66330 B/op	     726 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-128164
+BenchmarkNewKeyPair/NewKeyPair-128164-32    	       6	 180713236 ns/op	   66504 B/op	     728 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-128881
+BenchmarkNewKeyPair/NewKeyPair-128881-32    	       6	 174334504 ns/op	   66680 B/op	     730 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-129600
+BenchmarkNewKeyPair/NewKeyPair-129600-32    	       6	 178002552 ns/op	   66856 B/op	     732 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-130321
+BenchmarkNewKeyPair/NewKeyPair-130321-32    	       6	 185930562 ns/op	   67032 B/op	     734 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-131044
+BenchmarkNewKeyPair/NewKeyPair-131044-32    	       6	 186811142 ns/op	   67208 B/op	     736 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-131769
+BenchmarkNewKeyPair/NewKeyPair-131769-32    	       6	 177247038 ns/op	   67384 B/op	     738 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-132496
+BenchmarkNewKeyPair/NewKeyPair-132496-32    	       7	 165105873 ns/op	   67561 B/op	     740 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-133225
+BenchmarkNewKeyPair/NewKeyPair-133225-32    	       6	 189944110 ns/op	   67736 B/op	     742 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-133956
+BenchmarkNewKeyPair/NewKeyPair-133956-32    	       6	 168076485 ns/op	   67912 B/op	     744 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-134689
+BenchmarkNewKeyPair/NewKeyPair-134689-32    	       6	 185878995 ns/op	   68088 B/op	     746 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-135424
+BenchmarkNewKeyPair/NewKeyPair-135424-32    	       6	 180857922 ns/op	   68264 B/op	     748 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-136161
+BenchmarkNewKeyPair/NewKeyPair-136161-32    	       6	 169448133 ns/op	   68440 B/op	     750 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-136900
+BenchmarkNewKeyPair/NewKeyPair-136900-32    	       6	 169370079 ns/op	   68616 B/op	     752 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-137641
+BenchmarkNewKeyPair/NewKeyPair-137641-32    	       6	 180887440 ns/op	   68792 B/op	     754 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-138384
+BenchmarkNewKeyPair/NewKeyPair-138384-32    	       6	 168841256 ns/op	   68968 B/op	     756 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-139129
+BenchmarkNewKeyPair/NewKeyPair-139129-32    	       6	 178246309 ns/op	   69144 B/op	     758 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-139876
+BenchmarkNewKeyPair/NewKeyPair-139876-32    	       7	 165778894 ns/op	   69321 B/op	     760 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-140625
+BenchmarkNewKeyPair/NewKeyPair-140625-32    	       6	 190993140 ns/op	   69496 B/op	     762 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-141376
+BenchmarkNewKeyPair/NewKeyPair-141376-32    	       6	 190622492 ns/op	   69672 B/op	     764 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-142129
+BenchmarkNewKeyPair/NewKeyPair-142129-32    	       6	 173424208 ns/op	   69848 B/op	     766 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-142884
+BenchmarkNewKeyPair/NewKeyPair-142884-32    	       6	 185625144 ns/op	   70024 B/op	     768 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-143641
+BenchmarkNewKeyPair/NewKeyPair-143641-32    	       6	 189994855 ns/op	   70200 B/op	     770 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-144400
+BenchmarkNewKeyPair/NewKeyPair-144400-32    	       6	 192551362 ns/op	   70376 B/op	     772 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-145161
+BenchmarkNewKeyPair/NewKeyPair-145161-32    	       6	 195348704 ns/op	   70552 B/op	     774 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-145924
+BenchmarkNewKeyPair/NewKeyPair-145924-32    	       6	 190559163 ns/op	   70728 B/op	     776 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-146689
+BenchmarkNewKeyPair/NewKeyPair-146689-32    	       6	 172324117 ns/op	   70904 B/op	     778 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-147456
+BenchmarkNewKeyPair/NewKeyPair-147456-32    	       6	 190833503 ns/op	   71208 B/op	     780 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-148225
+BenchmarkNewKeyPair/NewKeyPair-148225-32    	       5	 200348288 ns/op	   71385 B/op	     782 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-148996
+BenchmarkNewKeyPair/NewKeyPair-148996-32    	       5	 200718172 ns/op	   71561 B/op	     784 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-149769
+BenchmarkNewKeyPair/NewKeyPair-149769-32    	       5	 202105945 ns/op	   71737 B/op	     786 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-150544
+BenchmarkNewKeyPair/NewKeyPair-150544-32    	       6	 175485624 ns/op	   71912 B/op	     788 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-151321
+BenchmarkNewKeyPair/NewKeyPair-151321-32    	       5	 206549456 ns/op	   72089 B/op	     790 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-152100
+BenchmarkNewKeyPair/NewKeyPair-152100-32    	       5	 201906217 ns/op	   72265 B/op	     792 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-152881
+BenchmarkNewKeyPair/NewKeyPair-152881-32    	       5	 201460502 ns/op	   72441 B/op	     794 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-153664
+BenchmarkNewKeyPair/NewKeyPair-153664-32    	       6	 176206038 ns/op	   72616 B/op	     796 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-154449
+BenchmarkNewKeyPair/NewKeyPair-154449-32    	       5	 207980963 ns/op	   72793 B/op	     798 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-155236
+BenchmarkNewKeyPair/NewKeyPair-155236-32    	       5	 207609853 ns/op	   72969 B/op	     800 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-156025
+BenchmarkNewKeyPair/NewKeyPair-156025-32    	       5	 204551328 ns/op	   73145 B/op	     802 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-156816
+BenchmarkNewKeyPair/NewKeyPair-156816-32    	       5	 205104715 ns/op	   73321 B/op	     804 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-157609
+BenchmarkNewKeyPair/NewKeyPair-157609-32    	       5	 208153537 ns/op	   73497 B/op	     806 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-158404
+BenchmarkNewKeyPair/NewKeyPair-158404-32    	       5	 208439557 ns/op	   73673 B/op	     808 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-159201
+BenchmarkNewKeyPair/NewKeyPair-159201-32    	       5	 207534736 ns/op	   73849 B/op	     810 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-160000
+BenchmarkNewKeyPair/NewKeyPair-160000-32    	       6	 179169193 ns/op	   74280 B/op	     812 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-160801
+BenchmarkNewKeyPair/NewKeyPair-160801-32    	       5	 207736355 ns/op	   74457 B/op	     814 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-161604
+BenchmarkNewKeyPair/NewKeyPair-161604-32    	       6	 196049725 ns/op	   74632 B/op	     816 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-162409
+BenchmarkNewKeyPair/NewKeyPair-162409-32    	       5	 209467664 ns/op	   74809 B/op	     818 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-163216
+BenchmarkNewKeyPair/NewKeyPair-163216-32    	       5	 207877222 ns/op	   74985 B/op	     820 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-164025
+BenchmarkNewKeyPair/NewKeyPair-164025-32    	       5	 213523491 ns/op	   75161 B/op	     822 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-164836
+BenchmarkNewKeyPair/NewKeyPair-164836-32    	       5	 205584139 ns/op	   75337 B/op	     824 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-165649
+BenchmarkNewKeyPair/NewKeyPair-165649-32    	       5	 205418753 ns/op	   75513 B/op	     826 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-166464
+BenchmarkNewKeyPair/NewKeyPair-166464-32    	       5	 201015384 ns/op	   75689 B/op	     828 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-167281
+BenchmarkNewKeyPair/NewKeyPair-167281-32    	       5	 210599879 ns/op	   75865 B/op	     830 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-168100
+BenchmarkNewKeyPair/NewKeyPair-168100-32    	       5	 212023968 ns/op	   76041 B/op	     832 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-168921
+BenchmarkNewKeyPair/NewKeyPair-168921-32    	       5	 212909590 ns/op	   76217 B/op	     834 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-169744
+BenchmarkNewKeyPair/NewKeyPair-169744-32    	       5	 211127329 ns/op	   76393 B/op	     836 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-170569
+BenchmarkNewKeyPair/NewKeyPair-170569-32    	       5	 213167873 ns/op	   76569 B/op	     838 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-171396
+BenchmarkNewKeyPair/NewKeyPair-171396-32    	       5	 211430289 ns/op	   76745 B/op	     840 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-172225
+BenchmarkNewKeyPair/NewKeyPair-172225-32    	       5	 214145999 ns/op	   76921 B/op	     842 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-173056
+BenchmarkNewKeyPair/NewKeyPair-173056-32    	       5	 213186987 ns/op	   77097 B/op	     844 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-173889
+BenchmarkNewKeyPair/NewKeyPair-173889-32    	       5	 204917924 ns/op	   77273 B/op	     846 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-174724
+BenchmarkNewKeyPair/NewKeyPair-174724-32    	       6	 185967669 ns/op	   77448 B/op	     848 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-175561
+BenchmarkNewKeyPair/NewKeyPair-175561-32    	       5	 219907639 ns/op	   77625 B/op	     850 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-176400
+BenchmarkNewKeyPair/NewKeyPair-176400-32    	       5	 215652579 ns/op	   77801 B/op	     852 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-177241
+BenchmarkNewKeyPair/NewKeyPair-177241-32    	       5	 220481127 ns/op	   77977 B/op	     854 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-178084
+BenchmarkNewKeyPair/NewKeyPair-178084-32    	       6	 191850341 ns/op	   78152 B/op	     856 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-178929
+BenchmarkNewKeyPair/NewKeyPair-178929-32    	       5	 216812232 ns/op	   78329 B/op	     858 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-179776
+BenchmarkNewKeyPair/NewKeyPair-179776-32    	       5	 215371285 ns/op	   78505 B/op	     860 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-180625
+BenchmarkNewKeyPair/NewKeyPair-180625-32    	       5	 214256439 ns/op	   78681 B/op	     862 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-181476
+BenchmarkNewKeyPair/NewKeyPair-181476-32    	       5	 200117752 ns/op	   78857 B/op	     864 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-182329
+BenchmarkNewKeyPair/NewKeyPair-182329-32    	       5	 217437329 ns/op	   79033 B/op	     866 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-183184
+BenchmarkNewKeyPair/NewKeyPair-183184-32    	       6	 192259558 ns/op	   79208 B/op	     868 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-184041
+BenchmarkNewKeyPair/NewKeyPair-184041-32    	       5	 219519399 ns/op	   79385 B/op	     870 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-184900
+BenchmarkNewKeyPair/NewKeyPair-184900-32    	       5	 214235707 ns/op	   79561 B/op	     872 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-185761
+BenchmarkNewKeyPair/NewKeyPair-185761-32    	       5	 201631944 ns/op	   79737 B/op	     874 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-186624
+BenchmarkNewKeyPair/NewKeyPair-186624-32    	       6	 195040347 ns/op	   80552 B/op	     876 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-187489
+BenchmarkNewKeyPair/NewKeyPair-187489-32    	       5	 221515359 ns/op	   80729 B/op	     878 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-188356
+BenchmarkNewKeyPair/NewKeyPair-188356-32    	       5	 214746076 ns/op	   80905 B/op	     880 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-189225
+BenchmarkNewKeyPair/NewKeyPair-189225-32    	       5	 223861405 ns/op	   81081 B/op	     882 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-190096
+BenchmarkNewKeyPair/NewKeyPair-190096-32    	       5	 216280752 ns/op	   81257 B/op	     884 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-190969
+BenchmarkNewKeyPair/NewKeyPair-190969-32    	       5	 219694450 ns/op	   81433 B/op	     886 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-191844
+BenchmarkNewKeyPair/NewKeyPair-191844-32    	       4	 250212190 ns/op	   81608 B/op	     888 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-192721
+BenchmarkNewKeyPair/NewKeyPair-192721-32    	       5	 221822353 ns/op	   81785 B/op	     890 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-193600
+BenchmarkNewKeyPair/NewKeyPair-193600-32    	       5	 228061786 ns/op	   81961 B/op	     892 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-194481
+BenchmarkNewKeyPair/NewKeyPair-194481-32    	       5	 227827531 ns/op	   82137 B/op	     894 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-195364
+BenchmarkNewKeyPair/NewKeyPair-195364-32    	       5	 225779269 ns/op	   82313 B/op	     896 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-196249
+BenchmarkNewKeyPair/NewKeyPair-196249-32    	       5	 229480475 ns/op	   82489 B/op	     898 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-197136
+BenchmarkNewKeyPair/NewKeyPair-197136-32    	       5	 232134918 ns/op	   82665 B/op	     900 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-198025
+BenchmarkNewKeyPair/NewKeyPair-198025-32    	       5	 220001556 ns/op	   82841 B/op	     902 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-198916
+BenchmarkNewKeyPair/NewKeyPair-198916-32    	       5	 229416850 ns/op	   83017 B/op	     904 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-199809
+BenchmarkNewKeyPair/NewKeyPair-199809-32    	       5	 203770088 ns/op	   83193 B/op	     906 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-200704
+BenchmarkNewKeyPair/NewKeyPair-200704-32    	       6	 199874931 ns/op	   83368 B/op	     908 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-201601
+BenchmarkNewKeyPair/NewKeyPair-201601-32    	       5	 208131487 ns/op	   83545 B/op	     910 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-202500
+BenchmarkNewKeyPair/NewKeyPair-202500-32    	       5	 226163380 ns/op	   83721 B/op	     912 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-203401
+BenchmarkNewKeyPair/NewKeyPair-203401-32    	       6	 197023422 ns/op	   83896 B/op	     914 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-204304
+BenchmarkNewKeyPair/NewKeyPair-204304-32    	       5	 227615170 ns/op	   84073 B/op	     916 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-205209
+BenchmarkNewKeyPair/NewKeyPair-205209-32    	       5	 205221982 ns/op	   84249 B/op	     918 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-206116
+BenchmarkNewKeyPair/NewKeyPair-206116-32    	       5	 232491813 ns/op	   84425 B/op	     920 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-207025
+BenchmarkNewKeyPair/NewKeyPair-207025-32    	       5	 228712302 ns/op	   84601 B/op	     922 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-207936
+BenchmarkNewKeyPair/NewKeyPair-207936-32    	       5	 230326262 ns/op	   84777 B/op	     924 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-208849
+BenchmarkNewKeyPair/NewKeyPair-208849-32    	       5	 230806710 ns/op	   84953 B/op	     926 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-209764
+BenchmarkNewKeyPair/NewKeyPair-209764-32    	       5	 222054609 ns/op	   85129 B/op	     928 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-210681
+BenchmarkNewKeyPair/NewKeyPair-210681-32    	       5	 224201984 ns/op	   85305 B/op	     930 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-211600
+BenchmarkNewKeyPair/NewKeyPair-211600-32    	       5	 231945492 ns/op	   85481 B/op	     932 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-212521
+BenchmarkNewKeyPair/NewKeyPair-212521-32    	       5	 234550358 ns/op	   85657 B/op	     934 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-213444
+BenchmarkNewKeyPair/NewKeyPair-213444-32    	       5	 213252303 ns/op	   85833 B/op	     936 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-214369
+BenchmarkNewKeyPair/NewKeyPair-214369-32    	       5	 222381973 ns/op	   86009 B/op	     938 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-215296
+BenchmarkNewKeyPair/NewKeyPair-215296-32    	       5	 228635429 ns/op	   86185 B/op	     940 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-216225
+BenchmarkNewKeyPair/NewKeyPair-216225-32    	       5	 206632130 ns/op	   86361 B/op	     942 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-217156
+BenchmarkNewKeyPair/NewKeyPair-217156-32    	       5	 234115265 ns/op	   86537 B/op	     944 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-218089
+BenchmarkNewKeyPair/NewKeyPair-218089-32    	       5	 204371317 ns/op	   86713 B/op	     946 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-219024
+BenchmarkNewKeyPair/NewKeyPair-219024-32    	       5	 206358307 ns/op	   86889 B/op	     948 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-219961
+BenchmarkNewKeyPair/NewKeyPair-219961-32    	       5	 204351341 ns/op	   87065 B/op	     950 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-220900
+BenchmarkNewKeyPair/NewKeyPair-220900-32    	       5	 237763674 ns/op	   87241 B/op	     952 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-221841
+BenchmarkNewKeyPair/NewKeyPair-221841-32    	       5	 235083915 ns/op	   87417 B/op	     954 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-222784
+BenchmarkNewKeyPair/NewKeyPair-222784-32    	       5	 244553451 ns/op	   87593 B/op	     956 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-223729
+BenchmarkNewKeyPair/NewKeyPair-223729-32    	       5	 240789822 ns/op	   87769 B/op	     958 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-224676
+BenchmarkNewKeyPair/NewKeyPair-224676-32    	       4	 254719404 ns/op	   87944 B/op	     960 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-225625
+BenchmarkNewKeyPair/NewKeyPair-225625-32    	       5	 238789130 ns/op	   88121 B/op	     962 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-226576
+BenchmarkNewKeyPair/NewKeyPair-226576-32    	       5	 236231358 ns/op	   88297 B/op	     964 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-227529
+BenchmarkNewKeyPair/NewKeyPair-227529-32    	       5	 241492471 ns/op	   88473 B/op	     966 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-228484
+BenchmarkNewKeyPair/NewKeyPair-228484-32    	       5	 236043694 ns/op	   88649 B/op	     968 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-229441
+BenchmarkNewKeyPair/NewKeyPair-229441-32    	       5	 223021260 ns/op	   88825 B/op	     970 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-230400
+BenchmarkNewKeyPair/NewKeyPair-230400-32    	       4	 253092172 ns/op	   89000 B/op	     972 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-231361
+BenchmarkNewKeyPair/NewKeyPair-231361-32    	       4	 250820531 ns/op	   89176 B/op	     974 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-232324
+BenchmarkNewKeyPair/NewKeyPair-232324-32    	       5	 244339776 ns/op	   89353 B/op	     976 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-233289
+BenchmarkNewKeyPair/NewKeyPair-233289-32    	       4	 252804336 ns/op	   89528 B/op	     978 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-234256
+BenchmarkNewKeyPair/NewKeyPair-234256-32    	       4	 253985682 ns/op	   89704 B/op	     980 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-235225
+BenchmarkNewKeyPair/NewKeyPair-235225-32    	       5	 223314264 ns/op	   89881 B/op	     982 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-236196
+BenchmarkNewKeyPair/NewKeyPair-236196-32    	       4	 250875669 ns/op	   90056 B/op	     984 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-237169
+BenchmarkNewKeyPair/NewKeyPair-237169-32    	       4	 252453508 ns/op	   90232 B/op	     986 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-238144
+BenchmarkNewKeyPair/NewKeyPair-238144-32    	       5	 225222072 ns/op	   90409 B/op	     988 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-239121
+BenchmarkNewKeyPair/NewKeyPair-239121-32    	       4	 256568528 ns/op	   90584 B/op	     990 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-240100
+BenchmarkNewKeyPair/NewKeyPair-240100-32    	       4	 261684804 ns/op	   90764 B/op	     992 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-241081
+BenchmarkNewKeyPair/NewKeyPair-241081-32    	       4	 253868273 ns/op	   90936 B/op	     994 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-242064
+BenchmarkNewKeyPair/NewKeyPair-242064-32    	       5	 224339037 ns/op	   91113 B/op	     996 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-243049
+BenchmarkNewKeyPair/NewKeyPair-243049-32    	       4	 255980725 ns/op	   91288 B/op	     998 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-244036
+BenchmarkNewKeyPair/NewKeyPair-244036-32    	       4	 256460125 ns/op	   91464 B/op	    1000 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-245025
+BenchmarkNewKeyPair/NewKeyPair-245025-32    	       5	 226830300 ns/op	   91641 B/op	    1002 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-246016
+BenchmarkNewKeyPair/NewKeyPair-246016-32    	       5	 221244413 ns/op	   91817 B/op	    1004 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-247009
+BenchmarkNewKeyPair/NewKeyPair-247009-32    	       5	 228939386 ns/op	   91993 B/op	    1006 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-248004
+BenchmarkNewKeyPair/NewKeyPair-248004-32    	       4	 260038740 ns/op	   92168 B/op	    1008 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-249001
+BenchmarkNewKeyPair/NewKeyPair-249001-32    	       5	 240344637 ns/op	   92345 B/op	    1010 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-250000
+BenchmarkNewKeyPair/NewKeyPair-250000-32    	       4	 259082334 ns/op	   92520 B/op	    1012 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-251001
+BenchmarkNewKeyPair/NewKeyPair-251001-32    	       4	 257345838 ns/op	   92696 B/op	    1014 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-252004
+BenchmarkNewKeyPair/NewKeyPair-252004-32    	       4	 252849963 ns/op	   92872 B/op	    1016 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-253009
+BenchmarkNewKeyPair/NewKeyPair-253009-32    	       4	 258029936 ns/op	   93048 B/op	    1018 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-254016
+BenchmarkNewKeyPair/NewKeyPair-254016-32    	       5	 229669596 ns/op	   93225 B/op	    1020 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-255025
+BenchmarkNewKeyPair/NewKeyPair-255025-32    	       5	 222427472 ns/op	   93401 B/op	    1022 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-256036
+BenchmarkNewKeyPair/NewKeyPair-256036-32    	       4	 260326617 ns/op	   93576 B/op	    1024 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-257049
+BenchmarkNewKeyPair/NewKeyPair-257049-32    	       4	 254589956 ns/op	   93752 B/op	    1026 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-258064
+BenchmarkNewKeyPair/NewKeyPair-258064-32    	       4	 259682402 ns/op	   93928 B/op	    1028 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-259081
+BenchmarkNewKeyPair/NewKeyPair-259081-32    	       5	 229402604 ns/op	   94105 B/op	    1030 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-260100
+BenchmarkNewKeyPair/NewKeyPair-260100-32    	       4	 261592936 ns/op	   94280 B/op	    1032 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-261121
+BenchmarkNewKeyPair/NewKeyPair-261121-32    	       5	 229291533 ns/op	   94457 B/op	    1034 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-262144
+BenchmarkNewKeyPair/NewKeyPair-262144-32    	       5	 228687457 ns/op	   95401 B/op	    1036 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-263169
+BenchmarkNewKeyPair/NewKeyPair-263169-32    	       4	 252696047 ns/op	   95576 B/op	    1038 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-264196
+BenchmarkNewKeyPair/NewKeyPair-264196-32    	       4	 266816413 ns/op	   95752 B/op	    1040 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-265225
+BenchmarkNewKeyPair/NewKeyPair-265225-32    	       4	 263325309 ns/op	   95928 B/op	    1042 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-266256
+BenchmarkNewKeyPair/NewKeyPair-266256-32    	       4	 266620934 ns/op	   96104 B/op	    1044 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-267289
+BenchmarkNewKeyPair/NewKeyPair-267289-32    	       4	 267430966 ns/op	   96280 B/op	    1046 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-268324
+BenchmarkNewKeyPair/NewKeyPair-268324-32    	       4	 264913151 ns/op	   96456 B/op	    1048 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-269361
+BenchmarkNewKeyPair/NewKeyPair-269361-32    	       5	 232469660 ns/op	   96633 B/op	    1050 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-270400
+BenchmarkNewKeyPair/NewKeyPair-270400-32    	       4	 269641328 ns/op	   96808 B/op	    1052 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-271441
+BenchmarkNewKeyPair/NewKeyPair-271441-32    	       5	 237692708 ns/op	   96985 B/op	    1054 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-272484
+BenchmarkNewKeyPair/NewKeyPair-272484-32    	       4	 267257647 ns/op	   97160 B/op	    1056 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-273529
+BenchmarkNewKeyPair/NewKeyPair-273529-32    	       4	 271509485 ns/op	   97336 B/op	    1058 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-274576
+BenchmarkNewKeyPair/NewKeyPair-274576-32    	       4	 271293488 ns/op	   97512 B/op	    1060 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-275625
+BenchmarkNewKeyPair/NewKeyPair-275625-32    	       4	 271787596 ns/op	   97688 B/op	    1062 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-276676
+BenchmarkNewKeyPair/NewKeyPair-276676-32    	       4	 274181110 ns/op	   97864 B/op	    1064 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-277729
+BenchmarkNewKeyPair/NewKeyPair-277729-32    	       4	 258017955 ns/op	   98040 B/op	    1066 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-278784
+BenchmarkNewKeyPair/NewKeyPair-278784-32    	       5	 232604742 ns/op	   98217 B/op	    1068 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-279841
+BenchmarkNewKeyPair/NewKeyPair-279841-32    	       4	 272731473 ns/op	   98392 B/op	    1070 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-280900
+BenchmarkNewKeyPair/NewKeyPair-280900-32    	       5	 234658157 ns/op	   98569 B/op	    1072 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-281961
+BenchmarkNewKeyPair/NewKeyPair-281961-32    	       5	 237031836 ns/op	   98745 B/op	    1074 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-283024
+BenchmarkNewKeyPair/NewKeyPair-283024-32    	       4	 271299517 ns/op	   98920 B/op	    1076 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-284089
+BenchmarkNewKeyPair/NewKeyPair-284089-32    	       4	 270065490 ns/op	   99096 B/op	    1078 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-285156
+BenchmarkNewKeyPair/NewKeyPair-285156-32    	       4	 273423695 ns/op	   99272 B/op	    1080 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-286225
+BenchmarkNewKeyPair/NewKeyPair-286225-32    	       5	 239399467 ns/op	   99449 B/op	    1082 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-287296
+BenchmarkNewKeyPair/NewKeyPair-287296-32    	       4	 254893725 ns/op	   99624 B/op	    1084 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-288369
+BenchmarkNewKeyPair/NewKeyPair-288369-32    	       4	 273843901 ns/op	   99800 B/op	    1086 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-289444
+BenchmarkNewKeyPair/NewKeyPair-289444-32    	       4	 276640694 ns/op	   99976 B/op	    1088 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-290521
+BenchmarkNewKeyPair/NewKeyPair-290521-32    	       4	 272371016 ns/op	  100152 B/op	    1090 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-291600
+BenchmarkNewKeyPair/NewKeyPair-291600-32    	       5	 239500585 ns/op	  100329 B/op	    1092 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-292681
+BenchmarkNewKeyPair/NewKeyPair-292681-32    	       4	 275093802 ns/op	  100504 B/op	    1094 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-293764
+BenchmarkNewKeyPair/NewKeyPair-293764-32    	       5	 241966210 ns/op	  100681 B/op	    1096 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-294849
+BenchmarkNewKeyPair/NewKeyPair-294849-32    	       4	 276621606 ns/op	  100856 B/op	    1098 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-295936
+BenchmarkNewKeyPair/NewKeyPair-295936-32    	       4	 280306677 ns/op	  101032 B/op	    1100 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-297025
+BenchmarkNewKeyPair/NewKeyPair-297025-32    	       4	 277690492 ns/op	  101208 B/op	    1102 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-298116
+BenchmarkNewKeyPair/NewKeyPair-298116-32    	       4	 285012896 ns/op	  101384 B/op	    1104 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-299209
+BenchmarkNewKeyPair/NewKeyPair-299209-32    	       5	 244372578 ns/op	  101561 B/op	    1106 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-300304
+BenchmarkNewKeyPair/NewKeyPair-300304-32    	       4	 283948514 ns/op	  101736 B/op	    1108 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-301401
+BenchmarkNewKeyPair/NewKeyPair-301401-32    	       4	 250663234 ns/op	  101912 B/op	    1110 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-302500
+BenchmarkNewKeyPair/NewKeyPair-302500-32    	       4	 267405169 ns/op	  102088 B/op	    1112 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-303601
+BenchmarkNewKeyPair/NewKeyPair-303601-32    	       4	 282701298 ns/op	  102264 B/op	    1114 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-304704
+BenchmarkNewKeyPair/NewKeyPair-304704-32    	       5	 244101534 ns/op	  102441 B/op	    1116 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-305809
+BenchmarkNewKeyPair/NewKeyPair-305809-32    	       4	 283635384 ns/op	  102616 B/op	    1118 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-306916
+BenchmarkNewKeyPair/NewKeyPair-306916-32    	       4	 282490157 ns/op	  102792 B/op	    1120 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-308025
+BenchmarkNewKeyPair/NewKeyPair-308025-32    	       4	 273485610 ns/op	  102968 B/op	    1122 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-309136
+BenchmarkNewKeyPair/NewKeyPair-309136-32    	       4	 273795265 ns/op	  103144 B/op	    1124 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-310249
+BenchmarkNewKeyPair/NewKeyPair-310249-32    	       4	 266860654 ns/op	  103320 B/op	    1126 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-311364
+BenchmarkNewKeyPair/NewKeyPair-311364-32    	       4	 274592793 ns/op	  103496 B/op	    1128 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-312481
+BenchmarkNewKeyPair/NewKeyPair-312481-32    	       4	 284171435 ns/op	  103672 B/op	    1130 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-313600
+BenchmarkNewKeyPair/NewKeyPair-313600-32    	       5	 247270023 ns/op	  103849 B/op	    1132 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-314721
+BenchmarkNewKeyPair/NewKeyPair-314721-32    	       5	 249051941 ns/op	  104025 B/op	    1134 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-315844
+BenchmarkNewKeyPair/NewKeyPair-315844-32    	       4	 283649385 ns/op	  104200 B/op	    1136 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-316969
+BenchmarkNewKeyPair/NewKeyPair-316969-32    	       4	 279715248 ns/op	  104376 B/op	    1138 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-318096
+BenchmarkNewKeyPair/NewKeyPair-318096-32    	       4	 286386982 ns/op	  104552 B/op	    1140 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-319225
+BenchmarkNewKeyPair/NewKeyPair-319225-32    	       4	 256529379 ns/op	  104728 B/op	    1142 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-320356
+BenchmarkNewKeyPair/NewKeyPair-320356-32    	       4	 288506622 ns/op	  104904 B/op	    1144 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-321489
+BenchmarkNewKeyPair/NewKeyPair-321489-32    	       4	 291490303 ns/op	  105080 B/op	    1146 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-322624
+BenchmarkNewKeyPair/NewKeyPair-322624-32    	       4	 287035530 ns/op	  105256 B/op	    1148 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-323761
+BenchmarkNewKeyPair/NewKeyPair-323761-32    	       4	 258537217 ns/op	  105432 B/op	    1150 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-324900
+BenchmarkNewKeyPair/NewKeyPair-324900-32    	       4	 262442379 ns/op	  105608 B/op	    1152 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-326041
+BenchmarkNewKeyPair/NewKeyPair-326041-32    	       4	 295909883 ns/op	  105784 B/op	    1154 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-327184
+BenchmarkNewKeyPair/NewKeyPair-327184-32    	       4	 265337507 ns/op	  105960 B/op	    1156 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-328329
+BenchmarkNewKeyPair/NewKeyPair-328329-32    	       4	 288494878 ns/op	  106136 B/op	    1158 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-329476
+BenchmarkNewKeyPair/NewKeyPair-329476-32    	       4	 293228748 ns/op	  106312 B/op	    1160 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-330625
+BenchmarkNewKeyPair/NewKeyPair-330625-32    	       4	 253424108 ns/op	  106488 B/op	    1162 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-331776
+BenchmarkNewKeyPair/NewKeyPair-331776-32    	       4	 261457990 ns/op	  106664 B/op	    1164 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-332929
+BenchmarkNewKeyPair/NewKeyPair-332929-32    	       4	 294094646 ns/op	  106840 B/op	    1166 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-334084
+BenchmarkNewKeyPair/NewKeyPair-334084-32    	       4	 287006450 ns/op	  107016 B/op	    1168 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-335241
+BenchmarkNewKeyPair/NewKeyPair-335241-32    	       4	 269447571 ns/op	  107192 B/op	    1170 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-336400
+BenchmarkNewKeyPair/NewKeyPair-336400-32    	       4	 295112676 ns/op	  107368 B/op	    1172 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-337561
+BenchmarkNewKeyPair/NewKeyPair-337561-32    	       4	 259763947 ns/op	  107544 B/op	    1174 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-338724
+BenchmarkNewKeyPair/NewKeyPair-338724-32    	       4	 297243930 ns/op	  107720 B/op	    1176 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-339889
+BenchmarkNewKeyPair/NewKeyPair-339889-32    	       4	 258222199 ns/op	  107896 B/op	    1178 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-341056
+BenchmarkNewKeyPair/NewKeyPair-341056-32    	       4	 257584512 ns/op	  108072 B/op	    1180 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-342225
+BenchmarkNewKeyPair/NewKeyPair-342225-32    	       4	 300726228 ns/op	  108248 B/op	    1182 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-343396
+BenchmarkNewKeyPair/NewKeyPair-343396-32    	       4	 284826217 ns/op	  108424 B/op	    1184 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-344569
+BenchmarkNewKeyPair/NewKeyPair-344569-32    	       4	 295452104 ns/op	  108600 B/op	    1186 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-345744
+BenchmarkNewKeyPair/NewKeyPair-345744-32    	       4	 295504614 ns/op	  108776 B/op	    1188 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-346921
+BenchmarkNewKeyPair/NewKeyPair-346921-32    	       4	 287651821 ns/op	  108952 B/op	    1190 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-348100
+BenchmarkNewKeyPair/NewKeyPair-348100-32    	       4	 263786804 ns/op	  109128 B/op	    1192 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-349281
+BenchmarkNewKeyPair/NewKeyPair-349281-32    	       4	 299305878 ns/op	  109304 B/op	    1194 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-350464
+BenchmarkNewKeyPair/NewKeyPair-350464-32    	       4	 269385814 ns/op	  109480 B/op	    1196 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-351649
+BenchmarkNewKeyPair/NewKeyPair-351649-32    	       4	 266431325 ns/op	  109656 B/op	    1198 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-352836
+BenchmarkNewKeyPair/NewKeyPair-352836-32    	       3	 352968316 ns/op	  109834 B/op	    1200 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-354025
+BenchmarkNewKeyPair/NewKeyPair-354025-32    	       4	 288478043 ns/op	  110008 B/op	    1202 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-355216
+BenchmarkNewKeyPair/NewKeyPair-355216-32    	       4	 302373402 ns/op	  110184 B/op	    1204 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-356409
+BenchmarkNewKeyPair/NewKeyPair-356409-32    	       4	 291400831 ns/op	  110360 B/op	    1206 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-357604
+BenchmarkNewKeyPair/NewKeyPair-357604-32    	       4	 310199696 ns/op	  110536 B/op	    1208 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-358801
+BenchmarkNewKeyPair/NewKeyPair-358801-32    	       4	 305135914 ns/op	  110712 B/op	    1210 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-360000
+BenchmarkNewKeyPair/NewKeyPair-360000-32    	       4	 273067241 ns/op	  110888 B/op	    1212 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-361201
+BenchmarkNewKeyPair/NewKeyPair-361201-32    	       4	 292712980 ns/op	  111064 B/op	    1214 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-362404
+BenchmarkNewKeyPair/NewKeyPair-362404-32    	       4	 305864480 ns/op	  111240 B/op	    1216 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-363609
+BenchmarkNewKeyPair/NewKeyPair-363609-32    	       4	 309794685 ns/op	  111416 B/op	    1218 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-364816
+BenchmarkNewKeyPair/NewKeyPair-364816-32    	       4	 300071162 ns/op	  111592 B/op	    1220 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-366025
+BenchmarkNewKeyPair/NewKeyPair-366025-32    	       4	 290365890 ns/op	  111768 B/op	    1222 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-367236
+BenchmarkNewKeyPair/NewKeyPair-367236-32    	       4	 268264428 ns/op	  111944 B/op	    1224 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-368449
+BenchmarkNewKeyPair/NewKeyPair-368449-32    	       4	 286314902 ns/op	  112120 B/op	    1226 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-369664
+BenchmarkNewKeyPair/NewKeyPair-369664-32    	       4	 308305258 ns/op	  112808 B/op	    1228 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-370881
+BenchmarkNewKeyPair/NewKeyPair-370881-32    	       4	 306776772 ns/op	  112984 B/op	    1230 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-372100
+BenchmarkNewKeyPair/NewKeyPair-372100-32    	       4	 306059053 ns/op	  113160 B/op	    1232 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-373321
+BenchmarkNewKeyPair/NewKeyPair-373321-32    	       4	 300756470 ns/op	  113336 B/op	    1234 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-374544
+BenchmarkNewKeyPair/NewKeyPair-374544-32    	       4	 301112184 ns/op	  113512 B/op	    1236 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-375769
+BenchmarkNewKeyPair/NewKeyPair-375769-32    	       4	 304961254 ns/op	  113688 B/op	    1238 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-376996
+BenchmarkNewKeyPair/NewKeyPair-376996-32    	       4	 309026381 ns/op	  113864 B/op	    1240 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-378225
+BenchmarkNewKeyPair/NewKeyPair-378225-32    	       4	 308672141 ns/op	  114040 B/op	    1242 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-379456
+BenchmarkNewKeyPair/NewKeyPair-379456-32    	       4	 276206563 ns/op	  114216 B/op	    1244 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-380689
+BenchmarkNewKeyPair/NewKeyPair-380689-32    	       4	 281858107 ns/op	  114392 B/op	    1246 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-381924
+BenchmarkNewKeyPair/NewKeyPair-381924-32    	       4	 313167366 ns/op	  114568 B/op	    1248 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-383161
+BenchmarkNewKeyPair/NewKeyPair-383161-32    	       4	 312963986 ns/op	  114744 B/op	    1250 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-384400
+BenchmarkNewKeyPair/NewKeyPair-384400-32    	       4	 310407308 ns/op	  114920 B/op	    1252 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-385641
+BenchmarkNewKeyPair/NewKeyPair-385641-32    	       4	 278299263 ns/op	  115096 B/op	    1254 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-386884
+BenchmarkNewKeyPair/NewKeyPair-386884-32    	       4	 314554668 ns/op	  115272 B/op	    1256 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-388129
+BenchmarkNewKeyPair/NewKeyPair-388129-32    	       4	 312709197 ns/op	  115448 B/op	    1258 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-389376
+BenchmarkNewKeyPair/NewKeyPair-389376-32    	       4	 316499135 ns/op	  115624 B/op	    1260 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-390625
+BenchmarkNewKeyPair/NewKeyPair-390625-32    	       4	 317864169 ns/op	  115800 B/op	    1262 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-391876
+BenchmarkNewKeyPair/NewKeyPair-391876-32    	       4	 315657664 ns/op	  115976 B/op	    1264 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-393129
+BenchmarkNewKeyPair/NewKeyPair-393129-32    	       4	 279219928 ns/op	  116152 B/op	    1266 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-394384
+BenchmarkNewKeyPair/NewKeyPair-394384-32    	       4	 316828901 ns/op	  116328 B/op	    1268 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-395641
+BenchmarkNewKeyPair/NewKeyPair-395641-32    	       4	 315688873 ns/op	  116504 B/op	    1270 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-396900
+BenchmarkNewKeyPair/NewKeyPair-396900-32    	       4	 304826760 ns/op	  116680 B/op	    1272 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-398161
+BenchmarkNewKeyPair/NewKeyPair-398161-32    	       4	 305748484 ns/op	  116856 B/op	    1274 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-399424
+BenchmarkNewKeyPair/NewKeyPair-399424-32    	       4	 318025747 ns/op	  117032 B/op	    1276 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-400689
+BenchmarkNewKeyPair/NewKeyPair-400689-32    	       4	 279072299 ns/op	  117208 B/op	    1278 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-401956
+BenchmarkNewKeyPair/NewKeyPair-401956-32    	       4	 283835472 ns/op	  117384 B/op	    1280 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-403225
+BenchmarkNewKeyPair/NewKeyPair-403225-32    	       4	 289046865 ns/op	  117560 B/op	    1282 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-404496
+BenchmarkNewKeyPair/NewKeyPair-404496-32    	       4	 285146439 ns/op	  117736 B/op	    1284 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-405769
+BenchmarkNewKeyPair/NewKeyPair-405769-32    	       4	 289320641 ns/op	  117912 B/op	    1286 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-407044
+BenchmarkNewKeyPair/NewKeyPair-407044-32    	       3	 335416093 ns/op	  118090 B/op	    1288 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-408321
+BenchmarkNewKeyPair/NewKeyPair-408321-32    	       4	 290920304 ns/op	  118264 B/op	    1290 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-409600
+BenchmarkNewKeyPair/NewKeyPair-409600-32    	       3	 340046924 ns/op	  118442 B/op	    1292 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-410881
+BenchmarkNewKeyPair/NewKeyPair-410881-32    	       4	 285497675 ns/op	  118616 B/op	    1294 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-412164
+BenchmarkNewKeyPair/NewKeyPair-412164-32    	       4	 317438260 ns/op	  118792 B/op	    1296 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-413449
+BenchmarkNewKeyPair/NewKeyPair-413449-32    	       4	 295292794 ns/op	  118968 B/op	    1298 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-414736
+BenchmarkNewKeyPair/NewKeyPair-414736-32    	       4	 298351384 ns/op	  119144 B/op	    1300 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-416025
+BenchmarkNewKeyPair/NewKeyPair-416025-32    	       4	 323700216 ns/op	  119320 B/op	    1302 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-417316
+BenchmarkNewKeyPair/NewKeyPair-417316-32    	       4	 288560215 ns/op	  119496 B/op	    1304 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-418609
+BenchmarkNewKeyPair/NewKeyPair-418609-32    	       4	 284071694 ns/op	  119672 B/op	    1306 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-419904
+BenchmarkNewKeyPair/NewKeyPair-419904-32    	       3	 341911668 ns/op	  119850 B/op	    1308 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-421201
+BenchmarkNewKeyPair/NewKeyPair-421201-32    	       3	 338192771 ns/op	  120026 B/op	    1310 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-422500
+BenchmarkNewKeyPair/NewKeyPair-422500-32    	       4	 285531445 ns/op	  120200 B/op	    1312 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-423801
+BenchmarkNewKeyPair/NewKeyPair-423801-32    	       3	 334787606 ns/op	  120378 B/op	    1314 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-425104
+BenchmarkNewKeyPair/NewKeyPair-425104-32    	       3	 338945044 ns/op	  120554 B/op	    1316 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-426409
+BenchmarkNewKeyPair/NewKeyPair-426409-32    	       4	 315110581 ns/op	  120728 B/op	    1318 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-427716
+BenchmarkNewKeyPair/NewKeyPair-427716-32    	       3	 345744021 ns/op	  120906 B/op	    1320 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-429025
+BenchmarkNewKeyPair/NewKeyPair-429025-32    	       4	 291344295 ns/op	  121080 B/op	    1322 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-430336
+BenchmarkNewKeyPair/NewKeyPair-430336-32    	       4	 317303296 ns/op	  121256 B/op	    1324 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-431649
+BenchmarkNewKeyPair/NewKeyPair-431649-32    	       3	 338957937 ns/op	  121434 B/op	    1326 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-432964
+BenchmarkNewKeyPair/NewKeyPair-432964-32    	       3	 341487400 ns/op	  121610 B/op	    1328 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-434281
+BenchmarkNewKeyPair/NewKeyPair-434281-32    	       4	 297493100 ns/op	  121784 B/op	    1330 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-435600
+BenchmarkNewKeyPair/NewKeyPair-435600-32    	       4	 321293306 ns/op	  121960 B/op	    1332 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-436921
+BenchmarkNewKeyPair/NewKeyPair-436921-32    	       3	 348600959 ns/op	  122138 B/op	    1334 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-438244
+BenchmarkNewKeyPair/NewKeyPair-438244-32    	       4	 299535126 ns/op	  122312 B/op	    1336 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-439569
+BenchmarkNewKeyPair/NewKeyPair-439569-32    	       4	 319755445 ns/op	  122488 B/op	    1338 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-440896
+BenchmarkNewKeyPair/NewKeyPair-440896-32    	       4	 309203388 ns/op	  122664 B/op	    1340 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-442225
+BenchmarkNewKeyPair/NewKeyPair-442225-32    	       3	 348470589 ns/op	  122842 B/op	    1342 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-443556
+BenchmarkNewKeyPair/NewKeyPair-443556-32    	       3	 344652102 ns/op	  123018 B/op	    1344 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-444889
+BenchmarkNewKeyPair/NewKeyPair-444889-32    	       3	 346644555 ns/op	  123194 B/op	    1346 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-446224
+BenchmarkNewKeyPair/NewKeyPair-446224-32    	       3	 341376617 ns/op	  123370 B/op	    1348 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-447561
+BenchmarkNewKeyPair/NewKeyPair-447561-32    	       3	 340888652 ns/op	  123546 B/op	    1350 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-448900
+BenchmarkNewKeyPair/NewKeyPair-448900-32    	       4	 325648944 ns/op	  123720 B/op	    1352 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-450241
+BenchmarkNewKeyPair/NewKeyPair-450241-32    	       3	 347878242 ns/op	  123898 B/op	    1354 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-451584
+BenchmarkNewKeyPair/NewKeyPair-451584-32    	       3	 341772978 ns/op	  124842 B/op	    1356 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-452929
+BenchmarkNewKeyPair/NewKeyPair-452929-32    	       3	 345112729 ns/op	  125018 B/op	    1358 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-454276
+BenchmarkNewKeyPair/NewKeyPair-454276-32    	       3	 359008647 ns/op	  125194 B/op	    1360 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-455625
+BenchmarkNewKeyPair/NewKeyPair-455625-32    	       3	 342925237 ns/op	  125370 B/op	    1362 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-456976
+BenchmarkNewKeyPair/NewKeyPair-456976-32    	       3	 351816843 ns/op	  125546 B/op	    1364 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-458329
+BenchmarkNewKeyPair/NewKeyPair-458329-32    	       3	 352450273 ns/op	  125722 B/op	    1366 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-459684
+BenchmarkNewKeyPair/NewKeyPair-459684-32    	       3	 348078644 ns/op	  125898 B/op	    1368 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-461041
+BenchmarkNewKeyPair/NewKeyPair-461041-32    	       4	 303458796 ns/op	  126072 B/op	    1370 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-462400
+BenchmarkNewKeyPair/NewKeyPair-462400-32    	       3	 335577552 ns/op	  126250 B/op	    1372 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-463761
+BenchmarkNewKeyPair/NewKeyPair-463761-32    	       4	 306988442 ns/op	  126424 B/op	    1374 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-465124
+BenchmarkNewKeyPair/NewKeyPair-465124-32    	       3	 348381798 ns/op	  126602 B/op	    1376 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-466489
+BenchmarkNewKeyPair/NewKeyPair-466489-32    	       3	 353969835 ns/op	  126778 B/op	    1378 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-467856
+BenchmarkNewKeyPair/NewKeyPair-467856-32    	       3	 350850810 ns/op	  126954 B/op	    1380 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-469225
+BenchmarkNewKeyPair/NewKeyPair-469225-32    	       3	 345344685 ns/op	  127130 B/op	    1382 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-470596
+BenchmarkNewKeyPair/NewKeyPair-470596-32    	       3	 354610712 ns/op	  127306 B/op	    1384 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-471969
+BenchmarkNewKeyPair/NewKeyPair-471969-32    	       4	 314757171 ns/op	  127480 B/op	    1386 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-473344
+BenchmarkNewKeyPair/NewKeyPair-473344-32    	       4	 327867912 ns/op	  127656 B/op	    1388 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-474721
+BenchmarkNewKeyPair/NewKeyPair-474721-32    	       3	 356122319 ns/op	  127834 B/op	    1390 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-476100
+BenchmarkNewKeyPair/NewKeyPair-476100-32    	       4	 309941676 ns/op	  128008 B/op	    1392 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-477481
+BenchmarkNewKeyPair/NewKeyPair-477481-32    	       3	 352481562 ns/op	  128186 B/op	    1394 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-478864
+BenchmarkNewKeyPair/NewKeyPair-478864-32    	       3	 368713675 ns/op	  128362 B/op	    1396 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-480249
+BenchmarkNewKeyPair/NewKeyPair-480249-32    	       3	 364239904 ns/op	  128538 B/op	    1398 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-481636
+BenchmarkNewKeyPair/NewKeyPair-481636-32    	       4	 329130052 ns/op	  128712 B/op	    1400 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-483025
+BenchmarkNewKeyPair/NewKeyPair-483025-32    	       3	 369471788 ns/op	  128890 B/op	    1402 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-484416
+BenchmarkNewKeyPair/NewKeyPair-484416-32    	       3	 369584412 ns/op	  129066 B/op	    1404 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-485809
+BenchmarkNewKeyPair/NewKeyPair-485809-32    	       3	 363006658 ns/op	  129242 B/op	    1406 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-487204
+BenchmarkNewKeyPair/NewKeyPair-487204-32    	       3	 360633658 ns/op	  129418 B/op	    1408 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-488601
+BenchmarkNewKeyPair/NewKeyPair-488601-32    	       4	 309953754 ns/op	  129592 B/op	    1410 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-490000
+BenchmarkNewKeyPair/NewKeyPair-490000-32    	       3	 365136055 ns/op	  129770 B/op	    1412 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-491401
+BenchmarkNewKeyPair/NewKeyPair-491401-32    	       3	 366643935 ns/op	  129946 B/op	    1414 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-492804
+BenchmarkNewKeyPair/NewKeyPair-492804-32    	       3	 346351952 ns/op	  130122 B/op	    1416 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-494209
+BenchmarkNewKeyPair/NewKeyPair-494209-32    	       3	 343425147 ns/op	  130298 B/op	    1418 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-495616
+BenchmarkNewKeyPair/NewKeyPair-495616-32    	       3	 370803755 ns/op	  130474 B/op	    1420 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-497025
+BenchmarkNewKeyPair/NewKeyPair-497025-32    	       3	 363778679 ns/op	  130650 B/op	    1422 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-498436
+BenchmarkNewKeyPair/NewKeyPair-498436-32    	       4	 322453548 ns/op	  130824 B/op	    1424 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-499849
+BenchmarkNewKeyPair/NewKeyPair-499849-32    	       3	 367335773 ns/op	  131002 B/op	    1426 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-501264
+BenchmarkNewKeyPair/NewKeyPair-501264-32    	       3	 375500032 ns/op	  131178 B/op	    1428 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-502681
+BenchmarkNewKeyPair/NewKeyPair-502681-32    	       4	 321437783 ns/op	  131352 B/op	    1430 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-504100
+BenchmarkNewKeyPair/NewKeyPair-504100-32    	       3	 369260878 ns/op	  131530 B/op	    1432 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-505521
+BenchmarkNewKeyPair/NewKeyPair-505521-32    	       3	 371111886 ns/op	  131706 B/op	    1434 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-506944
+BenchmarkNewKeyPair/NewKeyPair-506944-32    	       3	 360834931 ns/op	  131882 B/op	    1436 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-508369
+BenchmarkNewKeyPair/NewKeyPair-508369-32    	       3	 368642247 ns/op	  132058 B/op	    1438 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-509796
+BenchmarkNewKeyPair/NewKeyPair-509796-32    	       3	 363645511 ns/op	  132234 B/op	    1440 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-511225
+BenchmarkNewKeyPair/NewKeyPair-511225-32    	       3	 364743902 ns/op	  132410 B/op	    1442 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-512656
+BenchmarkNewKeyPair/NewKeyPair-512656-32    	       3	 370931078 ns/op	  132586 B/op	    1444 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-514089
+BenchmarkNewKeyPair/NewKeyPair-514089-32    	       4	 323914696 ns/op	  132760 B/op	    1446 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-515524
+BenchmarkNewKeyPair/NewKeyPair-515524-32    	       3	 367751884 ns/op	  132938 B/op	    1448 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-516961
+BenchmarkNewKeyPair/NewKeyPair-516961-32    	       3	 371477410 ns/op	  133114 B/op	    1450 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-518400
+BenchmarkNewKeyPair/NewKeyPair-518400-32    	       3	 358769012 ns/op	  133290 B/op	    1452 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-519841
+BenchmarkNewKeyPair/NewKeyPair-519841-32    	       3	 357405443 ns/op	  133466 B/op	    1454 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-521284
+BenchmarkNewKeyPair/NewKeyPair-521284-32    	       3	 334455957 ns/op	  133642 B/op	    1456 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-522729
+BenchmarkNewKeyPair/NewKeyPair-522729-32    	       3	 355317824 ns/op	  133818 B/op	    1458 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-524176
+BenchmarkNewKeyPair/NewKeyPair-524176-32    	       3	 335302283 ns/op	  133994 B/op	    1460 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-525625
+BenchmarkNewKeyPair/NewKeyPair-525625-32    	       3	 377913657 ns/op	  134170 B/op	    1462 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-527076
+BenchmarkNewKeyPair/NewKeyPair-527076-32    	       3	 365031802 ns/op	  134346 B/op	    1464 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-528529
+BenchmarkNewKeyPair/NewKeyPair-528529-32    	       3	 376701464 ns/op	  134522 B/op	    1466 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-529984
+BenchmarkNewKeyPair/NewKeyPair-529984-32    	       3	 382418850 ns/op	  134698 B/op	    1468 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-531441
+BenchmarkNewKeyPair/NewKeyPair-531441-32    	       3	 377516472 ns/op	  134874 B/op	    1470 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-532900
+BenchmarkNewKeyPair/NewKeyPair-532900-32    	       4	 326844298 ns/op	  135048 B/op	    1472 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-534361
+BenchmarkNewKeyPair/NewKeyPair-534361-32    	       3	 374959833 ns/op	  135226 B/op	    1474 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-535824
+BenchmarkNewKeyPair/NewKeyPair-535824-32    	       3	 380009345 ns/op	  135402 B/op	    1476 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-537289
+BenchmarkNewKeyPair/NewKeyPair-537289-32    	       3	 378234527 ns/op	  135578 B/op	    1478 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-538756
+BenchmarkNewKeyPair/NewKeyPair-538756-32    	       3	 349540189 ns/op	  135754 B/op	    1480 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-540225
+BenchmarkNewKeyPair/NewKeyPair-540225-32    	       3	 334089041 ns/op	  135930 B/op	    1482 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-541696
+BenchmarkNewKeyPair/NewKeyPair-541696-32    	       3	 373137453 ns/op	  136106 B/op	    1484 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-543169
+BenchmarkNewKeyPair/NewKeyPair-543169-32    	       3	 373344627 ns/op	  136282 B/op	    1486 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-544644
+BenchmarkNewKeyPair/NewKeyPair-544644-32    	       3	 374528639 ns/op	  136458 B/op	    1488 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-546121
+BenchmarkNewKeyPair/NewKeyPair-546121-32    	       3	 374465758 ns/op	  136634 B/op	    1490 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-547600
+BenchmarkNewKeyPair/NewKeyPair-547600-32    	       4	 330773904 ns/op	  136808 B/op	    1492 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-549081
+BenchmarkNewKeyPair/NewKeyPair-549081-32    	       3	 348381259 ns/op	  136986 B/op	    1494 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-550564
+BenchmarkNewKeyPair/NewKeyPair-550564-32    	       3	 386241671 ns/op	  137162 B/op	    1496 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-552049
+BenchmarkNewKeyPair/NewKeyPair-552049-32    	       3	 334764069 ns/op	  137338 B/op	    1498 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-553536
+BenchmarkNewKeyPair/NewKeyPair-553536-32    	       3	 385821191 ns/op	  137514 B/op	    1500 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-555025
+BenchmarkNewKeyPair/NewKeyPair-555025-32    	       3	 377045468 ns/op	  137690 B/op	    1502 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-556516
+BenchmarkNewKeyPair/NewKeyPair-556516-32    	       3	 393503005 ns/op	  137866 B/op	    1504 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-558009
+BenchmarkNewKeyPair/NewKeyPair-558009-32    	       3	 380907076 ns/op	  138042 B/op	    1506 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-559504
+BenchmarkNewKeyPair/NewKeyPair-559504-32    	       3	 378417453 ns/op	  138218 B/op	    1508 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-561001
+BenchmarkNewKeyPair/NewKeyPair-561001-32    	       3	 384086834 ns/op	  138394 B/op	    1510 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-562500
+BenchmarkNewKeyPair/NewKeyPair-562500-32    	       3	 391327629 ns/op	  138570 B/op	    1512 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-564001
+BenchmarkNewKeyPair/NewKeyPair-564001-32    	       3	 386743144 ns/op	  138746 B/op	    1514 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-565504
+BenchmarkNewKeyPair/NewKeyPair-565504-32    	       3	 372624064 ns/op	  138922 B/op	    1516 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-567009
+BenchmarkNewKeyPair/NewKeyPair-567009-32    	       3	 384836095 ns/op	  139098 B/op	    1518 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-568516
+BenchmarkNewKeyPair/NewKeyPair-568516-32    	       3	 382915489 ns/op	  139274 B/op	    1520 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-570025
+BenchmarkNewKeyPair/NewKeyPair-570025-32    	       3	 353759911 ns/op	  139450 B/op	    1522 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-571536
+BenchmarkNewKeyPair/NewKeyPair-571536-32    	       3	 395503116 ns/op	  139626 B/op	    1524 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-573049
+BenchmarkNewKeyPair/NewKeyPair-573049-32    	       3	 381111280 ns/op	  139802 B/op	    1526 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-574564
+BenchmarkNewKeyPair/NewKeyPair-574564-32    	       3	 377466372 ns/op	  139978 B/op	    1528 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-576081
+BenchmarkNewKeyPair/NewKeyPair-576081-32    	       3	 349104650 ns/op	  140154 B/op	    1530 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-577600
+BenchmarkNewKeyPair/NewKeyPair-577600-32    	       3	 394492553 ns/op	  140330 B/op	    1532 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-579121
+BenchmarkNewKeyPair/NewKeyPair-579121-32    	       3	 388794269 ns/op	  140506 B/op	    1534 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-580644
+BenchmarkNewKeyPair/NewKeyPair-580644-32    	       4	 335878492 ns/op	  140680 B/op	    1536 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-582169
+BenchmarkNewKeyPair/NewKeyPair-582169-32    	       3	 381553910 ns/op	  140858 B/op	    1538 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-583696
+BenchmarkNewKeyPair/NewKeyPair-583696-32    	       3	 392441082 ns/op	  141034 B/op	    1540 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-585225
+BenchmarkNewKeyPair/NewKeyPair-585225-32    	       3	 344964735 ns/op	  141210 B/op	    1542 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-586756
+BenchmarkNewKeyPair/NewKeyPair-586756-32    	       3	 390688069 ns/op	  141386 B/op	    1544 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-588289
+BenchmarkNewKeyPair/NewKeyPair-588289-32    	       3	 389044430 ns/op	  141562 B/op	    1546 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-589824
+BenchmarkNewKeyPair/NewKeyPair-589824-32    	       3	 384743930 ns/op	  142122 B/op	    1548 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-591361
+BenchmarkNewKeyPair/NewKeyPair-591361-32    	       3	 370522799 ns/op	  142298 B/op	    1550 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-592900
+BenchmarkNewKeyPair/NewKeyPair-592900-32    	       3	 390570404 ns/op	  142474 B/op	    1552 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-594441
+BenchmarkNewKeyPair/NewKeyPair-594441-32    	       3	 393010455 ns/op	  142650 B/op	    1554 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-595984
+BenchmarkNewKeyPair/NewKeyPair-595984-32    	       3	 383941224 ns/op	  142826 B/op	    1556 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-597529
+BenchmarkNewKeyPair/NewKeyPair-597529-32    	       3	 392997230 ns/op	  143002 B/op	    1558 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-599076
+BenchmarkNewKeyPair/NewKeyPair-599076-32    	       3	 378197217 ns/op	  143178 B/op	    1560 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-600625
+BenchmarkNewKeyPair/NewKeyPair-600625-32    	       3	 345488482 ns/op	  143354 B/op	    1562 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-602176
+BenchmarkNewKeyPair/NewKeyPair-602176-32    	       3	 398866538 ns/op	  143530 B/op	    1564 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-603729
+BenchmarkNewKeyPair/NewKeyPair-603729-32    	       3	 379662667 ns/op	  143706 B/op	    1566 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-605284
+BenchmarkNewKeyPair/NewKeyPair-605284-32    	       3	 360569046 ns/op	  143882 B/op	    1568 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-606841
+BenchmarkNewKeyPair/NewKeyPair-606841-32    	       3	 396364762 ns/op	  144058 B/op	    1570 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-608400
+BenchmarkNewKeyPair/NewKeyPair-608400-32    	       3	 393321324 ns/op	  144234 B/op	    1572 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-609961
+BenchmarkNewKeyPair/NewKeyPair-609961-32    	       3	 398891612 ns/op	  144410 B/op	    1574 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-611524
+BenchmarkNewKeyPair/NewKeyPair-611524-32    	       3	 399489609 ns/op	  144586 B/op	    1576 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-613089
+BenchmarkNewKeyPair/NewKeyPair-613089-32    	       3	 361058925 ns/op	  144762 B/op	    1578 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-614656
+BenchmarkNewKeyPair/NewKeyPair-614656-32    	       3	 405770749 ns/op	  144938 B/op	    1580 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-616225
+BenchmarkNewKeyPair/NewKeyPair-616225-32    	       3	 397377568 ns/op	  145114 B/op	    1582 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-617796
+BenchmarkNewKeyPair/NewKeyPair-617796-32    	       3	 356886546 ns/op	  145290 B/op	    1584 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-619369
+BenchmarkNewKeyPair/NewKeyPair-619369-32    	       3	 392610815 ns/op	  145466 B/op	    1586 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-620944
+BenchmarkNewKeyPair/NewKeyPair-620944-32    	       3	 396622007 ns/op	  145642 B/op	    1588 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-622521
+BenchmarkNewKeyPair/NewKeyPair-622521-32    	       3	 393875519 ns/op	  145818 B/op	    1590 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-624100
+BenchmarkNewKeyPair/NewKeyPair-624100-32    	       3	 399612149 ns/op	  145994 B/op	    1592 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-625681
+BenchmarkNewKeyPair/NewKeyPair-625681-32    	       3	 394129586 ns/op	  146170 B/op	    1594 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-627264
+BenchmarkNewKeyPair/NewKeyPair-627264-32    	       3	 410324597 ns/op	  146346 B/op	    1596 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-628849
+BenchmarkNewKeyPair/NewKeyPair-628849-32    	       3	 382316748 ns/op	  146522 B/op	    1598 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-630436
+BenchmarkNewKeyPair/NewKeyPair-630436-32    	       3	 391507089 ns/op	  146698 B/op	    1600 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-632025
+BenchmarkNewKeyPair/NewKeyPair-632025-32    	       3	 397258200 ns/op	  146874 B/op	    1602 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-633616
+BenchmarkNewKeyPair/NewKeyPair-633616-32    	       3	 400837721 ns/op	  147050 B/op	    1604 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-635209
+BenchmarkNewKeyPair/NewKeyPair-635209-32    	       3	 356304805 ns/op	  147226 B/op	    1606 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-636804
+BenchmarkNewKeyPair/NewKeyPair-636804-32    	       3	 362957619 ns/op	  147402 B/op	    1608 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-638401
+BenchmarkNewKeyPair/NewKeyPair-638401-32    	       3	 355619491 ns/op	  147578 B/op	    1610 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-640000
+BenchmarkNewKeyPair/NewKeyPair-640000-32    	       3	 354210263 ns/op	  147754 B/op	    1612 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-641601
+BenchmarkNewKeyPair/NewKeyPair-641601-32    	       3	 387504611 ns/op	  147930 B/op	    1614 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-643204
+BenchmarkNewKeyPair/NewKeyPair-643204-32    	       3	 346694917 ns/op	  148106 B/op	    1616 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-644809
+BenchmarkNewKeyPair/NewKeyPair-644809-32    	       3	 354129833 ns/op	  148282 B/op	    1618 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-646416
+BenchmarkNewKeyPair/NewKeyPair-646416-32    	       3	 408320255 ns/op	  148458 B/op	    1620 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-648025
+BenchmarkNewKeyPair/NewKeyPair-648025-32    	       3	 409750325 ns/op	  148634 B/op	    1622 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-649636
+BenchmarkNewKeyPair/NewKeyPair-649636-32    	       3	 362055327 ns/op	  148810 B/op	    1624 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-651249
+BenchmarkNewKeyPair/NewKeyPair-651249-32    	       3	 414982363 ns/op	  148986 B/op	    1626 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-652864
+BenchmarkNewKeyPair/NewKeyPair-652864-32    	       3	 410756658 ns/op	  149162 B/op	    1628 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-654481
+BenchmarkNewKeyPair/NewKeyPair-654481-32    	       3	 409076502 ns/op	  149338 B/op	    1630 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-656100
+BenchmarkNewKeyPair/NewKeyPair-656100-32    	       3	 399975670 ns/op	  149514 B/op	    1632 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-657721
+BenchmarkNewKeyPair/NewKeyPair-657721-32    	       3	 362330948 ns/op	  149690 B/op	    1634 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-659344
+BenchmarkNewKeyPair/NewKeyPair-659344-32    	       3	 413444748 ns/op	  149866 B/op	    1636 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-660969
+BenchmarkNewKeyPair/NewKeyPair-660969-32    	       3	 409059137 ns/op	  150042 B/op	    1638 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-662596
+BenchmarkNewKeyPair/NewKeyPair-662596-32    	       3	 371085841 ns/op	  150218 B/op	    1640 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-664225
+BenchmarkNewKeyPair/NewKeyPair-664225-32    	       3	 400555939 ns/op	  150394 B/op	    1642 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-665856
+BenchmarkNewKeyPair/NewKeyPair-665856-32    	       3	 361224885 ns/op	  150826 B/op	    1644 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-667489
+BenchmarkNewKeyPair/NewKeyPair-667489-32    	       3	 408843367 ns/op	  151002 B/op	    1646 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-669124
+BenchmarkNewKeyPair/NewKeyPair-669124-32    	       3	 370961021 ns/op	  151178 B/op	    1648 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-670761
+BenchmarkNewKeyPair/NewKeyPair-670761-32    	       3	 390566093 ns/op	  151354 B/op	    1650 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-672400
+BenchmarkNewKeyPair/NewKeyPair-672400-32    	       3	 367048835 ns/op	  151530 B/op	    1652 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-674041
+BenchmarkNewKeyPair/NewKeyPair-674041-32    	       3	 418946672 ns/op	  151706 B/op	    1654 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-675684
+BenchmarkNewKeyPair/NewKeyPair-675684-32    	       3	 384345554 ns/op	  151882 B/op	    1656 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-677329
+BenchmarkNewKeyPair/NewKeyPair-677329-32    	       3	 418162275 ns/op	  152058 B/op	    1658 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-678976
+BenchmarkNewKeyPair/NewKeyPair-678976-32    	       3	 366761132 ns/op	  152234 B/op	    1660 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-680625
+BenchmarkNewKeyPair/NewKeyPair-680625-32    	       3	 415382585 ns/op	  152410 B/op	    1662 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-682276
+BenchmarkNewKeyPair/NewKeyPair-682276-32    	       3	 369898635 ns/op	  152586 B/op	    1664 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-683929
+BenchmarkNewKeyPair/NewKeyPair-683929-32    	       3	 414220460 ns/op	  152762 B/op	    1666 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-685584
+BenchmarkNewKeyPair/NewKeyPair-685584-32    	       3	 389238903 ns/op	  152938 B/op	    1668 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-687241
+BenchmarkNewKeyPair/NewKeyPair-687241-32    	       3	 367745208 ns/op	  153114 B/op	    1670 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-688900
+BenchmarkNewKeyPair/NewKeyPair-688900-32    	       3	 420419425 ns/op	  153290 B/op	    1672 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-690561
+BenchmarkNewKeyPair/NewKeyPair-690561-32    	       3	 381679537 ns/op	  153466 B/op	    1674 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-692224
+BenchmarkNewKeyPair/NewKeyPair-692224-32    	       3	 424078920 ns/op	  153642 B/op	    1676 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-693889
+BenchmarkNewKeyPair/NewKeyPair-693889-32    	       3	 431355205 ns/op	  153818 B/op	    1678 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-695556
+BenchmarkNewKeyPair/NewKeyPair-695556-32    	       3	 418433941 ns/op	  153994 B/op	    1680 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-697225
+BenchmarkNewKeyPair/NewKeyPair-697225-32    	       3	 431684309 ns/op	  154170 B/op	    1682 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-698896
+BenchmarkNewKeyPair/NewKeyPair-698896-32    	       3	 389790734 ns/op	  154346 B/op	    1684 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-700569
+BenchmarkNewKeyPair/NewKeyPair-700569-32    	       3	 387424789 ns/op	  154522 B/op	    1686 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-702244
+BenchmarkNewKeyPair/NewKeyPair-702244-32    	       3	 375285903 ns/op	  154698 B/op	    1688 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-703921
+BenchmarkNewKeyPair/NewKeyPair-703921-32    	       3	 427613674 ns/op	  154874 B/op	    1690 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-705600
+BenchmarkNewKeyPair/NewKeyPair-705600-32    	       3	 434992106 ns/op	  155050 B/op	    1692 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-707281
+BenchmarkNewKeyPair/NewKeyPair-707281-32    	       3	 401139660 ns/op	  155226 B/op	    1694 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-708964
+BenchmarkNewKeyPair/NewKeyPair-708964-32    	       3	 429246271 ns/op	  155402 B/op	    1696 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-710649
+BenchmarkNewKeyPair/NewKeyPair-710649-32    	       3	 375552494 ns/op	  155578 B/op	    1698 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-712336
+BenchmarkNewKeyPair/NewKeyPair-712336-32    	       3	 433587530 ns/op	  155754 B/op	    1700 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-714025
+BenchmarkNewKeyPair/NewKeyPair-714025-32    	       3	 379350998 ns/op	  155930 B/op	    1702 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-715716
+BenchmarkNewKeyPair/NewKeyPair-715716-32    	       3	 378998852 ns/op	  156106 B/op	    1704 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-717409
+BenchmarkNewKeyPair/NewKeyPair-717409-32    	       3	 377434120 ns/op	  156282 B/op	    1706 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-719104
+BenchmarkNewKeyPair/NewKeyPair-719104-32    	       3	 382378573 ns/op	  156586 B/op	    1708 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-720801
+BenchmarkNewKeyPair/NewKeyPair-720801-32    	       3	 434842059 ns/op	  156762 B/op	    1710 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-722500
+BenchmarkNewKeyPair/NewKeyPair-722500-32    	       3	 383440677 ns/op	  156938 B/op	    1712 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-724201
+BenchmarkNewKeyPair/NewKeyPair-724201-32    	       3	 417624700 ns/op	  157114 B/op	    1714 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-725904
+BenchmarkNewKeyPair/NewKeyPair-725904-32    	       3	 412094938 ns/op	  157290 B/op	    1716 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-727609
+BenchmarkNewKeyPair/NewKeyPair-727609-32    	       3	 437433632 ns/op	  157466 B/op	    1718 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-729316
+BenchmarkNewKeyPair/NewKeyPair-729316-32    	       3	 431544826 ns/op	  157642 B/op	    1720 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-731025
+BenchmarkNewKeyPair/NewKeyPair-731025-32    	       3	 432523928 ns/op	  157818 B/op	    1722 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-732736
+BenchmarkNewKeyPair/NewKeyPair-732736-32    	       3	 418808928 ns/op	  157994 B/op	    1724 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-734449
+BenchmarkNewKeyPair/NewKeyPair-734449-32    	       3	 424443949 ns/op	  158170 B/op	    1726 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-736164
+BenchmarkNewKeyPair/NewKeyPair-736164-32    	       3	 429036803 ns/op	  158346 B/op	    1728 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-737881
+BenchmarkNewKeyPair/NewKeyPair-737881-32    	       3	 384860731 ns/op	  158522 B/op	    1730 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-739600
+BenchmarkNewKeyPair/NewKeyPair-739600-32    	       3	 386509450 ns/op	  158698 B/op	    1732 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-741321
+BenchmarkNewKeyPair/NewKeyPair-741321-32    	       3	 435557976 ns/op	  158874 B/op	    1734 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-743044
+BenchmarkNewKeyPair/NewKeyPair-743044-32    	       3	 416742477 ns/op	  159050 B/op	    1736 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-744769
+BenchmarkNewKeyPair/NewKeyPair-744769-32    	       3	 432373301 ns/op	  159226 B/op	    1738 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-746496
+BenchmarkNewKeyPair/NewKeyPair-746496-32    	       3	 410647157 ns/op	  160682 B/op	    1740 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-748225
+BenchmarkNewKeyPair/NewKeyPair-748225-32    	       3	 416853990 ns/op	  160858 B/op	    1742 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-749956
+BenchmarkNewKeyPair/NewKeyPair-749956-32    	       3	 432822750 ns/op	  161034 B/op	    1744 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-751689
+BenchmarkNewKeyPair/NewKeyPair-751689-32    	       3	 441035888 ns/op	  161210 B/op	    1746 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-753424
+BenchmarkNewKeyPair/NewKeyPair-753424-32    	       3	 417607607 ns/op	  161386 B/op	    1748 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-755161
+BenchmarkNewKeyPair/NewKeyPair-755161-32    	       3	 446143953 ns/op	  161562 B/op	    1750 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-756900
+BenchmarkNewKeyPair/NewKeyPair-756900-32    	       3	 397570870 ns/op	  161738 B/op	    1752 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-758641
+BenchmarkNewKeyPair/NewKeyPair-758641-32    	       3	 443857261 ns/op	  161914 B/op	    1754 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-760384
+BenchmarkNewKeyPair/NewKeyPair-760384-32    	       3	 439002062 ns/op	  162090 B/op	    1756 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-762129
+BenchmarkNewKeyPair/NewKeyPair-762129-32    	       3	 427036014 ns/op	  162266 B/op	    1758 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-763876
+BenchmarkNewKeyPair/NewKeyPair-763876-32    	       3	 446432303 ns/op	  162442 B/op	    1760 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-765625
+BenchmarkNewKeyPair/NewKeyPair-765625-32    	       3	 390954065 ns/op	  162618 B/op	    1762 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-767376
+BenchmarkNewKeyPair/NewKeyPair-767376-32    	       3	 453242816 ns/op	  162794 B/op	    1764 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-769129
+BenchmarkNewKeyPair/NewKeyPair-769129-32    	       3	 386304277 ns/op	  162970 B/op	    1766 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-770884
+BenchmarkNewKeyPair/NewKeyPair-770884-32    	       3	 446364017 ns/op	  163146 B/op	    1768 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-772641
+BenchmarkNewKeyPair/NewKeyPair-772641-32    	       3	 451654704 ns/op	  163322 B/op	    1770 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-774400
+BenchmarkNewKeyPair/NewKeyPair-774400-32    	       3	 402951062 ns/op	  163498 B/op	    1772 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-776161
+BenchmarkNewKeyPair/NewKeyPair-776161-32    	       3	 443771633 ns/op	  163674 B/op	    1774 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-777924
+BenchmarkNewKeyPair/NewKeyPair-777924-32    	       3	 433571791 ns/op	  163850 B/op	    1776 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-779689
+BenchmarkNewKeyPair/NewKeyPair-779689-32    	       3	 407024492 ns/op	  164026 B/op	    1778 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-781456
+BenchmarkNewKeyPair/NewKeyPair-781456-32    	       3	 436839023 ns/op	  164202 B/op	    1780 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-783225
+BenchmarkNewKeyPair/NewKeyPair-783225-32    	       3	 448197377 ns/op	  164378 B/op	    1782 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-784996
+BenchmarkNewKeyPair/NewKeyPair-784996-32    	       3	 389063752 ns/op	  164554 B/op	    1784 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-786769
+BenchmarkNewKeyPair/NewKeyPair-786769-32    	       3	 442167935 ns/op	  164730 B/op	    1786 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-788544
+BenchmarkNewKeyPair/NewKeyPair-788544-32    	       3	 406462417 ns/op	  164906 B/op	    1788 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-790321
+BenchmarkNewKeyPair/NewKeyPair-790321-32    	       3	 409199672 ns/op	  165082 B/op	    1790 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-792100
+BenchmarkNewKeyPair/NewKeyPair-792100-32    	       3	 453953381 ns/op	  165258 B/op	    1792 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-793881
+BenchmarkNewKeyPair/NewKeyPair-793881-32    	       3	 455080013 ns/op	  165434 B/op	    1794 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-795664
+BenchmarkNewKeyPair/NewKeyPair-795664-32    	       3	 394838011 ns/op	  165610 B/op	    1796 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-797449
+BenchmarkNewKeyPair/NewKeyPair-797449-32    	       3	 436518398 ns/op	  165786 B/op	    1798 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-799236
+BenchmarkNewKeyPair/NewKeyPair-799236-32    	       3	 461255506 ns/op	  165962 B/op	    1800 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-801025
+BenchmarkNewKeyPair/NewKeyPair-801025-32    	       3	 455756160 ns/op	  166138 B/op	    1802 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-802816
+BenchmarkNewKeyPair/NewKeyPair-802816-32    	       3	 433910032 ns/op	  166314 B/op	    1804 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-804609
+BenchmarkNewKeyPair/NewKeyPair-804609-32    	       3	 406998508 ns/op	  166490 B/op	    1806 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-806404
+BenchmarkNewKeyPair/NewKeyPair-806404-32    	       3	 405590279 ns/op	  166666 B/op	    1808 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-808201
+BenchmarkNewKeyPair/NewKeyPair-808201-32    	       3	 433079835 ns/op	  166842 B/op	    1810 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-810000
+BenchmarkNewKeyPair/NewKeyPair-810000-32    	       3	 451295484 ns/op	  167018 B/op	    1812 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-811801
+BenchmarkNewKeyPair/NewKeyPair-811801-32    	       3	 462842835 ns/op	  167194 B/op	    1814 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-813604
+BenchmarkNewKeyPair/NewKeyPair-813604-32    	       3	 414327091 ns/op	  167370 B/op	    1816 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-815409
+BenchmarkNewKeyPair/NewKeyPair-815409-32    	       3	 420710245 ns/op	  167546 B/op	    1818 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-817216
+BenchmarkNewKeyPair/NewKeyPair-817216-32    	       3	 458702371 ns/op	  167722 B/op	    1820 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-819025
+BenchmarkNewKeyPair/NewKeyPair-819025-32    	       3	 427720063 ns/op	  167898 B/op	    1822 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-820836
+BenchmarkNewKeyPair/NewKeyPair-820836-32    	       3	 449905900 ns/op	  168074 B/op	    1824 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-822649
+BenchmarkNewKeyPair/NewKeyPair-822649-32    	       3	 417371335 ns/op	  168250 B/op	    1826 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-824464
+BenchmarkNewKeyPair/NewKeyPair-824464-32    	       3	 459241860 ns/op	  168426 B/op	    1828 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-826281
+BenchmarkNewKeyPair/NewKeyPair-826281-32    	       3	 432552693 ns/op	  168602 B/op	    1830 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-828100
+BenchmarkNewKeyPair/NewKeyPair-828100-32    	       3	 411537269 ns/op	  168778 B/op	    1832 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-829921
+BenchmarkNewKeyPair/NewKeyPair-829921-32    	       3	 451822639 ns/op	  168954 B/op	    1834 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-831744
+BenchmarkNewKeyPair/NewKeyPair-831744-32    	       3	 433894346 ns/op	  169130 B/op	    1836 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-833569
+BenchmarkNewKeyPair/NewKeyPair-833569-32    	       3	 445665132 ns/op	  169306 B/op	    1838 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-835396
+BenchmarkNewKeyPair/NewKeyPair-835396-32    	       3	 428736041 ns/op	  169482 B/op	    1840 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-837225
+BenchmarkNewKeyPair/NewKeyPair-837225-32    	       3	 455847831 ns/op	  169658 B/op	    1842 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-839056
+BenchmarkNewKeyPair/NewKeyPair-839056-32    	       3	 432551381 ns/op	  169834 B/op	    1844 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-840889
+BenchmarkNewKeyPair/NewKeyPair-840889-32    	       3	 439185757 ns/op	  170010 B/op	    1846 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-842724
+BenchmarkNewKeyPair/NewKeyPair-842724-32    	       3	 465678586 ns/op	  170186 B/op	    1848 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-844561
+BenchmarkNewKeyPair/NewKeyPair-844561-32    	       3	 464187887 ns/op	  170362 B/op	    1850 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-846400
+BenchmarkNewKeyPair/NewKeyPair-846400-32    	       3	 413340820 ns/op	  170538 B/op	    1852 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-848241
+BenchmarkNewKeyPair/NewKeyPair-848241-32    	       3	 417889049 ns/op	  170714 B/op	    1854 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-850084
+BenchmarkNewKeyPair/NewKeyPair-850084-32    	       3	 469008323 ns/op	  170890 B/op	    1856 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-851929
+BenchmarkNewKeyPair/NewKeyPair-851929-32    	       3	 428285319 ns/op	  171066 B/op	    1858 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-853776
+BenchmarkNewKeyPair/NewKeyPair-853776-32    	       3	 474812324 ns/op	  171242 B/op	    1860 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-855625
+BenchmarkNewKeyPair/NewKeyPair-855625-32    	       3	 462996233 ns/op	  171418 B/op	    1862 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-857476
+BenchmarkNewKeyPair/NewKeyPair-857476-32    	       3	 463015933 ns/op	  171594 B/op	    1864 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-859329
+BenchmarkNewKeyPair/NewKeyPair-859329-32    	       3	 459447379 ns/op	  171770 B/op	    1866 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-861184
+BenchmarkNewKeyPair/NewKeyPair-861184-32    	       3	 468022685 ns/op	  171946 B/op	    1868 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-863041
+BenchmarkNewKeyPair/NewKeyPair-863041-32    	       3	 438854533 ns/op	  172122 B/op	    1870 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-864900
+BenchmarkNewKeyPair/NewKeyPair-864900-32    	       3	 453159970 ns/op	  172298 B/op	    1872 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-866761
+BenchmarkNewKeyPair/NewKeyPair-866761-32    	       3	 421952672 ns/op	  172474 B/op	    1874 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-868624
+BenchmarkNewKeyPair/NewKeyPair-868624-32    	       3	 415789295 ns/op	  172650 B/op	    1876 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-870489
+BenchmarkNewKeyPair/NewKeyPair-870489-32    	       3	 466218682 ns/op	  172826 B/op	    1878 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-872356
+BenchmarkNewKeyPair/NewKeyPair-872356-32    	       3	 422610247 ns/op	  173002 B/op	    1880 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-874225
+BenchmarkNewKeyPair/NewKeyPair-874225-32    	       3	 463836223 ns/op	  173178 B/op	    1882 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-876096
+BenchmarkNewKeyPair/NewKeyPair-876096-32    	       3	 445906604 ns/op	  173354 B/op	    1884 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-877969
+BenchmarkNewKeyPair/NewKeyPair-877969-32    	       3	 409571255 ns/op	  173530 B/op	    1886 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-879844
+BenchmarkNewKeyPair/NewKeyPair-879844-32    	       3	 473296165 ns/op	  173706 B/op	    1888 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-881721
+BenchmarkNewKeyPair/NewKeyPair-881721-32    	       3	 475762763 ns/op	  173882 B/op	    1890 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-883600
+BenchmarkNewKeyPair/NewKeyPair-883600-32    	       3	 459659721 ns/op	  174058 B/op	    1892 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-885481
+BenchmarkNewKeyPair/NewKeyPair-885481-32    	       3	 421983837 ns/op	  174234 B/op	    1894 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-887364
+BenchmarkNewKeyPair/NewKeyPair-887364-32    	       3	 462237607 ns/op	  174410 B/op	    1896 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-889249
+BenchmarkNewKeyPair/NewKeyPair-889249-32    	       3	 425427253 ns/op	  174586 B/op	    1898 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-891136
+BenchmarkNewKeyPair/NewKeyPair-891136-32    	       2	 521881748 ns/op	  174768 B/op	    1900 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-893025
+BenchmarkNewKeyPair/NewKeyPair-893025-32    	       3	 472285954 ns/op	  174938 B/op	    1902 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-894916
+BenchmarkNewKeyPair/NewKeyPair-894916-32    	       3	 434087165 ns/op	  175114 B/op	    1904 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-896809
+BenchmarkNewKeyPair/NewKeyPair-896809-32    	       3	 455946020 ns/op	  175290 B/op	    1906 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-898704
+BenchmarkNewKeyPair/NewKeyPair-898704-32    	       3	 435049310 ns/op	  175466 B/op	    1908 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-900601
+BenchmarkNewKeyPair/NewKeyPair-900601-32    	       3	 434207822 ns/op	  175642 B/op	    1910 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-902500
+BenchmarkNewKeyPair/NewKeyPair-902500-32    	       3	 456042949 ns/op	  175818 B/op	    1912 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-904401
+BenchmarkNewKeyPair/NewKeyPair-904401-32    	       3	 471685303 ns/op	  175994 B/op	    1914 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-906304
+BenchmarkNewKeyPair/NewKeyPair-906304-32    	       3	 432669671 ns/op	  176170 B/op	    1916 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-908209
+BenchmarkNewKeyPair/NewKeyPair-908209-32    	       3	 425485581 ns/op	  176346 B/op	    1918 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-910116
+BenchmarkNewKeyPair/NewKeyPair-910116-32    	       2	 509307172 ns/op	  176520 B/op	    1920 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-912025
+BenchmarkNewKeyPair/NewKeyPair-912025-32    	       3	 433827837 ns/op	  176698 B/op	    1922 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-913936
+BenchmarkNewKeyPair/NewKeyPair-913936-32    	       2	 500507479 ns/op	  176872 B/op	    1924 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-915849
+BenchmarkNewKeyPair/NewKeyPair-915849-32    	       2	 503357155 ns/op	  177048 B/op	    1926 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-917764
+BenchmarkNewKeyPair/NewKeyPair-917764-32    	       3	 422956705 ns/op	  177226 B/op	    1928 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-919681
+BenchmarkNewKeyPair/NewKeyPair-919681-32    	       3	 431008311 ns/op	  177402 B/op	    1930 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-921600
+BenchmarkNewKeyPair/NewKeyPair-921600-32    	       3	 430075767 ns/op	  177578 B/op	    1932 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-923521
+BenchmarkNewKeyPair/NewKeyPair-923521-32    	       2	 501370923 ns/op	  177752 B/op	    1934 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-925444
+BenchmarkNewKeyPair/NewKeyPair-925444-32    	       2	 505978784 ns/op	  177928 B/op	    1936 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-927369
+BenchmarkNewKeyPair/NewKeyPair-927369-32    	       3	 462011768 ns/op	  178106 B/op	    1938 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-929296
+BenchmarkNewKeyPair/NewKeyPair-929296-32    	       3	 434617695 ns/op	  178282 B/op	    1940 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-931225
+BenchmarkNewKeyPair/NewKeyPair-931225-32    	       3	 466745603 ns/op	  178458 B/op	    1942 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-933156
+BenchmarkNewKeyPair/NewKeyPair-933156-32    	       2	 505223727 ns/op	  178632 B/op	    1944 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-935089
+BenchmarkNewKeyPair/NewKeyPair-935089-32    	       2	 500141847 ns/op	  178808 B/op	    1946 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-937024
+BenchmarkNewKeyPair/NewKeyPair-937024-32    	       2	 511629096 ns/op	  178984 B/op	    1948 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-938961
+BenchmarkNewKeyPair/NewKeyPair-938961-32    	       2	 500687530 ns/op	  179160 B/op	    1950 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-940900
+BenchmarkNewKeyPair/NewKeyPair-940900-32    	       3	 432273700 ns/op	  179338 B/op	    1952 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-942841
+BenchmarkNewKeyPair/NewKeyPair-942841-32    	       3	 474598506 ns/op	  179514 B/op	    1954 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-944784
+BenchmarkNewKeyPair/NewKeyPair-944784-32    	       3	 428390669 ns/op	  179690 B/op	    1956 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-946729
+BenchmarkNewKeyPair/NewKeyPair-946729-32    	       3	 471746725 ns/op	  179866 B/op	    1958 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-948676
+BenchmarkNewKeyPair/NewKeyPair-948676-32    	       2	 506401582 ns/op	  180040 B/op	    1960 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-950625
+BenchmarkNewKeyPair/NewKeyPair-950625-32    	       2	 502088532 ns/op	  180216 B/op	    1962 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-952576
+BenchmarkNewKeyPair/NewKeyPair-952576-32    	       2	 510962716 ns/op	  180392 B/op	    1964 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-954529
+BenchmarkNewKeyPair/NewKeyPair-954529-32    	       2	 509574844 ns/op	  180568 B/op	    1966 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-956484
+BenchmarkNewKeyPair/NewKeyPair-956484-32    	       2	 513012450 ns/op	  180744 B/op	    1968 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-958441
+BenchmarkNewKeyPair/NewKeyPair-958441-32    	       2	 504008582 ns/op	  180920 B/op	    1970 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-960400
+BenchmarkNewKeyPair/NewKeyPair-960400-32    	       2	 507768729 ns/op	  181096 B/op	    1972 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-962361
+BenchmarkNewKeyPair/NewKeyPair-962361-32    	       3	 443730285 ns/op	  181274 B/op	    1974 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-964324
+BenchmarkNewKeyPair/NewKeyPair-964324-32    	       2	 505763802 ns/op	  181448 B/op	    1976 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-966289
+BenchmarkNewKeyPair/NewKeyPair-966289-32    	       2	 513380432 ns/op	  181624 B/op	    1978 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-968256
+BenchmarkNewKeyPair/NewKeyPair-968256-32    	       2	 509225000 ns/op	  181800 B/op	    1980 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-970225
+BenchmarkNewKeyPair/NewKeyPair-970225-32    	       2	 513547861 ns/op	  181976 B/op	    1982 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-972196
+BenchmarkNewKeyPair/NewKeyPair-972196-32    	       2	 508158666 ns/op	  182152 B/op	    1984 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-974169
+BenchmarkNewKeyPair/NewKeyPair-974169-32    	       3	 482187144 ns/op	  182330 B/op	    1986 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-976144
+BenchmarkNewKeyPair/NewKeyPair-976144-32    	       3	 442218186 ns/op	  182506 B/op	    1988 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-978121
+BenchmarkNewKeyPair/NewKeyPair-978121-32    	       3	 445711798 ns/op	  182682 B/op	    1990 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-980100
+BenchmarkNewKeyPair/NewKeyPair-980100-32    	       2	 509774656 ns/op	  182856 B/op	    1992 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-982081
+BenchmarkNewKeyPair/NewKeyPair-982081-32    	       2	 519173340 ns/op	  183032 B/op	    1994 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-984064
+BenchmarkNewKeyPair/NewKeyPair-984064-32    	       2	 521090496 ns/op	  183208 B/op	    1996 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-986049
+BenchmarkNewKeyPair/NewKeyPair-986049-32    	       2	 521934935 ns/op	  183384 B/op	    1998 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-988036
+BenchmarkNewKeyPair/NewKeyPair-988036-32    	       3	 439318128 ns/op	  183562 B/op	    2000 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-990025
+BenchmarkNewKeyPair/NewKeyPair-990025-32    	       3	 448275961 ns/op	  183738 B/op	    2002 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-992016
+BenchmarkNewKeyPair/NewKeyPair-992016-32    	       2	 526028360 ns/op	  183912 B/op	    2004 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-994009
+BenchmarkNewKeyPair/NewKeyPair-994009-32    	       2	 532168151 ns/op	  184088 B/op	    2006 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-996004
+BenchmarkNewKeyPair/NewKeyPair-996004-32    	       2	 520249406 ns/op	  184264 B/op	    2008 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-998001
+BenchmarkNewKeyPair/NewKeyPair-998001-32    	       2	 519495994 ns/op	  184440 B/op	    2010 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-1000000
+BenchmarkNewKeyPair/NewKeyPair-1000000-32   	       3	 485902475 ns/op	  184618 B/op	    2012 allocs/op
+PASS
+ok  	github.com/etclab/rbe	3034.227s

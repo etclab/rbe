@@ -1,0 +1,2006 @@
+MaxUsers=1000000, SqrtMaxUsers=1000
+goos: linux
+goarch: amd64
+pkg: github.com/etclab/rbe
+cpu: Intel(R) Xeon(R) CPU E5-2630 v3 @ 2.40GHz
+BenchmarkRegisterUser
+BenchmarkRegisterUser/RegisterUser-4
+BenchmarkRegisterUser/RegisterUser-4-32         	     200	   5894125 ns/op	    1331 B/op	       3 allocs/op
+BenchmarkRegisterUser/RegisterUser-9
+BenchmarkRegisterUser/RegisterUser-9-32         	     174	   6465076 ns/op	    1522 B/op	       4 allocs/op
+BenchmarkRegisterUser/RegisterUser-16
+BenchmarkRegisterUser/RegisterUser-16-32        	     133	   8932841 ns/op	    2212 B/op	       6 allocs/op
+BenchmarkRegisterUser/RegisterUser-25
+BenchmarkRegisterUser/RegisterUser-25-32        	      88	  12314755 ns/op	    2985 B/op	       8 allocs/op
+BenchmarkRegisterUser/RegisterUser-36
+BenchmarkRegisterUser/RegisterUser-36-32        	      79	  15036803 ns/op	    3746 B/op	      10 allocs/op
+BenchmarkRegisterUser/RegisterUser-49
+BenchmarkRegisterUser/RegisterUser-49-32        	      56	  19255922 ns/op	    4321 B/op	      12 allocs/op
+BenchmarkRegisterUser/RegisterUser-64
+BenchmarkRegisterUser/RegisterUser-64-32        	      60	  20155805 ns/op	    5041 B/op	      14 allocs/op
+BenchmarkRegisterUser/RegisterUser-81
+BenchmarkRegisterUser/RegisterUser-81-32        	      49	  24358311 ns/op	    5762 B/op	      16 allocs/op
+BenchmarkRegisterUser/RegisterUser-100
+BenchmarkRegisterUser/RegisterUser-100-32       	      38	  28595328 ns/op	    6483 B/op	      18 allocs/op
+BenchmarkRegisterUser/RegisterUser-121
+BenchmarkRegisterUser/RegisterUser-121-32       	      34	  31049859 ns/op	    7205 B/op	      20 allocs/op
+BenchmarkRegisterUser/RegisterUser-144
+BenchmarkRegisterUser/RegisterUser-144-32       	      30	  35912082 ns/op	    7925 B/op	      22 allocs/op
+BenchmarkRegisterUser/RegisterUser-169
+BenchmarkRegisterUser/RegisterUser-169-32       	      28	  38523634 ns/op	    8646 B/op	      24 allocs/op
+BenchmarkRegisterUser/RegisterUser-196
+BenchmarkRegisterUser/RegisterUser-196-32       	      31	  38564046 ns/op	    9366 B/op	      26 allocs/op
+BenchmarkRegisterUser/RegisterUser-225
+BenchmarkRegisterUser/RegisterUser-225-32       	      28	  41653164 ns/op	   10088 B/op	      28 allocs/op
+BenchmarkRegisterUser/RegisterUser-256
+BenchmarkRegisterUser/RegisterUser-256-32       	      22	  47927910 ns/op	   10810 B/op	      30 allocs/op
+BenchmarkRegisterUser/RegisterUser-289
+BenchmarkRegisterUser/RegisterUser-289-32       	      24	  47686798 ns/op	   11530 B/op	      32 allocs/op
+BenchmarkRegisterUser/RegisterUser-324
+BenchmarkRegisterUser/RegisterUser-324-32       	      20	  54166260 ns/op	   12253 B/op	      34 allocs/op
+BenchmarkRegisterUser/RegisterUser-361
+BenchmarkRegisterUser/RegisterUser-361-32       	      21	  52293250 ns/op	   12973 B/op	      36 allocs/op
+BenchmarkRegisterUser/RegisterUser-400
+BenchmarkRegisterUser/RegisterUser-400-32       	      18	  60283443 ns/op	   13696 B/op	      39 allocs/op
+BenchmarkRegisterUser/RegisterUser-441
+BenchmarkRegisterUser/RegisterUser-441-32       	      18	  57263864 ns/op	   14417 B/op	      41 allocs/op
+BenchmarkRegisterUser/RegisterUser-484
+BenchmarkRegisterUser/RegisterUser-484-32       	      18	  63193555 ns/op	   15138 B/op	      43 allocs/op
+BenchmarkRegisterUser/RegisterUser-529
+BenchmarkRegisterUser/RegisterUser-529-32       	      18	  62485950 ns/op	   15859 B/op	      45 allocs/op
+BenchmarkRegisterUser/RegisterUser-576
+BenchmarkRegisterUser/RegisterUser-576-32       	      14	  74516162 ns/op	   16586 B/op	      47 allocs/op
+BenchmarkRegisterUser/RegisterUser-625
+BenchmarkRegisterUser/RegisterUser-625-32       	      14	  77713136 ns/op	   17307 B/op	      49 allocs/op
+BenchmarkRegisterUser/RegisterUser-676
+BenchmarkRegisterUser/RegisterUser-676-32       	      14	  78602519 ns/op	   18028 B/op	      51 allocs/op
+BenchmarkRegisterUser/RegisterUser-729
+BenchmarkRegisterUser/RegisterUser-729-32       	      14	  79305164 ns/op	   18749 B/op	      53 allocs/op
+BenchmarkRegisterUser/RegisterUser-784
+BenchmarkRegisterUser/RegisterUser-784-32       	      13	  84236479 ns/op	   19473 B/op	      56 allocs/op
+BenchmarkRegisterUser/RegisterUser-841
+BenchmarkRegisterUser/RegisterUser-841-32       	      13	  80731408 ns/op	   20194 B/op	      58 allocs/op
+BenchmarkRegisterUser/RegisterUser-900
+BenchmarkRegisterUser/RegisterUser-900-32       	      14	  83156099 ns/op	   20913 B/op	      60 allocs/op
+BenchmarkRegisterUser/RegisterUser-961
+BenchmarkRegisterUser/RegisterUser-961-32       	      12	  94987030 ns/op	   21640 B/op	      62 allocs/op
+BenchmarkRegisterUser/RegisterUser-1024
+BenchmarkRegisterUser/RegisterUser-1024-32      	      12	  96540676 ns/op	   22361 B/op	      64 allocs/op
+BenchmarkRegisterUser/RegisterUser-1089
+BenchmarkRegisterUser/RegisterUser-1089-32      	      10	 106045629 ns/op	   23091 B/op	      67 allocs/op
+BenchmarkRegisterUser/RegisterUser-1156
+BenchmarkRegisterUser/RegisterUser-1156-32      	      10	 102411521 ns/op	   23812 B/op	      69 allocs/op
+BenchmarkRegisterUser/RegisterUser-1225
+BenchmarkRegisterUser/RegisterUser-1225-32      	      10	 104804169 ns/op	   24534 B/op	      71 allocs/op
+BenchmarkRegisterUser/RegisterUser-1296
+BenchmarkRegisterUser/RegisterUser-1296-32      	      10	 107971194 ns/op	   25256 B/op	      73 allocs/op
+BenchmarkRegisterUser/RegisterUser-1369
+BenchmarkRegisterUser/RegisterUser-1369-32      	       9	 113478121 ns/op	   25984 B/op	      76 allocs/op
+BenchmarkRegisterUser/RegisterUser-1444
+BenchmarkRegisterUser/RegisterUser-1444-32      	       9	 115606303 ns/op	   26705 B/op	      78 allocs/op
+BenchmarkRegisterUser/RegisterUser-1521
+BenchmarkRegisterUser/RegisterUser-1521-32      	       9	 112640844 ns/op	   27427 B/op	      80 allocs/op
+BenchmarkRegisterUser/RegisterUser-1600
+BenchmarkRegisterUser/RegisterUser-1600-32      	       9	 122965097 ns/op	   28149 B/op	      82 allocs/op
+BenchmarkRegisterUser/RegisterUser-1681
+BenchmarkRegisterUser/RegisterUser-1681-32      	       8	 127359351 ns/op	   28880 B/op	      85 allocs/op
+BenchmarkRegisterUser/RegisterUser-1764
+BenchmarkRegisterUser/RegisterUser-1764-32      	       8	 133322769 ns/op	   29602 B/op	      87 allocs/op
+BenchmarkRegisterUser/RegisterUser-1849
+BenchmarkRegisterUser/RegisterUser-1849-32      	       8	 137229682 ns/op	   30324 B/op	      89 allocs/op
+BenchmarkRegisterUser/RegisterUser-1936
+BenchmarkRegisterUser/RegisterUser-1936-32      	       8	 134228430 ns/op	   31046 B/op	      91 allocs/op
+BenchmarkRegisterUser/RegisterUser-2025
+BenchmarkRegisterUser/RegisterUser-2025-32      	       8	 126210916 ns/op	   31768 B/op	      93 allocs/op
+BenchmarkRegisterUser/RegisterUser-2116
+BenchmarkRegisterUser/RegisterUser-2116-32      	       8	 139714876 ns/op	   32490 B/op	      95 allocs/op
+BenchmarkRegisterUser/RegisterUser-2209
+BenchmarkRegisterUser/RegisterUser-2209-32      	       7	 150214627 ns/op	   33225 B/op	      98 allocs/op
+BenchmarkRegisterUser/RegisterUser-2304
+BenchmarkRegisterUser/RegisterUser-2304-32      	       7	 151396428 ns/op	   33947 B/op	     100 allocs/op
+BenchmarkRegisterUser/RegisterUser-2401
+BenchmarkRegisterUser/RegisterUser-2401-32      	       7	 151342564 ns/op	   34669 B/op	     102 allocs/op
+BenchmarkRegisterUser/RegisterUser-2500
+BenchmarkRegisterUser/RegisterUser-2500-32      	       7	 156673011 ns/op	   35392 B/op	     105 allocs/op
+BenchmarkRegisterUser/RegisterUser-2601
+BenchmarkRegisterUser/RegisterUser-2601-32      	       7	 159973616 ns/op	   36114 B/op	     107 allocs/op
+BenchmarkRegisterUser/RegisterUser-2704
+BenchmarkRegisterUser/RegisterUser-2704-32      	       7	 162888009 ns/op	   36836 B/op	     109 allocs/op
+BenchmarkRegisterUser/RegisterUser-2809
+BenchmarkRegisterUser/RegisterUser-2809-32      	       7	 163156183 ns/op	   37558 B/op	     111 allocs/op
+BenchmarkRegisterUser/RegisterUser-2916
+BenchmarkRegisterUser/RegisterUser-2916-32      	       6	 168488971 ns/op	   38301 B/op	     114 allocs/op
+BenchmarkRegisterUser/RegisterUser-3025
+BenchmarkRegisterUser/RegisterUser-3025-32      	       7	 160409871 ns/op	   39003 B/op	     115 allocs/op
+BenchmarkRegisterUser/RegisterUser-3136
+BenchmarkRegisterUser/RegisterUser-3136-32      	       7	 159786537 ns/op	   39725 B/op	     117 allocs/op
+BenchmarkRegisterUser/RegisterUser-3249
+BenchmarkRegisterUser/RegisterUser-3249-32      	       7	 160696371 ns/op	   40448 B/op	     120 allocs/op
+BenchmarkRegisterUser/RegisterUser-3364
+BenchmarkRegisterUser/RegisterUser-3364-32      	       6	 180080918 ns/op	   41192 B/op	     123 allocs/op
+BenchmarkRegisterUser/RegisterUser-3481
+BenchmarkRegisterUser/RegisterUser-3481-32      	       6	 184264234 ns/op	   41914 B/op	     125 allocs/op
+BenchmarkRegisterUser/RegisterUser-3600
+BenchmarkRegisterUser/RegisterUser-3600-32      	       6	 169306226 ns/op	   42637 B/op	     127 allocs/op
+BenchmarkRegisterUser/RegisterUser-3721
+BenchmarkRegisterUser/RegisterUser-3721-32      	       6	 185606070 ns/op	   43360 B/op	     130 allocs/op
+BenchmarkRegisterUser/RegisterUser-3844
+BenchmarkRegisterUser/RegisterUser-3844-32      	       6	 191762236 ns/op	   44082 B/op	     132 allocs/op
+BenchmarkRegisterUser/RegisterUser-3969
+BenchmarkRegisterUser/RegisterUser-3969-32      	       6	 195121196 ns/op	   44805 B/op	     134 allocs/op
+BenchmarkRegisterUser/RegisterUser-4096
+BenchmarkRegisterUser/RegisterUser-4096-32      	       6	 191072707 ns/op	   45528 B/op	     136 allocs/op
+BenchmarkRegisterUser/RegisterUser-4225
+BenchmarkRegisterUser/RegisterUser-4225-32      	       5	 202162969 ns/op	   46284 B/op	     140 allocs/op
+BenchmarkRegisterUser/RegisterUser-4356
+BenchmarkRegisterUser/RegisterUser-4356-32      	       6	 186026017 ns/op	   46973 B/op	     140 allocs/op
+BenchmarkRegisterUser/RegisterUser-4489
+BenchmarkRegisterUser/RegisterUser-4489-32      	       5	 208252498 ns/op	   47731 B/op	     145 allocs/op
+BenchmarkRegisterUser/RegisterUser-4624
+BenchmarkRegisterUser/RegisterUser-4624-32      	       5	 212114218 ns/op	   48454 B/op	     147 allocs/op
+BenchmarkRegisterUser/RegisterUser-4761
+BenchmarkRegisterUser/RegisterUser-4761-32      	       5	 205895866 ns/op	   49177 B/op	     149 allocs/op
+BenchmarkRegisterUser/RegisterUser-4900
+BenchmarkRegisterUser/RegisterUser-4900-32      	       5	 213634930 ns/op	   49900 B/op	     151 allocs/op
+BenchmarkRegisterUser/RegisterUser-5041
+BenchmarkRegisterUser/RegisterUser-5041-32      	       6	 199668582 ns/op	   50586 B/op	     151 allocs/op
+BenchmarkRegisterUser/RegisterUser-5184
+BenchmarkRegisterUser/RegisterUser-5184-32      	       5	 221858771 ns/op	   51347 B/op	     156 allocs/op
+BenchmarkRegisterUser/RegisterUser-5329
+BenchmarkRegisterUser/RegisterUser-5329-32      	       5	 232806512 ns/op	   52070 B/op	     158 allocs/op
+BenchmarkRegisterUser/RegisterUser-5476
+BenchmarkRegisterUser/RegisterUser-5476-32      	       5	 228399569 ns/op	   52793 B/op	     160 allocs/op
+BenchmarkRegisterUser/RegisterUser-5625
+BenchmarkRegisterUser/RegisterUser-5625-32      	       5	 226982075 ns/op	   53516 B/op	     162 allocs/op
+BenchmarkRegisterUser/RegisterUser-5776
+BenchmarkRegisterUser/RegisterUser-5776-32      	       5	 229309334 ns/op	   54240 B/op	     165 allocs/op
+BenchmarkRegisterUser/RegisterUser-5929
+BenchmarkRegisterUser/RegisterUser-5929-32      	       5	 238238375 ns/op	   54963 B/op	     167 allocs/op
+BenchmarkRegisterUser/RegisterUser-6084
+BenchmarkRegisterUser/RegisterUser-6084-32      	       5	 250402571 ns/op	   55686 B/op	     169 allocs/op
+BenchmarkRegisterUser/RegisterUser-6241
+BenchmarkRegisterUser/RegisterUser-6241-32      	       5	 244065688 ns/op	   56409 B/op	     171 allocs/op
+BenchmarkRegisterUser/RegisterUser-6400
+BenchmarkRegisterUser/RegisterUser-6400-32      	       5	 233735785 ns/op	   57132 B/op	     173 allocs/op
+BenchmarkRegisterUser/RegisterUser-6561
+BenchmarkRegisterUser/RegisterUser-6561-32      	       4	 253442893 ns/op	   57920 B/op	     180 allocs/op
+BenchmarkRegisterUser/RegisterUser-6724
+BenchmarkRegisterUser/RegisterUser-6724-32      	       4	 258220254 ns/op	   58644 B/op	     182 allocs/op
+BenchmarkRegisterUser/RegisterUser-6889
+BenchmarkRegisterUser/RegisterUser-6889-32      	       4	 259279547 ns/op	   59368 B/op	     184 allocs/op
+BenchmarkRegisterUser/RegisterUser-7056
+BenchmarkRegisterUser/RegisterUser-7056-32      	       4	 251582140 ns/op	   60092 B/op	     186 allocs/op
+BenchmarkRegisterUser/RegisterUser-7225
+BenchmarkRegisterUser/RegisterUser-7225-32      	       4	 255508214 ns/op	   60816 B/op	     189 allocs/op
+BenchmarkRegisterUser/RegisterUser-7396
+BenchmarkRegisterUser/RegisterUser-7396-32      	       4	 269708759 ns/op	   61540 B/op	     191 allocs/op
+BenchmarkRegisterUser/RegisterUser-7569
+BenchmarkRegisterUser/RegisterUser-7569-32      	       4	 277819230 ns/op	   62264 B/op	     193 allocs/op
+BenchmarkRegisterUser/RegisterUser-7744
+BenchmarkRegisterUser/RegisterUser-7744-32      	       4	 272945226 ns/op	   62988 B/op	     195 allocs/op
+BenchmarkRegisterUser/RegisterUser-7921
+BenchmarkRegisterUser/RegisterUser-7921-32      	       4	 284839857 ns/op	   63712 B/op	     198 allocs/op
+BenchmarkRegisterUser/RegisterUser-8100
+BenchmarkRegisterUser/RegisterUser-8100-32      	       4	 276104090 ns/op	   64436 B/op	     200 allocs/op
+BenchmarkRegisterUser/RegisterUser-8281
+BenchmarkRegisterUser/RegisterUser-8281-32      	       4	 283763924 ns/op	   65160 B/op	     202 allocs/op
+BenchmarkRegisterUser/RegisterUser-8464
+BenchmarkRegisterUser/RegisterUser-8464-32      	       4	 292602334 ns/op	   65884 B/op	     204 allocs/op
+BenchmarkRegisterUser/RegisterUser-8649
+BenchmarkRegisterUser/RegisterUser-8649-32      	       4	 289009723 ns/op	   66608 B/op	     207 allocs/op
+BenchmarkRegisterUser/RegisterUser-8836
+BenchmarkRegisterUser/RegisterUser-8836-32      	       4	 294654123 ns/op	   67332 B/op	     209 allocs/op
+BenchmarkRegisterUser/RegisterUser-9025
+BenchmarkRegisterUser/RegisterUser-9025-32      	       4	 298082296 ns/op	   68056 B/op	     211 allocs/op
+BenchmarkRegisterUser/RegisterUser-9216
+BenchmarkRegisterUser/RegisterUser-9216-32      	       4	 296455553 ns/op	   68780 B/op	     213 allocs/op
+BenchmarkRegisterUser/RegisterUser-9409
+BenchmarkRegisterUser/RegisterUser-9409-32      	       4	 301086586 ns/op	   69504 B/op	     216 allocs/op
+BenchmarkRegisterUser/RegisterUser-9604
+BenchmarkRegisterUser/RegisterUser-9604-32      	       4	 285663220 ns/op	   70228 B/op	     218 allocs/op
+BenchmarkRegisterUser/RegisterUser-9801
+BenchmarkRegisterUser/RegisterUser-9801-32      	       4	 307036937 ns/op	   70952 B/op	     220 allocs/op
+BenchmarkRegisterUser/RegisterUser-10000
+BenchmarkRegisterUser/RegisterUser-10000-32     	       4	 298907345 ns/op	   71676 B/op	     222 allocs/op
+BenchmarkRegisterUser/RegisterUser-10201
+BenchmarkRegisterUser/RegisterUser-10201-32     	       4	 312386577 ns/op	   72400 B/op	     225 allocs/op
+BenchmarkRegisterUser/RegisterUser-10404
+BenchmarkRegisterUser/RegisterUser-10404-32     	       4	 316244314 ns/op	   73124 B/op	     227 allocs/op
+BenchmarkRegisterUser/RegisterUser-10609
+BenchmarkRegisterUser/RegisterUser-10609-32     	       3	 333335107 ns/op	   73984 B/op	     238 allocs/op
+BenchmarkRegisterUser/RegisterUser-10816
+BenchmarkRegisterUser/RegisterUser-10816-32     	       3	 335639789 ns/op	   74709 B/op	     240 allocs/op
+BenchmarkRegisterUser/RegisterUser-11025
+BenchmarkRegisterUser/RegisterUser-11025-32     	       3	 341155551 ns/op	   75434 B/op	     242 allocs/op
+BenchmarkRegisterUser/RegisterUser-11236
+BenchmarkRegisterUser/RegisterUser-11236-32     	       3	 341819430 ns/op	   76160 B/op	     245 allocs/op
+BenchmarkRegisterUser/RegisterUser-11449
+BenchmarkRegisterUser/RegisterUser-11449-32     	       3	 348729549 ns/op	   76885 B/op	     247 allocs/op
+BenchmarkRegisterUser/RegisterUser-11664
+BenchmarkRegisterUser/RegisterUser-11664-32     	       3	 351936104 ns/op	   77610 B/op	     249 allocs/op
+BenchmarkRegisterUser/RegisterUser-11881
+BenchmarkRegisterUser/RegisterUser-11881-32     	       3	 352967752 ns/op	   78336 B/op	     252 allocs/op
+BenchmarkRegisterUser/RegisterUser-12100
+BenchmarkRegisterUser/RegisterUser-12100-32     	       3	 350838378 ns/op	   79061 B/op	     254 allocs/op
+BenchmarkRegisterUser/RegisterUser-12321
+BenchmarkRegisterUser/RegisterUser-12321-32     	       3	 352034773 ns/op	   79786 B/op	     256 allocs/op
+BenchmarkRegisterUser/RegisterUser-12544
+BenchmarkRegisterUser/RegisterUser-12544-32     	       3	 362620457 ns/op	   80512 B/op	     259 allocs/op
+BenchmarkRegisterUser/RegisterUser-12769
+BenchmarkRegisterUser/RegisterUser-12769-32     	       3	 364379394 ns/op	   81237 B/op	     261 allocs/op
+BenchmarkRegisterUser/RegisterUser-12996
+BenchmarkRegisterUser/RegisterUser-12996-32     	       3	 365894336 ns/op	   81962 B/op	     263 allocs/op
+BenchmarkRegisterUser/RegisterUser-13225
+BenchmarkRegisterUser/RegisterUser-13225-32     	       3	 370218564 ns/op	   82688 B/op	     266 allocs/op
+BenchmarkRegisterUser/RegisterUser-13456
+BenchmarkRegisterUser/RegisterUser-13456-32     	       3	 365930411 ns/op	   83413 B/op	     268 allocs/op
+BenchmarkRegisterUser/RegisterUser-13689
+BenchmarkRegisterUser/RegisterUser-13689-32     	       3	 389821834 ns/op	   84138 B/op	     270 allocs/op
+BenchmarkRegisterUser/RegisterUser-13924
+BenchmarkRegisterUser/RegisterUser-13924-32     	       3	 378794922 ns/op	   84864 B/op	     273 allocs/op
+BenchmarkRegisterUser/RegisterUser-14161
+BenchmarkRegisterUser/RegisterUser-14161-32     	       3	 386400217 ns/op	   85589 B/op	     275 allocs/op
+BenchmarkRegisterUser/RegisterUser-14400
+BenchmarkRegisterUser/RegisterUser-14400-32     	       3	 383651933 ns/op	   86314 B/op	     277 allocs/op
+BenchmarkRegisterUser/RegisterUser-14641
+BenchmarkRegisterUser/RegisterUser-14641-32     	       3	 384023923 ns/op	   87040 B/op	     280 allocs/op
+BenchmarkRegisterUser/RegisterUser-14884
+BenchmarkRegisterUser/RegisterUser-14884-32     	       3	 389476521 ns/op	   87765 B/op	     282 allocs/op
+BenchmarkRegisterUser/RegisterUser-15129
+BenchmarkRegisterUser/RegisterUser-15129-32     	       3	 392711241 ns/op	   88490 B/op	     284 allocs/op
+BenchmarkRegisterUser/RegisterUser-15376
+BenchmarkRegisterUser/RegisterUser-15376-32     	       3	 394323785 ns/op	   89216 B/op	     287 allocs/op
+BenchmarkRegisterUser/RegisterUser-15625
+BenchmarkRegisterUser/RegisterUser-15625-32     	       3	 399517845 ns/op	   89941 B/op	     289 allocs/op
+BenchmarkRegisterUser/RegisterUser-15876
+BenchmarkRegisterUser/RegisterUser-15876-32     	       3	 400331488 ns/op	   90666 B/op	     291 allocs/op
+BenchmarkRegisterUser/RegisterUser-16129
+BenchmarkRegisterUser/RegisterUser-16129-32     	       3	 408961508 ns/op	   91392 B/op	     294 allocs/op
+BenchmarkRegisterUser/RegisterUser-16384
+BenchmarkRegisterUser/RegisterUser-16384-32     	       3	 398770536 ns/op	   92117 B/op	     296 allocs/op
+BenchmarkRegisterUser/RegisterUser-16641
+BenchmarkRegisterUser/RegisterUser-16641-32     	       3	 412270392 ns/op	   92842 B/op	     298 allocs/op
+BenchmarkRegisterUser/RegisterUser-16900
+BenchmarkRegisterUser/RegisterUser-16900-32     	       3	 379608563 ns/op	   93568 B/op	     301 allocs/op
+BenchmarkRegisterUser/RegisterUser-17161
+BenchmarkRegisterUser/RegisterUser-17161-32     	       3	 421607479 ns/op	   94293 B/op	     303 allocs/op
+BenchmarkRegisterUser/RegisterUser-17424
+BenchmarkRegisterUser/RegisterUser-17424-32     	       3	 404386789 ns/op	   95018 B/op	     305 allocs/op
+BenchmarkRegisterUser/RegisterUser-17689
+BenchmarkRegisterUser/RegisterUser-17689-32     	       3	 449113508 ns/op	   95744 B/op	     308 allocs/op
+BenchmarkRegisterUser/RegisterUser-17956
+BenchmarkRegisterUser/RegisterUser-17956-32     	       3	 431330347 ns/op	   96469 B/op	     310 allocs/op
+BenchmarkRegisterUser/RegisterUser-18225
+BenchmarkRegisterUser/RegisterUser-18225-32     	       3	 427805832 ns/op	   97194 B/op	     312 allocs/op
+BenchmarkRegisterUser/RegisterUser-18496
+BenchmarkRegisterUser/RegisterUser-18496-32     	       3	 434605446 ns/op	   97920 B/op	     315 allocs/op
+BenchmarkRegisterUser/RegisterUser-18769
+BenchmarkRegisterUser/RegisterUser-18769-32     	       3	 441318276 ns/op	   98645 B/op	     317 allocs/op
+BenchmarkRegisterUser/RegisterUser-19044
+BenchmarkRegisterUser/RegisterUser-19044-32     	       3	 438605230 ns/op	   99370 B/op	     319 allocs/op
+BenchmarkRegisterUser/RegisterUser-19321
+BenchmarkRegisterUser/RegisterUser-19321-32     	       3	 431375257 ns/op	  100096 B/op	     322 allocs/op
+BenchmarkRegisterUser/RegisterUser-19600
+BenchmarkRegisterUser/RegisterUser-19600-32     	       3	 446214456 ns/op	  100821 B/op	     324 allocs/op
+BenchmarkRegisterUser/RegisterUser-19881
+BenchmarkRegisterUser/RegisterUser-19881-32     	       3	 451457939 ns/op	  101546 B/op	     326 allocs/op
+BenchmarkRegisterUser/RegisterUser-20164
+BenchmarkRegisterUser/RegisterUser-20164-32     	       3	 450302589 ns/op	  102272 B/op	     329 allocs/op
+BenchmarkRegisterUser/RegisterUser-20449
+BenchmarkRegisterUser/RegisterUser-20449-32     	       3	 451997530 ns/op	  102997 B/op	     331 allocs/op
+BenchmarkRegisterUser/RegisterUser-20736
+BenchmarkRegisterUser/RegisterUser-20736-32     	       3	 413737185 ns/op	  103722 B/op	     333 allocs/op
+BenchmarkRegisterUser/RegisterUser-21025
+BenchmarkRegisterUser/RegisterUser-21025-32     	       3	 429915972 ns/op	  104448 B/op	     336 allocs/op
+BenchmarkRegisterUser/RegisterUser-21316
+BenchmarkRegisterUser/RegisterUser-21316-32     	       2	 500910722 ns/op	  105560 B/op	     362 allocs/op
+BenchmarkRegisterUser/RegisterUser-21609
+BenchmarkRegisterUser/RegisterUser-21609-32     	       3	 454452941 ns/op	  105898 B/op	     340 allocs/op
+BenchmarkRegisterUser/RegisterUser-21904
+BenchmarkRegisterUser/RegisterUser-21904-32     	       2	 502585356 ns/op	  107016 B/op	     367 allocs/op
+BenchmarkRegisterUser/RegisterUser-22201
+BenchmarkRegisterUser/RegisterUser-22201-32     	       3	 473735990 ns/op	  107349 B/op	     345 allocs/op
+BenchmarkRegisterUser/RegisterUser-22500
+BenchmarkRegisterUser/RegisterUser-22500-32     	       3	 474353463 ns/op	  108074 B/op	     347 allocs/op
+BenchmarkRegisterUser/RegisterUser-22801
+BenchmarkRegisterUser/RegisterUser-22801-32     	       2	 506947714 ns/op	  109200 B/op	     375 allocs/op
+BenchmarkRegisterUser/RegisterUser-23104
+BenchmarkRegisterUser/RegisterUser-23104-32     	       2	 522699497 ns/op	  109928 B/op	     377 allocs/op
+BenchmarkRegisterUser/RegisterUser-23409
+BenchmarkRegisterUser/RegisterUser-23409-32     	       3	 477512780 ns/op	  110250 B/op	     354 allocs/op
+BenchmarkRegisterUser/RegisterUser-23716
+BenchmarkRegisterUser/RegisterUser-23716-32     	       2	 542654344 ns/op	  111384 B/op	     382 allocs/op
+BenchmarkRegisterUser/RegisterUser-24025
+BenchmarkRegisterUser/RegisterUser-24025-32     	       2	 510498174 ns/op	  112112 B/op	     385 allocs/op
+BenchmarkRegisterUser/RegisterUser-24336
+BenchmarkRegisterUser/RegisterUser-24336-32     	       2	 518938039 ns/op	  112840 B/op	     387 allocs/op
+BenchmarkRegisterUser/RegisterUser-24649
+BenchmarkRegisterUser/RegisterUser-24649-32     	       2	 536917595 ns/op	  113568 B/op	     390 allocs/op
+BenchmarkRegisterUser/RegisterUser-24964
+BenchmarkRegisterUser/RegisterUser-24964-32     	       2	 522101476 ns/op	  114296 B/op	     392 allocs/op
+BenchmarkRegisterUser/RegisterUser-25281
+BenchmarkRegisterUser/RegisterUser-25281-32     	       2	 551386092 ns/op	  115024 B/op	     395 allocs/op
+BenchmarkRegisterUser/RegisterUser-25600
+BenchmarkRegisterUser/RegisterUser-25600-32     	       2	 552744056 ns/op	  115752 B/op	     397 allocs/op
+BenchmarkRegisterUser/RegisterUser-25921
+BenchmarkRegisterUser/RegisterUser-25921-32     	       2	 542840610 ns/op	  116480 B/op	     400 allocs/op
+BenchmarkRegisterUser/RegisterUser-26244
+BenchmarkRegisterUser/RegisterUser-26244-32     	       2	 548536238 ns/op	  117208 B/op	     402 allocs/op
+BenchmarkRegisterUser/RegisterUser-26569
+BenchmarkRegisterUser/RegisterUser-26569-32     	       2	 536775032 ns/op	  117936 B/op	     405 allocs/op
+BenchmarkRegisterUser/RegisterUser-26896
+BenchmarkRegisterUser/RegisterUser-26896-32     	       2	 540789130 ns/op	  118664 B/op	     407 allocs/op
+BenchmarkRegisterUser/RegisterUser-27225
+BenchmarkRegisterUser/RegisterUser-27225-32     	       2	 545792983 ns/op	  119392 B/op	     410 allocs/op
+BenchmarkRegisterUser/RegisterUser-27556
+BenchmarkRegisterUser/RegisterUser-27556-32     	       2	 549266332 ns/op	  120120 B/op	     412 allocs/op
+BenchmarkRegisterUser/RegisterUser-27889
+BenchmarkRegisterUser/RegisterUser-27889-32     	       2	 575413808 ns/op	  120848 B/op	     415 allocs/op
+BenchmarkRegisterUser/RegisterUser-28224
+BenchmarkRegisterUser/RegisterUser-28224-32     	       3	 498596104 ns/op	  121130 B/op	     389 allocs/op
+BenchmarkRegisterUser/RegisterUser-28561
+BenchmarkRegisterUser/RegisterUser-28561-32     	       2	 550520940 ns/op	  122304 B/op	     420 allocs/op
+BenchmarkRegisterUser/RegisterUser-28900
+BenchmarkRegisterUser/RegisterUser-28900-32     	       2	 577902394 ns/op	  123032 B/op	     422 allocs/op
+BenchmarkRegisterUser/RegisterUser-29241
+BenchmarkRegisterUser/RegisterUser-29241-32     	       2	 570780340 ns/op	  123760 B/op	     425 allocs/op
+BenchmarkRegisterUser/RegisterUser-29584
+BenchmarkRegisterUser/RegisterUser-29584-32     	       2	 560330280 ns/op	  124488 B/op	     427 allocs/op
+BenchmarkRegisterUser/RegisterUser-29929
+BenchmarkRegisterUser/RegisterUser-29929-32     	       2	 569458513 ns/op	  125216 B/op	     430 allocs/op
+BenchmarkRegisterUser/RegisterUser-30276
+BenchmarkRegisterUser/RegisterUser-30276-32     	       2	 579210179 ns/op	  125944 B/op	     432 allocs/op
+BenchmarkRegisterUser/RegisterUser-30625
+BenchmarkRegisterUser/RegisterUser-30625-32     	       2	 575897372 ns/op	  126672 B/op	     435 allocs/op
+BenchmarkRegisterUser/RegisterUser-30976
+BenchmarkRegisterUser/RegisterUser-30976-32     	       2	 565514708 ns/op	  127400 B/op	     437 allocs/op
+BenchmarkRegisterUser/RegisterUser-31329
+BenchmarkRegisterUser/RegisterUser-31329-32     	       2	 569497788 ns/op	  128128 B/op	     440 allocs/op
+BenchmarkRegisterUser/RegisterUser-31684
+BenchmarkRegisterUser/RegisterUser-31684-32     	       2	 577879816 ns/op	  128856 B/op	     442 allocs/op
+BenchmarkRegisterUser/RegisterUser-32041
+BenchmarkRegisterUser/RegisterUser-32041-32     	       2	 600759550 ns/op	  129584 B/op	     445 allocs/op
+BenchmarkRegisterUser/RegisterUser-32400
+BenchmarkRegisterUser/RegisterUser-32400-32     	       2	 601957065 ns/op	  130312 B/op	     447 allocs/op
+BenchmarkRegisterUser/RegisterUser-32761
+BenchmarkRegisterUser/RegisterUser-32761-32     	       2	 578484571 ns/op	  131040 B/op	     450 allocs/op
+BenchmarkRegisterUser/RegisterUser-33124
+BenchmarkRegisterUser/RegisterUser-33124-32     	       2	 608193424 ns/op	  131768 B/op	     452 allocs/op
+BenchmarkRegisterUser/RegisterUser-33489
+BenchmarkRegisterUser/RegisterUser-33489-32     	       2	 602357914 ns/op	  132496 B/op	     455 allocs/op
+BenchmarkRegisterUser/RegisterUser-33856
+BenchmarkRegisterUser/RegisterUser-33856-32     	       2	 597864824 ns/op	  133224 B/op	     457 allocs/op
+BenchmarkRegisterUser/RegisterUser-34225
+BenchmarkRegisterUser/RegisterUser-34225-32     	       2	 597597460 ns/op	  133952 B/op	     460 allocs/op
+BenchmarkRegisterUser/RegisterUser-34596
+BenchmarkRegisterUser/RegisterUser-34596-32     	       2	 601991890 ns/op	  134680 B/op	     462 allocs/op
+BenchmarkRegisterUser/RegisterUser-34969
+BenchmarkRegisterUser/RegisterUser-34969-32     	       2	 618093598 ns/op	  135408 B/op	     465 allocs/op
+BenchmarkRegisterUser/RegisterUser-35344
+BenchmarkRegisterUser/RegisterUser-35344-32     	       2	 625940824 ns/op	  136136 B/op	     467 allocs/op
+BenchmarkRegisterUser/RegisterUser-35721
+BenchmarkRegisterUser/RegisterUser-35721-32     	       2	 650804234 ns/op	  136864 B/op	     470 allocs/op
+BenchmarkRegisterUser/RegisterUser-36100
+BenchmarkRegisterUser/RegisterUser-36100-32     	       2	 630550408 ns/op	  137592 B/op	     472 allocs/op
+BenchmarkRegisterUser/RegisterUser-36481
+BenchmarkRegisterUser/RegisterUser-36481-32     	       2	 629626331 ns/op	  138320 B/op	     475 allocs/op
+BenchmarkRegisterUser/RegisterUser-36864
+BenchmarkRegisterUser/RegisterUser-36864-32     	       2	 620441975 ns/op	  139048 B/op	     477 allocs/op
+BenchmarkRegisterUser/RegisterUser-37249
+BenchmarkRegisterUser/RegisterUser-37249-32     	       2	 602076674 ns/op	  139776 B/op	     480 allocs/op
+BenchmarkRegisterUser/RegisterUser-37636
+BenchmarkRegisterUser/RegisterUser-37636-32     	       2	 626290202 ns/op	  140504 B/op	     482 allocs/op
+BenchmarkRegisterUser/RegisterUser-38025
+BenchmarkRegisterUser/RegisterUser-38025-32     	       2	 650097428 ns/op	  141232 B/op	     485 allocs/op
+BenchmarkRegisterUser/RegisterUser-38416
+BenchmarkRegisterUser/RegisterUser-38416-32     	       2	 634332904 ns/op	  141960 B/op	     487 allocs/op
+BenchmarkRegisterUser/RegisterUser-38809
+BenchmarkRegisterUser/RegisterUser-38809-32     	       2	 630805157 ns/op	  142688 B/op	     490 allocs/op
+BenchmarkRegisterUser/RegisterUser-39204
+BenchmarkRegisterUser/RegisterUser-39204-32     	       2	 668465470 ns/op	  143416 B/op	     492 allocs/op
+BenchmarkRegisterUser/RegisterUser-39601
+BenchmarkRegisterUser/RegisterUser-39601-32     	       2	 592194435 ns/op	  144144 B/op	     495 allocs/op
+BenchmarkRegisterUser/RegisterUser-40000
+BenchmarkRegisterUser/RegisterUser-40000-32     	       2	 642143083 ns/op	  144872 B/op	     497 allocs/op
+BenchmarkRegisterUser/RegisterUser-40401
+BenchmarkRegisterUser/RegisterUser-40401-32     	       2	 670988622 ns/op	  145600 B/op	     500 allocs/op
+BenchmarkRegisterUser/RegisterUser-40804
+BenchmarkRegisterUser/RegisterUser-40804-32     	       2	 660807948 ns/op	  146328 B/op	     502 allocs/op
+BenchmarkRegisterUser/RegisterUser-41209
+BenchmarkRegisterUser/RegisterUser-41209-32     	       2	 673036992 ns/op	  147056 B/op	     505 allocs/op
+BenchmarkRegisterUser/RegisterUser-41616
+BenchmarkRegisterUser/RegisterUser-41616-32     	       2	 668095381 ns/op	  147784 B/op	     507 allocs/op
+BenchmarkRegisterUser/RegisterUser-42025
+BenchmarkRegisterUser/RegisterUser-42025-32     	       2	 681541230 ns/op	  148512 B/op	     510 allocs/op
+BenchmarkRegisterUser/RegisterUser-42436
+BenchmarkRegisterUser/RegisterUser-42436-32     	       2	 657549060 ns/op	  149240 B/op	     512 allocs/op
+BenchmarkRegisterUser/RegisterUser-42849
+BenchmarkRegisterUser/RegisterUser-42849-32     	       2	 666869253 ns/op	  149968 B/op	     515 allocs/op
+BenchmarkRegisterUser/RegisterUser-43264
+BenchmarkRegisterUser/RegisterUser-43264-32     	       2	 655057705 ns/op	  150696 B/op	     517 allocs/op
+BenchmarkRegisterUser/RegisterUser-43681
+BenchmarkRegisterUser/RegisterUser-43681-32     	       2	 665084174 ns/op	  151424 B/op	     520 allocs/op
+BenchmarkRegisterUser/RegisterUser-44100
+BenchmarkRegisterUser/RegisterUser-44100-32     	       2	 623827436 ns/op	  152152 B/op	     522 allocs/op
+BenchmarkRegisterUser/RegisterUser-44521
+BenchmarkRegisterUser/RegisterUser-44521-32     	       2	 678005130 ns/op	  152880 B/op	     525 allocs/op
+BenchmarkRegisterUser/RegisterUser-44944
+BenchmarkRegisterUser/RegisterUser-44944-32     	       2	 621766583 ns/op	  153608 B/op	     527 allocs/op
+BenchmarkRegisterUser/RegisterUser-45369
+BenchmarkRegisterUser/RegisterUser-45369-32     	       2	 688358579 ns/op	  154336 B/op	     530 allocs/op
+BenchmarkRegisterUser/RegisterUser-45796
+BenchmarkRegisterUser/RegisterUser-45796-32     	       2	 687204559 ns/op	  155064 B/op	     532 allocs/op
+BenchmarkRegisterUser/RegisterUser-46225
+BenchmarkRegisterUser/RegisterUser-46225-32     	       2	 700793136 ns/op	  155792 B/op	     535 allocs/op
+BenchmarkRegisterUser/RegisterUser-46656
+BenchmarkRegisterUser/RegisterUser-46656-32     	       2	 699128080 ns/op	  156520 B/op	     537 allocs/op
+BenchmarkRegisterUser/RegisterUser-47089
+BenchmarkRegisterUser/RegisterUser-47089-32     	       2	 703802460 ns/op	  157248 B/op	     540 allocs/op
+BenchmarkRegisterUser/RegisterUser-47524
+BenchmarkRegisterUser/RegisterUser-47524-32     	       2	 704517813 ns/op	  157976 B/op	     542 allocs/op
+BenchmarkRegisterUser/RegisterUser-47961
+BenchmarkRegisterUser/RegisterUser-47961-32     	       2	 691747250 ns/op	  158704 B/op	     545 allocs/op
+BenchmarkRegisterUser/RegisterUser-48400
+BenchmarkRegisterUser/RegisterUser-48400-32     	       2	 702511020 ns/op	  159432 B/op	     547 allocs/op
+BenchmarkRegisterUser/RegisterUser-48841
+BenchmarkRegisterUser/RegisterUser-48841-32     	       2	 697748758 ns/op	  160160 B/op	     550 allocs/op
+BenchmarkRegisterUser/RegisterUser-49284
+BenchmarkRegisterUser/RegisterUser-49284-32     	       2	 677405914 ns/op	  160888 B/op	     552 allocs/op
+BenchmarkRegisterUser/RegisterUser-49729
+BenchmarkRegisterUser/RegisterUser-49729-32     	       2	 716662962 ns/op	  161616 B/op	     555 allocs/op
+BenchmarkRegisterUser/RegisterUser-50176
+BenchmarkRegisterUser/RegisterUser-50176-32     	       2	 681905372 ns/op	  162344 B/op	     557 allocs/op
+BenchmarkRegisterUser/RegisterUser-50625
+BenchmarkRegisterUser/RegisterUser-50625-32     	       2	 710218050 ns/op	  163072 B/op	     560 allocs/op
+BenchmarkRegisterUser/RegisterUser-51076
+BenchmarkRegisterUser/RegisterUser-51076-32     	       2	 732646249 ns/op	  163800 B/op	     562 allocs/op
+BenchmarkRegisterUser/RegisterUser-51529
+BenchmarkRegisterUser/RegisterUser-51529-32     	       2	 718752112 ns/op	  164528 B/op	     565 allocs/op
+BenchmarkRegisterUser/RegisterUser-51984
+BenchmarkRegisterUser/RegisterUser-51984-32     	       2	 687708662 ns/op	  165256 B/op	     567 allocs/op
+BenchmarkRegisterUser/RegisterUser-52441
+BenchmarkRegisterUser/RegisterUser-52441-32     	       2	 722362442 ns/op	  165984 B/op	     570 allocs/op
+BenchmarkRegisterUser/RegisterUser-52900
+BenchmarkRegisterUser/RegisterUser-52900-32     	       2	 715528313 ns/op	  166712 B/op	     572 allocs/op
+BenchmarkRegisterUser/RegisterUser-53361
+BenchmarkRegisterUser/RegisterUser-53361-32     	       2	 751074036 ns/op	  167440 B/op	     575 allocs/op
+BenchmarkRegisterUser/RegisterUser-53824
+BenchmarkRegisterUser/RegisterUser-53824-32     	       2	 760652752 ns/op	  168168 B/op	     577 allocs/op
+BenchmarkRegisterUser/RegisterUser-54289
+BenchmarkRegisterUser/RegisterUser-54289-32     	       2	 748411250 ns/op	  168896 B/op	     580 allocs/op
+BenchmarkRegisterUser/RegisterUser-54756
+BenchmarkRegisterUser/RegisterUser-54756-32     	       2	 675234044 ns/op	  169624 B/op	     582 allocs/op
+BenchmarkRegisterUser/RegisterUser-55225
+BenchmarkRegisterUser/RegisterUser-55225-32     	       2	 772361570 ns/op	  170352 B/op	     585 allocs/op
+BenchmarkRegisterUser/RegisterUser-55696
+BenchmarkRegisterUser/RegisterUser-55696-32     	       2	 726481164 ns/op	  171080 B/op	     587 allocs/op
+BenchmarkRegisterUser/RegisterUser-56169
+BenchmarkRegisterUser/RegisterUser-56169-32     	       2	 760358081 ns/op	  171808 B/op	     590 allocs/op
+BenchmarkRegisterUser/RegisterUser-56644
+BenchmarkRegisterUser/RegisterUser-56644-32     	       2	 783739360 ns/op	  172536 B/op	     592 allocs/op
+BenchmarkRegisterUser/RegisterUser-57121
+BenchmarkRegisterUser/RegisterUser-57121-32     	       2	 749659624 ns/op	  173264 B/op	     595 allocs/op
+BenchmarkRegisterUser/RegisterUser-57600
+BenchmarkRegisterUser/RegisterUser-57600-32     	       2	 745595023 ns/op	  173992 B/op	     597 allocs/op
+BenchmarkRegisterUser/RegisterUser-58081
+BenchmarkRegisterUser/RegisterUser-58081-32     	       2	 792921692 ns/op	  174720 B/op	     600 allocs/op
+BenchmarkRegisterUser/RegisterUser-58564
+BenchmarkRegisterUser/RegisterUser-58564-32     	       2	 787369800 ns/op	  175448 B/op	     602 allocs/op
+BenchmarkRegisterUser/RegisterUser-59049
+BenchmarkRegisterUser/RegisterUser-59049-32     	       2	 771354969 ns/op	  176176 B/op	     605 allocs/op
+BenchmarkRegisterUser/RegisterUser-59536
+BenchmarkRegisterUser/RegisterUser-59536-32     	       2	 764041198 ns/op	  176904 B/op	     607 allocs/op
+BenchmarkRegisterUser/RegisterUser-60025
+BenchmarkRegisterUser/RegisterUser-60025-32     	       2	 770810418 ns/op	  177632 B/op	     610 allocs/op
+BenchmarkRegisterUser/RegisterUser-60516
+BenchmarkRegisterUser/RegisterUser-60516-32     	       2	 787397764 ns/op	  178360 B/op	     612 allocs/op
+BenchmarkRegisterUser/RegisterUser-61009
+BenchmarkRegisterUser/RegisterUser-61009-32     	       2	 777634714 ns/op	  179088 B/op	     615 allocs/op
+BenchmarkRegisterUser/RegisterUser-61504
+BenchmarkRegisterUser/RegisterUser-61504-32     	       2	 785864241 ns/op	  179816 B/op	     617 allocs/op
+BenchmarkRegisterUser/RegisterUser-62001
+BenchmarkRegisterUser/RegisterUser-62001-32     	       2	 781723792 ns/op	  180544 B/op	     620 allocs/op
+BenchmarkRegisterUser/RegisterUser-62500
+BenchmarkRegisterUser/RegisterUser-62500-32     	       2	 722747471 ns/op	  181272 B/op	     622 allocs/op
+BenchmarkRegisterUser/RegisterUser-63001
+BenchmarkRegisterUser/RegisterUser-63001-32     	       2	 801463228 ns/op	  182000 B/op	     625 allocs/op
+BenchmarkRegisterUser/RegisterUser-63504
+BenchmarkRegisterUser/RegisterUser-63504-32     	       2	 830453374 ns/op	  182728 B/op	     627 allocs/op
+BenchmarkRegisterUser/RegisterUser-64009
+BenchmarkRegisterUser/RegisterUser-64009-32     	       2	 739093672 ns/op	  183456 B/op	     630 allocs/op
+BenchmarkRegisterUser/RegisterUser-64516
+BenchmarkRegisterUser/RegisterUser-64516-32     	       2	 794530902 ns/op	  184184 B/op	     632 allocs/op
+BenchmarkRegisterUser/RegisterUser-65025
+BenchmarkRegisterUser/RegisterUser-65025-32     	       2	 813014260 ns/op	  184912 B/op	     635 allocs/op
+BenchmarkRegisterUser/RegisterUser-65536
+BenchmarkRegisterUser/RegisterUser-65536-32     	       2	 827766896 ns/op	  185640 B/op	     637 allocs/op
+BenchmarkRegisterUser/RegisterUser-66049
+BenchmarkRegisterUser/RegisterUser-66049-32     	       2	 818513181 ns/op	  186368 B/op	     640 allocs/op
+BenchmarkRegisterUser/RegisterUser-66564
+BenchmarkRegisterUser/RegisterUser-66564-32     	       2	 808028796 ns/op	  187096 B/op	     642 allocs/op
+BenchmarkRegisterUser/RegisterUser-67081
+BenchmarkRegisterUser/RegisterUser-67081-32     	       2	 851140180 ns/op	  187824 B/op	     645 allocs/op
+BenchmarkRegisterUser/RegisterUser-67600
+BenchmarkRegisterUser/RegisterUser-67600-32     	       2	 785558630 ns/op	  188552 B/op	     647 allocs/op
+BenchmarkRegisterUser/RegisterUser-68121
+BenchmarkRegisterUser/RegisterUser-68121-32     	       2	 798823694 ns/op	  189280 B/op	     650 allocs/op
+BenchmarkRegisterUser/RegisterUser-68644
+BenchmarkRegisterUser/RegisterUser-68644-32     	       2	 817900322 ns/op	  190008 B/op	     652 allocs/op
+BenchmarkRegisterUser/RegisterUser-69169
+BenchmarkRegisterUser/RegisterUser-69169-32     	       2	 833117768 ns/op	  190736 B/op	     655 allocs/op
+BenchmarkRegisterUser/RegisterUser-69696
+BenchmarkRegisterUser/RegisterUser-69696-32     	       2	 830633060 ns/op	  191464 B/op	     657 allocs/op
+BenchmarkRegisterUser/RegisterUser-70225
+BenchmarkRegisterUser/RegisterUser-70225-32     	       2	 868990790 ns/op	  192192 B/op	     660 allocs/op
+BenchmarkRegisterUser/RegisterUser-70756
+BenchmarkRegisterUser/RegisterUser-70756-32     	       2	 826745426 ns/op	  192920 B/op	     662 allocs/op
+BenchmarkRegisterUser/RegisterUser-71289
+BenchmarkRegisterUser/RegisterUser-71289-32     	       2	 871183204 ns/op	  193648 B/op	     665 allocs/op
+BenchmarkRegisterUser/RegisterUser-71824
+BenchmarkRegisterUser/RegisterUser-71824-32     	       2	 865914890 ns/op	  194376 B/op	     667 allocs/op
+BenchmarkRegisterUser/RegisterUser-72361
+BenchmarkRegisterUser/RegisterUser-72361-32     	       2	 855853223 ns/op	  195104 B/op	     670 allocs/op
+BenchmarkRegisterUser/RegisterUser-72900
+BenchmarkRegisterUser/RegisterUser-72900-32     	       2	 855481482 ns/op	  195832 B/op	     672 allocs/op
+BenchmarkRegisterUser/RegisterUser-73441
+BenchmarkRegisterUser/RegisterUser-73441-32     	       2	 828831128 ns/op	  196560 B/op	     675 allocs/op
+BenchmarkRegisterUser/RegisterUser-73984
+BenchmarkRegisterUser/RegisterUser-73984-32     	       2	 891687295 ns/op	  197288 B/op	     677 allocs/op
+BenchmarkRegisterUser/RegisterUser-74529
+BenchmarkRegisterUser/RegisterUser-74529-32     	       2	 866144088 ns/op	  198016 B/op	     680 allocs/op
+BenchmarkRegisterUser/RegisterUser-75076
+BenchmarkRegisterUser/RegisterUser-75076-32     	       2	 853825296 ns/op	  198744 B/op	     682 allocs/op
+BenchmarkRegisterUser/RegisterUser-75625
+BenchmarkRegisterUser/RegisterUser-75625-32     	       2	 933648925 ns/op	  199472 B/op	     685 allocs/op
+BenchmarkRegisterUser/RegisterUser-76176
+BenchmarkRegisterUser/RegisterUser-76176-32     	       2	 871795320 ns/op	  200200 B/op	     687 allocs/op
+BenchmarkRegisterUser/RegisterUser-76729
+BenchmarkRegisterUser/RegisterUser-76729-32     	       2	 901626400 ns/op	  200928 B/op	     690 allocs/op
+BenchmarkRegisterUser/RegisterUser-77284
+BenchmarkRegisterUser/RegisterUser-77284-32     	       2	 842584681 ns/op	  201656 B/op	     692 allocs/op
+BenchmarkRegisterUser/RegisterUser-77841
+BenchmarkRegisterUser/RegisterUser-77841-32     	       1	1029823016 ns/op	  204608 B/op	     834 allocs/op
+BenchmarkRegisterUser/RegisterUser-78400
+BenchmarkRegisterUser/RegisterUser-78400-32     	       2	 871056174 ns/op	  203112 B/op	     697 allocs/op
+BenchmarkRegisterUser/RegisterUser-78961
+BenchmarkRegisterUser/RegisterUser-78961-32     	       1	1001568745 ns/op	  206080 B/op	     840 allocs/op
+BenchmarkRegisterUser/RegisterUser-79524
+BenchmarkRegisterUser/RegisterUser-79524-32     	       2	 891645250 ns/op	  204568 B/op	     702 allocs/op
+BenchmarkRegisterUser/RegisterUser-80089
+BenchmarkRegisterUser/RegisterUser-80089-32     	       2	 899224706 ns/op	  205296 B/op	     705 allocs/op
+BenchmarkRegisterUser/RegisterUser-80656
+BenchmarkRegisterUser/RegisterUser-80656-32     	       2	 916995222 ns/op	  206024 B/op	     707 allocs/op
+BenchmarkRegisterUser/RegisterUser-81225
+BenchmarkRegisterUser/RegisterUser-81225-32     	       2	 833035600 ns/op	  206752 B/op	     710 allocs/op
+BenchmarkRegisterUser/RegisterUser-81796
+BenchmarkRegisterUser/RegisterUser-81796-32     	       2	 913297681 ns/op	  207480 B/op	     712 allocs/op
+BenchmarkRegisterUser/RegisterUser-82369
+BenchmarkRegisterUser/RegisterUser-82369-32     	       2	 867065124 ns/op	  208208 B/op	     715 allocs/op
+BenchmarkRegisterUser/RegisterUser-82944
+BenchmarkRegisterUser/RegisterUser-82944-32     	       2	 847830512 ns/op	  208936 B/op	     717 allocs/op
+BenchmarkRegisterUser/RegisterUser-83521
+BenchmarkRegisterUser/RegisterUser-83521-32     	       2	 916924318 ns/op	  209664 B/op	     720 allocs/op
+BenchmarkRegisterUser/RegisterUser-84100
+BenchmarkRegisterUser/RegisterUser-84100-32     	       1	1017278217 ns/op	  212704 B/op	     867 allocs/op
+BenchmarkRegisterUser/RegisterUser-84681
+BenchmarkRegisterUser/RegisterUser-84681-32     	       1	1015450538 ns/op	  213440 B/op	     870 allocs/op
+BenchmarkRegisterUser/RegisterUser-85264
+BenchmarkRegisterUser/RegisterUser-85264-32     	       2	 926821591 ns/op	  211848 B/op	     727 allocs/op
+BenchmarkRegisterUser/RegisterUser-85849
+BenchmarkRegisterUser/RegisterUser-85849-32     	       1	1012210157 ns/op	  214912 B/op	     876 allocs/op
+BenchmarkRegisterUser/RegisterUser-86436
+BenchmarkRegisterUser/RegisterUser-86436-32     	       1	1021941120 ns/op	  215648 B/op	     879 allocs/op
+BenchmarkRegisterUser/RegisterUser-87025
+BenchmarkRegisterUser/RegisterUser-87025-32     	       2	 926892896 ns/op	  214032 B/op	     735 allocs/op
+BenchmarkRegisterUser/RegisterUser-87616
+BenchmarkRegisterUser/RegisterUser-87616-32     	       2	 853057647 ns/op	  214760 B/op	     737 allocs/op
+BenchmarkRegisterUser/RegisterUser-88209
+BenchmarkRegisterUser/RegisterUser-88209-32     	       1	1022797139 ns/op	  217856 B/op	     888 allocs/op
+BenchmarkRegisterUser/RegisterUser-88804
+BenchmarkRegisterUser/RegisterUser-88804-32     	       1	1058684662 ns/op	  218592 B/op	     891 allocs/op
+BenchmarkRegisterUser/RegisterUser-89401
+BenchmarkRegisterUser/RegisterUser-89401-32     	       1	1039738593 ns/op	  219328 B/op	     894 allocs/op
+BenchmarkRegisterUser/RegisterUser-90000
+BenchmarkRegisterUser/RegisterUser-90000-32     	       1	1011245701 ns/op	  220064 B/op	     897 allocs/op
+BenchmarkRegisterUser/RegisterUser-90601
+BenchmarkRegisterUser/RegisterUser-90601-32     	       1	1033212971 ns/op	  220800 B/op	     900 allocs/op
+BenchmarkRegisterUser/RegisterUser-91204
+BenchmarkRegisterUser/RegisterUser-91204-32     	       2	 918872778 ns/op	  219128 B/op	     752 allocs/op
+BenchmarkRegisterUser/RegisterUser-91809
+BenchmarkRegisterUser/RegisterUser-91809-32     	       1	1040391179 ns/op	  222272 B/op	     906 allocs/op
+BenchmarkRegisterUser/RegisterUser-92416
+BenchmarkRegisterUser/RegisterUser-92416-32     	       1	1018336587 ns/op	  223008 B/op	     909 allocs/op
+BenchmarkRegisterUser/RegisterUser-93025
+BenchmarkRegisterUser/RegisterUser-93025-32     	       1	1017693124 ns/op	  223744 B/op	     912 allocs/op
+BenchmarkRegisterUser/RegisterUser-93636
+BenchmarkRegisterUser/RegisterUser-93636-32     	       1	1038377685 ns/op	  224480 B/op	     915 allocs/op
+BenchmarkRegisterUser/RegisterUser-94249
+BenchmarkRegisterUser/RegisterUser-94249-32     	       1	1054729038 ns/op	  225216 B/op	     918 allocs/op
+BenchmarkRegisterUser/RegisterUser-94864
+BenchmarkRegisterUser/RegisterUser-94864-32     	       2	 914904490 ns/op	  223496 B/op	     767 allocs/op
+BenchmarkRegisterUser/RegisterUser-95481
+BenchmarkRegisterUser/RegisterUser-95481-32     	       1	1084748081 ns/op	  226688 B/op	     924 allocs/op
+BenchmarkRegisterUser/RegisterUser-96100
+BenchmarkRegisterUser/RegisterUser-96100-32     	       2	 892326296 ns/op	  224952 B/op	     772 allocs/op
+BenchmarkRegisterUser/RegisterUser-96721
+BenchmarkRegisterUser/RegisterUser-96721-32     	       2	 899123171 ns/op	  225680 B/op	     775 allocs/op
+BenchmarkRegisterUser/RegisterUser-97344
+BenchmarkRegisterUser/RegisterUser-97344-32     	       1	1023578974 ns/op	  228896 B/op	     933 allocs/op
+BenchmarkRegisterUser/RegisterUser-97969
+BenchmarkRegisterUser/RegisterUser-97969-32     	       1	1096611389 ns/op	  229632 B/op	     936 allocs/op
+BenchmarkRegisterUser/RegisterUser-98596
+BenchmarkRegisterUser/RegisterUser-98596-32     	       1	1062071669 ns/op	  230368 B/op	     939 allocs/op
+BenchmarkRegisterUser/RegisterUser-99225
+BenchmarkRegisterUser/RegisterUser-99225-32     	       1	1049484211 ns/op	  231104 B/op	     942 allocs/op
+BenchmarkRegisterUser/RegisterUser-99856
+BenchmarkRegisterUser/RegisterUser-99856-32     	       2	 914745218 ns/op	  229320 B/op	     787 allocs/op
+BenchmarkRegisterUser/RegisterUser-100489
+BenchmarkRegisterUser/RegisterUser-100489-32    	       1	1082623891 ns/op	  232576 B/op	     948 allocs/op
+BenchmarkRegisterUser/RegisterUser-101124
+BenchmarkRegisterUser/RegisterUser-101124-32    	       1	1102804802 ns/op	  233312 B/op	     951 allocs/op
+BenchmarkRegisterUser/RegisterUser-101761
+BenchmarkRegisterUser/RegisterUser-101761-32    	       1	1105540228 ns/op	  234048 B/op	     954 allocs/op
+BenchmarkRegisterUser/RegisterUser-102400
+BenchmarkRegisterUser/RegisterUser-102400-32    	       1	1093797602 ns/op	  234784 B/op	     957 allocs/op
+BenchmarkRegisterUser/RegisterUser-103041
+BenchmarkRegisterUser/RegisterUser-103041-32    	       1	1069155530 ns/op	  235520 B/op	     960 allocs/op
+BenchmarkRegisterUser/RegisterUser-103684
+BenchmarkRegisterUser/RegisterUser-103684-32    	       1	1118237369 ns/op	  236256 B/op	     963 allocs/op
+BenchmarkRegisterUser/RegisterUser-104329
+BenchmarkRegisterUser/RegisterUser-104329-32    	       1	1102661974 ns/op	  236992 B/op	     966 allocs/op
+BenchmarkRegisterUser/RegisterUser-104976
+BenchmarkRegisterUser/RegisterUser-104976-32    	       1	1089901485 ns/op	  237728 B/op	     969 allocs/op
+BenchmarkRegisterUser/RegisterUser-105625
+BenchmarkRegisterUser/RegisterUser-105625-32    	       1	1092942111 ns/op	  238464 B/op	     972 allocs/op
+BenchmarkRegisterUser/RegisterUser-106276
+BenchmarkRegisterUser/RegisterUser-106276-32    	       1	1097110368 ns/op	  239200 B/op	     975 allocs/op
+BenchmarkRegisterUser/RegisterUser-106929
+BenchmarkRegisterUser/RegisterUser-106929-32    	       1	1088147511 ns/op	  239936 B/op	     978 allocs/op
+BenchmarkRegisterUser/RegisterUser-107584
+BenchmarkRegisterUser/RegisterUser-107584-32    	       1	1088424082 ns/op	  240672 B/op	     981 allocs/op
+BenchmarkRegisterUser/RegisterUser-108241
+BenchmarkRegisterUser/RegisterUser-108241-32    	       1	1138140523 ns/op	  241408 B/op	     984 allocs/op
+BenchmarkRegisterUser/RegisterUser-108900
+BenchmarkRegisterUser/RegisterUser-108900-32    	       1	1083244403 ns/op	  242144 B/op	     987 allocs/op
+BenchmarkRegisterUser/RegisterUser-109561
+BenchmarkRegisterUser/RegisterUser-109561-32    	       1	1161835960 ns/op	  242880 B/op	     990 allocs/op
+BenchmarkRegisterUser/RegisterUser-110224
+BenchmarkRegisterUser/RegisterUser-110224-32    	       1	1138079086 ns/op	  243616 B/op	     993 allocs/op
+BenchmarkRegisterUser/RegisterUser-110889
+BenchmarkRegisterUser/RegisterUser-110889-32    	       1	1066250811 ns/op	  244352 B/op	     996 allocs/op
+BenchmarkRegisterUser/RegisterUser-111556
+BenchmarkRegisterUser/RegisterUser-111556-32    	       1	1129889991 ns/op	  245088 B/op	     999 allocs/op
+BenchmarkRegisterUser/RegisterUser-112225
+BenchmarkRegisterUser/RegisterUser-112225-32    	       1	1107344063 ns/op	  245824 B/op	    1002 allocs/op
+BenchmarkRegisterUser/RegisterUser-112896
+BenchmarkRegisterUser/RegisterUser-112896-32    	       1	1121060687 ns/op	  246560 B/op	    1005 allocs/op
+BenchmarkRegisterUser/RegisterUser-113569
+BenchmarkRegisterUser/RegisterUser-113569-32    	       1	1147392832 ns/op	  247296 B/op	    1008 allocs/op
+BenchmarkRegisterUser/RegisterUser-114244
+BenchmarkRegisterUser/RegisterUser-114244-32    	       1	1136831196 ns/op	  248032 B/op	    1011 allocs/op
+BenchmarkRegisterUser/RegisterUser-114921
+BenchmarkRegisterUser/RegisterUser-114921-32    	       1	1161621470 ns/op	  248768 B/op	    1014 allocs/op
+BenchmarkRegisterUser/RegisterUser-115600
+BenchmarkRegisterUser/RegisterUser-115600-32    	       1	1098061940 ns/op	  249504 B/op	    1017 allocs/op
+BenchmarkRegisterUser/RegisterUser-116281
+BenchmarkRegisterUser/RegisterUser-116281-32    	       1	1160411970 ns/op	  250240 B/op	    1020 allocs/op
+BenchmarkRegisterUser/RegisterUser-116964
+BenchmarkRegisterUser/RegisterUser-116964-32    	       1	1170855512 ns/op	  250976 B/op	    1023 allocs/op
+BenchmarkRegisterUser/RegisterUser-117649
+BenchmarkRegisterUser/RegisterUser-117649-32    	       1	1125192538 ns/op	  251712 B/op	    1026 allocs/op
+BenchmarkRegisterUser/RegisterUser-118336
+BenchmarkRegisterUser/RegisterUser-118336-32    	       1	1171474797 ns/op	  252448 B/op	    1029 allocs/op
+BenchmarkRegisterUser/RegisterUser-119025
+BenchmarkRegisterUser/RegisterUser-119025-32    	       1	1183162541 ns/op	  253184 B/op	    1032 allocs/op
+BenchmarkRegisterUser/RegisterUser-119716
+BenchmarkRegisterUser/RegisterUser-119716-32    	       1	1177712939 ns/op	  253920 B/op	    1035 allocs/op
+BenchmarkRegisterUser/RegisterUser-120409
+BenchmarkRegisterUser/RegisterUser-120409-32    	       1	1188303868 ns/op	  254656 B/op	    1038 allocs/op
+BenchmarkRegisterUser/RegisterUser-121104
+BenchmarkRegisterUser/RegisterUser-121104-32    	       1	1072370891 ns/op	  255392 B/op	    1041 allocs/op
+BenchmarkRegisterUser/RegisterUser-121801
+BenchmarkRegisterUser/RegisterUser-121801-32    	       1	1188833703 ns/op	  256128 B/op	    1044 allocs/op
+BenchmarkRegisterUser/RegisterUser-122500
+BenchmarkRegisterUser/RegisterUser-122500-32    	       1	1085736224 ns/op	  256864 B/op	    1047 allocs/op
+BenchmarkRegisterUser/RegisterUser-123201
+BenchmarkRegisterUser/RegisterUser-123201-32    	       1	1209951306 ns/op	  257600 B/op	    1050 allocs/op
+BenchmarkRegisterUser/RegisterUser-123904
+BenchmarkRegisterUser/RegisterUser-123904-32    	       1	1102203838 ns/op	  258336 B/op	    1053 allocs/op
+BenchmarkRegisterUser/RegisterUser-124609
+BenchmarkRegisterUser/RegisterUser-124609-32    	       1	1192205376 ns/op	  259072 B/op	    1056 allocs/op
+BenchmarkRegisterUser/RegisterUser-125316
+BenchmarkRegisterUser/RegisterUser-125316-32    	       1	1183998608 ns/op	  259808 B/op	    1059 allocs/op
+BenchmarkRegisterUser/RegisterUser-126025
+BenchmarkRegisterUser/RegisterUser-126025-32    	       1	1180040125 ns/op	  260544 B/op	    1062 allocs/op
+BenchmarkRegisterUser/RegisterUser-126736
+BenchmarkRegisterUser/RegisterUser-126736-32    	       1	1143975083 ns/op	  261280 B/op	    1065 allocs/op
+BenchmarkRegisterUser/RegisterUser-127449
+BenchmarkRegisterUser/RegisterUser-127449-32    	       1	1166279119 ns/op	  262016 B/op	    1068 allocs/op
+BenchmarkRegisterUser/RegisterUser-128164
+BenchmarkRegisterUser/RegisterUser-128164-32    	       1	1165690917 ns/op	  262752 B/op	    1071 allocs/op
+BenchmarkRegisterUser/RegisterUser-128881
+BenchmarkRegisterUser/RegisterUser-128881-32    	       1	1169568323 ns/op	  263488 B/op	    1074 allocs/op
+BenchmarkRegisterUser/RegisterUser-129600
+BenchmarkRegisterUser/RegisterUser-129600-32    	       1	1222886438 ns/op	  264224 B/op	    1077 allocs/op
+BenchmarkRegisterUser/RegisterUser-130321
+BenchmarkRegisterUser/RegisterUser-130321-32    	       1	1227706035 ns/op	  264960 B/op	    1080 allocs/op
+BenchmarkRegisterUser/RegisterUser-131044
+BenchmarkRegisterUser/RegisterUser-131044-32    	       1	1178362252 ns/op	  265696 B/op	    1083 allocs/op
+BenchmarkRegisterUser/RegisterUser-131769
+BenchmarkRegisterUser/RegisterUser-131769-32    	       1	1197912932 ns/op	  266432 B/op	    1086 allocs/op
+BenchmarkRegisterUser/RegisterUser-132496
+BenchmarkRegisterUser/RegisterUser-132496-32    	       1	1162384388 ns/op	  267168 B/op	    1089 allocs/op
+BenchmarkRegisterUser/RegisterUser-133225
+BenchmarkRegisterUser/RegisterUser-133225-32    	       1	1244580439 ns/op	  267904 B/op	    1092 allocs/op
+BenchmarkRegisterUser/RegisterUser-133956
+BenchmarkRegisterUser/RegisterUser-133956-32    	       1	1188215771 ns/op	  268640 B/op	    1095 allocs/op
+BenchmarkRegisterUser/RegisterUser-134689
+BenchmarkRegisterUser/RegisterUser-134689-32    	       1	1206963137 ns/op	  269376 B/op	    1098 allocs/op
+BenchmarkRegisterUser/RegisterUser-135424
+BenchmarkRegisterUser/RegisterUser-135424-32    	       1	1190833000 ns/op	  270112 B/op	    1101 allocs/op
+BenchmarkRegisterUser/RegisterUser-136161
+BenchmarkRegisterUser/RegisterUser-136161-32    	       1	1230945503 ns/op	  270848 B/op	    1104 allocs/op
+BenchmarkRegisterUser/RegisterUser-136900
+BenchmarkRegisterUser/RegisterUser-136900-32    	       1	1239377389 ns/op	  271584 B/op	    1107 allocs/op
+BenchmarkRegisterUser/RegisterUser-137641
+BenchmarkRegisterUser/RegisterUser-137641-32    	       1	1242622571 ns/op	  272320 B/op	    1110 allocs/op
+BenchmarkRegisterUser/RegisterUser-138384
+BenchmarkRegisterUser/RegisterUser-138384-32    	       1	1232228957 ns/op	  273056 B/op	    1113 allocs/op
+BenchmarkRegisterUser/RegisterUser-139129
+BenchmarkRegisterUser/RegisterUser-139129-32    	       1	1225016153 ns/op	  273792 B/op	    1116 allocs/op
+BenchmarkRegisterUser/RegisterUser-139876
+BenchmarkRegisterUser/RegisterUser-139876-32    	       1	1158343393 ns/op	  274528 B/op	    1119 allocs/op
+BenchmarkRegisterUser/RegisterUser-140625
+BenchmarkRegisterUser/RegisterUser-140625-32    	       1	1252350662 ns/op	  275264 B/op	    1122 allocs/op
+BenchmarkRegisterUser/RegisterUser-141376
+BenchmarkRegisterUser/RegisterUser-141376-32    	       1	1235457721 ns/op	  276000 B/op	    1125 allocs/op
+BenchmarkRegisterUser/RegisterUser-142129
+BenchmarkRegisterUser/RegisterUser-142129-32    	       1	1238722210 ns/op	  276736 B/op	    1128 allocs/op
+BenchmarkRegisterUser/RegisterUser-142884
+BenchmarkRegisterUser/RegisterUser-142884-32    	       1	1252598688 ns/op	  277472 B/op	    1131 allocs/op
+BenchmarkRegisterUser/RegisterUser-143641
+BenchmarkRegisterUser/RegisterUser-143641-32    	       1	1261233842 ns/op	  278208 B/op	    1134 allocs/op
+BenchmarkRegisterUser/RegisterUser-144400
+BenchmarkRegisterUser/RegisterUser-144400-32    	       1	1196143531 ns/op	  278944 B/op	    1137 allocs/op
+BenchmarkRegisterUser/RegisterUser-145161
+BenchmarkRegisterUser/RegisterUser-145161-32    	       1	1284137876 ns/op	  279680 B/op	    1140 allocs/op
+BenchmarkRegisterUser/RegisterUser-145924
+BenchmarkRegisterUser/RegisterUser-145924-32    	       1	1250968329 ns/op	  280416 B/op	    1143 allocs/op
+BenchmarkRegisterUser/RegisterUser-146689
+BenchmarkRegisterUser/RegisterUser-146689-32    	       1	1270375973 ns/op	  281152 B/op	    1146 allocs/op
+BenchmarkRegisterUser/RegisterUser-147456
+BenchmarkRegisterUser/RegisterUser-147456-32    	       1	1242749022 ns/op	  281888 B/op	    1149 allocs/op
+BenchmarkRegisterUser/RegisterUser-148225
+BenchmarkRegisterUser/RegisterUser-148225-32    	       1	1287797384 ns/op	  282624 B/op	    1152 allocs/op
+BenchmarkRegisterUser/RegisterUser-148996
+BenchmarkRegisterUser/RegisterUser-148996-32    	       1	1155135865 ns/op	  283360 B/op	    1155 allocs/op
+BenchmarkRegisterUser/RegisterUser-149769
+BenchmarkRegisterUser/RegisterUser-149769-32    	       1	1290340651 ns/op	  284096 B/op	    1158 allocs/op
+BenchmarkRegisterUser/RegisterUser-150544
+BenchmarkRegisterUser/RegisterUser-150544-32    	       1	1158444556 ns/op	  284832 B/op	    1161 allocs/op
+BenchmarkRegisterUser/RegisterUser-151321
+BenchmarkRegisterUser/RegisterUser-151321-32    	       1	1297692657 ns/op	  285568 B/op	    1164 allocs/op
+BenchmarkRegisterUser/RegisterUser-152100
+BenchmarkRegisterUser/RegisterUser-152100-32    	       1	1277043727 ns/op	  286304 B/op	    1167 allocs/op
+BenchmarkRegisterUser/RegisterUser-152881
+BenchmarkRegisterUser/RegisterUser-152881-32    	       1	1311097350 ns/op	  287040 B/op	    1170 allocs/op
+BenchmarkRegisterUser/RegisterUser-153664
+BenchmarkRegisterUser/RegisterUser-153664-32    	       1	1303833227 ns/op	  287776 B/op	    1173 allocs/op
+BenchmarkRegisterUser/RegisterUser-154449
+BenchmarkRegisterUser/RegisterUser-154449-32    	       1	1324386612 ns/op	  288512 B/op	    1176 allocs/op
+BenchmarkRegisterUser/RegisterUser-155236
+BenchmarkRegisterUser/RegisterUser-155236-32    	       1	1303962903 ns/op	  289248 B/op	    1179 allocs/op
+BenchmarkRegisterUser/RegisterUser-156025
+BenchmarkRegisterUser/RegisterUser-156025-32    	       1	1333710563 ns/op	  289984 B/op	    1182 allocs/op
+BenchmarkRegisterUser/RegisterUser-156816
+BenchmarkRegisterUser/RegisterUser-156816-32    	       1	1250218566 ns/op	  290720 B/op	    1185 allocs/op
+BenchmarkRegisterUser/RegisterUser-157609
+BenchmarkRegisterUser/RegisterUser-157609-32    	       1	1306484605 ns/op	  291456 B/op	    1188 allocs/op
+BenchmarkRegisterUser/RegisterUser-158404
+BenchmarkRegisterUser/RegisterUser-158404-32    	       1	1336962490 ns/op	  292192 B/op	    1191 allocs/op
+BenchmarkRegisterUser/RegisterUser-159201
+BenchmarkRegisterUser/RegisterUser-159201-32    	       1	1240016299 ns/op	  292928 B/op	    1194 allocs/op
+BenchmarkRegisterUser/RegisterUser-160000
+BenchmarkRegisterUser/RegisterUser-160000-32    	       1	1388800039 ns/op	  293664 B/op	    1197 allocs/op
+BenchmarkRegisterUser/RegisterUser-160801
+BenchmarkRegisterUser/RegisterUser-160801-32    	       1	1289139326 ns/op	  294400 B/op	    1200 allocs/op
+BenchmarkRegisterUser/RegisterUser-161604
+BenchmarkRegisterUser/RegisterUser-161604-32    	       1	1318990937 ns/op	  295136 B/op	    1203 allocs/op
+BenchmarkRegisterUser/RegisterUser-162409
+BenchmarkRegisterUser/RegisterUser-162409-32    	       1	1353989952 ns/op	  295872 B/op	    1206 allocs/op
+BenchmarkRegisterUser/RegisterUser-163216
+BenchmarkRegisterUser/RegisterUser-163216-32    	       1	1310775306 ns/op	  296608 B/op	    1209 allocs/op
+BenchmarkRegisterUser/RegisterUser-164025
+BenchmarkRegisterUser/RegisterUser-164025-32    	       1	1344759880 ns/op	  297344 B/op	    1212 allocs/op
+BenchmarkRegisterUser/RegisterUser-164836
+BenchmarkRegisterUser/RegisterUser-164836-32    	       1	1339496008 ns/op	  298080 B/op	    1215 allocs/op
+BenchmarkRegisterUser/RegisterUser-165649
+BenchmarkRegisterUser/RegisterUser-165649-32    	       1	1358770198 ns/op	  298816 B/op	    1218 allocs/op
+BenchmarkRegisterUser/RegisterUser-166464
+BenchmarkRegisterUser/RegisterUser-166464-32    	       1	1327007231 ns/op	  299552 B/op	    1221 allocs/op
+BenchmarkRegisterUser/RegisterUser-167281
+BenchmarkRegisterUser/RegisterUser-167281-32    	       1	1329084413 ns/op	  300288 B/op	    1224 allocs/op
+BenchmarkRegisterUser/RegisterUser-168100
+BenchmarkRegisterUser/RegisterUser-168100-32    	       1	1370368688 ns/op	  301024 B/op	    1227 allocs/op
+BenchmarkRegisterUser/RegisterUser-168921
+BenchmarkRegisterUser/RegisterUser-168921-32    	       1	1332947611 ns/op	  301760 B/op	    1230 allocs/op
+BenchmarkRegisterUser/RegisterUser-169744
+BenchmarkRegisterUser/RegisterUser-169744-32    	       1	1327312815 ns/op	  302496 B/op	    1233 allocs/op
+BenchmarkRegisterUser/RegisterUser-170569
+BenchmarkRegisterUser/RegisterUser-170569-32    	       1	1363514395 ns/op	  303232 B/op	    1236 allocs/op
+BenchmarkRegisterUser/RegisterUser-171396
+BenchmarkRegisterUser/RegisterUser-171396-32    	       1	1370235207 ns/op	  303968 B/op	    1239 allocs/op
+BenchmarkRegisterUser/RegisterUser-172225
+BenchmarkRegisterUser/RegisterUser-172225-32    	       1	1362144408 ns/op	  304704 B/op	    1242 allocs/op
+BenchmarkRegisterUser/RegisterUser-173056
+BenchmarkRegisterUser/RegisterUser-173056-32    	       1	1372981684 ns/op	  305440 B/op	    1245 allocs/op
+BenchmarkRegisterUser/RegisterUser-173889
+BenchmarkRegisterUser/RegisterUser-173889-32    	       1	1306138447 ns/op	  306176 B/op	    1248 allocs/op
+BenchmarkRegisterUser/RegisterUser-174724
+BenchmarkRegisterUser/RegisterUser-174724-32    	       1	1421004248 ns/op	  306912 B/op	    1251 allocs/op
+BenchmarkRegisterUser/RegisterUser-175561
+BenchmarkRegisterUser/RegisterUser-175561-32    	       1	1290931890 ns/op	  307648 B/op	    1254 allocs/op
+BenchmarkRegisterUser/RegisterUser-176400
+BenchmarkRegisterUser/RegisterUser-176400-32    	       1	1358857859 ns/op	  308384 B/op	    1257 allocs/op
+BenchmarkRegisterUser/RegisterUser-177241
+BenchmarkRegisterUser/RegisterUser-177241-32    	       1	1333095025 ns/op	  309120 B/op	    1260 allocs/op
+BenchmarkRegisterUser/RegisterUser-178084
+BenchmarkRegisterUser/RegisterUser-178084-32    	       1	1397282421 ns/op	  309856 B/op	    1263 allocs/op
+BenchmarkRegisterUser/RegisterUser-178929
+BenchmarkRegisterUser/RegisterUser-178929-32    	       1	1380566768 ns/op	  310592 B/op	    1266 allocs/op
+BenchmarkRegisterUser/RegisterUser-179776
+BenchmarkRegisterUser/RegisterUser-179776-32    	       1	1371037113 ns/op	  311328 B/op	    1269 allocs/op
+BenchmarkRegisterUser/RegisterUser-180625
+BenchmarkRegisterUser/RegisterUser-180625-32    	       1	1384169437 ns/op	  312064 B/op	    1272 allocs/op
+BenchmarkRegisterUser/RegisterUser-181476
+BenchmarkRegisterUser/RegisterUser-181476-32    	       1	1437110244 ns/op	  312800 B/op	    1275 allocs/op
+BenchmarkRegisterUser/RegisterUser-182329
+BenchmarkRegisterUser/RegisterUser-182329-32    	       1	1445628966 ns/op	  313536 B/op	    1278 allocs/op
+BenchmarkRegisterUser/RegisterUser-183184
+BenchmarkRegisterUser/RegisterUser-183184-32    	       1	1417383795 ns/op	  314272 B/op	    1281 allocs/op
+BenchmarkRegisterUser/RegisterUser-184041
+BenchmarkRegisterUser/RegisterUser-184041-32    	       1	1480801338 ns/op	  315008 B/op	    1284 allocs/op
+BenchmarkRegisterUser/RegisterUser-184900
+BenchmarkRegisterUser/RegisterUser-184900-32    	       1	1391567985 ns/op	  315744 B/op	    1287 allocs/op
+BenchmarkRegisterUser/RegisterUser-185761
+BenchmarkRegisterUser/RegisterUser-185761-32    	       1	1401381750 ns/op	  316480 B/op	    1290 allocs/op
+BenchmarkRegisterUser/RegisterUser-186624
+BenchmarkRegisterUser/RegisterUser-186624-32    	       1	1402400663 ns/op	  317216 B/op	    1293 allocs/op
+BenchmarkRegisterUser/RegisterUser-187489
+BenchmarkRegisterUser/RegisterUser-187489-32    	       1	1442807323 ns/op	  317952 B/op	    1296 allocs/op
+BenchmarkRegisterUser/RegisterUser-188356
+BenchmarkRegisterUser/RegisterUser-188356-32    	       1	1397036478 ns/op	  318688 B/op	    1299 allocs/op
+BenchmarkRegisterUser/RegisterUser-189225
+BenchmarkRegisterUser/RegisterUser-189225-32    	       1	1400666243 ns/op	  319424 B/op	    1302 allocs/op
+BenchmarkRegisterUser/RegisterUser-190096
+BenchmarkRegisterUser/RegisterUser-190096-32    	       1	1435600709 ns/op	  320160 B/op	    1305 allocs/op
+BenchmarkRegisterUser/RegisterUser-190969
+BenchmarkRegisterUser/RegisterUser-190969-32    	       1	1299061313 ns/op	  320896 B/op	    1308 allocs/op
+BenchmarkRegisterUser/RegisterUser-191844
+BenchmarkRegisterUser/RegisterUser-191844-32    	       1	1338459381 ns/op	  321632 B/op	    1311 allocs/op
+BenchmarkRegisterUser/RegisterUser-192721
+BenchmarkRegisterUser/RegisterUser-192721-32    	       1	1420520366 ns/op	  322368 B/op	    1314 allocs/op
+BenchmarkRegisterUser/RegisterUser-193600
+BenchmarkRegisterUser/RegisterUser-193600-32    	       1	1391693678 ns/op	  323104 B/op	    1317 allocs/op
+BenchmarkRegisterUser/RegisterUser-194481
+BenchmarkRegisterUser/RegisterUser-194481-32    	       1	1427372075 ns/op	  323840 B/op	    1320 allocs/op
+BenchmarkRegisterUser/RegisterUser-195364
+BenchmarkRegisterUser/RegisterUser-195364-32    	       1	1384640558 ns/op	  324576 B/op	    1323 allocs/op
+BenchmarkRegisterUser/RegisterUser-196249
+BenchmarkRegisterUser/RegisterUser-196249-32    	       1	1537166741 ns/op	  325312 B/op	    1326 allocs/op
+BenchmarkRegisterUser/RegisterUser-197136
+BenchmarkRegisterUser/RegisterUser-197136-32    	       1	1394542432 ns/op	  326048 B/op	    1329 allocs/op
+BenchmarkRegisterUser/RegisterUser-198025
+BenchmarkRegisterUser/RegisterUser-198025-32    	       1	1447184784 ns/op	  326784 B/op	    1332 allocs/op
+BenchmarkRegisterUser/RegisterUser-198916
+BenchmarkRegisterUser/RegisterUser-198916-32    	       1	1410326441 ns/op	  327520 B/op	    1335 allocs/op
+BenchmarkRegisterUser/RegisterUser-199809
+BenchmarkRegisterUser/RegisterUser-199809-32    	       1	1367223236 ns/op	  328256 B/op	    1338 allocs/op
+BenchmarkRegisterUser/RegisterUser-200704
+BenchmarkRegisterUser/RegisterUser-200704-32    	       1	1328837249 ns/op	  328992 B/op	    1341 allocs/op
+BenchmarkRegisterUser/RegisterUser-201601
+BenchmarkRegisterUser/RegisterUser-201601-32    	       1	1366099664 ns/op	  329728 B/op	    1344 allocs/op
+BenchmarkRegisterUser/RegisterUser-202500
+BenchmarkRegisterUser/RegisterUser-202500-32    	       1	1465595790 ns/op	  330464 B/op	    1347 allocs/op
+BenchmarkRegisterUser/RegisterUser-203401
+BenchmarkRegisterUser/RegisterUser-203401-32    	       1	1469359292 ns/op	  331200 B/op	    1350 allocs/op
+BenchmarkRegisterUser/RegisterUser-204304
+BenchmarkRegisterUser/RegisterUser-204304-32    	       1	1354650542 ns/op	  331936 B/op	    1353 allocs/op
+BenchmarkRegisterUser/RegisterUser-205209
+BenchmarkRegisterUser/RegisterUser-205209-32    	       1	1448209088 ns/op	  332672 B/op	    1356 allocs/op
+BenchmarkRegisterUser/RegisterUser-206116
+BenchmarkRegisterUser/RegisterUser-206116-32    	       1	1427210287 ns/op	  333408 B/op	    1359 allocs/op
+BenchmarkRegisterUser/RegisterUser-207025
+BenchmarkRegisterUser/RegisterUser-207025-32    	       1	1440297098 ns/op	  334144 B/op	    1362 allocs/op
+BenchmarkRegisterUser/RegisterUser-207936
+BenchmarkRegisterUser/RegisterUser-207936-32    	       1	1463196911 ns/op	  334880 B/op	    1365 allocs/op
+BenchmarkRegisterUser/RegisterUser-208849
+BenchmarkRegisterUser/RegisterUser-208849-32    	       1	1525775440 ns/op	  335616 B/op	    1368 allocs/op
+BenchmarkRegisterUser/RegisterUser-209764
+BenchmarkRegisterUser/RegisterUser-209764-32    	       1	1450330129 ns/op	  336352 B/op	    1371 allocs/op
+BenchmarkRegisterUser/RegisterUser-210681
+BenchmarkRegisterUser/RegisterUser-210681-32    	       1	1514984125 ns/op	  337088 B/op	    1374 allocs/op
+BenchmarkRegisterUser/RegisterUser-211600
+BenchmarkRegisterUser/RegisterUser-211600-32    	       1	1395302197 ns/op	  337824 B/op	    1377 allocs/op
+BenchmarkRegisterUser/RegisterUser-212521
+BenchmarkRegisterUser/RegisterUser-212521-32    	       1	1509553187 ns/op	  338560 B/op	    1380 allocs/op
+BenchmarkRegisterUser/RegisterUser-213444
+BenchmarkRegisterUser/RegisterUser-213444-32    	       1	1405691489 ns/op	  339296 B/op	    1383 allocs/op
+BenchmarkRegisterUser/RegisterUser-214369
+BenchmarkRegisterUser/RegisterUser-214369-32    	       1	1456562105 ns/op	  340032 B/op	    1386 allocs/op
+BenchmarkRegisterUser/RegisterUser-215296
+BenchmarkRegisterUser/RegisterUser-215296-32    	       1	1491242778 ns/op	  340768 B/op	    1389 allocs/op
+BenchmarkRegisterUser/RegisterUser-216225
+BenchmarkRegisterUser/RegisterUser-216225-32    	       1	1513979729 ns/op	  341504 B/op	    1392 allocs/op
+BenchmarkRegisterUser/RegisterUser-217156
+BenchmarkRegisterUser/RegisterUser-217156-32    	       1	1452090970 ns/op	  342240 B/op	    1395 allocs/op
+BenchmarkRegisterUser/RegisterUser-218089
+BenchmarkRegisterUser/RegisterUser-218089-32    	       1	1525157518 ns/op	  342976 B/op	    1398 allocs/op
+BenchmarkRegisterUser/RegisterUser-219024
+BenchmarkRegisterUser/RegisterUser-219024-32    	       1	1492440580 ns/op	  343712 B/op	    1401 allocs/op
+BenchmarkRegisterUser/RegisterUser-219961
+BenchmarkRegisterUser/RegisterUser-219961-32    	       1	1488423326 ns/op	  344448 B/op	    1404 allocs/op
+BenchmarkRegisterUser/RegisterUser-220900
+BenchmarkRegisterUser/RegisterUser-220900-32    	       1	1533679028 ns/op	  345184 B/op	    1407 allocs/op
+BenchmarkRegisterUser/RegisterUser-221841
+BenchmarkRegisterUser/RegisterUser-221841-32    	       1	1514827326 ns/op	  345920 B/op	    1410 allocs/op
+BenchmarkRegisterUser/RegisterUser-222784
+BenchmarkRegisterUser/RegisterUser-222784-32    	       1	1534434637 ns/op	  346656 B/op	    1413 allocs/op
+BenchmarkRegisterUser/RegisterUser-223729
+BenchmarkRegisterUser/RegisterUser-223729-32    	       1	1535019499 ns/op	  347392 B/op	    1416 allocs/op
+BenchmarkRegisterUser/RegisterUser-224676
+BenchmarkRegisterUser/RegisterUser-224676-32    	       1	1530990143 ns/op	  348128 B/op	    1419 allocs/op
+BenchmarkRegisterUser/RegisterUser-225625
+BenchmarkRegisterUser/RegisterUser-225625-32    	       1	1560622919 ns/op	  348864 B/op	    1422 allocs/op
+BenchmarkRegisterUser/RegisterUser-226576
+BenchmarkRegisterUser/RegisterUser-226576-32    	       1	1537306489 ns/op	  349600 B/op	    1425 allocs/op
+BenchmarkRegisterUser/RegisterUser-227529
+BenchmarkRegisterUser/RegisterUser-227529-32    	       1	1569597760 ns/op	  350336 B/op	    1428 allocs/op
+BenchmarkRegisterUser/RegisterUser-228484
+BenchmarkRegisterUser/RegisterUser-228484-32    	       1	1558182289 ns/op	  351072 B/op	    1431 allocs/op
+BenchmarkRegisterUser/RegisterUser-229441
+BenchmarkRegisterUser/RegisterUser-229441-32    	       1	1575516219 ns/op	  351808 B/op	    1434 allocs/op
+BenchmarkRegisterUser/RegisterUser-230400
+BenchmarkRegisterUser/RegisterUser-230400-32    	       1	1570090095 ns/op	  352544 B/op	    1437 allocs/op
+BenchmarkRegisterUser/RegisterUser-231361
+BenchmarkRegisterUser/RegisterUser-231361-32    	       1	1606369385 ns/op	  353280 B/op	    1440 allocs/op
+BenchmarkRegisterUser/RegisterUser-232324
+BenchmarkRegisterUser/RegisterUser-232324-32    	       1	1545133161 ns/op	  354016 B/op	    1443 allocs/op
+BenchmarkRegisterUser/RegisterUser-233289
+BenchmarkRegisterUser/RegisterUser-233289-32    	       1	1506238678 ns/op	  354752 B/op	    1446 allocs/op
+BenchmarkRegisterUser/RegisterUser-234256
+BenchmarkRegisterUser/RegisterUser-234256-32    	       1	1594068991 ns/op	  355488 B/op	    1449 allocs/op
+BenchmarkRegisterUser/RegisterUser-235225
+BenchmarkRegisterUser/RegisterUser-235225-32    	       1	1577195966 ns/op	  356224 B/op	    1452 allocs/op
+BenchmarkRegisterUser/RegisterUser-236196
+BenchmarkRegisterUser/RegisterUser-236196-32    	       1	1589081362 ns/op	  356960 B/op	    1455 allocs/op
+BenchmarkRegisterUser/RegisterUser-237169
+BenchmarkRegisterUser/RegisterUser-237169-32    	       1	1579901305 ns/op	  357696 B/op	    1458 allocs/op
+BenchmarkRegisterUser/RegisterUser-238144
+BenchmarkRegisterUser/RegisterUser-238144-32    	       1	1605458977 ns/op	  358432 B/op	    1461 allocs/op
+BenchmarkRegisterUser/RegisterUser-239121
+BenchmarkRegisterUser/RegisterUser-239121-32    	       1	1605137821 ns/op	  359168 B/op	    1464 allocs/op
+BenchmarkRegisterUser/RegisterUser-240100
+BenchmarkRegisterUser/RegisterUser-240100-32    	       1	1574200996 ns/op	  359904 B/op	    1467 allocs/op
+BenchmarkRegisterUser/RegisterUser-241081
+BenchmarkRegisterUser/RegisterUser-241081-32    	       1	1596129520 ns/op	  360640 B/op	    1470 allocs/op
+BenchmarkRegisterUser/RegisterUser-242064
+BenchmarkRegisterUser/RegisterUser-242064-32    	       1	1561105765 ns/op	  361376 B/op	    1473 allocs/op
+BenchmarkRegisterUser/RegisterUser-243049
+BenchmarkRegisterUser/RegisterUser-243049-32    	       1	1592399952 ns/op	  362112 B/op	    1476 allocs/op
+BenchmarkRegisterUser/RegisterUser-244036
+BenchmarkRegisterUser/RegisterUser-244036-32    	       1	1562406446 ns/op	  362848 B/op	    1479 allocs/op
+BenchmarkRegisterUser/RegisterUser-245025
+BenchmarkRegisterUser/RegisterUser-245025-32    	       1	1612296796 ns/op	  363584 B/op	    1482 allocs/op
+BenchmarkRegisterUser/RegisterUser-246016
+BenchmarkRegisterUser/RegisterUser-246016-32    	       1	1614150896 ns/op	  364320 B/op	    1485 allocs/op
+BenchmarkRegisterUser/RegisterUser-247009
+BenchmarkRegisterUser/RegisterUser-247009-32    	       1	1642669006 ns/op	  365056 B/op	    1488 allocs/op
+BenchmarkRegisterUser/RegisterUser-248004
+BenchmarkRegisterUser/RegisterUser-248004-32    	       1	1619981615 ns/op	  365792 B/op	    1491 allocs/op
+BenchmarkRegisterUser/RegisterUser-249001
+BenchmarkRegisterUser/RegisterUser-249001-32    	       1	1596407839 ns/op	  366528 B/op	    1494 allocs/op
+BenchmarkRegisterUser/RegisterUser-250000
+BenchmarkRegisterUser/RegisterUser-250000-32    	       1	1616608466 ns/op	  367264 B/op	    1497 allocs/op
+BenchmarkRegisterUser/RegisterUser-251001
+BenchmarkRegisterUser/RegisterUser-251001-32    	       1	1564290009 ns/op	  368000 B/op	    1500 allocs/op
+BenchmarkRegisterUser/RegisterUser-252004
+BenchmarkRegisterUser/RegisterUser-252004-32    	       1	1610854575 ns/op	  368736 B/op	    1503 allocs/op
+BenchmarkRegisterUser/RegisterUser-253009
+BenchmarkRegisterUser/RegisterUser-253009-32    	       1	1678680127 ns/op	  369472 B/op	    1506 allocs/op
+BenchmarkRegisterUser/RegisterUser-254016
+BenchmarkRegisterUser/RegisterUser-254016-32    	       1	1554992126 ns/op	  370208 B/op	    1509 allocs/op
+BenchmarkRegisterUser/RegisterUser-255025
+BenchmarkRegisterUser/RegisterUser-255025-32    	       1	1652062396 ns/op	  370944 B/op	    1512 allocs/op
+BenchmarkRegisterUser/RegisterUser-256036
+BenchmarkRegisterUser/RegisterUser-256036-32    	       1	1649001480 ns/op	  371680 B/op	    1515 allocs/op
+BenchmarkRegisterUser/RegisterUser-257049
+BenchmarkRegisterUser/RegisterUser-257049-32    	       1	1623607529 ns/op	  372416 B/op	    1518 allocs/op
+BenchmarkRegisterUser/RegisterUser-258064
+BenchmarkRegisterUser/RegisterUser-258064-32    	       1	1623665833 ns/op	  373152 B/op	    1521 allocs/op
+BenchmarkRegisterUser/RegisterUser-259081
+BenchmarkRegisterUser/RegisterUser-259081-32    	       1	1659186384 ns/op	  373888 B/op	    1524 allocs/op
+BenchmarkRegisterUser/RegisterUser-260100
+BenchmarkRegisterUser/RegisterUser-260100-32    	       1	1649664210 ns/op	  374624 B/op	    1527 allocs/op
+BenchmarkRegisterUser/RegisterUser-261121
+BenchmarkRegisterUser/RegisterUser-261121-32    	       1	1692422516 ns/op	  375360 B/op	    1530 allocs/op
+BenchmarkRegisterUser/RegisterUser-262144
+BenchmarkRegisterUser/RegisterUser-262144-32    	       1	1690165322 ns/op	  376096 B/op	    1533 allocs/op
+BenchmarkRegisterUser/RegisterUser-263169
+BenchmarkRegisterUser/RegisterUser-263169-32    	       1	1568959207 ns/op	  376832 B/op	    1536 allocs/op
+BenchmarkRegisterUser/RegisterUser-264196
+BenchmarkRegisterUser/RegisterUser-264196-32    	       1	1572954611 ns/op	  377568 B/op	    1539 allocs/op
+BenchmarkRegisterUser/RegisterUser-265225
+BenchmarkRegisterUser/RegisterUser-265225-32    	       1	1543706834 ns/op	  378304 B/op	    1542 allocs/op
+BenchmarkRegisterUser/RegisterUser-266256
+BenchmarkRegisterUser/RegisterUser-266256-32    	       1	1605335892 ns/op	  379040 B/op	    1545 allocs/op
+BenchmarkRegisterUser/RegisterUser-267289
+BenchmarkRegisterUser/RegisterUser-267289-32    	       1	1637068936 ns/op	  379776 B/op	    1548 allocs/op
+BenchmarkRegisterUser/RegisterUser-268324
+BenchmarkRegisterUser/RegisterUser-268324-32    	       1	1676016441 ns/op	  380512 B/op	    1551 allocs/op
+BenchmarkRegisterUser/RegisterUser-269361
+BenchmarkRegisterUser/RegisterUser-269361-32    	       1	1697588963 ns/op	  381248 B/op	    1554 allocs/op
+BenchmarkRegisterUser/RegisterUser-270400
+BenchmarkRegisterUser/RegisterUser-270400-32    	       1	1667856562 ns/op	  381984 B/op	    1557 allocs/op
+BenchmarkRegisterUser/RegisterUser-271441
+BenchmarkRegisterUser/RegisterUser-271441-32    	       1	1644379326 ns/op	  382720 B/op	    1560 allocs/op
+BenchmarkRegisterUser/RegisterUser-272484
+BenchmarkRegisterUser/RegisterUser-272484-32    	       1	1650689913 ns/op	  383456 B/op	    1563 allocs/op
+BenchmarkRegisterUser/RegisterUser-273529
+BenchmarkRegisterUser/RegisterUser-273529-32    	       1	1707146666 ns/op	  384192 B/op	    1566 allocs/op
+BenchmarkRegisterUser/RegisterUser-274576
+BenchmarkRegisterUser/RegisterUser-274576-32    	       1	1690510992 ns/op	  384928 B/op	    1569 allocs/op
+BenchmarkRegisterUser/RegisterUser-275625
+BenchmarkRegisterUser/RegisterUser-275625-32    	       1	1686205038 ns/op	  385664 B/op	    1572 allocs/op
+BenchmarkRegisterUser/RegisterUser-276676
+BenchmarkRegisterUser/RegisterUser-276676-32    	       1	1745214979 ns/op	  386400 B/op	    1575 allocs/op
+BenchmarkRegisterUser/RegisterUser-277729
+BenchmarkRegisterUser/RegisterUser-277729-32    	       1	1608633922 ns/op	  387136 B/op	    1578 allocs/op
+BenchmarkRegisterUser/RegisterUser-278784
+BenchmarkRegisterUser/RegisterUser-278784-32    	       1	1579450424 ns/op	  387872 B/op	    1581 allocs/op
+BenchmarkRegisterUser/RegisterUser-279841
+BenchmarkRegisterUser/RegisterUser-279841-32    	       1	1704954670 ns/op	  388608 B/op	    1584 allocs/op
+BenchmarkRegisterUser/RegisterUser-280900
+BenchmarkRegisterUser/RegisterUser-280900-32    	       1	1759464685 ns/op	  389344 B/op	    1587 allocs/op
+BenchmarkRegisterUser/RegisterUser-281961
+BenchmarkRegisterUser/RegisterUser-281961-32    	       1	1722910449 ns/op	  390080 B/op	    1590 allocs/op
+BenchmarkRegisterUser/RegisterUser-283024
+BenchmarkRegisterUser/RegisterUser-283024-32    	       1	1697951864 ns/op	  390816 B/op	    1593 allocs/op
+BenchmarkRegisterUser/RegisterUser-284089
+BenchmarkRegisterUser/RegisterUser-284089-32    	       1	1700457108 ns/op	  391552 B/op	    1596 allocs/op
+BenchmarkRegisterUser/RegisterUser-285156
+BenchmarkRegisterUser/RegisterUser-285156-32    	       1	1756140651 ns/op	  392288 B/op	    1599 allocs/op
+BenchmarkRegisterUser/RegisterUser-286225
+BenchmarkRegisterUser/RegisterUser-286225-32    	       1	1686128394 ns/op	  393024 B/op	    1602 allocs/op
+BenchmarkRegisterUser/RegisterUser-287296
+BenchmarkRegisterUser/RegisterUser-287296-32    	       1	1723391987 ns/op	  393760 B/op	    1605 allocs/op
+BenchmarkRegisterUser/RegisterUser-288369
+BenchmarkRegisterUser/RegisterUser-288369-32    	       1	1748040921 ns/op	  394496 B/op	    1608 allocs/op
+BenchmarkRegisterUser/RegisterUser-289444
+BenchmarkRegisterUser/RegisterUser-289444-32    	       1	1736779519 ns/op	  395232 B/op	    1611 allocs/op
+BenchmarkRegisterUser/RegisterUser-290521
+BenchmarkRegisterUser/RegisterUser-290521-32    	       1	1725340102 ns/op	  395968 B/op	    1614 allocs/op
+BenchmarkRegisterUser/RegisterUser-291600
+BenchmarkRegisterUser/RegisterUser-291600-32    	       1	1714510035 ns/op	  396704 B/op	    1617 allocs/op
+BenchmarkRegisterUser/RegisterUser-292681
+BenchmarkRegisterUser/RegisterUser-292681-32    	       1	1785896276 ns/op	  397440 B/op	    1620 allocs/op
+BenchmarkRegisterUser/RegisterUser-293764
+BenchmarkRegisterUser/RegisterUser-293764-32    	       1	1692033973 ns/op	  398176 B/op	    1623 allocs/op
+BenchmarkRegisterUser/RegisterUser-294849
+BenchmarkRegisterUser/RegisterUser-294849-32    	       1	1713934129 ns/op	  398912 B/op	    1626 allocs/op
+BenchmarkRegisterUser/RegisterUser-295936
+BenchmarkRegisterUser/RegisterUser-295936-32    	       1	1674150309 ns/op	  399648 B/op	    1629 allocs/op
+BenchmarkRegisterUser/RegisterUser-297025
+BenchmarkRegisterUser/RegisterUser-297025-32    	       1	1681468936 ns/op	  400384 B/op	    1632 allocs/op
+BenchmarkRegisterUser/RegisterUser-298116
+BenchmarkRegisterUser/RegisterUser-298116-32    	       1	1781432268 ns/op	  401120 B/op	    1635 allocs/op
+BenchmarkRegisterUser/RegisterUser-299209
+BenchmarkRegisterUser/RegisterUser-299209-32    	       1	1718095689 ns/op	  401856 B/op	    1638 allocs/op
+BenchmarkRegisterUser/RegisterUser-300304
+BenchmarkRegisterUser/RegisterUser-300304-32    	       1	1619437362 ns/op	  402592 B/op	    1641 allocs/op
+BenchmarkRegisterUser/RegisterUser-301401
+BenchmarkRegisterUser/RegisterUser-301401-32    	       1	1793607821 ns/op	  403328 B/op	    1644 allocs/op
+BenchmarkRegisterUser/RegisterUser-302500
+BenchmarkRegisterUser/RegisterUser-302500-32    	       1	1924590166 ns/op	  404064 B/op	    1647 allocs/op
+BenchmarkRegisterUser/RegisterUser-303601
+BenchmarkRegisterUser/RegisterUser-303601-32    	       1	1732657248 ns/op	  404800 B/op	    1650 allocs/op
+BenchmarkRegisterUser/RegisterUser-304704
+BenchmarkRegisterUser/RegisterUser-304704-32    	       1	1766878740 ns/op	  405536 B/op	    1653 allocs/op
+BenchmarkRegisterUser/RegisterUser-305809
+BenchmarkRegisterUser/RegisterUser-305809-32    	       1	1745323325 ns/op	  406272 B/op	    1656 allocs/op
+BenchmarkRegisterUser/RegisterUser-306916
+BenchmarkRegisterUser/RegisterUser-306916-32    	       1	1775436125 ns/op	  407008 B/op	    1659 allocs/op
+BenchmarkRegisterUser/RegisterUser-308025
+BenchmarkRegisterUser/RegisterUser-308025-32    	       1	1798962563 ns/op	  407744 B/op	    1662 allocs/op
+BenchmarkRegisterUser/RegisterUser-309136
+BenchmarkRegisterUser/RegisterUser-309136-32    	       1	1712976632 ns/op	  408480 B/op	    1665 allocs/op
+BenchmarkRegisterUser/RegisterUser-310249
+BenchmarkRegisterUser/RegisterUser-310249-32    	       1	1792911160 ns/op	  409216 B/op	    1668 allocs/op
+BenchmarkRegisterUser/RegisterUser-311364
+BenchmarkRegisterUser/RegisterUser-311364-32    	       1	1792102276 ns/op	  409952 B/op	    1671 allocs/op
+BenchmarkRegisterUser/RegisterUser-312481
+BenchmarkRegisterUser/RegisterUser-312481-32    	       1	1805685592 ns/op	  410688 B/op	    1674 allocs/op
+BenchmarkRegisterUser/RegisterUser-313600
+BenchmarkRegisterUser/RegisterUser-313600-32    	       1	1669885381 ns/op	  411424 B/op	    1677 allocs/op
+BenchmarkRegisterUser/RegisterUser-314721
+BenchmarkRegisterUser/RegisterUser-314721-32    	       1	1806342263 ns/op	  412160 B/op	    1680 allocs/op
+BenchmarkRegisterUser/RegisterUser-315844
+BenchmarkRegisterUser/RegisterUser-315844-32    	       1	1771797750 ns/op	  412896 B/op	    1683 allocs/op
+BenchmarkRegisterUser/RegisterUser-316969
+BenchmarkRegisterUser/RegisterUser-316969-32    	       1	1789087615 ns/op	  413632 B/op	    1686 allocs/op
+BenchmarkRegisterUser/RegisterUser-318096
+BenchmarkRegisterUser/RegisterUser-318096-32    	       1	1780704083 ns/op	  414368 B/op	    1689 allocs/op
+BenchmarkRegisterUser/RegisterUser-319225
+BenchmarkRegisterUser/RegisterUser-319225-32    	       1	1848355371 ns/op	  415104 B/op	    1692 allocs/op
+BenchmarkRegisterUser/RegisterUser-320356
+BenchmarkRegisterUser/RegisterUser-320356-32    	       1	1831732938 ns/op	  415840 B/op	    1695 allocs/op
+BenchmarkRegisterUser/RegisterUser-321489
+BenchmarkRegisterUser/RegisterUser-321489-32    	       1	1835673246 ns/op	  416576 B/op	    1698 allocs/op
+BenchmarkRegisterUser/RegisterUser-322624
+BenchmarkRegisterUser/RegisterUser-322624-32    	       1	1836640454 ns/op	  417312 B/op	    1701 allocs/op
+BenchmarkRegisterUser/RegisterUser-323761
+BenchmarkRegisterUser/RegisterUser-323761-32    	       1	1806896759 ns/op	  418048 B/op	    1704 allocs/op
+BenchmarkRegisterUser/RegisterUser-324900
+BenchmarkRegisterUser/RegisterUser-324900-32    	       1	1734621901 ns/op	  418784 B/op	    1707 allocs/op
+BenchmarkRegisterUser/RegisterUser-326041
+BenchmarkRegisterUser/RegisterUser-326041-32    	       1	1714533466 ns/op	  419520 B/op	    1710 allocs/op
+BenchmarkRegisterUser/RegisterUser-327184
+BenchmarkRegisterUser/RegisterUser-327184-32    	       1	1784073953 ns/op	  420256 B/op	    1713 allocs/op
+BenchmarkRegisterUser/RegisterUser-328329
+BenchmarkRegisterUser/RegisterUser-328329-32    	       1	1822610694 ns/op	  420992 B/op	    1716 allocs/op
+BenchmarkRegisterUser/RegisterUser-329476
+BenchmarkRegisterUser/RegisterUser-329476-32    	       1	1774841662 ns/op	  421728 B/op	    1719 allocs/op
+BenchmarkRegisterUser/RegisterUser-330625
+BenchmarkRegisterUser/RegisterUser-330625-32    	       1	1852972794 ns/op	  422464 B/op	    1722 allocs/op
+BenchmarkRegisterUser/RegisterUser-331776
+BenchmarkRegisterUser/RegisterUser-331776-32    	       1	1724134473 ns/op	  423200 B/op	    1725 allocs/op
+BenchmarkRegisterUser/RegisterUser-332929
+BenchmarkRegisterUser/RegisterUser-332929-32    	       1	1890667271 ns/op	  423936 B/op	    1728 allocs/op
+BenchmarkRegisterUser/RegisterUser-334084
+BenchmarkRegisterUser/RegisterUser-334084-32    	       1	1859158115 ns/op	  424688 B/op	    1732 allocs/op
+BenchmarkRegisterUser/RegisterUser-335241
+BenchmarkRegisterUser/RegisterUser-335241-32    	       1	1902295502 ns/op	  425408 B/op	    1734 allocs/op
+BenchmarkRegisterUser/RegisterUser-336400
+BenchmarkRegisterUser/RegisterUser-336400-32    	       1	1868132798 ns/op	  426144 B/op	    1737 allocs/op
+BenchmarkRegisterUser/RegisterUser-337561
+BenchmarkRegisterUser/RegisterUser-337561-32    	       1	1855929936 ns/op	  426880 B/op	    1740 allocs/op
+BenchmarkRegisterUser/RegisterUser-338724
+BenchmarkRegisterUser/RegisterUser-338724-32    	       1	1795600863 ns/op	  427616 B/op	    1743 allocs/op
+BenchmarkRegisterUser/RegisterUser-339889
+BenchmarkRegisterUser/RegisterUser-339889-32    	       1	1876199958 ns/op	  428352 B/op	    1746 allocs/op
+BenchmarkRegisterUser/RegisterUser-341056
+BenchmarkRegisterUser/RegisterUser-341056-32    	       1	1875573143 ns/op	  429088 B/op	    1749 allocs/op
+BenchmarkRegisterUser/RegisterUser-342225
+BenchmarkRegisterUser/RegisterUser-342225-32    	       1	1788649236 ns/op	  429824 B/op	    1752 allocs/op
+BenchmarkRegisterUser/RegisterUser-343396
+BenchmarkRegisterUser/RegisterUser-343396-32    	       1	1910141586 ns/op	  430560 B/op	    1755 allocs/op
+BenchmarkRegisterUser/RegisterUser-344569
+BenchmarkRegisterUser/RegisterUser-344569-32    	       1	1845018979 ns/op	  431296 B/op	    1758 allocs/op
+BenchmarkRegisterUser/RegisterUser-345744
+BenchmarkRegisterUser/RegisterUser-345744-32    	       1	1850474485 ns/op	  432032 B/op	    1761 allocs/op
+BenchmarkRegisterUser/RegisterUser-346921
+BenchmarkRegisterUser/RegisterUser-346921-32    	       1	1837664700 ns/op	  432768 B/op	    1764 allocs/op
+BenchmarkRegisterUser/RegisterUser-348100
+BenchmarkRegisterUser/RegisterUser-348100-32    	       1	1884756839 ns/op	  433504 B/op	    1767 allocs/op
+BenchmarkRegisterUser/RegisterUser-349281
+BenchmarkRegisterUser/RegisterUser-349281-32    	       1	1827760105 ns/op	  434240 B/op	    1770 allocs/op
+BenchmarkRegisterUser/RegisterUser-350464
+BenchmarkRegisterUser/RegisterUser-350464-32    	       1	1923263644 ns/op	  434976 B/op	    1773 allocs/op
+BenchmarkRegisterUser/RegisterUser-351649
+BenchmarkRegisterUser/RegisterUser-351649-32    	       1	1846033556 ns/op	  435712 B/op	    1776 allocs/op
+BenchmarkRegisterUser/RegisterUser-352836
+BenchmarkRegisterUser/RegisterUser-352836-32    	       1	1924598790 ns/op	  436448 B/op	    1779 allocs/op
+BenchmarkRegisterUser/RegisterUser-354025
+BenchmarkRegisterUser/RegisterUser-354025-32    	       1	1919457403 ns/op	  437184 B/op	    1782 allocs/op
+BenchmarkRegisterUser/RegisterUser-355216
+BenchmarkRegisterUser/RegisterUser-355216-32    	       1	1863942619 ns/op	  437920 B/op	    1785 allocs/op
+BenchmarkRegisterUser/RegisterUser-356409
+BenchmarkRegisterUser/RegisterUser-356409-32    	       1	1802791250 ns/op	  438656 B/op	    1788 allocs/op
+BenchmarkRegisterUser/RegisterUser-357604
+BenchmarkRegisterUser/RegisterUser-357604-32    	       1	1819693737 ns/op	  439392 B/op	    1791 allocs/op
+BenchmarkRegisterUser/RegisterUser-358801
+BenchmarkRegisterUser/RegisterUser-358801-32    	       1	1800587037 ns/op	  440128 B/op	    1794 allocs/op
+BenchmarkRegisterUser/RegisterUser-360000
+BenchmarkRegisterUser/RegisterUser-360000-32    	       1	1847036062 ns/op	  440864 B/op	    1797 allocs/op
+BenchmarkRegisterUser/RegisterUser-361201
+BenchmarkRegisterUser/RegisterUser-361201-32    	       1	1835569212 ns/op	  441600 B/op	    1800 allocs/op
+BenchmarkRegisterUser/RegisterUser-362404
+BenchmarkRegisterUser/RegisterUser-362404-32    	       1	1914899654 ns/op	  442336 B/op	    1803 allocs/op
+BenchmarkRegisterUser/RegisterUser-363609
+BenchmarkRegisterUser/RegisterUser-363609-32    	       1	1968636236 ns/op	  443072 B/op	    1806 allocs/op
+BenchmarkRegisterUser/RegisterUser-364816
+BenchmarkRegisterUser/RegisterUser-364816-32    	       1	1954989583 ns/op	  443808 B/op	    1809 allocs/op
+BenchmarkRegisterUser/RegisterUser-366025
+BenchmarkRegisterUser/RegisterUser-366025-32    	       1	1981848256 ns/op	  444544 B/op	    1812 allocs/op
+BenchmarkRegisterUser/RegisterUser-367236
+BenchmarkRegisterUser/RegisterUser-367236-32    	       1	1880030872 ns/op	  445280 B/op	    1815 allocs/op
+BenchmarkRegisterUser/RegisterUser-368449
+BenchmarkRegisterUser/RegisterUser-368449-32    	       1	1872665326 ns/op	  446016 B/op	    1818 allocs/op
+BenchmarkRegisterUser/RegisterUser-369664
+BenchmarkRegisterUser/RegisterUser-369664-32    	       1	1905409663 ns/op	  446752 B/op	    1821 allocs/op
+BenchmarkRegisterUser/RegisterUser-370881
+BenchmarkRegisterUser/RegisterUser-370881-32    	       1	1807610430 ns/op	  447488 B/op	    1824 allocs/op
+BenchmarkRegisterUser/RegisterUser-372100
+BenchmarkRegisterUser/RegisterUser-372100-32    	       1	1951247303 ns/op	  448224 B/op	    1827 allocs/op
+BenchmarkRegisterUser/RegisterUser-373321
+BenchmarkRegisterUser/RegisterUser-373321-32    	       1	1951914629 ns/op	  448960 B/op	    1830 allocs/op
+BenchmarkRegisterUser/RegisterUser-374544
+BenchmarkRegisterUser/RegisterUser-374544-32    	       1	1979891370 ns/op	  449696 B/op	    1833 allocs/op
+BenchmarkRegisterUser/RegisterUser-375769
+BenchmarkRegisterUser/RegisterUser-375769-32    	       1	1958816846 ns/op	  450432 B/op	    1836 allocs/op
+BenchmarkRegisterUser/RegisterUser-376996
+BenchmarkRegisterUser/RegisterUser-376996-32    	       1	1846639408 ns/op	  451168 B/op	    1839 allocs/op
+BenchmarkRegisterUser/RegisterUser-378225
+BenchmarkRegisterUser/RegisterUser-378225-32    	       1	1932857567 ns/op	  451904 B/op	    1842 allocs/op
+BenchmarkRegisterUser/RegisterUser-379456
+BenchmarkRegisterUser/RegisterUser-379456-32    	       1	1915878321 ns/op	  452640 B/op	    1845 allocs/op
+BenchmarkRegisterUser/RegisterUser-380689
+BenchmarkRegisterUser/RegisterUser-380689-32    	       1	1963135260 ns/op	  453376 B/op	    1848 allocs/op
+BenchmarkRegisterUser/RegisterUser-381924
+BenchmarkRegisterUser/RegisterUser-381924-32    	       1	1946098365 ns/op	  454112 B/op	    1851 allocs/op
+BenchmarkRegisterUser/RegisterUser-383161
+BenchmarkRegisterUser/RegisterUser-383161-32    	       1	1953426553 ns/op	  454848 B/op	    1854 allocs/op
+BenchmarkRegisterUser/RegisterUser-384400
+BenchmarkRegisterUser/RegisterUser-384400-32    	       1	1978234487 ns/op	  455584 B/op	    1857 allocs/op
+BenchmarkRegisterUser/RegisterUser-385641
+BenchmarkRegisterUser/RegisterUser-385641-32    	       1	1964772051 ns/op	  456320 B/op	    1860 allocs/op
+BenchmarkRegisterUser/RegisterUser-386884
+BenchmarkRegisterUser/RegisterUser-386884-32    	       1	1961043160 ns/op	  457056 B/op	    1863 allocs/op
+BenchmarkRegisterUser/RegisterUser-388129
+BenchmarkRegisterUser/RegisterUser-388129-32    	       1	1784485226 ns/op	  457792 B/op	    1866 allocs/op
+BenchmarkRegisterUser/RegisterUser-389376
+BenchmarkRegisterUser/RegisterUser-389376-32    	       1	1999733256 ns/op	  458528 B/op	    1869 allocs/op
+BenchmarkRegisterUser/RegisterUser-390625
+BenchmarkRegisterUser/RegisterUser-390625-32    	       1	1931877286 ns/op	  459264 B/op	    1872 allocs/op
+BenchmarkRegisterUser/RegisterUser-391876
+BenchmarkRegisterUser/RegisterUser-391876-32    	       1	1831384310 ns/op	  460000 B/op	    1875 allocs/op
+BenchmarkRegisterUser/RegisterUser-393129
+BenchmarkRegisterUser/RegisterUser-393129-32    	       1	2199322693 ns/op	  460736 B/op	    1878 allocs/op
+BenchmarkRegisterUser/RegisterUser-394384
+BenchmarkRegisterUser/RegisterUser-394384-32    	       1	1952627982 ns/op	  461472 B/op	    1881 allocs/op
+BenchmarkRegisterUser/RegisterUser-395641
+BenchmarkRegisterUser/RegisterUser-395641-32    	       1	2032747466 ns/op	  462208 B/op	    1884 allocs/op
+BenchmarkRegisterUser/RegisterUser-396900
+BenchmarkRegisterUser/RegisterUser-396900-32    	       1	2027801778 ns/op	  462944 B/op	    1887 allocs/op
+BenchmarkRegisterUser/RegisterUser-398161
+BenchmarkRegisterUser/RegisterUser-398161-32    	       1	1899417973 ns/op	  463680 B/op	    1890 allocs/op
+BenchmarkRegisterUser/RegisterUser-399424
+BenchmarkRegisterUser/RegisterUser-399424-32    	       1	1972941011 ns/op	  464416 B/op	    1893 allocs/op
+BenchmarkRegisterUser/RegisterUser-400689
+BenchmarkRegisterUser/RegisterUser-400689-32    	       1	2047656716 ns/op	  465152 B/op	    1896 allocs/op
+BenchmarkRegisterUser/RegisterUser-401956
+BenchmarkRegisterUser/RegisterUser-401956-32    	       1	1939031642 ns/op	  465888 B/op	    1899 allocs/op
+BenchmarkRegisterUser/RegisterUser-403225
+BenchmarkRegisterUser/RegisterUser-403225-32    	       1	1974031152 ns/op	  466624 B/op	    1902 allocs/op
+BenchmarkRegisterUser/RegisterUser-404496
+BenchmarkRegisterUser/RegisterUser-404496-32    	       1	1898190941 ns/op	  467360 B/op	    1905 allocs/op
+BenchmarkRegisterUser/RegisterUser-405769
+BenchmarkRegisterUser/RegisterUser-405769-32    	       1	1985737499 ns/op	  468096 B/op	    1908 allocs/op
+BenchmarkRegisterUser/RegisterUser-407044
+BenchmarkRegisterUser/RegisterUser-407044-32    	       1	2014876487 ns/op	  468832 B/op	    1911 allocs/op
+BenchmarkRegisterUser/RegisterUser-408321
+BenchmarkRegisterUser/RegisterUser-408321-32    	       1	2046010207 ns/op	  469568 B/op	    1914 allocs/op
+BenchmarkRegisterUser/RegisterUser-409600
+BenchmarkRegisterUser/RegisterUser-409600-32    	       1	2075321176 ns/op	  470304 B/op	    1917 allocs/op
+BenchmarkRegisterUser/RegisterUser-410881
+BenchmarkRegisterUser/RegisterUser-410881-32    	       1	1999757941 ns/op	  471040 B/op	    1920 allocs/op
+BenchmarkRegisterUser/RegisterUser-412164
+BenchmarkRegisterUser/RegisterUser-412164-32    	       1	1964226025 ns/op	  471776 B/op	    1923 allocs/op
+BenchmarkRegisterUser/RegisterUser-413449
+BenchmarkRegisterUser/RegisterUser-413449-32    	       1	1967700791 ns/op	  472512 B/op	    1926 allocs/op
+BenchmarkRegisterUser/RegisterUser-414736
+BenchmarkRegisterUser/RegisterUser-414736-32    	       1	1980744767 ns/op	  473248 B/op	    1929 allocs/op
+BenchmarkRegisterUser/RegisterUser-416025
+BenchmarkRegisterUser/RegisterUser-416025-32    	       1	1966741155 ns/op	  473984 B/op	    1932 allocs/op
+BenchmarkRegisterUser/RegisterUser-417316
+BenchmarkRegisterUser/RegisterUser-417316-32    	       1	2091932073 ns/op	  474720 B/op	    1935 allocs/op
+BenchmarkRegisterUser/RegisterUser-418609
+BenchmarkRegisterUser/RegisterUser-418609-32    	       1	2066052637 ns/op	  475456 B/op	    1938 allocs/op
+BenchmarkRegisterUser/RegisterUser-419904
+BenchmarkRegisterUser/RegisterUser-419904-32    	       1	2072790027 ns/op	  476192 B/op	    1941 allocs/op
+BenchmarkRegisterUser/RegisterUser-421201
+BenchmarkRegisterUser/RegisterUser-421201-32    	       1	2074956078 ns/op	  476928 B/op	    1944 allocs/op
+BenchmarkRegisterUser/RegisterUser-422500
+BenchmarkRegisterUser/RegisterUser-422500-32    	       1	2025562292 ns/op	  477664 B/op	    1947 allocs/op
+BenchmarkRegisterUser/RegisterUser-423801
+BenchmarkRegisterUser/RegisterUser-423801-32    	       1	2011979195 ns/op	  478400 B/op	    1950 allocs/op
+BenchmarkRegisterUser/RegisterUser-425104
+BenchmarkRegisterUser/RegisterUser-425104-32    	       1	2070962691 ns/op	  479136 B/op	    1953 allocs/op
+BenchmarkRegisterUser/RegisterUser-426409
+BenchmarkRegisterUser/RegisterUser-426409-32    	       1	1884183102 ns/op	  479872 B/op	    1956 allocs/op
+BenchmarkRegisterUser/RegisterUser-427716
+BenchmarkRegisterUser/RegisterUser-427716-32    	       1	2119728941 ns/op	  480608 B/op	    1959 allocs/op
+BenchmarkRegisterUser/RegisterUser-429025
+BenchmarkRegisterUser/RegisterUser-429025-32    	       1	1968264069 ns/op	  481344 B/op	    1962 allocs/op
+BenchmarkRegisterUser/RegisterUser-430336
+BenchmarkRegisterUser/RegisterUser-430336-32    	       1	2117387811 ns/op	  482080 B/op	    1965 allocs/op
+BenchmarkRegisterUser/RegisterUser-431649
+BenchmarkRegisterUser/RegisterUser-431649-32    	       1	2024234469 ns/op	  482816 B/op	    1968 allocs/op
+BenchmarkRegisterUser/RegisterUser-432964
+BenchmarkRegisterUser/RegisterUser-432964-32    	       1	2141320858 ns/op	  483552 B/op	    1971 allocs/op
+BenchmarkRegisterUser/RegisterUser-434281
+BenchmarkRegisterUser/RegisterUser-434281-32    	       1	2119107021 ns/op	  484304 B/op	    1975 allocs/op
+BenchmarkRegisterUser/RegisterUser-435600
+BenchmarkRegisterUser/RegisterUser-435600-32    	       1	2117182943 ns/op	  485040 B/op	    1978 allocs/op
+BenchmarkRegisterUser/RegisterUser-436921
+BenchmarkRegisterUser/RegisterUser-436921-32    	       1	2145775255 ns/op	  485760 B/op	    1980 allocs/op
+BenchmarkRegisterUser/RegisterUser-438244
+BenchmarkRegisterUser/RegisterUser-438244-32    	       1	2051818262 ns/op	  486496 B/op	    1983 allocs/op
+BenchmarkRegisterUser/RegisterUser-439569
+BenchmarkRegisterUser/RegisterUser-439569-32    	       1	2114923708 ns/op	  487232 B/op	    1986 allocs/op
+BenchmarkRegisterUser/RegisterUser-440896
+BenchmarkRegisterUser/RegisterUser-440896-32    	       1	2077046052 ns/op	  487968 B/op	    1989 allocs/op
+BenchmarkRegisterUser/RegisterUser-442225
+BenchmarkRegisterUser/RegisterUser-442225-32    	       1	2085519545 ns/op	  488704 B/op	    1992 allocs/op
+BenchmarkRegisterUser/RegisterUser-443556
+BenchmarkRegisterUser/RegisterUser-443556-32    	       1	2083823729 ns/op	  489440 B/op	    1995 allocs/op
+BenchmarkRegisterUser/RegisterUser-444889
+BenchmarkRegisterUser/RegisterUser-444889-32    	       1	2113475979 ns/op	  490176 B/op	    1998 allocs/op
+BenchmarkRegisterUser/RegisterUser-446224
+BenchmarkRegisterUser/RegisterUser-446224-32    	       1	1956326290 ns/op	  490912 B/op	    2001 allocs/op
+BenchmarkRegisterUser/RegisterUser-447561
+BenchmarkRegisterUser/RegisterUser-447561-32    	       1	2038294002 ns/op	  491648 B/op	    2004 allocs/op
+BenchmarkRegisterUser/RegisterUser-448900
+BenchmarkRegisterUser/RegisterUser-448900-32    	       1	2162007119 ns/op	  492384 B/op	    2007 allocs/op
+BenchmarkRegisterUser/RegisterUser-450241
+BenchmarkRegisterUser/RegisterUser-450241-32    	       1	2168972575 ns/op	  493120 B/op	    2010 allocs/op
+BenchmarkRegisterUser/RegisterUser-451584
+BenchmarkRegisterUser/RegisterUser-451584-32    	       1	2156676032 ns/op	  493856 B/op	    2013 allocs/op
+BenchmarkRegisterUser/RegisterUser-452929
+BenchmarkRegisterUser/RegisterUser-452929-32    	       1	2146672597 ns/op	  494592 B/op	    2016 allocs/op
+BenchmarkRegisterUser/RegisterUser-454276
+BenchmarkRegisterUser/RegisterUser-454276-32    	       1	2083046801 ns/op	  495328 B/op	    2019 allocs/op
+BenchmarkRegisterUser/RegisterUser-455625
+BenchmarkRegisterUser/RegisterUser-455625-32    	       1	2138448535 ns/op	  496080 B/op	    2023 allocs/op
+BenchmarkRegisterUser/RegisterUser-456976
+BenchmarkRegisterUser/RegisterUser-456976-32    	       1	2174061748 ns/op	  496800 B/op	    2025 allocs/op
+BenchmarkRegisterUser/RegisterUser-458329
+BenchmarkRegisterUser/RegisterUser-458329-32    	       1	2083330332 ns/op	  497536 B/op	    2028 allocs/op
+BenchmarkRegisterUser/RegisterUser-459684
+BenchmarkRegisterUser/RegisterUser-459684-32    	       1	2094909050 ns/op	  498272 B/op	    2031 allocs/op
+BenchmarkRegisterUser/RegisterUser-461041
+BenchmarkRegisterUser/RegisterUser-461041-32    	       1	2186841868 ns/op	  499008 B/op	    2034 allocs/op
+BenchmarkRegisterUser/RegisterUser-462400
+BenchmarkRegisterUser/RegisterUser-462400-32    	       1	2132691538 ns/op	  499744 B/op	    2037 allocs/op
+BenchmarkRegisterUser/RegisterUser-463761
+BenchmarkRegisterUser/RegisterUser-463761-32    	       1	2105188233 ns/op	  500480 B/op	    2040 allocs/op
+BenchmarkRegisterUser/RegisterUser-465124
+BenchmarkRegisterUser/RegisterUser-465124-32    	       1	2122504766 ns/op	  501216 B/op	    2043 allocs/op
+BenchmarkRegisterUser/RegisterUser-466489
+BenchmarkRegisterUser/RegisterUser-466489-32    	       1	2139919661 ns/op	  501952 B/op	    2046 allocs/op
+BenchmarkRegisterUser/RegisterUser-467856
+BenchmarkRegisterUser/RegisterUser-467856-32    	       1	2106242699 ns/op	  502688 B/op	    2049 allocs/op
+BenchmarkRegisterUser/RegisterUser-469225
+BenchmarkRegisterUser/RegisterUser-469225-32    	       1	2165773697 ns/op	  503424 B/op	    2052 allocs/op
+BenchmarkRegisterUser/RegisterUser-470596
+BenchmarkRegisterUser/RegisterUser-470596-32    	       1	2192671904 ns/op	  504160 B/op	    2055 allocs/op
+BenchmarkRegisterUser/RegisterUser-471969
+BenchmarkRegisterUser/RegisterUser-471969-32    	       1	2110082991 ns/op	  504896 B/op	    2058 allocs/op
+BenchmarkRegisterUser/RegisterUser-473344
+BenchmarkRegisterUser/RegisterUser-473344-32    	       1	2183648178 ns/op	  505632 B/op	    2061 allocs/op
+BenchmarkRegisterUser/RegisterUser-474721
+BenchmarkRegisterUser/RegisterUser-474721-32    	       1	2184956093 ns/op	  506368 B/op	    2064 allocs/op
+BenchmarkRegisterUser/RegisterUser-476100
+BenchmarkRegisterUser/RegisterUser-476100-32    	       1	2159589293 ns/op	  507104 B/op	    2067 allocs/op
+BenchmarkRegisterUser/RegisterUser-477481
+BenchmarkRegisterUser/RegisterUser-477481-32    	       1	2113422227 ns/op	  507840 B/op	    2070 allocs/op
+BenchmarkRegisterUser/RegisterUser-478864
+BenchmarkRegisterUser/RegisterUser-478864-32    	       1	2169285931 ns/op	  508576 B/op	    2073 allocs/op
+BenchmarkRegisterUser/RegisterUser-480249
+BenchmarkRegisterUser/RegisterUser-480249-32    	       1	2175100845 ns/op	  509312 B/op	    2076 allocs/op
+BenchmarkRegisterUser/RegisterUser-481636
+BenchmarkRegisterUser/RegisterUser-481636-32    	       1	2151623070 ns/op	  510048 B/op	    2079 allocs/op
+BenchmarkRegisterUser/RegisterUser-483025
+BenchmarkRegisterUser/RegisterUser-483025-32    	       1	2014826619 ns/op	  510784 B/op	    2082 allocs/op
+BenchmarkRegisterUser/RegisterUser-484416
+BenchmarkRegisterUser/RegisterUser-484416-32    	       1	2232670557 ns/op	  511520 B/op	    2085 allocs/op
+BenchmarkRegisterUser/RegisterUser-485809
+BenchmarkRegisterUser/RegisterUser-485809-32    	       1	2235020690 ns/op	  512256 B/op	    2088 allocs/op
+BenchmarkRegisterUser/RegisterUser-487204
+BenchmarkRegisterUser/RegisterUser-487204-32    	       1	2196627435 ns/op	  513008 B/op	    2092 allocs/op
+BenchmarkRegisterUser/RegisterUser-488601
+BenchmarkRegisterUser/RegisterUser-488601-32    	       1	2217347885 ns/op	  513728 B/op	    2094 allocs/op
+BenchmarkRegisterUser/RegisterUser-490000
+BenchmarkRegisterUser/RegisterUser-490000-32    	       1	2233979859 ns/op	  514464 B/op	    2097 allocs/op
+BenchmarkRegisterUser/RegisterUser-491401
+BenchmarkRegisterUser/RegisterUser-491401-32    	       1	2175696414 ns/op	  515200 B/op	    2100 allocs/op
+BenchmarkRegisterUser/RegisterUser-492804
+BenchmarkRegisterUser/RegisterUser-492804-32    	       1	2249837685 ns/op	  515936 B/op	    2103 allocs/op
+BenchmarkRegisterUser/RegisterUser-494209
+BenchmarkRegisterUser/RegisterUser-494209-32    	       1	2165633720 ns/op	  516672 B/op	    2106 allocs/op
+BenchmarkRegisterUser/RegisterUser-495616
+BenchmarkRegisterUser/RegisterUser-495616-32    	       1	2146781034 ns/op	  517408 B/op	    2109 allocs/op
+BenchmarkRegisterUser/RegisterUser-497025
+BenchmarkRegisterUser/RegisterUser-497025-32    	       1	2185787302 ns/op	  518144 B/op	    2112 allocs/op
+BenchmarkRegisterUser/RegisterUser-498436
+BenchmarkRegisterUser/RegisterUser-498436-32    	       1	2224719280 ns/op	  518880 B/op	    2115 allocs/op
+BenchmarkRegisterUser/RegisterUser-499849
+BenchmarkRegisterUser/RegisterUser-499849-32    	       1	2229795977 ns/op	  519616 B/op	    2118 allocs/op
+BenchmarkRegisterUser/RegisterUser-501264
+BenchmarkRegisterUser/RegisterUser-501264-32    	       1	2257144753 ns/op	  520352 B/op	    2121 allocs/op
+BenchmarkRegisterUser/RegisterUser-502681
+BenchmarkRegisterUser/RegisterUser-502681-32    	       1	2368432646 ns/op	  521088 B/op	    2124 allocs/op
+BenchmarkRegisterUser/RegisterUser-504100
+BenchmarkRegisterUser/RegisterUser-504100-32    	       1	2207882008 ns/op	  521824 B/op	    2127 allocs/op
+BenchmarkRegisterUser/RegisterUser-505521
+BenchmarkRegisterUser/RegisterUser-505521-32    	       1	2114785401 ns/op	  522560 B/op	    2130 allocs/op
+BenchmarkRegisterUser/RegisterUser-506944
+BenchmarkRegisterUser/RegisterUser-506944-32    	       1	2241893071 ns/op	  523296 B/op	    2133 allocs/op
+BenchmarkRegisterUser/RegisterUser-508369
+BenchmarkRegisterUser/RegisterUser-508369-32    	       1	2213139231 ns/op	  524032 B/op	    2136 allocs/op
+BenchmarkRegisterUser/RegisterUser-509796
+BenchmarkRegisterUser/RegisterUser-509796-32    	       1	2287358341 ns/op	  524768 B/op	    2139 allocs/op
+BenchmarkRegisterUser/RegisterUser-511225
+BenchmarkRegisterUser/RegisterUser-511225-32    	       1	2178477199 ns/op	  525504 B/op	    2142 allocs/op
+BenchmarkRegisterUser/RegisterUser-512656
+BenchmarkRegisterUser/RegisterUser-512656-32    	       1	2313768992 ns/op	  526240 B/op	    2145 allocs/op
+BenchmarkRegisterUser/RegisterUser-514089
+BenchmarkRegisterUser/RegisterUser-514089-32    	       1	2196343421 ns/op	  526976 B/op	    2148 allocs/op
+BenchmarkRegisterUser/RegisterUser-515524
+BenchmarkRegisterUser/RegisterUser-515524-32    	       1	2299796105 ns/op	  527712 B/op	    2151 allocs/op
+BenchmarkRegisterUser/RegisterUser-516961
+BenchmarkRegisterUser/RegisterUser-516961-32    	       1	2232511164 ns/op	  528448 B/op	    2154 allocs/op
+BenchmarkRegisterUser/RegisterUser-518400
+BenchmarkRegisterUser/RegisterUser-518400-32    	       1	2315500629 ns/op	  529184 B/op	    2157 allocs/op
+BenchmarkRegisterUser/RegisterUser-519841
+BenchmarkRegisterUser/RegisterUser-519841-32    	       1	2224615542 ns/op	  529920 B/op	    2160 allocs/op
+BenchmarkRegisterUser/RegisterUser-521284
+BenchmarkRegisterUser/RegisterUser-521284-32    	       1	2294390838 ns/op	  530656 B/op	    2163 allocs/op
+BenchmarkRegisterUser/RegisterUser-522729
+BenchmarkRegisterUser/RegisterUser-522729-32    	       1	2231878499 ns/op	  531392 B/op	    2166 allocs/op
+BenchmarkRegisterUser/RegisterUser-524176
+BenchmarkRegisterUser/RegisterUser-524176-32    	       1	2305813239 ns/op	  532128 B/op	    2169 allocs/op
+BenchmarkRegisterUser/RegisterUser-525625
+BenchmarkRegisterUser/RegisterUser-525625-32    	       1	2292228776 ns/op	  532864 B/op	    2172 allocs/op
+BenchmarkRegisterUser/RegisterUser-527076
+BenchmarkRegisterUser/RegisterUser-527076-32    	       1	2313054318 ns/op	  533600 B/op	    2175 allocs/op
+BenchmarkRegisterUser/RegisterUser-528529
+BenchmarkRegisterUser/RegisterUser-528529-32    	       1	2270425212 ns/op	  534336 B/op	    2178 allocs/op
+BenchmarkRegisterUser/RegisterUser-529984
+BenchmarkRegisterUser/RegisterUser-529984-32    	       1	2212030164 ns/op	  535072 B/op	    2181 allocs/op
+BenchmarkRegisterUser/RegisterUser-531441
+BenchmarkRegisterUser/RegisterUser-531441-32    	       1	2246778819 ns/op	  535808 B/op	    2184 allocs/op
+BenchmarkRegisterUser/RegisterUser-532900
+BenchmarkRegisterUser/RegisterUser-532900-32    	       1	2264920864 ns/op	  536544 B/op	    2187 allocs/op
+BenchmarkRegisterUser/RegisterUser-534361
+BenchmarkRegisterUser/RegisterUser-534361-32    	       1	2274799739 ns/op	  537280 B/op	    2190 allocs/op
+BenchmarkRegisterUser/RegisterUser-535824
+BenchmarkRegisterUser/RegisterUser-535824-32    	       1	2325271118 ns/op	  538016 B/op	    2193 allocs/op
+BenchmarkRegisterUser/RegisterUser-537289
+BenchmarkRegisterUser/RegisterUser-537289-32    	       1	2335642214 ns/op	  538752 B/op	    2196 allocs/op
+BenchmarkRegisterUser/RegisterUser-538756
+BenchmarkRegisterUser/RegisterUser-538756-32    	       1	2319371287 ns/op	  539504 B/op	    2200 allocs/op
+BenchmarkRegisterUser/RegisterUser-540225
+BenchmarkRegisterUser/RegisterUser-540225-32    	       1	2295392334 ns/op	  540224 B/op	    2202 allocs/op
+BenchmarkRegisterUser/RegisterUser-541696
+BenchmarkRegisterUser/RegisterUser-541696-32    	       1	2319993730 ns/op	  540960 B/op	    2205 allocs/op
+BenchmarkRegisterUser/RegisterUser-543169
+BenchmarkRegisterUser/RegisterUser-543169-32    	       1	2197285057 ns/op	  541696 B/op	    2208 allocs/op
+BenchmarkRegisterUser/RegisterUser-544644
+BenchmarkRegisterUser/RegisterUser-544644-32    	       1	2353951404 ns/op	  542432 B/op	    2211 allocs/op
+BenchmarkRegisterUser/RegisterUser-546121
+BenchmarkRegisterUser/RegisterUser-546121-32    	       1	2326229984 ns/op	  543168 B/op	    2214 allocs/op
+BenchmarkRegisterUser/RegisterUser-547600
+BenchmarkRegisterUser/RegisterUser-547600-32    	       1	2404108460 ns/op	  543904 B/op	    2217 allocs/op
+BenchmarkRegisterUser/RegisterUser-549081
+BenchmarkRegisterUser/RegisterUser-549081-32    	       1	2412606065 ns/op	  544640 B/op	    2220 allocs/op
+BenchmarkRegisterUser/RegisterUser-550564
+BenchmarkRegisterUser/RegisterUser-550564-32    	       1	2389681667 ns/op	  545376 B/op	    2223 allocs/op
+BenchmarkRegisterUser/RegisterUser-552049
+BenchmarkRegisterUser/RegisterUser-552049-32    	       1	2401872340 ns/op	  546112 B/op	    2226 allocs/op
+BenchmarkRegisterUser/RegisterUser-553536
+BenchmarkRegisterUser/RegisterUser-553536-32    	       1	2365049578 ns/op	  546848 B/op	    2229 allocs/op
+BenchmarkRegisterUser/RegisterUser-555025
+BenchmarkRegisterUser/RegisterUser-555025-32    	       1	2250817899 ns/op	  547584 B/op	    2232 allocs/op
+BenchmarkRegisterUser/RegisterUser-556516
+BenchmarkRegisterUser/RegisterUser-556516-32    	       1	2387278762 ns/op	  548320 B/op	    2235 allocs/op
+BenchmarkRegisterUser/RegisterUser-558009
+BenchmarkRegisterUser/RegisterUser-558009-32    	       1	2172148827 ns/op	  549056 B/op	    2238 allocs/op
+BenchmarkRegisterUser/RegisterUser-559504
+BenchmarkRegisterUser/RegisterUser-559504-32    	       1	2379669049 ns/op	  549792 B/op	    2241 allocs/op
+BenchmarkRegisterUser/RegisterUser-561001
+BenchmarkRegisterUser/RegisterUser-561001-32    	       1	2277249550 ns/op	  550528 B/op	    2244 allocs/op
+BenchmarkRegisterUser/RegisterUser-562500
+BenchmarkRegisterUser/RegisterUser-562500-32    	       1	2273761611 ns/op	  551264 B/op	    2247 allocs/op
+BenchmarkRegisterUser/RegisterUser-564001
+BenchmarkRegisterUser/RegisterUser-564001-32    	       1	2391423165 ns/op	  552000 B/op	    2250 allocs/op
+BenchmarkRegisterUser/RegisterUser-565504
+BenchmarkRegisterUser/RegisterUser-565504-32    	       1	2380845964 ns/op	  552736 B/op	    2253 allocs/op
+BenchmarkRegisterUser/RegisterUser-567009
+BenchmarkRegisterUser/RegisterUser-567009-32    	       1	2368605543 ns/op	  553472 B/op	    2256 allocs/op
+BenchmarkRegisterUser/RegisterUser-568516
+BenchmarkRegisterUser/RegisterUser-568516-32    	       1	2300116364 ns/op	  554208 B/op	    2259 allocs/op
+BenchmarkRegisterUser/RegisterUser-570025
+BenchmarkRegisterUser/RegisterUser-570025-32    	       1	2415578291 ns/op	  554944 B/op	    2262 allocs/op
+BenchmarkRegisterUser/RegisterUser-571536
+BenchmarkRegisterUser/RegisterUser-571536-32    	       1	2411858009 ns/op	  555680 B/op	    2265 allocs/op
+BenchmarkRegisterUser/RegisterUser-573049
+BenchmarkRegisterUser/RegisterUser-573049-32    	       1	2318807138 ns/op	  556416 B/op	    2268 allocs/op
+BenchmarkRegisterUser/RegisterUser-574564
+BenchmarkRegisterUser/RegisterUser-574564-32    	       1	2439649830 ns/op	  557152 B/op	    2271 allocs/op
+BenchmarkRegisterUser/RegisterUser-576081
+BenchmarkRegisterUser/RegisterUser-576081-32    	       1	2378374602 ns/op	  557888 B/op	    2274 allocs/op
+BenchmarkRegisterUser/RegisterUser-577600
+BenchmarkRegisterUser/RegisterUser-577600-32    	       1	2408393743 ns/op	  558624 B/op	    2277 allocs/op
+BenchmarkRegisterUser/RegisterUser-579121
+BenchmarkRegisterUser/RegisterUser-579121-32    	       1	2392125463 ns/op	  559360 B/op	    2280 allocs/op
+BenchmarkRegisterUser/RegisterUser-580644
+BenchmarkRegisterUser/RegisterUser-580644-32    	       1	2237378254 ns/op	  560096 B/op	    2283 allocs/op
+BenchmarkRegisterUser/RegisterUser-582169
+BenchmarkRegisterUser/RegisterUser-582169-32    	       1	2324634935 ns/op	  560832 B/op	    2286 allocs/op
+BenchmarkRegisterUser/RegisterUser-583696
+BenchmarkRegisterUser/RegisterUser-583696-32    	       1	2428467207 ns/op	  561568 B/op	    2289 allocs/op
+BenchmarkRegisterUser/RegisterUser-585225
+BenchmarkRegisterUser/RegisterUser-585225-32    	       1	2446568919 ns/op	  562304 B/op	    2292 allocs/op
+BenchmarkRegisterUser/RegisterUser-586756
+BenchmarkRegisterUser/RegisterUser-586756-32    	       1	2356786016 ns/op	  563040 B/op	    2295 allocs/op
+BenchmarkRegisterUser/RegisterUser-588289
+BenchmarkRegisterUser/RegisterUser-588289-32    	       1	2400661937 ns/op	  563776 B/op	    2298 allocs/op
+BenchmarkRegisterUser/RegisterUser-589824
+BenchmarkRegisterUser/RegisterUser-589824-32    	       1	2448412393 ns/op	  564512 B/op	    2301 allocs/op
+BenchmarkRegisterUser/RegisterUser-591361
+BenchmarkRegisterUser/RegisterUser-591361-32    	       1	2369765584 ns/op	  565248 B/op	    2304 allocs/op
+BenchmarkRegisterUser/RegisterUser-592900
+BenchmarkRegisterUser/RegisterUser-592900-32    	       1	2377563461 ns/op	  565984 B/op	    2307 allocs/op
+BenchmarkRegisterUser/RegisterUser-594441
+BenchmarkRegisterUser/RegisterUser-594441-32    	       1	2438530375 ns/op	  566720 B/op	    2310 allocs/op
+BenchmarkRegisterUser/RegisterUser-595984
+BenchmarkRegisterUser/RegisterUser-595984-32    	       1	2385369259 ns/op	  567456 B/op	    2313 allocs/op
+BenchmarkRegisterUser/RegisterUser-597529
+BenchmarkRegisterUser/RegisterUser-597529-32    	       1	2266656388 ns/op	  568192 B/op	    2316 allocs/op
+BenchmarkRegisterUser/RegisterUser-599076
+BenchmarkRegisterUser/RegisterUser-599076-32    	       1	2436275689 ns/op	  568928 B/op	    2319 allocs/op
+BenchmarkRegisterUser/RegisterUser-600625
+BenchmarkRegisterUser/RegisterUser-600625-32    	       1	2235947355 ns/op	  569664 B/op	    2322 allocs/op
+BenchmarkRegisterUser/RegisterUser-602176
+BenchmarkRegisterUser/RegisterUser-602176-32    	       1	2341181799 ns/op	  570400 B/op	    2325 allocs/op
+BenchmarkRegisterUser/RegisterUser-603729
+BenchmarkRegisterUser/RegisterUser-603729-32    	       1	2408909908 ns/op	  571136 B/op	    2328 allocs/op
+BenchmarkRegisterUser/RegisterUser-605284
+BenchmarkRegisterUser/RegisterUser-605284-32    	       1	2494493556 ns/op	  571872 B/op	    2331 allocs/op
+BenchmarkRegisterUser/RegisterUser-606841
+BenchmarkRegisterUser/RegisterUser-606841-32    	       1	2461203364 ns/op	  572608 B/op	    2334 allocs/op
+BenchmarkRegisterUser/RegisterUser-608400
+BenchmarkRegisterUser/RegisterUser-608400-32    	       1	2439967411 ns/op	  573344 B/op	    2337 allocs/op
+BenchmarkRegisterUser/RegisterUser-609961
+BenchmarkRegisterUser/RegisterUser-609961-32    	       1	2469976693 ns/op	  574080 B/op	    2340 allocs/op
+BenchmarkRegisterUser/RegisterUser-611524
+BenchmarkRegisterUser/RegisterUser-611524-32    	       1	2460893829 ns/op	  574816 B/op	    2343 allocs/op
+BenchmarkRegisterUser/RegisterUser-613089
+BenchmarkRegisterUser/RegisterUser-613089-32    	       1	2518806788 ns/op	  575552 B/op	    2346 allocs/op
+BenchmarkRegisterUser/RegisterUser-614656
+BenchmarkRegisterUser/RegisterUser-614656-32    	       1	2495343549 ns/op	  576288 B/op	    2349 allocs/op
+BenchmarkRegisterUser/RegisterUser-616225
+BenchmarkRegisterUser/RegisterUser-616225-32    	       1	2379408854 ns/op	  577024 B/op	    2352 allocs/op
+BenchmarkRegisterUser/RegisterUser-617796
+BenchmarkRegisterUser/RegisterUser-617796-32    	       1	2418616931 ns/op	  577760 B/op	    2355 allocs/op
+BenchmarkRegisterUser/RegisterUser-619369
+BenchmarkRegisterUser/RegisterUser-619369-32    	       1	2510937777 ns/op	  578496 B/op	    2358 allocs/op
+BenchmarkRegisterUser/RegisterUser-620944
+BenchmarkRegisterUser/RegisterUser-620944-32    	       1	2458481151 ns/op	  579232 B/op	    2361 allocs/op
+BenchmarkRegisterUser/RegisterUser-622521
+BenchmarkRegisterUser/RegisterUser-622521-32    	       1	2415220200 ns/op	  579968 B/op	    2364 allocs/op
+BenchmarkRegisterUser/RegisterUser-624100
+BenchmarkRegisterUser/RegisterUser-624100-32    	       1	2387205710 ns/op	  580704 B/op	    2367 allocs/op
+BenchmarkRegisterUser/RegisterUser-625681
+BenchmarkRegisterUser/RegisterUser-625681-32    	       1	2484713316 ns/op	  581440 B/op	    2370 allocs/op
+BenchmarkRegisterUser/RegisterUser-627264
+BenchmarkRegisterUser/RegisterUser-627264-32    	       1	2407877026 ns/op	  582176 B/op	    2373 allocs/op
+BenchmarkRegisterUser/RegisterUser-628849
+BenchmarkRegisterUser/RegisterUser-628849-32    	       1	2381885360 ns/op	  582912 B/op	    2376 allocs/op
+BenchmarkRegisterUser/RegisterUser-630436
+BenchmarkRegisterUser/RegisterUser-630436-32    	       1	2401642480 ns/op	  583648 B/op	    2379 allocs/op
+BenchmarkRegisterUser/RegisterUser-632025
+BenchmarkRegisterUser/RegisterUser-632025-32    	       1	2462021889 ns/op	  584384 B/op	    2382 allocs/op
+BenchmarkRegisterUser/RegisterUser-633616
+BenchmarkRegisterUser/RegisterUser-633616-32    	       1	2442987839 ns/op	  585120 B/op	    2385 allocs/op
+BenchmarkRegisterUser/RegisterUser-635209
+BenchmarkRegisterUser/RegisterUser-635209-32    	       1	2545669438 ns/op	  585856 B/op	    2388 allocs/op
+BenchmarkRegisterUser/RegisterUser-636804
+BenchmarkRegisterUser/RegisterUser-636804-32    	       1	2488727655 ns/op	  586592 B/op	    2391 allocs/op
+BenchmarkRegisterUser/RegisterUser-638401
+BenchmarkRegisterUser/RegisterUser-638401-32    	       1	2491869764 ns/op	  587328 B/op	    2394 allocs/op
+BenchmarkRegisterUser/RegisterUser-640000
+BenchmarkRegisterUser/RegisterUser-640000-32    	       1	2516645586 ns/op	  588064 B/op	    2397 allocs/op
+BenchmarkRegisterUser/RegisterUser-641601
+BenchmarkRegisterUser/RegisterUser-641601-32    	       1	2451958485 ns/op	  588800 B/op	    2400 allocs/op
+BenchmarkRegisterUser/RegisterUser-643204
+BenchmarkRegisterUser/RegisterUser-643204-32    	       1	2491510153 ns/op	  589536 B/op	    2403 allocs/op
+BenchmarkRegisterUser/RegisterUser-644809
+BenchmarkRegisterUser/RegisterUser-644809-32    	       1	2554286966 ns/op	  590272 B/op	    2406 allocs/op
+BenchmarkRegisterUser/RegisterUser-646416
+BenchmarkRegisterUser/RegisterUser-646416-32    	       1	2401889224 ns/op	  591008 B/op	    2409 allocs/op
+BenchmarkRegisterUser/RegisterUser-648025
+BenchmarkRegisterUser/RegisterUser-648025-32    	       1	2543969828 ns/op	  591744 B/op	    2412 allocs/op
+BenchmarkRegisterUser/RegisterUser-649636
+BenchmarkRegisterUser/RegisterUser-649636-32    	       1	2472173277 ns/op	  592480 B/op	    2415 allocs/op
+BenchmarkRegisterUser/RegisterUser-651249
+BenchmarkRegisterUser/RegisterUser-651249-32    	       1	2463250884 ns/op	  593216 B/op	    2418 allocs/op
+BenchmarkRegisterUser/RegisterUser-652864
+BenchmarkRegisterUser/RegisterUser-652864-32    	       1	2577369046 ns/op	  593952 B/op	    2421 allocs/op
+BenchmarkRegisterUser/RegisterUser-654481
+BenchmarkRegisterUser/RegisterUser-654481-32    	       1	2423350174 ns/op	  594688 B/op	    2424 allocs/op
+BenchmarkRegisterUser/RegisterUser-656100
+BenchmarkRegisterUser/RegisterUser-656100-32    	       1	2540019451 ns/op	  595424 B/op	    2427 allocs/op
+BenchmarkRegisterUser/RegisterUser-657721
+BenchmarkRegisterUser/RegisterUser-657721-32    	       1	2533396674 ns/op	  596160 B/op	    2430 allocs/op
+BenchmarkRegisterUser/RegisterUser-659344
+BenchmarkRegisterUser/RegisterUser-659344-32    	       1	2572541733 ns/op	  596896 B/op	    2433 allocs/op
+BenchmarkRegisterUser/RegisterUser-660969
+BenchmarkRegisterUser/RegisterUser-660969-32    	       1	2526538715 ns/op	  597632 B/op	    2436 allocs/op
+BenchmarkRegisterUser/RegisterUser-662596
+BenchmarkRegisterUser/RegisterUser-662596-32    	       1	2543670535 ns/op	  598368 B/op	    2439 allocs/op
+BenchmarkRegisterUser/RegisterUser-664225
+BenchmarkRegisterUser/RegisterUser-664225-32    	       1	2395555458 ns/op	  599104 B/op	    2442 allocs/op
+BenchmarkRegisterUser/RegisterUser-665856
+BenchmarkRegisterUser/RegisterUser-665856-32    	       1	2530891904 ns/op	  599840 B/op	    2445 allocs/op
+BenchmarkRegisterUser/RegisterUser-667489
+BenchmarkRegisterUser/RegisterUser-667489-32    	       1	2587224932 ns/op	  600576 B/op	    2448 allocs/op
+BenchmarkRegisterUser/RegisterUser-669124
+BenchmarkRegisterUser/RegisterUser-669124-32    	       1	2570144524 ns/op	  601312 B/op	    2451 allocs/op
+BenchmarkRegisterUser/RegisterUser-670761
+BenchmarkRegisterUser/RegisterUser-670761-32    	       1	2520875146 ns/op	  602048 B/op	    2454 allocs/op
+BenchmarkRegisterUser/RegisterUser-672400
+BenchmarkRegisterUser/RegisterUser-672400-32    	       1	2550719553 ns/op	  602784 B/op	    2457 allocs/op
+BenchmarkRegisterUser/RegisterUser-674041
+BenchmarkRegisterUser/RegisterUser-674041-32    	       1	2611310666 ns/op	  603520 B/op	    2460 allocs/op
+BenchmarkRegisterUser/RegisterUser-675684
+BenchmarkRegisterUser/RegisterUser-675684-32    	       1	2447286619 ns/op	  604256 B/op	    2463 allocs/op
+BenchmarkRegisterUser/RegisterUser-677329
+BenchmarkRegisterUser/RegisterUser-677329-32    	       1	2585602560 ns/op	  604992 B/op	    2466 allocs/op
+BenchmarkRegisterUser/RegisterUser-678976
+BenchmarkRegisterUser/RegisterUser-678976-32    	       1	2599296553 ns/op	  605728 B/op	    2469 allocs/op
+BenchmarkRegisterUser/RegisterUser-680625
+BenchmarkRegisterUser/RegisterUser-680625-32    	       1	2606585894 ns/op	  606464 B/op	    2472 allocs/op
+BenchmarkRegisterUser/RegisterUser-682276
+BenchmarkRegisterUser/RegisterUser-682276-32    	       1	2566142312 ns/op	  607200 B/op	    2475 allocs/op
+BenchmarkRegisterUser/RegisterUser-683929
+BenchmarkRegisterUser/RegisterUser-683929-32    	       1	2619444474 ns/op	  607936 B/op	    2478 allocs/op
+BenchmarkRegisterUser/RegisterUser-685584
+BenchmarkRegisterUser/RegisterUser-685584-32    	       1	2612045801 ns/op	  608672 B/op	    2481 allocs/op
+BenchmarkRegisterUser/RegisterUser-687241
+BenchmarkRegisterUser/RegisterUser-687241-32    	       1	2613551666 ns/op	  609408 B/op	    2484 allocs/op
+BenchmarkRegisterUser/RegisterUser-688900
+BenchmarkRegisterUser/RegisterUser-688900-32    	       1	2582239771 ns/op	  610144 B/op	    2487 allocs/op
+BenchmarkRegisterUser/RegisterUser-690561
+BenchmarkRegisterUser/RegisterUser-690561-32    	       1	2581023651 ns/op	  610880 B/op	    2490 allocs/op
+BenchmarkRegisterUser/RegisterUser-692224
+BenchmarkRegisterUser/RegisterUser-692224-32    	       1	2577811911 ns/op	  611616 B/op	    2493 allocs/op
+BenchmarkRegisterUser/RegisterUser-693889
+BenchmarkRegisterUser/RegisterUser-693889-32    	       1	2543667724 ns/op	  612352 B/op	    2496 allocs/op
+BenchmarkRegisterUser/RegisterUser-695556
+BenchmarkRegisterUser/RegisterUser-695556-32    	       1	2608096146 ns/op	  613088 B/op	    2499 allocs/op
+BenchmarkRegisterUser/RegisterUser-697225
+BenchmarkRegisterUser/RegisterUser-697225-32    	       1	2563486088 ns/op	  613824 B/op	    2502 allocs/op
+BenchmarkRegisterUser/RegisterUser-698896
+BenchmarkRegisterUser/RegisterUser-698896-32    	       1	2619991084 ns/op	  614560 B/op	    2505 allocs/op
+BenchmarkRegisterUser/RegisterUser-700569
+BenchmarkRegisterUser/RegisterUser-700569-32    	       1	2655417082 ns/op	  615296 B/op	    2508 allocs/op
+BenchmarkRegisterUser/RegisterUser-702244
+BenchmarkRegisterUser/RegisterUser-702244-32    	       1	2568047678 ns/op	  616032 B/op	    2511 allocs/op
+BenchmarkRegisterUser/RegisterUser-703921
+BenchmarkRegisterUser/RegisterUser-703921-32    	       1	2532908596 ns/op	  616768 B/op	    2514 allocs/op
+BenchmarkRegisterUser/RegisterUser-705600
+BenchmarkRegisterUser/RegisterUser-705600-32    	       1	2615370558 ns/op	  617504 B/op	    2517 allocs/op
+BenchmarkRegisterUser/RegisterUser-707281
+BenchmarkRegisterUser/RegisterUser-707281-32    	       1	2641628933 ns/op	  618240 B/op	    2520 allocs/op
+BenchmarkRegisterUser/RegisterUser-708964
+BenchmarkRegisterUser/RegisterUser-708964-32    	       1	2524772222 ns/op	  618976 B/op	    2523 allocs/op
+BenchmarkRegisterUser/RegisterUser-710649
+BenchmarkRegisterUser/RegisterUser-710649-32    	       1	2568316027 ns/op	  619712 B/op	    2526 allocs/op
+BenchmarkRegisterUser/RegisterUser-712336
+BenchmarkRegisterUser/RegisterUser-712336-32    	       1	2629040647 ns/op	  620448 B/op	    2529 allocs/op
+BenchmarkRegisterUser/RegisterUser-714025
+BenchmarkRegisterUser/RegisterUser-714025-32    	       1	2584907466 ns/op	  621184 B/op	    2532 allocs/op
+BenchmarkRegisterUser/RegisterUser-715716
+BenchmarkRegisterUser/RegisterUser-715716-32    	       1	2478988618 ns/op	  621920 B/op	    2535 allocs/op
+BenchmarkRegisterUser/RegisterUser-717409
+BenchmarkRegisterUser/RegisterUser-717409-32    	       1	2728525380 ns/op	  622656 B/op	    2538 allocs/op
+BenchmarkRegisterUser/RegisterUser-719104
+BenchmarkRegisterUser/RegisterUser-719104-32    	       1	2595745292 ns/op	  623392 B/op	    2541 allocs/op
+BenchmarkRegisterUser/RegisterUser-720801
+BenchmarkRegisterUser/RegisterUser-720801-32    	       1	2555670681 ns/op	  624128 B/op	    2544 allocs/op
+BenchmarkRegisterUser/RegisterUser-722500
+BenchmarkRegisterUser/RegisterUser-722500-32    	       1	2441166967 ns/op	  624864 B/op	    2547 allocs/op
+BenchmarkRegisterUser/RegisterUser-724201
+BenchmarkRegisterUser/RegisterUser-724201-32    	       1	2678661447 ns/op	  625600 B/op	    2550 allocs/op
+BenchmarkRegisterUser/RegisterUser-725904
+BenchmarkRegisterUser/RegisterUser-725904-32    	       1	2783577749 ns/op	  626336 B/op	    2553 allocs/op
+BenchmarkRegisterUser/RegisterUser-727609
+BenchmarkRegisterUser/RegisterUser-727609-32    	       1	2734042914 ns/op	  627072 B/op	    2556 allocs/op
+BenchmarkRegisterUser/RegisterUser-729316
+BenchmarkRegisterUser/RegisterUser-729316-32    	       1	2654312993 ns/op	  627808 B/op	    2559 allocs/op
+BenchmarkRegisterUser/RegisterUser-731025
+BenchmarkRegisterUser/RegisterUser-731025-32    	       1	2581670621 ns/op	  628544 B/op	    2562 allocs/op
+BenchmarkRegisterUser/RegisterUser-732736
+BenchmarkRegisterUser/RegisterUser-732736-32    	       1	2650175691 ns/op	  629280 B/op	    2565 allocs/op
+BenchmarkRegisterUser/RegisterUser-734449
+BenchmarkRegisterUser/RegisterUser-734449-32    	       1	2483130946 ns/op	  630016 B/op	    2568 allocs/op
+BenchmarkRegisterUser/RegisterUser-736164
+BenchmarkRegisterUser/RegisterUser-736164-32    	       1	2644859568 ns/op	  630752 B/op	    2571 allocs/op
+BenchmarkRegisterUser/RegisterUser-737881
+BenchmarkRegisterUser/RegisterUser-737881-32    	       1	2667722973 ns/op	  631488 B/op	    2574 allocs/op
+BenchmarkRegisterUser/RegisterUser-739600
+BenchmarkRegisterUser/RegisterUser-739600-32    	       1	2679628425 ns/op	  632224 B/op	    2577 allocs/op
+BenchmarkRegisterUser/RegisterUser-741321
+BenchmarkRegisterUser/RegisterUser-741321-32    	       1	2716650604 ns/op	  632960 B/op	    2580 allocs/op
+BenchmarkRegisterUser/RegisterUser-743044
+BenchmarkRegisterUser/RegisterUser-743044-32    	       1	2714636173 ns/op	  633696 B/op	    2583 allocs/op
+BenchmarkRegisterUser/RegisterUser-744769
+BenchmarkRegisterUser/RegisterUser-744769-32    	       1	2664000130 ns/op	  634432 B/op	    2586 allocs/op
+BenchmarkRegisterUser/RegisterUser-746496
+BenchmarkRegisterUser/RegisterUser-746496-32    	       1	2688716021 ns/op	  635168 B/op	    2589 allocs/op
+BenchmarkRegisterUser/RegisterUser-748225
+BenchmarkRegisterUser/RegisterUser-748225-32    	       1	2566567762 ns/op	  635904 B/op	    2592 allocs/op
+BenchmarkRegisterUser/RegisterUser-749956
+BenchmarkRegisterUser/RegisterUser-749956-32    	       1	2835701918 ns/op	  636640 B/op	    2595 allocs/op
+BenchmarkRegisterUser/RegisterUser-751689
+BenchmarkRegisterUser/RegisterUser-751689-32    	       1	2679897729 ns/op	  637376 B/op	    2598 allocs/op
+BenchmarkRegisterUser/RegisterUser-753424
+BenchmarkRegisterUser/RegisterUser-753424-32    	       1	2736816315 ns/op	  638112 B/op	    2601 allocs/op
+BenchmarkRegisterUser/RegisterUser-755161
+BenchmarkRegisterUser/RegisterUser-755161-32    	       1	2676822925 ns/op	  638848 B/op	    2604 allocs/op
+BenchmarkRegisterUser/RegisterUser-756900
+BenchmarkRegisterUser/RegisterUser-756900-32    	       1	2571686450 ns/op	  639584 B/op	    2607 allocs/op
+BenchmarkRegisterUser/RegisterUser-758641
+BenchmarkRegisterUser/RegisterUser-758641-32    	       1	2594241537 ns/op	  640320 B/op	    2610 allocs/op
+BenchmarkRegisterUser/RegisterUser-760384
+BenchmarkRegisterUser/RegisterUser-760384-32    	       1	2726693723 ns/op	  641056 B/op	    2613 allocs/op
+BenchmarkRegisterUser/RegisterUser-762129
+BenchmarkRegisterUser/RegisterUser-762129-32    	       1	2680622808 ns/op	  641792 B/op	    2616 allocs/op
+BenchmarkRegisterUser/RegisterUser-763876
+BenchmarkRegisterUser/RegisterUser-763876-32    	       1	2729851044 ns/op	  642528 B/op	    2619 allocs/op
+BenchmarkRegisterUser/RegisterUser-765625
+BenchmarkRegisterUser/RegisterUser-765625-32    	       1	2746257281 ns/op	  643264 B/op	    2622 allocs/op
+BenchmarkRegisterUser/RegisterUser-767376
+BenchmarkRegisterUser/RegisterUser-767376-32    	       1	2712384917 ns/op	  644000 B/op	    2625 allocs/op
+BenchmarkRegisterUser/RegisterUser-769129
+BenchmarkRegisterUser/RegisterUser-769129-32    	       1	2665194441 ns/op	  644736 B/op	    2628 allocs/op
+BenchmarkRegisterUser/RegisterUser-770884
+BenchmarkRegisterUser/RegisterUser-770884-32    	       1	2722177054 ns/op	  645472 B/op	    2631 allocs/op
+BenchmarkRegisterUser/RegisterUser-772641
+BenchmarkRegisterUser/RegisterUser-772641-32    	       1	2770442219 ns/op	  646208 B/op	    2634 allocs/op
+BenchmarkRegisterUser/RegisterUser-774400
+BenchmarkRegisterUser/RegisterUser-774400-32    	       1	2706076770 ns/op	  646944 B/op	    2637 allocs/op
+BenchmarkRegisterUser/RegisterUser-776161
+BenchmarkRegisterUser/RegisterUser-776161-32    	       1	2524005067 ns/op	  647680 B/op	    2640 allocs/op
+BenchmarkRegisterUser/RegisterUser-777924
+BenchmarkRegisterUser/RegisterUser-777924-32    	       1	2748028364 ns/op	  648416 B/op	    2643 allocs/op
+BenchmarkRegisterUser/RegisterUser-779689
+BenchmarkRegisterUser/RegisterUser-779689-32    	       1	2762384646 ns/op	  649152 B/op	    2646 allocs/op
+BenchmarkRegisterUser/RegisterUser-781456
+BenchmarkRegisterUser/RegisterUser-781456-32    	       1	2780142303 ns/op	  649888 B/op	    2649 allocs/op
+BenchmarkRegisterUser/RegisterUser-783225
+BenchmarkRegisterUser/RegisterUser-783225-32    	       1	2729389586 ns/op	  650624 B/op	    2652 allocs/op
+BenchmarkRegisterUser/RegisterUser-784996
+BenchmarkRegisterUser/RegisterUser-784996-32    	       1	2850688389 ns/op	  651360 B/op	    2655 allocs/op
+BenchmarkRegisterUser/RegisterUser-786769
+BenchmarkRegisterUser/RegisterUser-786769-32    	       1	2709666225 ns/op	  652096 B/op	    2658 allocs/op
+BenchmarkRegisterUser/RegisterUser-788544
+BenchmarkRegisterUser/RegisterUser-788544-32    	       1	2754110681 ns/op	  652832 B/op	    2661 allocs/op
+BenchmarkRegisterUser/RegisterUser-790321
+BenchmarkRegisterUser/RegisterUser-790321-32    	       1	2749614293 ns/op	  653568 B/op	    2664 allocs/op
+BenchmarkRegisterUser/RegisterUser-792100
+BenchmarkRegisterUser/RegisterUser-792100-32    	       1	2718237543 ns/op	  654304 B/op	    2667 allocs/op
+BenchmarkRegisterUser/RegisterUser-793881
+BenchmarkRegisterUser/RegisterUser-793881-32    	       1	2810033460 ns/op	  655040 B/op	    2670 allocs/op
+BenchmarkRegisterUser/RegisterUser-795664
+BenchmarkRegisterUser/RegisterUser-795664-32    	       1	2632775554 ns/op	  655776 B/op	    2673 allocs/op
+BenchmarkRegisterUser/RegisterUser-797449
+BenchmarkRegisterUser/RegisterUser-797449-32    	       1	2788484204 ns/op	  656512 B/op	    2676 allocs/op
+BenchmarkRegisterUser/RegisterUser-799236
+BenchmarkRegisterUser/RegisterUser-799236-32    	       1	2787466873 ns/op	  657248 B/op	    2679 allocs/op
+BenchmarkRegisterUser/RegisterUser-801025
+BenchmarkRegisterUser/RegisterUser-801025-32    	       1	2737399249 ns/op	  657984 B/op	    2682 allocs/op
+BenchmarkRegisterUser/RegisterUser-802816
+BenchmarkRegisterUser/RegisterUser-802816-32    	       1	2802530556 ns/op	  658720 B/op	    2685 allocs/op
+BenchmarkRegisterUser/RegisterUser-804609
+BenchmarkRegisterUser/RegisterUser-804609-32    	       1	2853260046 ns/op	  659456 B/op	    2688 allocs/op
+BenchmarkRegisterUser/RegisterUser-806404
+BenchmarkRegisterUser/RegisterUser-806404-32    	       1	2837184062 ns/op	  660192 B/op	    2691 allocs/op
+BenchmarkRegisterUser/RegisterUser-808201
+BenchmarkRegisterUser/RegisterUser-808201-32    	       1	2834192059 ns/op	  660928 B/op	    2694 allocs/op
+BenchmarkRegisterUser/RegisterUser-810000
+BenchmarkRegisterUser/RegisterUser-810000-32    	       1	2806962831 ns/op	  661664 B/op	    2697 allocs/op
+BenchmarkRegisterUser/RegisterUser-811801
+BenchmarkRegisterUser/RegisterUser-811801-32    	       1	2802747629 ns/op	  662400 B/op	    2700 allocs/op
+BenchmarkRegisterUser/RegisterUser-813604
+BenchmarkRegisterUser/RegisterUser-813604-32    	       1	2681256947 ns/op	  663136 B/op	    2703 allocs/op
+BenchmarkRegisterUser/RegisterUser-815409
+BenchmarkRegisterUser/RegisterUser-815409-32    	       1	2817096227 ns/op	  663872 B/op	    2706 allocs/op
+BenchmarkRegisterUser/RegisterUser-817216
+BenchmarkRegisterUser/RegisterUser-817216-32    	       1	2842641043 ns/op	  664608 B/op	    2709 allocs/op
+BenchmarkRegisterUser/RegisterUser-819025
+BenchmarkRegisterUser/RegisterUser-819025-32    	       1	2801965518 ns/op	  665344 B/op	    2712 allocs/op
+BenchmarkRegisterUser/RegisterUser-820836
+BenchmarkRegisterUser/RegisterUser-820836-32    	       1	2768645940 ns/op	  666080 B/op	    2715 allocs/op
+BenchmarkRegisterUser/RegisterUser-822649
+BenchmarkRegisterUser/RegisterUser-822649-32    	       1	2850404602 ns/op	  666816 B/op	    2718 allocs/op
+BenchmarkRegisterUser/RegisterUser-824464
+BenchmarkRegisterUser/RegisterUser-824464-32    	       1	2733085301 ns/op	  667552 B/op	    2721 allocs/op
+BenchmarkRegisterUser/RegisterUser-826281
+BenchmarkRegisterUser/RegisterUser-826281-32    	       1	2708848559 ns/op	  668288 B/op	    2724 allocs/op
+BenchmarkRegisterUser/RegisterUser-828100
+BenchmarkRegisterUser/RegisterUser-828100-32    	       1	2744065623 ns/op	  669024 B/op	    2727 allocs/op
+BenchmarkRegisterUser/RegisterUser-829921
+BenchmarkRegisterUser/RegisterUser-829921-32    	       1	2705533530 ns/op	  669760 B/op	    2730 allocs/op
+BenchmarkRegisterUser/RegisterUser-831744
+BenchmarkRegisterUser/RegisterUser-831744-32    	       1	2858288725 ns/op	  670496 B/op	    2733 allocs/op
+BenchmarkRegisterUser/RegisterUser-833569
+BenchmarkRegisterUser/RegisterUser-833569-32    	       1	2785401320 ns/op	  671232 B/op	    2736 allocs/op
+BenchmarkRegisterUser/RegisterUser-835396
+BenchmarkRegisterUser/RegisterUser-835396-32    	       1	2831859096 ns/op	  671968 B/op	    2739 allocs/op
+BenchmarkRegisterUser/RegisterUser-837225
+BenchmarkRegisterUser/RegisterUser-837225-32    	       1	2718208296 ns/op	  672704 B/op	    2742 allocs/op
+BenchmarkRegisterUser/RegisterUser-839056
+BenchmarkRegisterUser/RegisterUser-839056-32    	       1	2887448778 ns/op	  673440 B/op	    2745 allocs/op
+BenchmarkRegisterUser/RegisterUser-840889
+BenchmarkRegisterUser/RegisterUser-840889-32    	       1	2783119751 ns/op	  674176 B/op	    2748 allocs/op
+BenchmarkRegisterUser/RegisterUser-842724
+BenchmarkRegisterUser/RegisterUser-842724-32    	       1	2752547749 ns/op	  674912 B/op	    2751 allocs/op
+BenchmarkRegisterUser/RegisterUser-844561
+BenchmarkRegisterUser/RegisterUser-844561-32    	       1	2903284719 ns/op	  675648 B/op	    2754 allocs/op
+BenchmarkRegisterUser/RegisterUser-846400
+BenchmarkRegisterUser/RegisterUser-846400-32    	       1	2801145753 ns/op	  676384 B/op	    2757 allocs/op
+BenchmarkRegisterUser/RegisterUser-848241
+BenchmarkRegisterUser/RegisterUser-848241-32    	       1	2868027252 ns/op	  677120 B/op	    2760 allocs/op
+BenchmarkRegisterUser/RegisterUser-850084
+BenchmarkRegisterUser/RegisterUser-850084-32    	       1	2911417428 ns/op	  677856 B/op	    2763 allocs/op
+BenchmarkRegisterUser/RegisterUser-851929
+BenchmarkRegisterUser/RegisterUser-851929-32    	       1	2845268786 ns/op	  678592 B/op	    2766 allocs/op
+BenchmarkRegisterUser/RegisterUser-853776
+BenchmarkRegisterUser/RegisterUser-853776-32    	       1	2959693897 ns/op	  679328 B/op	    2769 allocs/op
+BenchmarkRegisterUser/RegisterUser-855625
+BenchmarkRegisterUser/RegisterUser-855625-32    	       1	2781279398 ns/op	  680064 B/op	    2772 allocs/op
+BenchmarkRegisterUser/RegisterUser-857476
+BenchmarkRegisterUser/RegisterUser-857476-32    	       1	2825887718 ns/op	  680800 B/op	    2775 allocs/op
+BenchmarkRegisterUser/RegisterUser-859329
+BenchmarkRegisterUser/RegisterUser-859329-32    	       1	2928165403 ns/op	  681536 B/op	    2778 allocs/op
+BenchmarkRegisterUser/RegisterUser-861184
+BenchmarkRegisterUser/RegisterUser-861184-32    	       1	2805321278 ns/op	  682272 B/op	    2781 allocs/op
+BenchmarkRegisterUser/RegisterUser-863041
+BenchmarkRegisterUser/RegisterUser-863041-32    	       1	2672999033 ns/op	  683008 B/op	    2784 allocs/op
+BenchmarkRegisterUser/RegisterUser-864900
+BenchmarkRegisterUser/RegisterUser-864900-32    	       1	2921726424 ns/op	  683744 B/op	    2787 allocs/op
+BenchmarkRegisterUser/RegisterUser-866761
+BenchmarkRegisterUser/RegisterUser-866761-32    	       1	2717510152 ns/op	  684480 B/op	    2790 allocs/op
+BenchmarkRegisterUser/RegisterUser-868624
+BenchmarkRegisterUser/RegisterUser-868624-32    	       1	2920888563 ns/op	  685216 B/op	    2793 allocs/op
+BenchmarkRegisterUser/RegisterUser-870489
+BenchmarkRegisterUser/RegisterUser-870489-32    	       1	2840488130 ns/op	  685952 B/op	    2796 allocs/op
+BenchmarkRegisterUser/RegisterUser-872356
+BenchmarkRegisterUser/RegisterUser-872356-32    	       1	2897118214 ns/op	  686688 B/op	    2799 allocs/op
+BenchmarkRegisterUser/RegisterUser-874225
+BenchmarkRegisterUser/RegisterUser-874225-32    	       1	2896434135 ns/op	  687424 B/op	    2802 allocs/op
+BenchmarkRegisterUser/RegisterUser-876096
+BenchmarkRegisterUser/RegisterUser-876096-32    	       1	2940427283 ns/op	  688160 B/op	    2805 allocs/op
+BenchmarkRegisterUser/RegisterUser-877969
+BenchmarkRegisterUser/RegisterUser-877969-32    	       1	2914739667 ns/op	  688896 B/op	    2808 allocs/op
+BenchmarkRegisterUser/RegisterUser-879844
+BenchmarkRegisterUser/RegisterUser-879844-32    	       1	2889133292 ns/op	  689632 B/op	    2811 allocs/op
+BenchmarkRegisterUser/RegisterUser-881721
+BenchmarkRegisterUser/RegisterUser-881721-32    	       1	2911426640 ns/op	  690368 B/op	    2814 allocs/op
+BenchmarkRegisterUser/RegisterUser-883600
+BenchmarkRegisterUser/RegisterUser-883600-32    	       1	2914805947 ns/op	  691104 B/op	    2817 allocs/op
+BenchmarkRegisterUser/RegisterUser-885481
+BenchmarkRegisterUser/RegisterUser-885481-32    	       1	2916165418 ns/op	  691840 B/op	    2820 allocs/op
+BenchmarkRegisterUser/RegisterUser-887364
+BenchmarkRegisterUser/RegisterUser-887364-32    	       1	2791749853 ns/op	  692576 B/op	    2823 allocs/op
+BenchmarkRegisterUser/RegisterUser-889249
+BenchmarkRegisterUser/RegisterUser-889249-32    	       1	2924095452 ns/op	  693312 B/op	    2826 allocs/op
+BenchmarkRegisterUser/RegisterUser-891136
+BenchmarkRegisterUser/RegisterUser-891136-32    	       1	2869658112 ns/op	  694048 B/op	    2829 allocs/op
+BenchmarkRegisterUser/RegisterUser-893025
+BenchmarkRegisterUser/RegisterUser-893025-32    	       1	2893309295 ns/op	  694784 B/op	    2832 allocs/op
+BenchmarkRegisterUser/RegisterUser-894916
+BenchmarkRegisterUser/RegisterUser-894916-32    	       1	2822022947 ns/op	  695520 B/op	    2835 allocs/op
+BenchmarkRegisterUser/RegisterUser-896809
+BenchmarkRegisterUser/RegisterUser-896809-32    	       1	2967668879 ns/op	  696256 B/op	    2838 allocs/op
+BenchmarkRegisterUser/RegisterUser-898704
+BenchmarkRegisterUser/RegisterUser-898704-32    	       1	2933834650 ns/op	  696992 B/op	    2841 allocs/op
+BenchmarkRegisterUser/RegisterUser-900601
+BenchmarkRegisterUser/RegisterUser-900601-32    	       1	2952222811 ns/op	  697728 B/op	    2844 allocs/op
+BenchmarkRegisterUser/RegisterUser-902500
+BenchmarkRegisterUser/RegisterUser-902500-32    	       1	2813043868 ns/op	  698464 B/op	    2847 allocs/op
+BenchmarkRegisterUser/RegisterUser-904401
+BenchmarkRegisterUser/RegisterUser-904401-32    	       1	2972707951 ns/op	  699200 B/op	    2850 allocs/op
+BenchmarkRegisterUser/RegisterUser-906304
+BenchmarkRegisterUser/RegisterUser-906304-32    	       1	2966545048 ns/op	  699936 B/op	    2853 allocs/op
+BenchmarkRegisterUser/RegisterUser-908209
+BenchmarkRegisterUser/RegisterUser-908209-32    	       1	2958479063 ns/op	  700672 B/op	    2856 allocs/op
+BenchmarkRegisterUser/RegisterUser-910116
+BenchmarkRegisterUser/RegisterUser-910116-32    	       1	2956892178 ns/op	  701408 B/op	    2859 allocs/op
+BenchmarkRegisterUser/RegisterUser-912025
+BenchmarkRegisterUser/RegisterUser-912025-32    	       1	3021972791 ns/op	  702144 B/op	    2862 allocs/op
+BenchmarkRegisterUser/RegisterUser-913936
+BenchmarkRegisterUser/RegisterUser-913936-32    	       1	3017576048 ns/op	  702880 B/op	    2865 allocs/op
+BenchmarkRegisterUser/RegisterUser-915849
+BenchmarkRegisterUser/RegisterUser-915849-32    	       1	2981848126 ns/op	  703616 B/op	    2868 allocs/op
+BenchmarkRegisterUser/RegisterUser-917764
+BenchmarkRegisterUser/RegisterUser-917764-32    	       1	2996365696 ns/op	  704352 B/op	    2871 allocs/op
+BenchmarkRegisterUser/RegisterUser-919681
+BenchmarkRegisterUser/RegisterUser-919681-32    	       1	2939257923 ns/op	  705088 B/op	    2874 allocs/op
+BenchmarkRegisterUser/RegisterUser-921600
+BenchmarkRegisterUser/RegisterUser-921600-32    	       1	2809091533 ns/op	  705824 B/op	    2877 allocs/op
+BenchmarkRegisterUser/RegisterUser-923521
+BenchmarkRegisterUser/RegisterUser-923521-32    	       1	3079993255 ns/op	  706560 B/op	    2880 allocs/op
+BenchmarkRegisterUser/RegisterUser-925444
+BenchmarkRegisterUser/RegisterUser-925444-32    	       1	3342877811 ns/op	  707296 B/op	    2883 allocs/op
+BenchmarkRegisterUser/RegisterUser-927369
+BenchmarkRegisterUser/RegisterUser-927369-32    	       1	3302582018 ns/op	  708032 B/op	    2886 allocs/op
+BenchmarkRegisterUser/RegisterUser-929296
+BenchmarkRegisterUser/RegisterUser-929296-32    	       1	3316178298 ns/op	  708768 B/op	    2889 allocs/op
+BenchmarkRegisterUser/RegisterUser-931225
+BenchmarkRegisterUser/RegisterUser-931225-32    	       1	3180167448 ns/op	  709504 B/op	    2892 allocs/op
+BenchmarkRegisterUser/RegisterUser-933156
+BenchmarkRegisterUser/RegisterUser-933156-32    	       1	3083294671 ns/op	  710240 B/op	    2895 allocs/op
+BenchmarkRegisterUser/RegisterUser-935089
+BenchmarkRegisterUser/RegisterUser-935089-32    	       1	2990774214 ns/op	  710976 B/op	    2898 allocs/op
+BenchmarkRegisterUser/RegisterUser-937024
+BenchmarkRegisterUser/RegisterUser-937024-32    	       1	3011745289 ns/op	  711712 B/op	    2901 allocs/op
+BenchmarkRegisterUser/RegisterUser-938961
+BenchmarkRegisterUser/RegisterUser-938961-32    	       1	3084153087 ns/op	  712448 B/op	    2904 allocs/op
+BenchmarkRegisterUser/RegisterUser-940900
+BenchmarkRegisterUser/RegisterUser-940900-32    	       1	3101936694 ns/op	  713184 B/op	    2907 allocs/op
+BenchmarkRegisterUser/RegisterUser-942841
+BenchmarkRegisterUser/RegisterUser-942841-32    	       1	3422946463 ns/op	  713920 B/op	    2910 allocs/op
+BenchmarkRegisterUser/RegisterUser-944784
+BenchmarkRegisterUser/RegisterUser-944784-32    	       1	3549744140 ns/op	  714656 B/op	    2913 allocs/op
+BenchmarkRegisterUser/RegisterUser-946729
+BenchmarkRegisterUser/RegisterUser-946729-32    	       1	3071465793 ns/op	  715392 B/op	    2916 allocs/op
+BenchmarkRegisterUser/RegisterUser-948676
+BenchmarkRegisterUser/RegisterUser-948676-32    	       1	3022164268 ns/op	  716128 B/op	    2919 allocs/op
+BenchmarkRegisterUser/RegisterUser-950625
+BenchmarkRegisterUser/RegisterUser-950625-32    	       1	2841306681 ns/op	  716864 B/op	    2922 allocs/op
+BenchmarkRegisterUser/RegisterUser-952576
+BenchmarkRegisterUser/RegisterUser-952576-32    	       1	3010737618 ns/op	  717600 B/op	    2925 allocs/op
+BenchmarkRegisterUser/RegisterUser-954529
+BenchmarkRegisterUser/RegisterUser-954529-32    	       1	3058469704 ns/op	  718336 B/op	    2928 allocs/op
+BenchmarkRegisterUser/RegisterUser-956484
+BenchmarkRegisterUser/RegisterUser-956484-32    	       1	3043971147 ns/op	  719072 B/op	    2931 allocs/op
+BenchmarkRegisterUser/RegisterUser-958441
+BenchmarkRegisterUser/RegisterUser-958441-32    	       1	3016300225 ns/op	  719808 B/op	    2934 allocs/op
+BenchmarkRegisterUser/RegisterUser-960400
+BenchmarkRegisterUser/RegisterUser-960400-32    	       1	3089042827 ns/op	  720544 B/op	    2937 allocs/op
+BenchmarkRegisterUser/RegisterUser-962361
+BenchmarkRegisterUser/RegisterUser-962361-32    	       1	3068957888 ns/op	  721280 B/op	    2940 allocs/op
+BenchmarkRegisterUser/RegisterUser-964324
+BenchmarkRegisterUser/RegisterUser-964324-32    	       1	3048467302 ns/op	  722016 B/op	    2943 allocs/op
+BenchmarkRegisterUser/RegisterUser-966289
+BenchmarkRegisterUser/RegisterUser-966289-32    	       1	3097874611 ns/op	  722752 B/op	    2946 allocs/op
+BenchmarkRegisterUser/RegisterUser-968256
+BenchmarkRegisterUser/RegisterUser-968256-32    	       1	3154697506 ns/op	  723488 B/op	    2949 allocs/op
+BenchmarkRegisterUser/RegisterUser-970225
+BenchmarkRegisterUser/RegisterUser-970225-32    	       1	2937755280 ns/op	  724224 B/op	    2952 allocs/op
+BenchmarkRegisterUser/RegisterUser-972196
+BenchmarkRegisterUser/RegisterUser-972196-32    	       1	2933153721 ns/op	  724960 B/op	    2955 allocs/op
+BenchmarkRegisterUser/RegisterUser-974169
+BenchmarkRegisterUser/RegisterUser-974169-32    	       1	3050130027 ns/op	  725696 B/op	    2958 allocs/op
+BenchmarkRegisterUser/RegisterUser-976144
+BenchmarkRegisterUser/RegisterUser-976144-32    	       1	3078524211 ns/op	  726432 B/op	    2961 allocs/op
+BenchmarkRegisterUser/RegisterUser-978121
+BenchmarkRegisterUser/RegisterUser-978121-32    	       1	3081924180 ns/op	  727168 B/op	    2964 allocs/op
+BenchmarkRegisterUser/RegisterUser-980100
+BenchmarkRegisterUser/RegisterUser-980100-32    	       1	3057609122 ns/op	  727904 B/op	    2967 allocs/op
+BenchmarkRegisterUser/RegisterUser-982081
+BenchmarkRegisterUser/RegisterUser-982081-32    	       1	3062875397 ns/op	  728640 B/op	    2970 allocs/op
+BenchmarkRegisterUser/RegisterUser-984064
+BenchmarkRegisterUser/RegisterUser-984064-32    	       1	3019057713 ns/op	  729376 B/op	    2973 allocs/op
+BenchmarkRegisterUser/RegisterUser-986049
+BenchmarkRegisterUser/RegisterUser-986049-32    	       1	3056495424 ns/op	  730112 B/op	    2976 allocs/op
+BenchmarkRegisterUser/RegisterUser-988036
+BenchmarkRegisterUser/RegisterUser-988036-32    	       1	3092517683 ns/op	  730848 B/op	    2979 allocs/op
+BenchmarkRegisterUser/RegisterUser-990025
+BenchmarkRegisterUser/RegisterUser-990025-32    	       1	3112801795 ns/op	  731584 B/op	    2982 allocs/op
+BenchmarkRegisterUser/RegisterUser-992016
+BenchmarkRegisterUser/RegisterUser-992016-32    	       1	3058062049 ns/op	  732320 B/op	    2985 allocs/op
+BenchmarkRegisterUser/RegisterUser-994009
+BenchmarkRegisterUser/RegisterUser-994009-32    	       1	3032173745 ns/op	  733056 B/op	    2988 allocs/op
+BenchmarkRegisterUser/RegisterUser-996004
+BenchmarkRegisterUser/RegisterUser-996004-32    	       1	3017345869 ns/op	  733792 B/op	    2991 allocs/op
+BenchmarkRegisterUser/RegisterUser-998001
+BenchmarkRegisterUser/RegisterUser-998001-32    	       1	3111657723 ns/op	  734528 B/op	    2994 allocs/op
+BenchmarkRegisterUser/RegisterUser-1000000
+BenchmarkRegisterUser/RegisterUser-1000000-32   	       1	3048326071 ns/op	  735264 B/op	    2997 allocs/op
+PASS
+ok  	github.com/etclab/rbe	5971.736s

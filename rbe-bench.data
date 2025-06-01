@@ -1,0 +1,391 @@
+go fmt ./...
+go test -v -bench=. -benchmem -timeout=12h -args -max-users=1024 
+MaxUsers=1024, SqrtMaxUsers=32
+=== RUN   TestDecrypt
+--- PASS: TestDecrypt (109.68s)
+=== RUN   TestVerifyMembership
+--- PASS: TestVerifyMembership (108.84s)
+goos: linux
+goarch: amd64
+pkg: github.com/etclab/rbe
+cpu: Intel(R) Xeon(R) CPU E5-2630 v3 @ 2.40GHz
+BenchmarkNewKeyPair
+BenchmarkNewKeyPair/NewKeyPair-4
+BenchmarkNewKeyPair/NewKeyPair-4-32         	    1137	   1010788 ns/op	     792 B/op	      16 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-9
+BenchmarkNewKeyPair/NewKeyPair-9-32         	     922	   1321687 ns/op	     976 B/op	      18 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-16
+BenchmarkNewKeyPair/NewKeyPair-16-32        	     579	   1998240 ns/op	    1160 B/op	      20 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-25
+BenchmarkNewKeyPair/NewKeyPair-25-32        	     466	   2500314 ns/op	    1352 B/op	      22 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-36
+BenchmarkNewKeyPair/NewKeyPair-36-32        	     390	   2990090 ns/op	    1528 B/op	      24 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-49
+BenchmarkNewKeyPair/NewKeyPair-49-32        	     290	   3496269 ns/op	    1720 B/op	      26 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-64
+BenchmarkNewKeyPair/NewKeyPair-64-32        	     268	   3817064 ns/op	    1896 B/op	      28 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-81
+BenchmarkNewKeyPair/NewKeyPair-81-32        	     303	   3927868 ns/op	    2088 B/op	      30 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-100
+BenchmarkNewKeyPair/NewKeyPair-100-32       	     204	   5122403 ns/op	    2264 B/op	      32 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-121
+BenchmarkNewKeyPair/NewKeyPair-121-32       	     182	   6169026 ns/op	    2456 B/op	      34 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-144
+BenchmarkNewKeyPair/NewKeyPair-144-32       	     171	   6169105 ns/op	    2632 B/op	      36 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-169
+BenchmarkNewKeyPair/NewKeyPair-169-32       	     207	   5725272 ns/op	    2824 B/op	      38 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-196
+BenchmarkNewKeyPair/NewKeyPair-196-32       	     192	   6151630 ns/op	    3000 B/op	      40 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-225
+BenchmarkNewKeyPair/NewKeyPair-225-32       	     180	   6692091 ns/op	    3192 B/op	      42 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-256
+BenchmarkNewKeyPair/NewKeyPair-256-32       	     163	   7243093 ns/op	    3368 B/op	      44 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-289
+BenchmarkNewKeyPair/NewKeyPair-289-32       	     120	   8757890 ns/op	    3560 B/op	      46 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-324
+BenchmarkNewKeyPair/NewKeyPair-324-32       	     114	   9115795 ns/op	    3736 B/op	      48 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-361
+BenchmarkNewKeyPair/NewKeyPair-361-32       	     108	   9735625 ns/op	    3928 B/op	      50 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-400
+BenchmarkNewKeyPair/NewKeyPair-400-32       	     134	   8860502 ns/op	    4104 B/op	      52 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-441
+BenchmarkNewKeyPair/NewKeyPair-441-32       	     103	  10444705 ns/op	    4296 B/op	      54 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-484
+BenchmarkNewKeyPair/NewKeyPair-484-32       	      93	  11391458 ns/op	    4472 B/op	      56 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-529
+BenchmarkNewKeyPair/NewKeyPair-529-32       	      88	  11803371 ns/op	    4664 B/op	      58 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-576
+BenchmarkNewKeyPair/NewKeyPair-576-32       	      85	  12529690 ns/op	    4840 B/op	      60 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-625
+BenchmarkNewKeyPair/NewKeyPair-625-32       	      81	  12838491 ns/op	    5032 B/op	      62 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-676
+BenchmarkNewKeyPair/NewKeyPair-676-32       	      79	  13198355 ns/op	    5208 B/op	      64 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-729
+BenchmarkNewKeyPair/NewKeyPair-729-32       	      78	  13739389 ns/op	    5400 B/op	      66 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-784
+BenchmarkNewKeyPair/NewKeyPair-784-32       	      87	  13291290 ns/op	    5576 B/op	      68 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-841
+BenchmarkNewKeyPair/NewKeyPair-841-32       	      82	  13526896 ns/op	    5768 B/op	      70 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-900
+BenchmarkNewKeyPair/NewKeyPair-900-32       	      67	  15379229 ns/op	    5944 B/op	      72 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-961
+BenchmarkNewKeyPair/NewKeyPair-961-32       	      66	  16006771 ns/op	    6136 B/op	      74 allocs/op
+BenchmarkNewKeyPair/NewKeyPair-1024
+BenchmarkNewKeyPair/NewKeyPair-1024-32      	      62	  16741522 ns/op	    6312 B/op	      76 allocs/op
+BenchmarkEncrypt
+BenchmarkEncrypt/Encrypt-4
+BenchmarkEncrypt/Encrypt-4-32               	      79	  14169098 ns/op	    1912 B/op	      16 allocs/op
+BenchmarkEncrypt/Encrypt-9
+BenchmarkEncrypt/Encrypt-9-32               	      72	  14598752 ns/op	    1912 B/op	      16 allocs/op
+BenchmarkEncrypt/Encrypt-16
+BenchmarkEncrypt/Encrypt-16-32              	      73	  14363494 ns/op	    1912 B/op	      16 allocs/op
+BenchmarkEncrypt/Encrypt-25
+BenchmarkEncrypt/Encrypt-25-32              	      72	  14314912 ns/op	    1912 B/op	      16 allocs/op
+BenchmarkEncrypt/Encrypt-36
+BenchmarkEncrypt/Encrypt-36-32              	      72	  14442658 ns/op	    1912 B/op	      16 allocs/op
+BenchmarkEncrypt/Encrypt-49
+BenchmarkEncrypt/Encrypt-49-32              	      74	  14590738 ns/op	    1912 B/op	      16 allocs/op
+BenchmarkEncrypt/Encrypt-64
+BenchmarkEncrypt/Encrypt-64-32              	      86	  13330387 ns/op	    1912 B/op	      16 allocs/op
+BenchmarkEncrypt/Encrypt-81
+BenchmarkEncrypt/Encrypt-81-32              	      73	  14357504 ns/op	    1912 B/op	      16 allocs/op
+BenchmarkEncrypt/Encrypt-100
+BenchmarkEncrypt/Encrypt-100-32             	      73	  14249121 ns/op	    1912 B/op	      16 allocs/op
+BenchmarkEncrypt/Encrypt-121
+BenchmarkEncrypt/Encrypt-121-32             	      86	  12284894 ns/op	    1912 B/op	      16 allocs/op
+BenchmarkEncrypt/Encrypt-144
+BenchmarkEncrypt/Encrypt-144-32             	      73	  14417312 ns/op	    1912 B/op	      16 allocs/op
+BenchmarkEncrypt/Encrypt-169
+BenchmarkEncrypt/Encrypt-169-32             	      94	  12505468 ns/op	    1912 B/op	      16 allocs/op
+BenchmarkEncrypt/Encrypt-196
+BenchmarkEncrypt/Encrypt-196-32             	      93	  12719304 ns/op	    1912 B/op	      16 allocs/op
+BenchmarkEncrypt/Encrypt-225
+BenchmarkEncrypt/Encrypt-225-32             	      72	  14411120 ns/op	    1912 B/op	      16 allocs/op
+BenchmarkEncrypt/Encrypt-256
+BenchmarkEncrypt/Encrypt-256-32             	      91	  12951350 ns/op	    1912 B/op	      16 allocs/op
+BenchmarkEncrypt/Encrypt-289
+BenchmarkEncrypt/Encrypt-289-32             	      73	  14641766 ns/op	    1912 B/op	      16 allocs/op
+BenchmarkEncrypt/Encrypt-324
+BenchmarkEncrypt/Encrypt-324-32             	      87	  12665685 ns/op	    1912 B/op	      16 allocs/op
+BenchmarkEncrypt/Encrypt-361
+BenchmarkEncrypt/Encrypt-361-32             	      73	  14592813 ns/op	    1912 B/op	      16 allocs/op
+BenchmarkEncrypt/Encrypt-400
+BenchmarkEncrypt/Encrypt-400-32             	      74	  14227504 ns/op	    1912 B/op	      16 allocs/op
+BenchmarkEncrypt/Encrypt-441
+BenchmarkEncrypt/Encrypt-441-32             	      87	  13339747 ns/op	    1912 B/op	      16 allocs/op
+BenchmarkEncrypt/Encrypt-484
+BenchmarkEncrypt/Encrypt-484-32             	      93	  12674974 ns/op	    1912 B/op	      16 allocs/op
+BenchmarkEncrypt/Encrypt-529
+BenchmarkEncrypt/Encrypt-529-32             	      72	  14493241 ns/op	    1912 B/op	      16 allocs/op
+BenchmarkEncrypt/Encrypt-576
+BenchmarkEncrypt/Encrypt-576-32             	      94	  12491303 ns/op	    1912 B/op	      16 allocs/op
+BenchmarkEncrypt/Encrypt-625
+BenchmarkEncrypt/Encrypt-625-32             	      72	  14422549 ns/op	    1912 B/op	      16 allocs/op
+BenchmarkEncrypt/Encrypt-676
+BenchmarkEncrypt/Encrypt-676-32             	      92	  12356812 ns/op	    1912 B/op	      16 allocs/op
+BenchmarkEncrypt/Encrypt-729
+BenchmarkEncrypt/Encrypt-729-32             	      73	  14541432 ns/op	    1912 B/op	      16 allocs/op
+BenchmarkEncrypt/Encrypt-784
+BenchmarkEncrypt/Encrypt-784-32             	      72	  14458476 ns/op	    1912 B/op	      16 allocs/op
+BenchmarkEncrypt/Encrypt-841
+BenchmarkEncrypt/Encrypt-841-32             	      72	  14491933 ns/op	    1912 B/op	      16 allocs/op
+BenchmarkEncrypt/Encrypt-900
+BenchmarkEncrypt/Encrypt-900-32             	      72	  14559505 ns/op	    1912 B/op	      16 allocs/op
+BenchmarkEncrypt/Encrypt-961
+BenchmarkEncrypt/Encrypt-961-32             	      72	  14534410 ns/op	    1912 B/op	      16 allocs/op
+BenchmarkEncrypt/Encrypt-1024
+BenchmarkEncrypt/Encrypt-1024-32            	      72	  14573757 ns/op	    1912 B/op	      16 allocs/op
+BenchmarkDecrypt
+BenchmarkDecrypt/Decrypt-4
+BenchmarkDecrypt/Decrypt-4-32               	      61	  17459905 ns/op	    2944 B/op	       7 allocs/op
+BenchmarkDecrypt/Decrypt-9
+BenchmarkDecrypt/Decrypt-9-32               	      79	  15013882 ns/op	    2944 B/op	       7 allocs/op
+BenchmarkDecrypt/Decrypt-16
+BenchmarkDecrypt/Decrypt-16-32              	      61	  17195808 ns/op	    2944 B/op	       7 allocs/op
+BenchmarkDecrypt/Decrypt-25
+BenchmarkDecrypt/Decrypt-25-32              	      80	  14851194 ns/op	    2944 B/op	       7 allocs/op
+BenchmarkDecrypt/Decrypt-36
+BenchmarkDecrypt/Decrypt-36-32              	      61	  17195559 ns/op	    2944 B/op	       7 allocs/op
+BenchmarkDecrypt/Decrypt-49
+BenchmarkDecrypt/Decrypt-49-32              	      68	  16471093 ns/op	    2944 B/op	       7 allocs/op
+BenchmarkDecrypt/Decrypt-64
+BenchmarkDecrypt/Decrypt-64-32              	      63	  16898177 ns/op	    2944 B/op	       7 allocs/op
+BenchmarkDecrypt/Decrypt-81
+BenchmarkDecrypt/Decrypt-81-32              	      80	  14912900 ns/op	    2944 B/op	       7 allocs/op
+BenchmarkDecrypt/Decrypt-100
+BenchmarkDecrypt/Decrypt-100-32             	      78	  15094217 ns/op	    2944 B/op	       7 allocs/op
+BenchmarkDecrypt/Decrypt-121
+BenchmarkDecrypt/Decrypt-121-32             	      61	  17374350 ns/op	    2944 B/op	       7 allocs/op
+BenchmarkDecrypt/Decrypt-144
+BenchmarkDecrypt/Decrypt-144-32             	      78	  15124098 ns/op	    2944 B/op	       7 allocs/op
+BenchmarkDecrypt/Decrypt-169
+BenchmarkDecrypt/Decrypt-169-32             	      61	  17086713 ns/op	    2944 B/op	       7 allocs/op
+BenchmarkDecrypt/Decrypt-196
+BenchmarkDecrypt/Decrypt-196-32             	      73	  15926592 ns/op	    2944 B/op	       7 allocs/op
+BenchmarkDecrypt/Decrypt-225
+BenchmarkDecrypt/Decrypt-225-32             	      68	  16611755 ns/op	    2944 B/op	       7 allocs/op
+BenchmarkDecrypt/Decrypt-256
+BenchmarkDecrypt/Decrypt-256-32             	      60	  17317553 ns/op	    2944 B/op	       7 allocs/op
+BenchmarkDecrypt/Decrypt-289
+BenchmarkDecrypt/Decrypt-289-32             	      61	  17027424 ns/op	    2944 B/op	       7 allocs/op
+BenchmarkDecrypt/Decrypt-324
+BenchmarkDecrypt/Decrypt-324-32             	      67	  16865163 ns/op	    2944 B/op	       7 allocs/op
+BenchmarkDecrypt/Decrypt-361
+BenchmarkDecrypt/Decrypt-361-32             	      61	  17396438 ns/op	    2944 B/op	       7 allocs/op
+BenchmarkDecrypt/Decrypt-400
+BenchmarkDecrypt/Decrypt-400-32             	      62	  17292523 ns/op	    2944 B/op	       7 allocs/op
+BenchmarkDecrypt/Decrypt-441
+BenchmarkDecrypt/Decrypt-441-32             	      73	  15931433 ns/op	    2944 B/op	       7 allocs/op
+BenchmarkDecrypt/Decrypt-484
+BenchmarkDecrypt/Decrypt-484-32             	      61	  17533750 ns/op	    2944 B/op	       7 allocs/op
+BenchmarkDecrypt/Decrypt-529
+BenchmarkDecrypt/Decrypt-529-32             	      78	  15214698 ns/op	    2944 B/op	       7 allocs/op
+BenchmarkDecrypt/Decrypt-576
+BenchmarkDecrypt/Decrypt-576-32             	      69	  16473069 ns/op	    2944 B/op	       7 allocs/op
+BenchmarkDecrypt/Decrypt-625
+BenchmarkDecrypt/Decrypt-625-32             	      68	  16503361 ns/op	    2944 B/op	       7 allocs/op
+BenchmarkDecrypt/Decrypt-676
+BenchmarkDecrypt/Decrypt-676-32             	      58	  17611477 ns/op	    2944 B/op	       7 allocs/op
+BenchmarkDecrypt/Decrypt-729
+BenchmarkDecrypt/Decrypt-729-32             	      60	  17325306 ns/op	    2944 B/op	       7 allocs/op
+BenchmarkDecrypt/Decrypt-784
+BenchmarkDecrypt/Decrypt-784-32             	      61	  17002862 ns/op	    2944 B/op	       7 allocs/op
+BenchmarkDecrypt/Decrypt-841
+BenchmarkDecrypt/Decrypt-841-32             	      58	  17597778 ns/op	    2944 B/op	       7 allocs/op
+BenchmarkDecrypt/Decrypt-900
+BenchmarkDecrypt/Decrypt-900-32             	      61	  17125468 ns/op	    2944 B/op	       7 allocs/op
+BenchmarkDecrypt/Decrypt-961
+BenchmarkDecrypt/Decrypt-961-32             	      61	  17147679 ns/op	    2944 B/op	       7 allocs/op
+BenchmarkDecrypt/Decrypt-1024
+BenchmarkDecrypt/Decrypt-1024-32            	      78	  15111243 ns/op	    2944 B/op	       7 allocs/op
+BenchmarkRegisterUser
+BenchmarkRegisterUser/RegisterUser-4
+BenchmarkRegisterUser/RegisterUser-4-32     	     199	   5932991 ns/op	    1332 B/op	       3 allocs/op
+BenchmarkRegisterUser/RegisterUser-9
+BenchmarkRegisterUser/RegisterUser-9-32     	     188	   6172634 ns/op	    1516 B/op	       4 allocs/op
+BenchmarkRegisterUser/RegisterUser-16
+BenchmarkRegisterUser/RegisterUser-16-32    	     133	   8935453 ns/op	    2212 B/op	       6 allocs/op
+BenchmarkRegisterUser/RegisterUser-25
+BenchmarkRegisterUser/RegisterUser-25-32    	      85	  12901514 ns/op	    2989 B/op	       8 allocs/op
+BenchmarkRegisterUser/RegisterUser-36
+BenchmarkRegisterUser/RegisterUser-36-32    	      68	  15889964 ns/op	    3601 B/op	      10 allocs/op
+BenchmarkRegisterUser/RegisterUser-49
+BenchmarkRegisterUser/RegisterUser-49-32    	      63	  18415002 ns/op	    4321 B/op	      12 allocs/op
+BenchmarkRegisterUser/RegisterUser-64
+BenchmarkRegisterUser/RegisterUser-64-32    	      52	  22056568 ns/op	    5042 B/op	      14 allocs/op
+BenchmarkRegisterUser/RegisterUser-81
+BenchmarkRegisterUser/RegisterUser-81-32    	      42	  25518472 ns/op	    5763 B/op	      16 allocs/op
+BenchmarkRegisterUser/RegisterUser-100
+BenchmarkRegisterUser/RegisterUser-100-32   	      46	  26782289 ns/op	    6483 B/op	      18 allocs/op
+BenchmarkRegisterUser/RegisterUser-121
+BenchmarkRegisterUser/RegisterUser-121-32   	      37	  30466034 ns/op	    7204 B/op	      20 allocs/op
+BenchmarkRegisterUser/RegisterUser-144
+BenchmarkRegisterUser/RegisterUser-144-32   	      31	  35316887 ns/op	    7925 B/op	      22 allocs/op
+BenchmarkRegisterUser/RegisterUser-169
+BenchmarkRegisterUser/RegisterUser-169-32   	      28	  38602061 ns/op	    8646 B/op	      24 allocs/op
+BenchmarkRegisterUser/RegisterUser-196
+BenchmarkRegisterUser/RegisterUser-196-32   	      30	  38833470 ns/op	    9366 B/op	      26 allocs/op
+BenchmarkRegisterUser/RegisterUser-225
+BenchmarkRegisterUser/RegisterUser-225-32   	      28	  41083714 ns/op	   10088 B/op	      28 allocs/op
+BenchmarkRegisterUser/RegisterUser-256
+BenchmarkRegisterUser/RegisterUser-256-32   	      25	  46790123 ns/op	   10809 B/op	      30 allocs/op
+BenchmarkRegisterUser/RegisterUser-289
+BenchmarkRegisterUser/RegisterUser-289-32   	      21	  50541643 ns/op	   11532 B/op	      32 allocs/op
+BenchmarkRegisterUser/RegisterUser-324
+BenchmarkRegisterUser/RegisterUser-324-32   	      20	  50901070 ns/op	   12253 B/op	      34 allocs/op
+BenchmarkRegisterUser/RegisterUser-361
+BenchmarkRegisterUser/RegisterUser-361-32   	      19	  57841896 ns/op	   12975 B/op	      36 allocs/op
+BenchmarkRegisterUser/RegisterUser-400
+BenchmarkRegisterUser/RegisterUser-400-32   	      19	  58498059 ns/op	   13696 B/op	      39 allocs/op
+BenchmarkRegisterUser/RegisterUser-441
+BenchmarkRegisterUser/RegisterUser-441-32   	      20	  58691806 ns/op	   14416 B/op	      41 allocs/op
+BenchmarkRegisterUser/RegisterUser-484
+BenchmarkRegisterUser/RegisterUser-484-32   	      16	  67214740 ns/op	   15141 B/op	      43 allocs/op
+BenchmarkRegisterUser/RegisterUser-529
+BenchmarkRegisterUser/RegisterUser-529-32   	      15	  70572672 ns/op	   15863 B/op	      45 allocs/op
+BenchmarkRegisterUser/RegisterUser-576
+BenchmarkRegisterUser/RegisterUser-576-32   	      15	  73337260 ns/op	   16584 B/op	      47 allocs/op
+BenchmarkRegisterUser/RegisterUser-625
+BenchmarkRegisterUser/RegisterUser-625-32   	      14	  76302963 ns/op	   17307 B/op	      49 allocs/op
+BenchmarkRegisterUser/RegisterUser-676
+BenchmarkRegisterUser/RegisterUser-676-32   	      14	  78683358 ns/op	   18028 B/op	      51 allocs/op
+BenchmarkRegisterUser/RegisterUser-729
+BenchmarkRegisterUser/RegisterUser-729-32   	      14	  79206060 ns/op	   18749 B/op	      53 allocs/op
+BenchmarkRegisterUser/RegisterUser-784
+BenchmarkRegisterUser/RegisterUser-784-32   	      13	  84843231 ns/op	   19473 B/op	      56 allocs/op
+BenchmarkRegisterUser/RegisterUser-841
+BenchmarkRegisterUser/RegisterUser-841-32   	      13	  86292741 ns/op	   20194 B/op	      58 allocs/op
+BenchmarkRegisterUser/RegisterUser-900
+BenchmarkRegisterUser/RegisterUser-900-32   	      12	  90847318 ns/op	   20918 B/op	      60 allocs/op
+BenchmarkRegisterUser/RegisterUser-961
+BenchmarkRegisterUser/RegisterUser-961-32   	      12	  96779339 ns/op	   21640 B/op	      62 allocs/op
+BenchmarkRegisterUser/RegisterUser-1024
+BenchmarkRegisterUser/RegisterUser-1024-32  	      12	  97482180 ns/op	   22361 B/op	      64 allocs/op
+BenchmarkProveMembership
+BenchmarkProveMembership/ProveMembership-4
+BenchmarkProveMembership/ProveMembership-4-32         	363075123	         3.312 ns/op	       0 B/op	       0 allocs/op
+BenchmarkProveMembership/ProveMembership-9
+BenchmarkProveMembership/ProveMembership-9-32         	263681582	         3.873 ns/op	       0 B/op	       0 allocs/op
+BenchmarkProveMembership/ProveMembership-16
+BenchmarkProveMembership/ProveMembership-16-32        	354764250	         3.343 ns/op	       0 B/op	       0 allocs/op
+BenchmarkProveMembership/ProveMembership-25
+BenchmarkProveMembership/ProveMembership-25-32        	262440237	         3.859 ns/op	       0 B/op	       0 allocs/op
+BenchmarkProveMembership/ProveMembership-36
+BenchmarkProveMembership/ProveMembership-36-32        	365116317	         3.366 ns/op	       0 B/op	       0 allocs/op
+BenchmarkProveMembership/ProveMembership-49
+BenchmarkProveMembership/ProveMembership-49-32        	307147046	         3.808 ns/op	       0 B/op	       0 allocs/op
+BenchmarkProveMembership/ProveMembership-64
+BenchmarkProveMembership/ProveMembership-64-32        	368977370	         3.260 ns/op	       0 B/op	       0 allocs/op
+BenchmarkProveMembership/ProveMembership-81
+BenchmarkProveMembership/ProveMembership-81-32        	253816564	         4.016 ns/op	       0 B/op	       0 allocs/op
+BenchmarkProveMembership/ProveMembership-100
+BenchmarkProveMembership/ProveMembership-100-32       	276459801	         3.676 ns/op	       0 B/op	       0 allocs/op
+BenchmarkProveMembership/ProveMembership-121
+BenchmarkProveMembership/ProveMembership-121-32       	352575782	         3.388 ns/op	       0 B/op	       0 allocs/op
+BenchmarkProveMembership/ProveMembership-144
+BenchmarkProveMembership/ProveMembership-144-32       	272714714	         3.774 ns/op	       0 B/op	       0 allocs/op
+BenchmarkProveMembership/ProveMembership-169
+BenchmarkProveMembership/ProveMembership-169-32       	262852815	         3.852 ns/op	       0 B/op	       0 allocs/op
+BenchmarkProveMembership/ProveMembership-196
+BenchmarkProveMembership/ProveMembership-196-32       	286696941	         3.602 ns/op	       0 B/op	       0 allocs/op
+BenchmarkProveMembership/ProveMembership-225
+BenchmarkProveMembership/ProveMembership-225-32       	277357376	         3.780 ns/op	       0 B/op	       0 allocs/op
+BenchmarkProveMembership/ProveMembership-256
+BenchmarkProveMembership/ProveMembership-256-32       	264046586	         3.846 ns/op	       0 B/op	       0 allocs/op
+BenchmarkProveMembership/ProveMembership-289
+BenchmarkProveMembership/ProveMembership-289-32       	263998641	         3.844 ns/op	       0 B/op	       0 allocs/op
+BenchmarkProveMembership/ProveMembership-324
+BenchmarkProveMembership/ProveMembership-324-32       	366871742	         3.320 ns/op	       0 B/op	       0 allocs/op
+BenchmarkProveMembership/ProveMembership-361
+BenchmarkProveMembership/ProveMembership-361-32       	356475692	         3.438 ns/op	       0 B/op	       0 allocs/op
+BenchmarkProveMembership/ProveMembership-400
+BenchmarkProveMembership/ProveMembership-400-32       	263412104	         3.883 ns/op	       0 B/op	       0 allocs/op
+BenchmarkProveMembership/ProveMembership-441
+BenchmarkProveMembership/ProveMembership-441-32       	262860163	         3.912 ns/op	       0 B/op	       0 allocs/op
+BenchmarkProveMembership/ProveMembership-484
+BenchmarkProveMembership/ProveMembership-484-32       	280860808	         3.696 ns/op	       0 B/op	       0 allocs/op
+BenchmarkProveMembership/ProveMembership-529
+BenchmarkProveMembership/ProveMembership-529-32       	263040194	         3.892 ns/op	       0 B/op	       0 allocs/op
+BenchmarkProveMembership/ProveMembership-576
+BenchmarkProveMembership/ProveMembership-576-32       	284345962	         3.716 ns/op	       0 B/op	       0 allocs/op
+BenchmarkProveMembership/ProveMembership-625
+BenchmarkProveMembership/ProveMembership-625-32       	341691103	         3.446 ns/op	       0 B/op	       0 allocs/op
+BenchmarkProveMembership/ProveMembership-676
+BenchmarkProveMembership/ProveMembership-676-32       	347206731	         3.398 ns/op	       0 B/op	       0 allocs/op
+BenchmarkProveMembership/ProveMembership-729
+BenchmarkProveMembership/ProveMembership-729-32       	264030693	         3.885 ns/op	       0 B/op	       0 allocs/op
+BenchmarkProveMembership/ProveMembership-784
+BenchmarkProveMembership/ProveMembership-784-32       	263686251	         3.891 ns/op	       0 B/op	       0 allocs/op
+BenchmarkProveMembership/ProveMembership-841
+BenchmarkProveMembership/ProveMembership-841-32       	284607703	         3.700 ns/op	       0 B/op	       0 allocs/op
+BenchmarkProveMembership/ProveMembership-900
+BenchmarkProveMembership/ProveMembership-900-32       	262577541	         3.936 ns/op	       0 B/op	       0 allocs/op
+BenchmarkProveMembership/ProveMembership-961
+BenchmarkProveMembership/ProveMembership-961-32       	263142182	         3.917 ns/op	       0 B/op	       0 allocs/op
+BenchmarkProveMembership/ProveMembership-1024
+BenchmarkProveMembership/ProveMembership-1024-32      	273989498	         3.760 ns/op	       0 B/op	       0 allocs/op
+BenchmarkVerifyMembership
+BenchmarkVerifyMembership/VerifyMembership-4
+BenchmarkVerifyMembership/VerifyMembership-4-32       	     103	  10338356 ns/op	    1728 B/op	       3 allocs/op
+BenchmarkVerifyMembership/VerifyMembership-9
+BenchmarkVerifyMembership/VerifyMembership-9-32       	     102	  10311181 ns/op	    1728 B/op	       3 allocs/op
+BenchmarkVerifyMembership/VerifyMembership-16
+BenchmarkVerifyMembership/VerifyMembership-16-32      	     103	  10198471 ns/op	    1728 B/op	       3 allocs/op
+BenchmarkVerifyMembership/VerifyMembership-25
+BenchmarkVerifyMembership/VerifyMembership-25-32      	     114	  10041338 ns/op	    1728 B/op	       3 allocs/op
+BenchmarkVerifyMembership/VerifyMembership-36
+BenchmarkVerifyMembership/VerifyMembership-36-32      	     128	   9078043 ns/op	    1728 B/op	       3 allocs/op
+BenchmarkVerifyMembership/VerifyMembership-49
+BenchmarkVerifyMembership/VerifyMembership-49-32      	     103	  10270993 ns/op	    1728 B/op	       3 allocs/op
+BenchmarkVerifyMembership/VerifyMembership-64
+BenchmarkVerifyMembership/VerifyMembership-64-32      	     122	   9638928 ns/op	    1728 B/op	       3 allocs/op
+BenchmarkVerifyMembership/VerifyMembership-81
+BenchmarkVerifyMembership/VerifyMembership-81-32      	     102	  10225010 ns/op	    1728 B/op	       3 allocs/op
+BenchmarkVerifyMembership/VerifyMembership-100
+BenchmarkVerifyMembership/VerifyMembership-100-32     	     118	   9779207 ns/op	    1728 B/op	       3 allocs/op
+BenchmarkVerifyMembership/VerifyMembership-121
+BenchmarkVerifyMembership/VerifyMembership-121-32     	     135	   8771055 ns/op	    1728 B/op	       3 allocs/op
+BenchmarkVerifyMembership/VerifyMembership-144
+BenchmarkVerifyMembership/VerifyMembership-144-32     	     106	  10022620 ns/op	    1728 B/op	       3 allocs/op
+BenchmarkVerifyMembership/VerifyMembership-169
+BenchmarkVerifyMembership/VerifyMembership-169-32     	     103	  10200202 ns/op	    1728 B/op	       3 allocs/op
+BenchmarkVerifyMembership/VerifyMembership-196
+BenchmarkVerifyMembership/VerifyMembership-196-32     	     105	  10201132 ns/op	    1728 B/op	       3 allocs/op
+BenchmarkVerifyMembership/VerifyMembership-225
+BenchmarkVerifyMembership/VerifyMembership-225-32     	     123	   9049247 ns/op	    1728 B/op	       3 allocs/op
+BenchmarkVerifyMembership/VerifyMembership-256
+BenchmarkVerifyMembership/VerifyMembership-256-32     	     103	  10181414 ns/op	    1728 B/op	       3 allocs/op
+BenchmarkVerifyMembership/VerifyMembership-289
+BenchmarkVerifyMembership/VerifyMembership-289-32     	     100	  10429171 ns/op	    1728 B/op	       3 allocs/op
+BenchmarkVerifyMembership/VerifyMembership-324
+BenchmarkVerifyMembership/VerifyMembership-324-32     	     111	  10033353 ns/op	    1728 B/op	       3 allocs/op
+BenchmarkVerifyMembership/VerifyMembership-361
+BenchmarkVerifyMembership/VerifyMembership-361-32     	     105	  10176180 ns/op	    1728 B/op	       3 allocs/op
+BenchmarkVerifyMembership/VerifyMembership-400
+BenchmarkVerifyMembership/VerifyMembership-400-32     	     103	  10232376 ns/op	    1728 B/op	       3 allocs/op
+BenchmarkVerifyMembership/VerifyMembership-441
+BenchmarkVerifyMembership/VerifyMembership-441-32     	     138	   8668753 ns/op	    1728 B/op	       3 allocs/op
+BenchmarkVerifyMembership/VerifyMembership-484
+BenchmarkVerifyMembership/VerifyMembership-484-32     	     135	   8719076 ns/op	    1728 B/op	       3 allocs/op
+BenchmarkVerifyMembership/VerifyMembership-529
+BenchmarkVerifyMembership/VerifyMembership-529-32     	     136	   8744500 ns/op	    1728 B/op	       3 allocs/op
+BenchmarkVerifyMembership/VerifyMembership-576
+BenchmarkVerifyMembership/VerifyMembership-576-32     	     102	  10274989 ns/op	    1728 B/op	       3 allocs/op
+BenchmarkVerifyMembership/VerifyMembership-625
+BenchmarkVerifyMembership/VerifyMembership-625-32     	     102	  10428923 ns/op	    1728 B/op	       3 allocs/op
+BenchmarkVerifyMembership/VerifyMembership-676
+BenchmarkVerifyMembership/VerifyMembership-676-32     	     100	  10329454 ns/op	    1728 B/op	       3 allocs/op
+BenchmarkVerifyMembership/VerifyMembership-729
+BenchmarkVerifyMembership/VerifyMembership-729-32     	     132	   9050857 ns/op	    1728 B/op	       3 allocs/op
+BenchmarkVerifyMembership/VerifyMembership-784
+BenchmarkVerifyMembership/VerifyMembership-784-32     	     102	  10347100 ns/op	    1728 B/op	       3 allocs/op
+BenchmarkVerifyMembership/VerifyMembership-841
+BenchmarkVerifyMembership/VerifyMembership-841-32     	     102	  10326390 ns/op	    1728 B/op	       3 allocs/op
+BenchmarkVerifyMembership/VerifyMembership-900
+BenchmarkVerifyMembership/VerifyMembership-900-32     	     102	  10132195 ns/op	    1728 B/op	       3 allocs/op
+BenchmarkVerifyMembership/VerifyMembership-961
+BenchmarkVerifyMembership/VerifyMembership-961-32     	     124	   9424474 ns/op	    1728 B/op	       3 allocs/op
+BenchmarkVerifyMembership/VerifyMembership-1024
+BenchmarkVerifyMembership/VerifyMembership-1024-32    	     103	  10247893 ns/op	    1728 B/op	       3 allocs/op
+PASS
+ok  	github.com/etclab/rbe	2340.072s
