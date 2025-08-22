@@ -67,9 +67,9 @@ func (pp *PublicParams) ToProto() *proto.PublicParams {
 	}
 
 	return &proto.PublicParams{
-		MaxUsers:    int32(pp.MaxUsers),
-		BlockSize:   int32(pp.BlockSize),
-		NumBlocks:   int32(pp.NumBlocks),
+		MaxUsers:    int64(pp.MaxUsers),
+		BlockSize:   int64(pp.BlockSize),
+		NumBlocks:   int64(pp.NumBlocks),
 		G1:          &proto.G1{Point: pp.G1.Bytes()},
 		G2:          &proto.G2{Point: pp.G2.Bytes()},
 		Crs:         pp.CRS.ToProto(),

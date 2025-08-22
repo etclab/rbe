@@ -22,9 +22,9 @@ message CRS {
 }
 
 message PublicParams {
-    int32 maxUsers = 1;
-    int32 blockSize = 2;
-    int32 numBlocks = 3;
+    int64 maxUsers = 1;
+    int64 blockSize = 2;
+    int64 numBlocks = 3;
     G1 g1 = 4;
     G2 g2 = 5;
     CRS crs = 6;
