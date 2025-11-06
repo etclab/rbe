@@ -55,7 +55,7 @@ func (crs *CRS) ToProto() *proto.CRS {
 		if v == nil {
 			H1 = append(H1, &proto.G1{Point: []byte{}})
 		} else {
-			H1 = append(H1, &proto.G1{Point: v.Bytes()})
+			H1 = append(H1, &proto.G1{Point: v.BytesCompressed()})
 		}
 	}
 
@@ -63,7 +63,7 @@ func (crs *CRS) ToProto() *proto.CRS {
 		if v == nil {
 			H2 = append(H2, &proto.G2{Point: []byte{}})
 		} else {
-			H2 = append(H2, &proto.G2{Point: v.Bytes()})
+			H2 = append(H2, &proto.G2{Point: v.BytesCompressed()})
 		}
 	}
 

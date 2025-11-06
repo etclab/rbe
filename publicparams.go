@@ -62,7 +62,7 @@ func (pp *PublicParams) ToProto() *proto.PublicParams {
 		// *bls.G1.Bytes() converts to affine coordinates (x,y,z) -> (x/z,y/z,1)
 		// during encoding; meaning the raw bytes when parsed back will not match the
 		// original projective coordinates (x,y,z)
-		commitG1 := &proto.G1{Point: v.Bytes()}
+		commitG1 := &proto.G1{Point: v.BytesCompressed()}
 		commitments = append(commitments, commitG1)
 	}
 
@@ -70,8 +70,8 @@ func (pp *PublicParams) ToProto() *proto.PublicParams {
 		MaxUsers:    int64(pp.MaxUsers),
 		BlockSize:   int64(pp.BlockSize),
 		NumBlocks:   int64(pp.NumBlocks),
-		G1:          &proto.G1{Point: pp.G1.Bytes()},
-		G2:          &proto.G2{Point: pp.G2.Bytes()},
+		G1:          &proto.G1{Point: pp.G1.BytesCompressed()},
+		G2:          &proto.G2{Point: pp.G2.BytesCompressed()},
 		Crs:         pp.CRS.ToProto(),
 		Commitments: commitments,
 	}
