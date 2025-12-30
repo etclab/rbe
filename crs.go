@@ -17,10 +17,8 @@ type CRS struct {
 }
 
 func (crs *CRS) FromProto(protoCrs *proto.CRS) {
-	size := len(protoCrs.GetH1())
-
-	crs.H1 = make([]*bls.G1, size)
-	crs.H2 = make([]*bls.G2, size)
+	crs.H1 = make([]*bls.G1, len(protoCrs.GetH1()))
+	crs.H2 = make([]*bls.G2, len(protoCrs.GetH2()))
 
 	for i, v := range protoCrs.GetH1() {
 		if len(v.GetPoint()) == 0 {
