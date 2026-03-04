@@ -1,6 +1,7 @@
 package rbe
 
 import (
+	"crypto/rand"
 	"fmt"
 	"math"
 	"strings"
@@ -117,21 +118,77 @@ func (pp *PublicParams) GetGenerators() (*bls.G1, *bls.G2) {
 }
 
 // check consistency of the helping values (xi)
+//
+// For each valid i, we check e(pk, h2[n-1]) == e(xi[i+1], h2[i]).
+// Rearranging: e(pk, h2[n-1]) * e(xi[i+1], h2[i])^{-1} == 1 (in Gt).
+//
+// We batch all checks with random coefficients r_i, applying them on the
+// G1 side (cheaper than G2 scalar mults on BLS12-381):
+//
+//	e((Σ r_i)*pk, h2[n-1]) * ∏_i e(r_i*xi[i+1], h2[i])^{-1} == 1
+//
+// This is computed via a single ProdPairFrac call (one final exponentiation).
 func (pp *PublicParams) CheckXiConsistency(pk *bls.G1, xi []*bls.G1) {
 	h2 := pp.CRS.H2
-	e := bls.Pair(pk, h2[pp.BlockSize-1])
-	for i := 0; i < (pp.BlockSize - 1); i++ {
-		if xi[i+1] == nil {
-			continue
-		}
-		if h2[i] == nil {
-			continue
-		}
+	n := pp.BlockSize
 
-		tmp := bls.Pair(xi[i+1], h2[i])
-		if !e.IsEqual(tmp) {
-			mu.Fatalf("helping values (xi) are not consistent!")
+	// Collect valid indices.
+	type entry struct {
+		xiIdx int // index into xi (i+1)
+		h2Idx int // index into h2 (i)
+	}
+	var entries []entry
+	for i := 0; i < (n - 1); i++ {
+		if xi[i+1] == nil || h2[i] == nil {
+			continue
 		}
+		entries = append(entries, entry{i + 1, i})
+	}
+
+	if len(entries) == 0 {
+		return
+	}
+
+	// Generate random scalars and compute their sum.
+	scalars := make([]bls.Scalar, len(entries))
+	var sumR bls.Scalar
+	for j := range scalars {
+		if err := scalars[j].Random(rand.Reader); err != nil {
+			mu.Fatalf("failed to generate random scalar: %v", err)
+		}
+		if j == 0 {
+			sumR.Set(&scalars[0])
+		} else {
+			sumR.Add(&sumR, &scalars[j])
+		}
+	}
+
+	// Build pairing inputs with G1 scalar mults:
+	//   G1: [(Σ r_i)*pk, r_1*xi[i_1], r_2*xi[i_2], ...]
+	//   G2: [h2[n-1],    h2[idx_1],    h2[idx_2],    ...]
+	//   signs: [+1,       -1,           -1,           ...]
+	count := len(entries)
+	g1s := make([]*bls.G1, 1+count)
+	g2s := make([]*bls.G2, 1+count)
+	signs := make([]int, 1+count)
+
+	sumR_pk := new(bls.G1)
+	sumR_pk.ScalarMult(&sumR, pk)
+	g1s[0] = sumR_pk
+	g2s[0] = h2[n-1]
+	signs[0] = 1
+
+	for j, e := range entries {
+		rxi := new(bls.G1)
+		rxi.ScalarMult(&scalars[j], xi[e.xiIdx])
+		g1s[j+1] = rxi
+		g2s[j+1] = h2[e.h2Idx]
+		signs[j+1] = -1
+	}
+
+	result := bls.ProdPairFrac(g1s, g2s, signs)
+	if !result.IsIdentity() {
+		mu.Fatalf("helping values (xi) are not consistent!")
 	}
 }
 

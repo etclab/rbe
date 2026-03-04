@@ -2,6 +2,8 @@ package rbe
 
 import (
 	"fmt"
+	"sync"
+	"time"
 
 	bls "github.com/cloudflare/circl/ecc/bls12381"
 )
@@ -19,6 +21,8 @@ type KeyCurator struct {
 	// id).  Ths is also called `aux` or `\Lambda`.  Each entry is a list of
 	// history of lambdas (the current is the last entry in the list)
 	UserOpenings [][]*bls.G1
+
+	blockLocks []sync.RWMutex // one per block
 }
 
 func NewKeyCurator(pp *PublicParams) *KeyCurator {
@@ -33,6 +37,8 @@ func NewKeyCurator(pp *PublicParams) *KeyCurator {
 		kc.UserOpenings[i][0].SetIdentity()
 	}
 
+	kc.blockLocks = make([]sync.RWMutex, pp.NumBlocks)
+
 	return kc
 }
 
@@ -43,7 +49,12 @@ func (kc *KeyCurator) RegisterUser(id int, pk *bls.G1, xi []*bls.G1) {
 	k := pp.IdToBlock(id)
 	idBar := pp.IdToIdBar(id)
 
+	start := time.Now()
 	pp.CheckXiConsistency(pk, xi)
+	fmt.Printf("[dev] CheckXiConsistency took %v\n", time.Since(start))
+
+	kc.blockLocks[k].Lock()
+	defer kc.blockLocks[k].Unlock()
 
 	// update commitment
 	com := pp.Commitments[k]
@@ -79,6 +90,9 @@ func (kc *KeyCurator) UnregisterUser(id int, pk *bls.G1, xi []*bls.G1) {
 
 	pp.CheckXiConsistency(pk, xi)
 
+	kc.blockLocks[k].Lock()
+	defer kc.blockLocks[k].Unlock()
+
 	// update commitment -- substract pk from commitment
 	com := pp.Commitments[k]
 	negPk := copyG1(pk)
@@ -111,6 +125,10 @@ func (kc *KeyCurator) UnregisterUser(id int, pk *bls.G1, xi []*bls.G1) {
 func (kc *KeyCurator) ProveMembership(id int) *bls.G1 {
 	pp := kc.PP
 	pp.CheckIdRange(id)
+
+	k := pp.IdToBlock(id)
+	kc.blockLocks[k].RLock()
+	defer kc.blockLocks[k].RUnlock()
 
 	openings := kc.UserOpenings[id]
 	lastOpening := openings[len(openings)-1]
