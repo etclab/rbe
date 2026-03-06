@@ -4,7 +4,9 @@ import (
 	"crypto/rand"
 	"fmt"
 	"math"
+	"runtime"
 	"strings"
+	"sync"
 
 	bls "github.com/cloudflare/circl/ecc/bls12381"
 	"github.com/etclab/mu"
@@ -127,7 +129,9 @@ func (pp *PublicParams) GetGenerators() (*bls.G1, *bls.G2) {
 //
 //	e((Σ r_i)*pk, h2[n-1]) * ∏_i e(r_i*xi[i+1], h2[i])^{-1} == 1
 //
-// This is computed via a single ProdPairFrac call (one final exponentiation).
+// With BlockSize=256, entries are split across N goroutines (N = GOMAXPROCS,
+// capped at 8). Each goroutine computes scalar mults + ProdPairFrac for its
+// chunk; the Gt results are multiplied together and checked for identity.
 func (pp *PublicParams) CheckXiConsistency(pk *bls.G1, xi []*bls.G1) {
 	h2 := pp.CRS.H2
 	n := pp.BlockSize
@@ -163,31 +167,75 @@ func (pp *PublicParams) CheckXiConsistency(pk *bls.G1, xi []*bls.G1) {
 		}
 	}
 
-	// Build pairing inputs with G1 scalar mults:
-	//   G1: [(Σ r_i)*pk, r_1*xi[i_1], r_2*xi[i_2], ...]
-	//   G2: [h2[n-1],    h2[idx_1],    h2[idx_2],    ...]
-	//   signs: [+1,       -1,           -1,           ...]
-	count := len(entries)
-	g1s := make([]*bls.G1, 1+count)
-	g2s := make([]*bls.G2, 1+count)
-	signs := make([]int, 1+count)
-
+	// Build pairing inputs and compute in parallel chunks.
 	sumR_pk := new(bls.G1)
 	sumR_pk.ScalarMult(&sumR, pk)
-	g1s[0] = sumR_pk
-	g2s[0] = h2[n-1]
-	signs[0] = 1
 
-	for j, e := range entries {
-		rxi := new(bls.G1)
-		rxi.ScalarMult(&scalars[j], xi[e.xiIdx])
-		g1s[j+1] = rxi
-		g2s[j+1] = h2[e.h2Idx]
-		signs[j+1] = -1
+	numWorkers := runtime.GOMAXPROCS(0)
+	if numWorkers > 8 {
+		numWorkers = 8
+	}
+	if numWorkers > len(entries) {
+		numWorkers = len(entries)
 	}
 
-	result := bls.ProdPairFrac(g1s, g2s, signs)
-	if !result.IsIdentity() {
+	chunkSize := (len(entries) + numWorkers - 1) / numWorkers
+	results := make([]*bls.Gt, numWorkers)
+	var wg sync.WaitGroup
+
+	for w := 0; w < numWorkers; w++ {
+		start := w * chunkSize
+		end := start + chunkSize
+		if end > len(entries) {
+			end = len(entries)
+		}
+		if start >= end {
+			break
+		}
+
+		wg.Add(1)
+		go func(w, start, end int) {
+			defer wg.Done()
+
+			extra := 0
+			if w == 0 {
+				extra = 1 // pk term in first chunk
+			}
+
+			sz := (end - start) + extra
+			lg1 := make([]*bls.G1, sz)
+			lg2 := make([]*bls.G2, sz)
+			lsigns := make([]int, sz)
+
+			if w == 0 {
+				lg1[0] = sumR_pk
+				lg2[0] = h2[n-1]
+				lsigns[0] = 1
+			}
+
+			for j := start; j < end; j++ {
+				rxi := new(bls.G1)
+				rxi.ScalarMult(&scalars[j], xi[entries[j].xiIdx])
+				idx := (j - start) + extra
+				lg1[idx] = rxi
+				lg2[idx] = h2[entries[j].h2Idx]
+				lsigns[idx] = -1
+			}
+
+			results[w] = bls.ProdPairFrac(lg1, lg2, lsigns)
+		}(w, start, end)
+	}
+
+	wg.Wait()
+
+	product := new(bls.Gt)
+	product.SetIdentity()
+	for _, r := range results {
+		if r != nil {
+			product.Mul(product, r)
+		}
+	}
+	if !product.IsIdentity() {
 		mu.Fatalf("helping values (xi) are not consistent!")
 	}
 }
