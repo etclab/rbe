@@ -37,6 +37,20 @@ func NewUserWithSecret(pp *PublicParams, id int, secretKey *bls.Scalar) *User {
 	return u
 }
 
+// NewUserForDecrypt creates a User with only the fields needed for Decrypt and
+// Update, skipping the expensive xi (helping values) computation in NewKeyPair.
+func NewUserForDecrypt(pp *PublicParams, id int, secretKey *bls.Scalar) *User {
+	pp.CheckIdRange(id)
+
+	return &User{
+		pp: pp,
+		id: id,
+		keyPair: &KeyPair{
+			SecretKey: secretKey,
+		},
+	}
+}
+
 func (u *User) PublicKey() *bls.G1 {
 	return u.keyPair.PublicKey
 }
